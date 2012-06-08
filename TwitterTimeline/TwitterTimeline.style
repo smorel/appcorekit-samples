@@ -21,16 +21,21 @@
                 "selectedBackgroundView" : {
                     "backgroundColor" : "blueColor"
                 },
+                "textLabel,detailTextLabel" : {
+                    "backgroundColor" : "whiteColor"
+                },
                 "imageView" : {
                     "clipsToBounds" : 0,
-                    "layer" : {
+                    "backgroundColor" : "whiteColor",
+                    "opaque" : 1
+                   /* "layer" : {
                         //"borderColor" : "darkGrayColor",
                         //"borderWidth" : 1,
                         "shadowColor" : "blackColor",
                         "shadowRadius" : 2,
                         "shadowOffset" : "0 2",
                         "shadowOpacity" : "0.8"
-                    }
+                    }*/
                 }
             }
         }

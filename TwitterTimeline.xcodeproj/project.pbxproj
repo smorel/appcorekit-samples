@@ -90,9 +90,9 @@
 		9691A52B15824C9100E4E6E8 /* TwitterTimeline.mappings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TwitterTimeline.mappings; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		9691A52C15824C9100E4E6E8 /* TwitterTimeline.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TwitterTimeline.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		9691A52F15824F0B00E4E6E8 /* TwitterTimeline.mock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TwitterTimeline.mock; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
-		9691A53115824F9E00E4E6E8 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = ../../../Dropbox/Frameworks/CloudKit/2.0.x/CloudKit.framework; sourceTree = "<group>"; };
+		9691A53115824F9E00E4E6E8 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = CloudKit/2.0.x/CloudKit.framework; sourceTree = CloudKitFrameworks; };
 		9691A53315824FB000E4E6E8 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
-		9691A53515824FC400E4E6E8 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = ../../../Dropbox/Frameworks/VendorsKit/1.0.x/VendorsKit.framework; sourceTree = "<group>"; };
+		9691A53515824FC400E4E6E8 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = VendorsKit/1.0.x/VendorsKit.framework; sourceTree = CloudKitFrameworks; };
 		9691A5371582531700E4E6E8 /* default_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_avatar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -398,9 +398,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"${CloudKitFrameworks}/CloudKit/1.7.x/",
-					"\"$(SRCROOT)/../../../Dropbox/Frameworks/CloudKit/2.0.x\"",
-					"\"$(SRCROOT)/../../../Dropbox/Frameworks/VendorsKit/1.0.x\"",
+					"${CloudKitFrameworks}/CloudKit/2.0.x/",
+					"${CloudKitFrameworks}/VendorsKit/1.0.x/",
+					"${CloudKitFrameworks}/AppMetrics/1.0.x/",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TwitterTimeline/TwitterTimeline-Prefix.pch";
@@ -422,9 +422,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"${CloudKitFrameworks}/CloudKit/1.7.x/",
-					"\"$(SRCROOT)/../../../Dropbox/Frameworks/CloudKit/2.0.x\"",
-					"\"$(SRCROOT)/../../../Dropbox/Frameworks/VendorsKit/1.0.x\"",
+					"${CloudKitFrameworks}/CloudKit/2.0.x/",
+					"${CloudKitFrameworks}/VendorsKit/1.0.x/",
+					"${CloudKitFrameworks}/AppMetrics/1.0.x/",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TwitterTimeline/TwitterTimeline-Prefix.pch";
@@ -461,6 +461,7 @@
 				9691A51E158246D400E4E6E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9691A51F158246D400E4E6E8 /* Build configuration list for PBXNativeTarget "TwitterTimeline" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +470,7 @@
 				9691A521158246D400E4E6E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
