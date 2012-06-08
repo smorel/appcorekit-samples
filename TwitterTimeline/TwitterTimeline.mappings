@@ -1,0 +1,8 @@
+{
+    "$Tweet" : {
+        "@class" : "Tweet",
+        "imageUrl" : "user.profile_image_url",
+        "name" : "user.name",
+        "message" : "text"
+    }
+}

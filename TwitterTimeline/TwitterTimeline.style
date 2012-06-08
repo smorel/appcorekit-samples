@@ -1,0 +1,52 @@
+{
+    "UIViewController[name=Timeline]" : {
+        "title" : "Twitter Public Timeline",
+        /*"UITableView,tableViewContainer" : {
+            "backgroundColor" : "clearColor"
+        },
+        
+        "view" : {
+            "backgroundColor" : "blackColor"
+        },
+        
+        "tableViewInsets" : "30 0 0 0",*/
+        
+        "CKTableViewCellController" : {
+            "cellType" : "CKTableViewCellStyleSubtitle2",
+            "contentInsets" : "10 10 10 10",
+            "UITableViewCell" : {
+                "backgroundView" : {
+                    "backgroundColor" : "whiteColor"
+                },
+                "selectedBackgroundView" : {
+                    "backgroundColor" : "blueColor"
+                },
+                "imageView" : {
+                    "clipsToBounds" : 0,
+                    "layer" : {
+                        //"borderColor" : "darkGrayColor",
+                        //"borderWidth" : 1,
+                        "shadowColor" : "blackColor",
+                        "shadowRadius" : 2,
+                        "shadowOffset" : "0 2",
+                        "shadowOpacity" : "0.8"
+                    }
+                }
+            }
+        }
+    },
+    
+    
+    "UINavigationController" : {
+        "navigationBar" : {
+            "titleView" : {
+                "fontName" : "Helvetica-Bold",
+                "fontSize" : "18",
+                "textColor" : "whiteColor",
+                "backgroundColor" : "clearColor",
+                "shadowColor" : "darkGrayColor",
+                "shadowOffset" : "0 -1"
+            }
+        }
+    }
+}
