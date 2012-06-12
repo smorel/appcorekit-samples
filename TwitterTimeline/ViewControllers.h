@@ -2,7 +2,7 @@
 //  ViewControllers.h
 //  TwitterTimeline
 //
-//  Created by Martin Dufort on 12-06-08.
+//  Created by  on 12-06-08.
 //  Copyright (c) 2012 WhereCloud Inc. All rights reserved.
 //
 

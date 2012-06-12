@@ -1,6 +1,6 @@
 {
     "UIViewController[name=Timeline]" : {
-        "title" : "Twitter Public Timeline",
+        "rowInsertAnimation" : "UITableViewRowAnimationTop",
         /*"UITableView,tableViewContainer" : {
             "backgroundColor" : "clearColor"
         },
@@ -27,15 +27,15 @@
                 "imageView" : {
                     "clipsToBounds" : 0,
                     "backgroundColor" : "whiteColor",
-                    "opaque" : 1
-                   /* "layer" : {
+                    "opaque" : 1,
+                    "layer" : {
                         //"borderColor" : "darkGrayColor",
                         //"borderWidth" : 1,
                         "shadowColor" : "blackColor",
                         "shadowRadius" : 2,
                         "shadowOffset" : "0 2",
                         "shadowOpacity" : "0.8"
-                    }*/
+                    }
                 }
             }
         }

@@ -2,7 +2,7 @@
 //  ViewControllers.m
 //  TwitterTimeline
 //
-//  Created by Martin Dufort on 12-06-08.
+//  Created by  on 12-06-08.
 //  Copyright (c) 2012 WhereCloud Inc. All rights reserved.
 //
 
@@ -23,6 +23,7 @@
     }];
     CKFormTableViewController* form = [CKFormTableViewController controller];
     form.name = @"Timeline";
+    form.title = _(@"kTimelineTitle");
     
     CKFormBindedCollectionSection* section = [CKFormBindedCollectionSection sectionWithCollection:timeline.tweets factory:tweetsFactory appendCollectionCellControllerAsFooterCell:YES];
     [form addSections:[NSArray arrayWithObject:section]];
