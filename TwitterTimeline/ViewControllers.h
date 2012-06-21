@@ -10,6 +10,6 @@
 
 @interface ViewControllers : NSObject
 
-+ (CKUIViewController*)viewControllerForTimeline:(Timeline*)timeline;
++ (CKViewController*)viewControllerForTimeline:(Timeline*)timeline;
 
 @end

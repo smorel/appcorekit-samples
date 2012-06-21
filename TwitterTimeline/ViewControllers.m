@@ -10,7 +10,7 @@
 
 @implementation ViewControllers
 
-+ (CKUIViewController*)viewControllerForTimeline:(Timeline*)timeline{
++ (CKViewController*)viewControllerForTimeline:(Timeline*)timeline{
     CKCollectionCellControllerFactory* tweetsFactory = [CKCollectionCellControllerFactory factory];
     [tweetsFactory addItemForObjectOfClass:[Tweet class] withControllerCreationBlock:^CKCollectionCellController *(id object, NSIndexPath *indexPath) {
         Tweet* tweet = (Tweet*)object;
@@ -25,7 +25,7 @@
     form.name = @"Timeline";
     form.title = _(@"kTimelineTitle");
     
-    CKFormBindedCollectionSection* section = [CKFormBindedCollectionSection sectionWithCollection:timeline.tweets factory:tweetsFactory appendCollectionCellControllerAsFooterCell:YES];
+    CKFormBindedCollectionSection* section = [CKFormBindedCollectionSection sectionWithCollection:timeline.tweets factory:tweetsFactory appendSpinnerAsFooterCell:YES];
     [form addSections:[NSArray arrayWithObject:section]];
     return form;
 }
