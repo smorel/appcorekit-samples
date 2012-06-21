@@ -11,8 +11,10 @@
         
         "tableViewInsets" : "30 0 0 0",*/
         
+        "style" : "UITableViewStyleGrouped",
+        
         "CKTableViewCellController" : {
-            "cellType" : "CKTableViewCellStyleSubtitle2",
+            "cellStyle" : "CKTableViewCellStyleSubtitle2",
             "contentInsets" : "10 10 10 10",
             "UITableViewCell" : {
                 "backgroundView" : {
@@ -22,7 +24,8 @@
                     "backgroundColor" : "blueColor"
                 },
                 "textLabel,detailTextLabel" : {
-                    "backgroundColor" : "whiteColor"
+                    "backgroundColor" : "whiteColor",
+                    "fontSize" : 20
                 },
                 "imageView" : {
                     "clipsToBounds" : 0,

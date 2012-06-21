@@ -11,8 +11,8 @@
 @implementation ViewControllers
 
 + (CKUIViewController*)viewControllerForTimeline:(Timeline*)timeline{
-    CKItemViewControllerFactory* tweetsFactory = [CKItemViewControllerFactory factory];
-    [tweetsFactory addItemForObjectOfClass:[Tweet class] withControllerCreationBlock:^CKItemViewController *(id object, NSIndexPath *indexPath) {
+    CKCollectionCellControllerFactory* tweetsFactory = [CKCollectionCellControllerFactory factory];
+    [tweetsFactory addItemForObjectOfClass:[Tweet class] withControllerCreationBlock:^CKCollectionCellController *(id object, NSIndexPath *indexPath) {
         Tweet* tweet = (Tweet*)object;
         CKTableViewCellController* cellController =  [CKTableViewCellController cellControllerWithTitle:tweet.name subtitle:tweet.message defaultImage:[UIImage imageNamed:@"default_avatar"] imageURL:tweet.imageUrl imageSize:CGSizeMake(40,40) action:nil];
         [cellController setLayoutBlock:^(CKTableViewCellController *controller, UITableViewCell *cell) {
