@@ -1,0 +1,6 @@
+{
+    "$Model" : {
+        "@class" : "Model",
+        "message" : "text"
+    }
+}

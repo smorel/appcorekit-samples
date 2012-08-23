@@ -1,0 +1,17 @@
+{
+    "$trimmed_string" : {
+        "@transformClass" : "CustomTransformers",
+        "@transformSelector" : "transformStringByTrimmingValue:error:"
+    },
+    
+    "$Model" : {
+        "@class" : "Model",
+        "name" : {
+            "@keyPath" : "name",
+            "@inherits" : [ "$trimmed_string" ]
+        },
+        "imageUrl" : "image_url",
+        "address" : "address",
+        "phone" : "phone_number"
+    }
+}

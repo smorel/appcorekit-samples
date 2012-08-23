@@ -1,0 +1,191 @@
+{
+
+    
+    "$Cell1View" : {
+        "layoutBoxes" : [ 
+                         { "@class" : "CKHorizontalBoxLayout", "fixedHeight" : 80,
+                         "padding" : "0 0 0 0",
+                         "layoutBoxes" : [
+                                          { "@class" : "UIView", "name" : "ImageBackgroundView", "fixedSize" : "80 80",
+                                          "layoutBoxes" : [
+                                                           { "@class" : "CKHorizontalBoxLayout", "padding" : "8 8 8 8",
+                                                           "layoutBoxes" : [
+                                                                            { "@class" : "UIImageView", "name" : "ImageLeft" }
+                                                                          /*  { "@class" : "UIView","name" : "ImageHighlightBAckgroundView",
+                                                                            "layoutBoxes" : [
+                                                                                             { "@class" : "CKHorizontalBoxLayout", "padding" : "-1 -1 -1 -1",
+                                                                                             "layoutBoxes" : [
+                                                                                                              { "@class" : "UIImageView", "name" : "ImageLeft" }
+                                                                                                              ]
+                                                                                             }
+                                                                                             ]
+                                                                            }*/
+                                                                            ]
+                                                           }
+                                                           ]
+                                          },
+                                          {"@class" : "CKVerticalBoxLayout",
+                                          "layoutBoxes" : [
+                                                           {"@class" : "CKHorizontalBoxLayout",
+                                                           "layoutBoxes" : [
+                                                                            { "@class" : "UIView","name" : "PhotoCountBackgroundView","fixedHeight" : 40,
+                                                                            "layoutBoxes" : [
+                                                                                             { "@class" : "CKVerticalBoxLayout",
+                                                                                             "layoutBoxes" : [{"@class" : "CKLayoutFlexibleSpace" },
+                                                                                                              { "@class" : "UILabel" , "text" : "177", "textAlignment" : "UITextAlignmentCenter","backgroundColor" : "clearColor","textColor" : "0.14 0.14 0.14 1","font" : ["Helvetica-Bold", 17],"marginBottom" : -2, "shadowColor" : "whiteColor", "shadowOffset" : "0 1"},
+                                                                                                              { "@class" : "UILabel", "text" : "photos", "textAlignment" : "UITextAlignmentCenter","backgroundColor" : "clearColor","textColor" : "0.54 0.54 0.54 1", "font" : ["Helvetica-Bold", 11], "marginTop" : -2 },
+                                                                                                              {"@class" : "CKLayoutFlexibleSpace" }
+                                                                                                              ]
+                                                                                             }
+                                                                                             ]
+                                                                            },
+                                                                            { "@class" : "UIView", "name" : "FollowersCountBackgroundView","fixedHeight" : 40,
+                                                                            "layoutBoxes" : [
+                                                                                             { "@class" : "CKVerticalBoxLayout",
+                                                                                             "layoutBoxes" : [{"@class" : "CKLayoutFlexibleSpace" },
+                                                                                                              { "@class" : "UILabel" , "text" : "6.4m", "textAlignment" : "UITextAlignmentCenter","backgroundColor" : "clearColor","textColor" : "0.14 0.14 0.14 1","font" : ["Helvetica-Bold", 17],"marginBottom" : -2, "shadowColor" : "whiteColor", "shadowOffset" : "0 1"},
+                                                                                                              { "@class" : "UILabel", "text" : "followers", "textAlignment" : "UITextAlignmentCenter","backgroundColor" : "clearColor", "textColor" : "0.54 0.54 0.54 1", "font" : ["Helvetica-Bold", 11],"marginTop" : -2 },
+                                                                                                              {"@class" : "CKLayoutFlexibleSpace" }
+                                                                                                              ]
+                                                                                             }
+                                                                                             ]
+                                                                            },
+                                                                            { "@class" : "UIView", "name" : "FollowingCountBackgroundView","fixedHeight" : 40,
+                                                                            "layoutBoxes" : [
+                                                                                             { "@class" : "CKVerticalBoxLayout", 
+                                                                                             "layoutBoxes" : [{"@class" : "CKLayoutFlexibleSpace" },
+                                                                                                              { "@class" : "UILabel" , "text" : "0", "textAlignment" : "UITextAlignmentCenter","backgroundColor" : "clearColor","textColor" : "0.14 0.14 0.14 1","font" : ["Helvetica-Bold", 17],"marginBottom" : -2, "shadowColor" : "whiteColor", "shadowOffset" : "0 1"},
+                                                                                                              { "@class" : "UILabel", "text" : "following", "textAlignment" : "UITextAlignmentCenter","backgroundColor" : "clearColor", "textColor" : "0.54 0.54 0.54 1", "font" : ["Helvetica-Bold", 11],"marginTop" : -2 },
+                                                                                                              {"@class" : "CKLayoutFlexibleSpace" }
+                                                                                             ]
+                                                                                             }
+                                                                            ]
+                                                                            }
+                                                            ]
+                                                           },
+                                                           
+                                                           { "@class" : "UIView",  "name" : "ButtonBackgroundView", "fixedHeight" : 40,
+                                                           "layoutBoxes" : [
+                                                                            { "@class" : "CKHorizontalBoxLayout","padding" : "8 8 8 8", "verticalAlignment" : "CKVerticalAlignmentCenter",
+                                                                            "layoutBoxes" : [
+                                                                                             {"@class" : "CKLayoutFlexibleSpace" },
+                                                                                             { "@class" : "UIButton", "name" : "FollowButton", "flexibleWidth" :1 },
+                                                                                             {"@class" : "CKLayoutFlexibleSpace" }
+                                                                                             ]
+                                                                            }
+                                                                            ]
+                                                           }
+                                            ]
+                                          }
+                                          ]
+                         }
+                         ]
+    },
+    
+    "$Cell2View" : {
+        "layoutBoxes" : [
+                         {
+                         "@class" : "CKVerticalBoxLayout",
+                         "padding" : "5 10 10 5",
+                         "layoutBoxes" : [
+                                          {"@class" : "UILabel", "text" : "Instagram","backgroundColor" : "clearColor","textColor" : "0.14 0.14 0.14 1","font" : ["Helvetica-Bold", 17], "shadowColor" : "whiteColor", "shadowOffset" : "0 1"},
+                                          {"@class" : "UILabel", "text" : "Photos straight from ins efibqw fqwef quwe oquwe ruqwhe ru bqwiuebr iuqwbefi bqwigefbwei fbqbwef wbef wbef wbefu wheb fuyvb tagram HQ!","backgroundColor" : "clearColor", "numberOfLines" : 0, "marginTop": 5, "textColor" : "0.44 0.44 0.44 1", "font" : ["Helvetica", 13], "shadowColor" : "whiteColor", "shadowOffset" : "0 1"},
+                                          {"@class" : "UILabel", "text" : "bit.ly/onthecouh01","backgroundColor" : "clearColor", "marginTop" :5, "font" : ["Helvetica", 13],"textColor" : "0.31 0.43 0.6 1", "shadowColor" : "whiteColor", "shadowOffset" : "0 1"}
+                                          ]
+                         }
+                         ]
+    },
+    
+    
+    "CKViewController[name=Form]" : {
+        "tableView" : {
+            "backgroundColor" : "0.79 0.79 0.79 1"  
+        },
+        "CKTableViewCellController[name=first]" : {
+            "cellStyle" : "CKTableViewCellStyleCustomLayout",
+            "flags" : "CKItemViewFlagNone",
+            "UITableViewCell" : {
+                "backgroundView" : {
+                    "embossTopColor" : "whiteColor",
+                    "backgroundColor" : "0.91 0.91 0.91 1",
+                    "borderShadowColor" : "0.3 0.3 0.3 0.6",
+                    "borderShadowRadius" : 4,
+                    "cornerSize" : 5,
+                    "borderColor" : "0.3 0.3 0.3 0.6"
+                },
+                "contentView" : {
+                    "@inherits" : [  "$Cell1View" ],
+                    "UIImageView[name=ImageLeft]" : {
+                         "image" : "Instagram_Icon_Large1",
+                        "clipsToBounds" : 1,
+                        "layer" : {
+                            "cornerRadius" : 5
+                        }
+                    },
+                    "UIButton[name=FollowButton]" : {
+                        "defaultTitle" : "Follow",
+                        "defaultTextShadowColor" : "blackColor",
+                        "defaultBackgroundImage" : ["button-dark-blue", "15 0"],
+                        "highlightedBackgroundImage" : ["button-dark-blue-highlight", "15 0"],
+                       // "contentEdgeInsets" : "0 83 0 83",
+                        "titleLabel " :{
+                            "shadowOffset" : "0 1",
+                            "font" : ["Helvetica-Bold", 12]
+                        }
+                    },
+                    "UIView[name=ImageBackgroundView]" : {
+                        "borderStyle" : "CKViewBorderStyleRight",
+                        "borderColor" : "0.83 0.83 0.83 1",
+                        "borderWidth" : 2
+                    },
+                    "UIView[name=FollowersCountBackgroundView]" : {
+                        "borderStyle" : "CKViewBorderStyleLeft",
+                        "borderColor" : "0.83 0.83 0.83 1",
+                        "borderWidth" : 1
+                    },
+                    "UIView[name=FollowingCountBackgroundView]" : {
+                        "borderStyle" : "CKViewBorderStyleLeft",
+                        "borderColor" : "0.83 0.83 0.83 1",
+                        "borderWidth" : 1
+                    },
+                    "UIView[name=ButtonBackgroundView]" : {
+                        "embossTopColor" : "whiteColor",
+                        "borderStyle" : "CKViewBorderStyleTop",
+                        "borderColor" : "0.83 0.83 0.83 1",
+                        "borderWidth" : 1
+                    },
+                    "UIView[name=ImageHighlightBAckgroundView]" : {
+                        "backgroundColor" : "1 1 1 0.5",
+                        "layer" : {
+                            "cornerRadius" : 10,
+                            "shadowColor" : "0.3 0.3 0.3 0.3",
+                            "shadowRadius" : 2,
+                            "shadowOffset" : "0 1",
+                            "shadowOpacity" : 1
+                        }
+                    }
+                }
+            }
+        },
+        
+        "CKTableViewCellController[name=second]" : {
+            "cellStyle" : "CKTableViewCellStyleCustomLayout",
+            "flags" : "CKItemViewFlagNone",
+            "UITableViewCell" : {
+                "backgroundView" : {
+                    "embossTopColor" : "whiteColor",
+                    "backgroundColor" : "0.91 0.91 0.91 1",
+                    "borderShadowColor" : "0.3 0.3 0.3 0.6",
+                    "borderShadowRadius" : 4,
+                    "cornerSize" : 5,
+                    "borderColor" : "0.3 0.3 0.3 0.6",
+                    "embossBottomColor" : "0.3 0.3 0.3 0.2"
+                },
+                "contentView" : {
+                    "@inherits" : [  "$Cell2View" ]
+                }
+            }
+        }
+
+    }
+}

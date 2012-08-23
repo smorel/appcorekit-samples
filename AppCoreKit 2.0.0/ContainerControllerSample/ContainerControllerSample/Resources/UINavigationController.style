@@ -1,0 +1,14 @@
+{
+    "@import" : [
+        "Appearance"
+    ],
+    
+    "UINavigationController" : {
+        "navigationBar" : {
+            "@inherits" : [ "$bottom_shadow" ],
+            "titleView" : {
+                "@inherits" : [ "$navigation_title_label", "$transparent_background", "$text_dark_shadow" ]
+            }
+        }
+    }
+}

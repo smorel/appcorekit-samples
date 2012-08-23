@@ -1,0 +1,6 @@
+{
+    "@import" : [
+        "Appearance",
+        "ViewControllerForSettings"
+    ]
+}

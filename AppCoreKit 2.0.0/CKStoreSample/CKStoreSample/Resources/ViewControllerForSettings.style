@@ -1,0 +1,49 @@
+{
+    "@import" : [
+        "Appearance"
+    ],
+    
+    "UIViewController[name=Settings]" : {
+        "style" : "UITableViewStyleGrouped",
+        
+        "tableView" : {
+            "backgroundColor" : "darkGrayColor"
+        },
+        
+        "sectionHeaderView" : {
+            "backgroundColor" : "clearColor",
+            "label" : {
+                "@inherits" : [ "$text_dark_shadow" ],
+                "textColor" : "whiteColor"
+            }
+        },
+        
+        "CKTableViewCellController" : {
+            "cellStyle" : "CKTableViewCellStyleIPhoneForm",
+            "contentInsets" : "10 10 10 10",
+            "enableNavigationToolbar" : 1,
+            "UITableViewCell" : {
+                "backgroundView" : {
+                    "@inherits" : [ "$lightGradient" ],
+                    "borderColor" : "lightGrayColor",
+                    "borderWidth" : 2
+                },
+                "selectedBackgroundView" : {
+                    "@inherits" : [ "$blueGradient" ],
+                    "borderColor" : "lightGrayColor",
+                    "borderWidth" : 2
+                },
+                "textLabel" : {
+                    "@inherits" : [ "$cell_title_font", "$transparent_background", "$text_light_shadow" ]
+                }
+            }
+        },
+        
+        "CKTableViewCellController[value.keyPath=phoneNumber],CKTableViewCellController[value.keyPath=phoneNumberConfirmation]" : {
+            "@inherits" : [ "CKTableViewCellController" ],
+            "textField" : {
+                "keyboardType" : "UIKeyboardTypePhonePad"
+            }
+        }
+    }
+}

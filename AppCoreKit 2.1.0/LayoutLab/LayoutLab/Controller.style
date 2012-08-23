@@ -1,0 +1,95 @@
+{
+    "$SampleView" : {
+        "@class" : "UIView", 
+        "backgroundColor" : "whiteColor",
+        "layoutBoxes" : [  
+                         { "@class" : "CKVerticalBoxLayout", 
+                         "verticalAlignment" : "CKLayoutVerticalAlignmentTop",
+                         "layoutBoxes" : [
+                                          { "@class" : "MKMapView", "name" : "AvatarImage","maximumHeight" : 60,  "marginBottom" : 0, "hidden" : 0 },
+                                          { "@class" : "CKVerticalBoxLayout", 
+                                          "verticalAlignment" : "CKLayoutVerticalAlignmentTop",
+                                          "padding" : "10 10 10 10",
+                                          "layoutBoxes" : [
+                                                           { "@class" : "CKHorizontalBoxLayout", 
+                                                           "padding" : "10 10 10 10" , "marginBottom" : 0,
+                                                           "layoutBoxes" : [
+                                                                            { "@class" : "UILabel" , "name" : "NameLabel"},
+                                                                            { "@class" : "CKLayoutFlexibleSpace" },
+                                                                            { "@class" : "UILabel" , "name" : "DateLabel" }
+                                                                            ]
+                                                           },
+                                                           { "@class" : "UILabel" , "name" : "TextLabel", "marginTop" : 0, "padding" : "0 0 0 0", "hidden" : 0, "maximumHeight" : 50 },
+                                                           { "@class" : "CKLayoutFlexibleSpace" },
+                                                           { "@class" : "CKHorizontalBoxLayout",
+                                                           "marginTop" : 10,
+                                                           "layoutBoxes" : [
+                                                                            { "@class" : "UIButton" , "name" : "smallIcon",  "marginRight" : 5 },
+                                                                            { "@class" : "UIButton" , "name" : "smallIcon","fixedSize" : "20 20",  "hidden" : 0 },
+                                                                            { "@class" : "CKLayoutFlexibleSpace", "minimumWidth" : 155 },
+                                                                            { "@class" : "UIButton" , "name" : "smallIcon","fixedSize" : "20 20"},
+                                                                            { "@class" : "CKLayoutFlexibleSpace" },
+                                                                            { "@class" : "UIButton" , "name" : "smallIcon", "fixedSize" : "20 20", "marginLeft" : 0 }
+                                                                            ]
+                                                           }                          
+                                                           ]
+                                          }
+                                          ]
+                         }
+                         ]
+    },
+    
+    "$NextViewTest" : {
+        "@class" : "UIView",
+        "layoutBoxes" : [
+            {
+                "@class" : "CKVerticalBoxLayout",
+                "layoutBoxes" : [
+                        { "@class" : "CKLayoutFlexibleSpace" },
+                        { "@inherits" : [  "$SampleView" ]   }//,
+                      //  { "@class" : "CKLayoutFlexibleSpace" }
+                ]
+            }
+        ]
+    },
+    
+    "$SampleViewStyle" : {
+        "UIView[name=AvatarImage], UIView[name=smallIcon]" : {
+            "image" : "Icon-72",
+            "defaultImage" : "Icon-72"
+        },
+        
+        "UILabel[name=NameLabel]" : {
+            "backgroundColor" : "clearColor",
+            "text" : "@sebMorelddssss",
+            "textColor" : "blueColor",
+            "font" : [ "Helvetica-Bold", 20 ],
+            "numberOfLines" : 1,
+            "hidden" : 0
+        },
+        
+        "UILabel[name=DateLabel]" : {
+            "backgroundColor" : "clearColor",
+            "text" : "lundi 10 septembre 2012",
+            "textColor" : "grayColor",
+            "font" : [ "Helvetica", 10 ],
+            "numberOfLines" : 2,
+            "textAlignment" : "UITextAlignmentRight"
+        },
+        
+        "UILabel[name=TextLabel]" : {
+            "backgroundColor" : "clearColor",
+            "text" : "ioeub oqwebvro qwhbveo qwq ewfqwpeoifefj qpwef piqubwepif bqpwiefb piub qwrqwj fbwrb gkjqwr gqwgr ihqbwrig bqwhe fihqweifh qiwhe fiqhweif q2iefh oeur vwe fbweifb qwirbf iqwbef iqbwergib qwrgiboqwf bweifjbwirbg iwerni webr ig bweiurbg iweuubrgi uwberiguub wierbg ibwuev rouquwvr ouuvbsttotoya man manitou",
+            "font" : [ "Helvetica-Bold", 10 ],
+            "numberOfLines" : 10,
+            "textAlignment" : "UITextAlignmentCenter"
+        }
+    },
+    
+    "CKViewController[name=Test]" : {
+        "view" : {
+            "backgroundColor" : "whiteColor",
+            "@inherits" : [ "$SampleViewStyle", "$NextViewTest" ]
+        }
+    }
+}
