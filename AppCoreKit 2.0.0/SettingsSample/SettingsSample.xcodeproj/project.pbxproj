@@ -361,6 +361,7 @@
 					"${CloudKitFrameworks}/AppCoreKit/2.0.0/",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "SettingsSample/SettingsSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -372,6 +373,7 @@
 					"/usr/lib/libstdc++.dylib",
 				);
 				PRODUCT_NAME = SettingsSample;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -384,6 +386,7 @@
 					"${CloudKitFrameworks}/AppCoreKit/2.0.0/",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "SettingsSample/SettingsSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -395,6 +398,7 @@
 					"/usr/lib/libstdc++.dylib",
 				);
 				PRODUCT_NAME = SettingsSample;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
