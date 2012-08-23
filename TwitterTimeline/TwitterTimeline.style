@@ -1,39 +1,44 @@
 {
+    "$big_font" : {
+        "fontSize" : 20
+    },
+    
+    "$background" : {
+        "backgroundColor" : "clearColor"
+    },
+    
+    "$lightGradient" : {
+        "backgroundGradientColors" : [ "0.986 0.986 0.986 1", "0.884 0.884 0.884 1" ],
+		"backgroundGradientLocations" : [ "0","1" ],
+		"embossTopColor" : "0.986 0.986 0.986 0.5",
+		"embossBottomColor" : "whiteColor"
+    },
+    
     "UIViewController[name=Timeline]" : {
         "rowInsertAnimation" : "UITableViewRowAnimationTop",
-        /*"UITableView,tableViewContainer" : {
-            "backgroundColor" : "clearColor"
-        },
+        "style" : "UITableViewStyleGrouped",
         
-        "view" : {
+        "tableView" : {
             "backgroundColor" : "blackColor"
         },
-        
-        "tableViewInsets" : "30 0 0 0",*/
-        
-        "style" : "UITableViewStyleGrouped",
         
         "CKTableViewCellController" : {
             "cellStyle" : "CKTableViewCellStyleSubtitle2",
             "contentInsets" : "10 10 10 10",
             "UITableViewCell" : {
                 "backgroundView" : {
-                    "backgroundColor" : "whiteColor"
-                },
-                "selectedBackgroundView" : {
-                    "backgroundColor" : "blueColor"
+                    "@inherits" : [ "$lightGradient" ],
+                    "borderColor" : "darkGrayColor",
+                    "borderWidth" : 2
                 },
                 "textLabel,detailTextLabel" : {
-                    "backgroundColor" : "whiteColor",
-                    "fontSize" : 20
+                    "@inherits" : [ "$big_font", "$background" ]
                 },
                 "imageView" : {
+                    "@inherits" : [ "$background" ],
                     "clipsToBounds" : 0,
-                    "backgroundColor" : "whiteColor",
                     "opaque" : 1,
                     "layer" : {
-                        //"borderColor" : "darkGrayColor",
-                        //"borderWidth" : 1,
                         "shadowColor" : "blackColor",
                         "shadowRadius" : 2,
                         "shadowOffset" : "0 2",
@@ -44,13 +49,24 @@
         }
     },
     
+    "$navigation_title_label" : {
+        "fontName" : "Helvetica-Bold",
+        "fontSize" : "18",
+        "textColor" : "whiteColor"
+    },
     
     "UINavigationController" : {
         "navigationBar" : {
+            "backgroundImage" : "background_nav",
+            "layer" : {
+                "shadowColor" : "blackColor",
+                "shadowRadius" : 4,
+                "shadowOffset" : "0 2",
+                "shadowOpacity" : "0.8"
+            },
+            
             "titleView" : {
-                "fontName" : "Helvetica-Bold",
-                "fontSize" : "18",
-                "textColor" : "whiteColor",
+                "@inherits" : [ "$navigation_title_label" ],
                 "backgroundColor" : "clearColor",
                 "shadowColor" : "darkGrayColor",
                 "shadowOffset" : "0 -1"

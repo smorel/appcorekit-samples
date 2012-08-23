@@ -10,6 +10,14 @@
 #import "ViewControllers.h"
 #import "FeedSources.h"
 
+@implementation CKLicense(YourAppName)
+
++ (NSString*)licenseKey{
+    //Return your license key here.
+    return @"__APPCOREKIT_LICENSE_KEY__";
+}
+
+@end
 
 @implementation AppDelegate
 
@@ -19,7 +27,7 @@
     self = [super init];
     [[CKStyleManager defaultManager]loadContentOfFileNamed:@"TwitterTimeline"];
     [CKMappingContext loadContentOfFileNamed:@"TwitterTimeline"];
-    [[CKMockManager defaultManager]loadContentOfFileNamed:@"TwitterTimeline"];
+    //[[CKMockManager defaultManager]loadContentOfFileNamed:@"TwitterTimeline"];
     return self;
 }
 

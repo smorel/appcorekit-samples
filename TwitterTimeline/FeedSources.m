@@ -20,9 +20,9 @@
                                                                 params:(NSDictionary*)params
                                                                   body:nil
                                               mappingContextIdentifier:@"$Tweet"
-                                                      transformRawData:^(id value){ return (NSArray*)value; }
-                                                            completion:^(NSArray* objects){} 
-                                                                 error:^(id value, NSHTTPURLResponse* response, NSError* error){}];
+                                                      transformRawData:nil
+                                                            completion:nil
+                                                                 error:nil];
         return request;
                                  
     };

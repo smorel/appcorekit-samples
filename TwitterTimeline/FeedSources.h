@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 WhereCloud Inc. All rights reserved.
 //
 
-#import <CloudKit/CloudKit.h>
+#import <AppCoreKit/AppCoreKit.h>
 
 @interface FeedSources : NSObject
 
