@@ -65,7 +65,7 @@
 /* Begin PBXFileReference section */
 		9629E83D1587DFC500593E62 /* TwitterTimeline.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = TwitterTimeline.strings; sourceTree = "<group>"; };
 		965DB124159B685B00D293B2 /* background_nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_nav.png; sourceTree = "<group>"; };
-		9691A4D8158246D300E4E6E8 /* TwitterTimeline.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TwitterTimeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9691A4D8158246D300E4E6E8 /* TwitterTimeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterTimeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9691A4DC158246D300E4E6E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9691A4DE158246D300E4E6E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9691A4E0158246D300E4E6E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };

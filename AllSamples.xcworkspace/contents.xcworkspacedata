@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "container:AppCoreKit 2.0.0/BindingsSample/BindingsSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AppCoreKit 2.0.0/BindingsSample/../CKStoreSample/CKStoreSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AppCoreKit 2.0.0/ContainerControllerSample/ContainerControllerSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AppCoreKit 2.0.0/MapSample/MapSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AppCoreKit 2.0.0/SettingsSample/SettingsSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AppCoreKit 2.0.0/TwitterTimeline/TwitterTimeline.xcodeproj">
+   </FileRef>
+</Workspace>

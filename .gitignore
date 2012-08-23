@@ -2,5 +2,5 @@
 TwitterTimeline.xcodeproj/xcuserdata/
 TwitterTimeline/.DS_Store
 xcuserdata
-xcworkspace
-*.xcworkspace
+
+contents.xcworkspacedata
