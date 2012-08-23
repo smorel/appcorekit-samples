@@ -66,7 +66,7 @@
 
 /* Begin PBXFileReference section */
 		965E71B015E6968C008EFE08 /* AppCoreKit.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppCoreKit.conf; sourceTree = "<group>"; };
-		9668B8D615D5954D00C57715 /* LayoutLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9668B8D615D5954D00C57715 /* LayoutLab.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LayoutLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9668B8DA15D5954D00C57715 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9668B8DC15D5954D00C57715 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9668B8DE15D5954D00C57715 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };

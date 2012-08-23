@@ -15,7 +15,7 @@
 
 + (NSString*)licenseKey{
     //Return your license key here.
-    return @"__APPCOREKIT_LICENSE_KEY__";
+    return @"E7geOxQIIPBhrPVRmLG/skbm4CsmLOwl2da9guNCKB+yZVQ4iHo4O8+8Q0gC89HwiYsWS7wsSKYHyICylxOnmnSqSiwSMT7KRPK5mWlYjciRYwVTNRnWEo1MjeXIOG9dXw5Dn9pNjBOsyF+hr1TUnUbnYO8YTm7p6ldqoxEE5WmmKJ64AK0O0SudFyZyF6TYO9XKzARvGiX2JAPEnyktVz//yPlGhx2YqilkmF4elcboBbnnyYCB5Y8/VvuplpZnABgcOe6OtTQT7zDMq5sh97Hp/3e4JR2a01L5kJNNfLiWZMqRJFCen4AFwqBkJQqzC4GaL1jgS5lhAQUUYLNqjA==";
 }
 
 @end

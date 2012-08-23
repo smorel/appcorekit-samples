@@ -170,8 +170,7 @@
 				960F342115E2D0890002DF6F /* Resources */,
 				960F33F815E2D0890002DF6F /* Supporting Files */,
 			);
-			name = SettingsSample;
-			path = SettingsForm;
+			path = SettingsSample;
 			sourceTree = "<group>";
 		};
 		960F33F815E2D0890002DF6F /* Supporting Files */ = {
@@ -423,8 +422,6 @@
 					"${CloudKitFrameworks}/AppCoreKit/2.0.0/",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SettingsForm/SettingsSample-Prefix.pch";
-				INFOPLIST_FILE = "SettingsForm/SettingsSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -448,8 +445,6 @@
 					"${CloudKitFrameworks}/AppCoreKit/2.0.0/",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SettingsForm/SettingsSample-Prefix.pch";
-				INFOPLIST_FILE = "SettingsForm/SettingsSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
