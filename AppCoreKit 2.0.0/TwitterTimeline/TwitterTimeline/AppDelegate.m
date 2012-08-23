@@ -10,6 +10,7 @@
 #import "ViewControllers.h"
 #import "FeedSources.h"
 
+
 @implementation CKLicense(YourAppName)
 
 + (NSString*)licenseKey{
@@ -28,6 +29,13 @@
     [[CKStyleManager defaultManager]loadContentOfFileNamed:@"TwitterTimeline"];
     [CKMappingContext loadContentOfFileNamed:@"TwitterTimeline"];
     //[[CKMockManager defaultManager]loadContentOfFileNamed:@"TwitterTimeline"];
+    
+#ifdef DEBUG
+    [CKConfiguration initWithContentOfFileNames:@"AppCoreKit" type:CKConfigurationTypeDebug];
+#else
+    [CKConfiguration initWithContentOfFileNames:@"AppCoreKit" type:CKConfigurationTypeRelease];
+#endif
+    
     return self;
 }
 

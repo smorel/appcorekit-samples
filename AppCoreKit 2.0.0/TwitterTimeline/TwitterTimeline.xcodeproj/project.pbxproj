@@ -47,6 +47,7 @@
 		9691A53015824F0B00E4E6E8 /* TwitterTimeline.mock in Resources */ = {isa = PBXBuildFile; fileRef = 9691A52F15824F0B00E4E6E8 /* TwitterTimeline.mock */; };
 		9691A53415824FB000E4E6E8 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9691A53315824FB000E4E6E8 /* libstdc++.dylib */; };
 		9691A5381582531700E4E6E8 /* default_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9691A5371582531700E4E6E8 /* default_avatar.png */; };
+		96951A3115E69AE800408239 /* AppCoreKit.conf in Resources */ = {isa = PBXBuildFile; fileRef = 96951A3015E69AE800408239 /* AppCoreKit.conf */; };
 		9696E5F815E3EB5500CD7C34 /* VendorsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9696E5F715E3EB5500CD7C34 /* VendorsKit.framework */; };
 		9696E5FA15E3EB6100CD7C34 /* AppCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9696E5F915E3EB6100CD7C34 /* AppCoreKit.framework */; };
 /* End PBXBuildFile section */
@@ -96,6 +97,7 @@
 		9691A52F15824F0B00E4E6E8 /* TwitterTimeline.mock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TwitterTimeline.mock; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		9691A53315824FB000E4E6E8 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		9691A5371582531700E4E6E8 /* default_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_avatar.png; sourceTree = "<group>"; };
+		96951A3015E69AE800408239 /* AppCoreKit.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppCoreKit.conf; sourceTree = "<group>"; };
 		9696E5F715E3EB5500CD7C34 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = VendorsKit/1.0.0/VendorsKit.framework; sourceTree = CloudKitFrameworks; };
 		9696E5F915E3EB6100CD7C34 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = AppCoreKit/2.0.0/AppCoreKit.framework; sourceTree = CloudKitFrameworks; };
 /* End PBXFileReference section */
@@ -170,6 +172,7 @@
 		9691A4FA158246D300E4E6E8 /* TwitterTimeline */ = {
 			isa = PBXGroup;
 			children = (
+				96951A3015E69AE800408239 /* AppCoreKit.conf */,
 				9691A503158246D300E4E6E8 /* AppDelegate.h */,
 				9691A504158246D300E4E6E8 /* AppDelegate.m */,
 				9691A5221582470B00E4E6E8 /* Document.h */,
@@ -270,6 +273,7 @@
 				9691A5381582531700E4E6E8 /* default_avatar.png in Resources */,
 				9629E83E1587DFC500593E62 /* TwitterTimeline.strings in Resources */,
 				965DB125159B685B00D293B2 /* background_nav.png in Resources */,
+				96951A3115E69AE800408239 /* AppCoreKit.conf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
