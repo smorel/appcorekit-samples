@@ -6,20 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		960F33F415E2D0890002DF6F /* Touch */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 960F342715E2D0890002DF6F /* Build configuration list for PBXAggregateTarget "Touch" */;
-			buildPhases = (
-				960F33F315E2D0890002DF6F /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = Touch;
-			productName = Touch;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		960F33D615E2D0890002DF6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960F33D515E2D0890002DF6F /* UIKit.framework */; };
 		960F33D815E2D0890002DF6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960F33D715E2D0890002DF6F /* Foundation.framework */; };
@@ -47,16 +33,6 @@
 		9696E5FD15E3EB7B00CD7C34 /* AppCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9696E5FC15E3EB7B00CD7C34 /* AppCoreKit.framework */; };
 		9696E5FF15E3EB8300CD7C34 /* VendorsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9696E5FE15E3EB8300CD7C34 /* VendorsKit.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		960F33F515E2D0890002DF6F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 960F33C715E2D0890002DF6F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 960F33F415E2D0890002DF6F;
-			remoteInfo = Touch;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		960F33D115E2D0890002DF6F /* SettingsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SettingsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,7 +212,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				960F33F615E2D0890002DF6F /* PBXTargetDependency */,
 			);
 			name = SettingsSample;
 			productName = SettingsForm;
@@ -265,7 +240,6 @@
 			projectRoot = "";
 			targets = (
 				960F33D015E2D0890002DF6F /* SettingsSample */,
-				960F33F415E2D0890002DF6F /* Touch */,
 			);
 		};
 /* End PBXProject section */
@@ -300,19 +274,6 @@
 			shellPath = /bin/sh;
 			shellScript = "#needed environment variables\nFRAMEWORKS_PATH=\"${CloudKitFrameworks}\"\nBUILD_DIR=\"$TARGET_BUILD_DIR\"\nAPP_NAME=\"${EXECUTABLE_NAME}\"\nXCODE_DIR=\"${SYSTEM_DEVELOPER_DIR}\"\n\n\n\n\n#script\nexport PATH=$PATH:\"${XCODE_DIR}/Platforms/iPhoneOS.platform/Developer/usr/bin:${XCODE_DIR}/usr/bin:/opt/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin\"\nexport XCODE_DEVELOPER_USR_PATH=$XCODE_DEVELOPER_USR_PATH:${XCODE_DIR}/usr/bin/..\nAPP_PATH=\"${BUILD_DIR}/${APP_NAME}.app\"\n\ncd $FRAMEWORKS_PATH\nFRAMEWORKS=$(find . -name \"*.framework\")\n\ncd \"$PROJECT_DIR/\"\nPROJ_FILE=$(find . -path \"*${PROJECT}.xcodeproj/project.pbxproj\")\necho $PROJ_FILE\n\nfor f in ${FRAMEWORKS}\ndo\nTMP_PATH=$(echo \"$f\" | cut -b 3-)\necho $TMP_PATH\nTMP_NAME=$(basename $f)\necho $TMP_NAME\n\n#search if this framework version is used in the project\ngrep \"$TMP_PATH\" \"$PROJECT_DIR/$PROJ_FILE\"\nif [ $? -eq 0 ]\nthen\necho \"${TMP_PATH} ${TMP_NAME}\"\nTMP_BUILD_FRAMEWORK_PATH=\"${BUILD_DIR}/${TMP_NAME}\"\nif [ -d \"$TMP_BUILD_FRAMEWORK_PATH\" ] \nthen\nTMP_RESOURCESPATH=\"$TMP_BUILD_FRAMEWORK_PATH/Resources\"\nelse \nTMP_RESOURCESPATH=\"${FRAMEWORKS_PATH}/${TMP_PATH}/Resources\"\nfi\n\necho $TMP_RESOURCESPATH\ncd $TMP_RESOURCESPATH\n\n#copy image by crunching them\nIMAGES=$(find . -name \"*.png\")\nfor img in ${IMAGES}\ndo\n\"${XCODE_DIR}/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng\" -compress \"\" \"$TMP_RESOURCESPATH/$img\" \"$APP_PATH/$img\" \ndone\n\n#compile and copy the core data models\nCORE_DATA_MODELS=$(find . -name \"*.xcdatamodeld\")\nfor cdm in ${CORE_DATA_MODELS}\ndo\n#find the name without extension\nTMP_CMD_NAME=$(basename $cdm)\nCDM_NAME=$(echo \"$TMP_CMD_NAME\" | cut -d'.' -f1)\necho \"${CDM_NAME}\"\n\"${XCODE_DIR}/usr/bin/momc\" -compress \"\" \"$TMP_RESOURCESPATH/$cdm\" \"$APP_PATH/$CDM_NAME.momd\"  \ndone\n\n#compile and copy the xib files\nXIBFILES=$(find . -name \"*.xib\")\nfor xib in ${XIBFILES}\ndo\n#find the name without extension\nTMP_XIB_NAME=$(basename $cdm)\nXIB_NAME=$(echo \"$TMP_XIB_NAME\" | cut -d'.' -f1)\necho \"${XIB_NAME}\"\n\"${XCODE_DIR}/usr/bin/ibtool\" --errors --warnings --notices --output-format human-readable-text --compile \"$APP_PATH/$CDM_NAME.nib\" \"$TMP_RESOURCESPATH/$xib\" --sdk ${SDKROOT}\ndone\n\n\n#simply copy the rest of the files and folders\nrsync -avz --exclude \"*.png\" --exclude \"*.xcdatamodeld\" --exclude \"*.xib\" \"$TMP_RESOURCESPATH/\" \"$APP_PATH/\"\nfi\ndone";
 		};
-		960F33F315E2D0890002DF6F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "touch \"$SRCROOT/$PROJECT/main.m\"";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -328,14 +289,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		960F33F615E2D0890002DF6F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 960F33F415E2D0890002DF6F /* Touch */;
-			targetProxy = 960F33F515E2D0890002DF6F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		960F33FA15E2D0890002DF6F /* InfoPlist.strings */ = {
@@ -400,20 +353,6 @@
 			};
 			name = Release;
 		};
-		960F342815E2D0890002DF6F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = SettingsSample;
-			};
-			name = Debug;
-		};
-		960F342915E2D0890002DF6F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = SettingsSample;
-			};
-			name = Release;
-		};
 		960F342B15E2D0890002DF6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -468,15 +407,6 @@
 			buildConfigurations = (
 				960F342515E2D0890002DF6F /* Debug */,
 				960F342615E2D0890002DF6F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		960F342715E2D0890002DF6F /* Build configuration list for PBXAggregateTarget "Touch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				960F342815E2D0890002DF6F /* Debug */,
-				960F342915E2D0890002DF6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
