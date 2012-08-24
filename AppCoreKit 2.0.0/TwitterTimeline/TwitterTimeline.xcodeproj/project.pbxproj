@@ -36,6 +36,7 @@
 		96951A3115E69AE800408239 /* AppCoreKit.conf in Resources */ = {isa = PBXBuildFile; fileRef = 96951A3015E69AE800408239 /* AppCoreKit.conf */; };
 		9696E5F815E3EB5500CD7C34 /* VendorsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9696E5F715E3EB5500CD7C34 /* VendorsKit.framework */; };
 		9696E5FA15E3EB6100CD7C34 /* AppCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9696E5F915E3EB6100CD7C34 /* AppCoreKit.framework */; };
+		96F5C12515E82931007121C6 /* background_nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F5C12415E82931007121C6 /* background_nav@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		96951A3015E69AE800408239 /* AppCoreKit.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppCoreKit.conf; sourceTree = "<group>"; };
 		9696E5F715E3EB5500CD7C34 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = VendorsKit/1.0.0/VendorsKit.framework; sourceTree = CloudKitFrameworks; };
 		9696E5F915E3EB6100CD7C34 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = AppCoreKit/2.0.0/AppCoreKit.framework; sourceTree = CloudKitFrameworks; };
+		96F5C12415E82931007121C6 /* background_nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background_nav@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				9629E83D1587DFC500593E62 /* TwitterTimeline.strings */,
 				9691A5371582531700E4E6E8 /* default_avatar.png */,
 				965DB124159B685B00D293B2 /* background_nav.png */,
+				96F5C12415E82931007121C6 /* background_nav@2x.png */,
 				9691A518158246D400E4E6E8 /* Resources */,
 				9691A4FB158246D300E4E6E8 /* Supporting Files */,
 			);
@@ -248,6 +251,7 @@
 				9629E83E1587DFC500593E62 /* TwitterTimeline.strings in Resources */,
 				965DB125159B685B00D293B2 /* background_nav.png in Resources */,
 				96951A3115E69AE800408239 /* AppCoreKit.conf in Resources */,
+				96F5C12515E82931007121C6 /* background_nav@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

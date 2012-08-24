@@ -9,7 +9,8 @@
     "CKViewController[name=WebSitesForm],CKViewController[name=BreadCrumbForm]" : {
         "@inherits" : [ "$removes_tableView_background" ],
         "tableViewContainer" : {
-            "backgroundImage" : "background-grey-pattern"
+            //"backgroundImage" : "background-grey-pattern"
+            "backgroundColor" : "scrollViewTexturedBackgroundColor"
         },
         "splitViewConstraints" : {
             "size" : 320,
@@ -24,7 +25,17 @@
     
     "CKViewController[name=SplitterSeparator]" : {
         "view" : {
-            "@inherits" : [ "$horizontal_darkGrayGradient", "$left_shadow" ]
+            "@inherits" : [ "$horizontal_darkGrayGradient", "$left_shadow" ],
+            "layer" : {
+                "zPosition" : 1
+            },
+            
+            "UIButton" : {
+                "layer" : {
+                    "zPosition" : 2
+                }
+ 
+            }
         },
         "splitViewConstraints" : {
             "size" : 40,
@@ -57,7 +68,7 @@
     
     "CKViewController[name=Custom]" : {
         "view" : {
-            "backgroundImage" : "background-grey-pattern"
+            "backgroundColor" : "scrollViewTexturedBackgroundColor"
         },
         "UIView[name=Background]" : {
             "@inherits" : [ "$darkGrayGradient", "$top_shadow" ],
@@ -144,7 +155,8 @@
             "$CKSegmentedControlButtonTemplate" : {
                 "fontName" : "Helvetica-Bold",
                 "fontSize" : "15",
-                "defaultTextColor" : "whiteColor",
+                "defaultTextColor" : "blackColor",
+                "defaultShadowColor" : "whiteColor",
                 "height" : "30",
                 "width" : 200
             },

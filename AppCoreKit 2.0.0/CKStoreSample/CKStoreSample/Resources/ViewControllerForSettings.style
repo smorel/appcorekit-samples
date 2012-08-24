@@ -3,7 +3,7 @@
         "Appearance"
     ],
     
-    "UIViewController[name=Settings]" : {
+    "CKFormTableViewController" : {
         "style" : "UITableViewStyleGrouped",
         
         "tableView" : {
@@ -20,7 +20,7 @@
         
         "CKTableViewCellController" : {
             "cellStyle" : "CKTableViewCellStyleIPhoneForm",
-            "contentInsets" : "10 10 10 10",
+            "contentInsets" : "15 10 15 10",
             "enableNavigationToolbar" : 1,
             "UITableViewCell" : {
                 "backgroundView" : {

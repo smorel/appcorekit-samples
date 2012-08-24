@@ -98,8 +98,8 @@
         "adjustsImageWhenDisabled" : 0,
         
         "defaultBackgroundImage" : ["breadcrumb_button_normal", "20 0" ],
-        "defaultTextColor" : "0xb0b0b0 1",
-        "defaultShadowColor" : "0x3f3f3f 1",
+        "defaultTextColor" : "0x2b3e4d 1",
+        "defaultShadowColor" : "whiteColor",
         
         "selectedBackgroundImage" : ["breadcrumb_button_highlighted", "20 0" ],
         "selectedTextColor" : "0xdbdbdb 1",
@@ -123,12 +123,12 @@
         "adjustsImageWhenDisabled" : 0,
         
         "selectedBackgroundImage" : ["mainnav_button-pressed", "4 0" ],
-        "selectedTextColor" : "0xe9e8e8 1",
-        "selectedShadowColor" : "0x4b4b4b 1",
+        "selectedTextColor" : "0x616161 1",
+        "selectedShadowColor" : "0xf0f0f0 1",
         
         "highlightedBackgroundImage" : ["mainnav_button-pressed", "4 0" ],
-        "highlightedTextColor" : "0xe9e8e8 1",
-        "highlightedShadowColor" : "0x4b4b4b 1",
+        "highlightedTextColor" : "0x616161 1",
+        "highlightedShadowColor" : "0xf0f0f0 1",
         
         "titleLabel" : {
             "@inherits" : [ "$large", "$bold" ],
@@ -189,19 +189,19 @@
     
     "$dark_button" : {
         "defaultBackgroundImage" : ["uppernav_button", "10 0" ],
-        "defaultTextColor" : "0xe9e8e8 1",
-        "defaultShadowColor" : "0x4b4b4b 1",
+        "defaultTextColor" : "blackColor",
+        "defaultShadowColor" : "whiteColor",
         
-        "selectedBackgroundImage" : ["uppernav_button-lighter", "10 0" ],
-        "selectedTextColor" : "0xe9e8e8 1",
-        "selectedShadowColor" : "0x4b4b4b 1",
+        "selectedBackgroundImage" : ["uppernav_button-pressed", "10 0" ],
+        "selectedTextColor" : "blackColor",
+        "selectedShadowColor" : "whiteColor",
         
         "highlightedBackgroundImage" : ["uppernav_button-pressed", "10 0" ],
-        "highlightedTextColor" : "0xe9e8e8 1",
-        "highlightedShadowColor" : "0x4b4b4b 1",
+        "highlightedTextColor" : "blackColor",
+        "highlightedShadowColor" : "whiteColor",
         
         "titleLabel" : {
-            "@inherits" : [ "$small", "$bold" ],
+            "font" : [ "Helvetica" , 14 ],
             "shadowOffset" : "0 2"
         }
     }

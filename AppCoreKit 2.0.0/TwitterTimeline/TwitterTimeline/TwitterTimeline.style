@@ -19,7 +19,7 @@
         "style" : "UITableViewStyleGrouped",
         
         "tableView" : {
-            "backgroundColor" : "blackColor"
+            "backgroundColor" : "0.79 0.79 0.79 1"  
         },
         
         "CKTableViewCellController" : {
@@ -28,7 +28,7 @@
             "UITableViewCell" : {
                 "backgroundView" : {
                     "@inherits" : [ "$lightGradient" ],
-                    "borderColor" : "darkGrayColor",
+                    "borderColor" : "lightGrayColor",
                     "borderWidth" : 2
                 },
                 "textLabel,detailTextLabel" : {

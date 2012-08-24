@@ -24,6 +24,7 @@
     CKFormTableViewController* form = [CKFormTableViewController controller];
     form.name = @"Timeline";
     form.title = _(@"kTimelineTitle");
+    form.supportedInterfaceOrientations = CKInterfaceOrientationPortrait;
     
     CKFormBindedCollectionSection* section = [CKFormBindedCollectionSection sectionWithCollection:timeline.tweets factory:tweetsFactory appendSpinnerAsFooterCell:YES];
     [form addSections:[NSArray arrayWithObject:section]];

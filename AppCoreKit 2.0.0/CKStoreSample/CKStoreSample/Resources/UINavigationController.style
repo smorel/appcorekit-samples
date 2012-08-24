@@ -8,8 +8,8 @@
     "$back_button" : {
         "defaultBackgroundImage" : "btn-back",
         "highlightedBackgroundImage" : "btn-back-highlight",
-        "width" : 31,
-        "height" : 29,
+        "width" : 36,
+        "height" : 36,
         "defaultTitle" : ""
     },
     
@@ -17,7 +17,9 @@
         "defaultBackgroundImage" : ["uppernav_button", "10 0" ],
         "highlightedBackgroundImage" : ["uppernav_button-pressed", "10 0" ],
         "contentEdgeInsets" : "10 10 10 10",
-        "height" : 34
+        "height" : 36,
+        "defaultTextColor" : "blackColor",
+        "font" : [ "Helvetica-Bold" , 14 ]
     },
     
     "UINavigationController" : {

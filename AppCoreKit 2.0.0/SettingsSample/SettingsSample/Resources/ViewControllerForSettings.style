@@ -20,7 +20,7 @@
         
         "CKTableViewCellController" : {
             "cellStyle" : "CKTableViewCellStyleIPhoneForm",
-            "contentInsets" : "10 10 10 10",
+            "contentInsets" : "15 10 15 10",
             "enableNavigationToolbar" : 1,
             "UITableViewCell" : {
                 "backgroundView" : {

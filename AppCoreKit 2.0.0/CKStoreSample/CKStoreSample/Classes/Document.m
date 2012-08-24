@@ -10,7 +10,7 @@
 static NSString* kUserSettingsUUID = @"00000000-0000-0000-0000-000000000010";
 
 @implementation UserSettings
-@synthesize name, forname, phoneNumber, birthDate, numberOfChildren,title,phoneNumberConfirmation;
+@synthesize name, forname, phoneNumber, birthDate, numberOfChildren,title,phoneNumberConfirmation,userObjects,userObject;
 
 + (id)newSharedInstance{
     UserSettings* shared = (UserSettings*)[CKObject loadObjectWithUniqueId:kUserSettingsUUID];
@@ -96,4 +96,21 @@ static NSString* kUserSettingsUUID = @"00000000-0000-0000-0000-000000000010";
     attributes.placeholderValue = [NSNumber numberWithInt:0];
 }
 
+- (void)userObjectExtendedAttributes:(CKPropertyExtendedAttributes*)attributes{
+    NSMutableDictionary* dico = [NSMutableDictionary dictionary];
+    for(UserObject* obj in [self.userObjects allObjects]){
+        if(obj.text){
+            [dico setValue:obj forKey:obj.text];
+        }
+    }
+    attributes.valuesAndLabels = dico;
+}
+
 @end
+
+
+
+@implementation UserObject
+@synthesize text;
+@end
+

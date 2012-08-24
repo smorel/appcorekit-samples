@@ -7,6 +7,26 @@
 
 @implementation ViewControllerFactory
 
++ (CKFormTableViewController*)viewControllerForUserObject:(UserObject*)object{
+    CKFormTableViewController* form = [CKFormTableViewController controllerWithName:@"UserObject"];
+    
+    CKFormSection* section1 = [CKFormSection sectionWithObject:object 
+                                                    properties:[NSArray arrayWithObjects:@"text",nil] headerTitle:nil];
+    
+    [form addSections:[NSArray arrayWithObjects:section1,nil]];
+    
+    return form;
+}
+
++ (BOOL)hasValidObjects:(UserSettings*)settings{
+    for(UserObject* object in [[settings userObjects]allObjects]){
+        if([[object text]length] > 0){
+            return YES;
+        }
+    }
+    return NO;
+}
+
 + (CKFormTableViewController*)viewControllerForSettings:(UserSettings*)settings{
     CKFormTableViewController* form = [CKFormTableViewController controllerWithName:@"Settings"];
     
@@ -28,7 +48,80 @@
                                                    headerTitle:_(@"kFamilly")];
     
     
-    [form addSections:[NSArray arrayWithObjects:section1,section2,section3,nil]];
+    //The following part will manage insertion/deletion of UserObject instance in userObjects collection of setting.
+    //This demonstrates that 2 side communication is automatic between the collection and the for section it is binded to.
+    
+    
+    //Setup the cell controller factory for UserObject
+    CKCollectionCellControllerFactory* userObjectCellFactory = [CKCollectionCellControllerFactory factory];
+    [userObjectCellFactory addItemForObjectOfClass:[UserObject class] withControllerCreationBlock:^CKCollectionCellController *(id object, NSIndexPath *indexPath) {
+        
+        NSString* text = ([object text] && [[object text]length] > 0)? [object text] : _(@"kEmptyText");
+        
+        //Creates a simple cell controller pushing an editing view controller
+        CKTableViewCellController* cellController = [CKTableViewCellController cellControllerWithTitle:text action:^(CKTableViewCellController *controller) {
+            CKFormTableViewController* edition = [self viewControllerForUserObject:(UserObject*)object];
+            [controller.containerController.navigationController pushViewController:edition animated:YES];
+        }];
+        cellController.name = @"UserObjectCell"; //For reuse and stylesheets
+        cellController.flags = CKItemViewFlagRemovable | CKItemViewFlagSelectable;
+        
+        //Binds on object text to update the cell controller text
+        __block CKTableViewCellController* bCellController = cellController;
+        [cellController beginBindingsContextByRemovingPreviousBindings];
+        [object bind:@"text" withBlock:^(id value) {
+            bCellController.text = ([object text] && [[object text]length] > 0)? [object text] : _(@"kEmptyText");
+        }];
+        [cellController endBindingsContext];
+        
+        return cellController;
+    }];
+    
+    CKFormBindedCollectionSection* section4 = [CKFormBindedCollectionSection sectionWithCollection:settings.userObjects factory:userObjectCellFactory headerTitle:_(@"kUserObjects")];
+    
+    CKTableViewCellController* addUserObjectCell = [CKTableViewCellController cellControllerWithTitle:_(@"kAdd") action:^(CKTableViewCellController *controller) {
+        UserObject* newObject = [UserObject object];
+        [settings.userObjects addObject:newObject];
+    }];
+    
+    //This demonstrates an option cell whose values are defined in extended attributes.
+    
+    CKTableViewCellController* selectUserObject = [CKTableViewCellController cellControllerWithObject:settings keyPath:@"userObject"];
+    [selectUserObject setSetupBlock:^(CKTableViewCellController *controller, UITableViewCell *cell) {
+        BOOL bo = [self hasValidObjects:settings];
+        NSString* text = ([settings.userObject text] && [[settings.userObject text]length] > 0)? [settings.userObject text] : _(@"userObject_Placeholder");
+        
+        controller.detailText = bo ? text : _(@"kNoUserObjects");
+        controller.accessoryType = bo ? UITableViewCellAccessoryDisclosureIndicator : UITableViewCellAccessoryNone;
+        controller.flags = bo ? CKItemViewFlagSelectable : CKItemViewFlagNone;
+    }];
+    selectUserObject.name = @"selectUserObject";
+    
+    CKFormSection* section5 = [CKFormSection sectionWithCellControllers:[NSArray arrayWithObjects:addUserObjectCell,selectUserObject,nil]];
+    
+    //Adds sections
+    [form addSections:[NSArray arrayWithObjects:section1,section2,section3,section4,section5,nil]];
+    
+    //Manage the form state depending on the number of userObjects
+    
+    [form beginBindingsContextByRemovingPreviousBindings];
+    [settings.userObjects bind:@"count" executeBlockImmediatly:YES withBlock:^(id value) {
+        BOOL bo = [self hasValidObjects:settings];
+        
+        form.editableType = ([settings.userObjects count] > 0) ? CKTableCollectionViewControllerEditingTypeLeft : CKTableCollectionViewControllerEditingTypeNone;
+        if([[ settings.userObjects allObjects]indexOfObjectIdenticalTo: settings.userObject] == NSNotFound){
+            settings.userObject = nil;
+        }
+        
+        //Updates selectUserObject detailText when number of objects in userObjects changes.
+        selectUserObject.accessoryType = bo ? UITableViewCellAccessoryDisclosureIndicator : UITableViewCellAccessoryNone;
+        selectUserObject.flags = bo ? CKItemViewFlagSelectable : CKItemViewFlagNone;
+        
+        NSString* text = ([settings.userObject text] && [[settings.userObject text]length] > 0)? [settings.userObject text] : _(@"userObject_Placeholder");
+        selectUserObject.detailText = bo ? text : _(@"kNoUserObjects");
+    }];
+    [form endBindingsContext];
+    
     return form;
 }
 

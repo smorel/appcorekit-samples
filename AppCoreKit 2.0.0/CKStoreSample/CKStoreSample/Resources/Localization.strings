@@ -35,8 +35,14 @@
 "numberOfChildren" = "Number of children";
 "numberOfChildren_Placeholder" = "Enter ...";
 "numberOfChildren_NavigationBar" = "Number of children";
+"userObject_Placeholder" = "Choose a user object";
 
 //Localize CKUserTitle
 "CKGenderMister" = "Mister";
 "CKGenderMiss"   = "Miss";
 "CKGenderMisses" = "Misses";
+
+"kUserObjects" = "User Objects";
+"kAdd" = "Add a user object";
+"kEmptyText" = "Enter your text ...";
+"kNoUserObjects" = "No objects available";
