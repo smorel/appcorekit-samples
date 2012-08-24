@@ -97,21 +97,33 @@
             bu.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
             [controller.view addSubview:bu];
         }
-        
-        {
-            UIButton* bu = [UIButton buttonWithType:UIButtonTypeCustom];
-            bu.name = @"ShowHideRight";
-            
-            //This could have been made in stylesheets
-            [bu setImage:[UIImage imageNamed:@"CKWebViewControllerGoBack"] forState:UIControlStateSelected];
-            [bu setImage:[UIImage imageNamed:@"CKWebViewControllerGoForward"] forState:UIControlStateNormal];
-            [bu sizeToFit];
-            bu.frame = CGRectMake(controller.view.width / 2 - bu.width / 2,controller.view.height - bu.height - 10,bu.width,bu.height);
-            bu.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-            [controller.view addSubview:bu];
-        }
     };
     return controller;
+}
+
++ (void)setViewControllers:(NSArray*)viewControllers inSplitter:(CKSplitViewController*)splitter{
+    [splitter setViewControllers:viewControllers animationDuration:0.3 startAnimationBlock:^(UIViewController *controller, CGRect beginFrame, CGRect endFrame, CKSplitViewControllerAnimationState state) {
+        if(state == CKSplitViewControllerAnimationStateMoving){
+            controller.view.frame = beginFrame;
+            if([controller isKindOfClass:[UINavigationController class]]){
+                CKWebBrowserViewController* browser = (CKWebBrowserViewController*)[(UINavigationController*)controller topViewController];
+                browser.webView.layer.borderWidth = 4;
+                browser.webView.layer.borderColor = [[UIColor redColor]CGColor];
+            }
+        }
+    } animationBlock:^(UIViewController *controller, CGRect beginFrame, CGRect endFrame, CKSplitViewControllerAnimationState state) {
+        if(state == CKSplitViewControllerAnimationStateMoving){
+            controller.view.frame = endFrame;
+        }
+    } endAnimationBlock:^(UIViewController *controller, CGRect beginFrame, CGRect endFrame, CKSplitViewControllerAnimationState state) {
+        if(state == CKSplitViewControllerAnimationStateMoving){
+            if([controller isKindOfClass:[UINavigationController class]]){
+                CKWebBrowserViewController* browser = (CKWebBrowserViewController*)[(UINavigationController*)controller topViewController];
+                browser.webView.layer.borderWidth = 0;
+                browser.webView.layer.borderColor = [[UIColor clearColor]CGColor];
+            }
+        }
+    }];
 }
 
 + (CKSplitViewController*)splitViewController{
@@ -121,6 +133,7 @@
     
     //Creates a web browser view controller
     CKWebBrowserViewController* browser = [CKWebBrowserViewController controllerWithName:@"WebSiteBrowser"];
+    browser.autoManageNavigationAndToolBar = NO;
     browser.viewWillAppearEndBlock = ^(CKViewController* controller, BOOL animated){
         [controller.navigationController setNavigationBarHidden:YES];
         [controller.navigationController setToolbarHidden:NO animated:NO];
@@ -131,7 +144,6 @@
     CKFormTableViewController* table = [self tableWithWebSitesWithSelectionBlock:^(NSURL* url){
         bBrowser.homeURL = url;
     }];
-    
     
     
     __block CKSplitViewController* bSplitter = Splitter;
@@ -146,50 +158,22 @@
     
     splitSeparatorViewController.viewWillAppearBlock = ^(CKViewController* controller, BOOL animated){
         UIButton* ShowHideLeft = [controller.view viewWithKeyPath:@"ShowHideLeft"];
-        UIButton* ShowHideRight = [controller.view viewWithKeyPath:@"ShowHideRight"];
         
         [controller beginBindingsContextByRemovingPreviousBindings];
         [ShowHideLeft bindEvent:UIControlEventTouchUpInside withBlock:^(){
             ShowHideLeft.selected = !ShowHideLeft.selected;
-            ShowHideRight.enabled = !ShowHideLeft.selected;
             if(ShowHideLeft.selected){
                 //hide left
-                [bSplitter setViewControllers:[NSArray arrayWithObjects:
+                [self setViewControllers:[NSArray arrayWithObjects:
                                                [viewControllers objectAtIndex:1],
                                                [viewControllers objectAtIndex:2], 
-                                               nil] animated:YES];
+                                               nil] inSplitter:bSplitter];
             }else{
                 //show left
-                [bSplitter setViewControllers:[viewControllers copy] animated:YES];
+                [self setViewControllers:[viewControllers copy] inSplitter:bSplitter];
             }
         }];
         
-        //As table constroller has a fixed size defined in stylesheet,
-        //when hiding the right controller, we have to switch this constraint to
-        //be flexible in order to fill the whole screen.
-        //set it back the original constraint when the right view controller comes back.
-        
-        __block CKSplitViewConstraintsType tableOriginalConstraintType = CKSplitViewConstraintsTypeFixedSizeInPixels;
-        [ShowHideRight bindEvent:UIControlEventTouchUpInside withBlock:^(){
-            ShowHideRight.selected = !ShowHideRight.selected;
-            ShowHideLeft.enabled = !ShowHideRight.selected;
-            CKFormTableViewController* table = [viewControllers objectAtIndex:0];
-            if(ShowHideRight.selected){
-                //hide right
-                
-                tableOriginalConstraintType = table.splitViewConstraints.type;
-                table.splitViewConstraints.type = CKSplitViewConstraintsTypeFlexibleSize;
-                
-                [bSplitter setViewControllers:[NSArray arrayWithObjects:
-                                               [viewControllers objectAtIndex:0],
-                                               [viewControllers objectAtIndex:1], 
-                                               nil] animated:YES];
-            }else{
-                //show right
-                table.splitViewConstraints.type = tableOriginalConstraintType;
-                [bSplitter setViewControllers:[viewControllers copy] animated:YES];
-            }
-        }];
         [controller endBindingsContext];
     };
     

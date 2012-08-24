@@ -24,7 +24,7 @@
     
     "CKViewController[name=SplitterSeparator]" : {
         "view" : {
-            "@inherits" : [ "$horizontal_darkGrayGradient" ]
+            "@inherits" : [ "$horizontal_darkGrayGradient", "$left_shadow" ]
         },
         "splitViewConstraints" : {
             "size" : 40,

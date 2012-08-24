@@ -180,6 +180,13 @@
         }
     },
     
+    "$left_shadow" : {
+        "@inherits" : [ "$bottom_shadow" ],
+        "layer" : {
+            "shadowOffset" : "-2 0"
+        }
+    },
+    
     "$dark_button" : {
         "defaultBackgroundImage" : ["uppernav_button", "10 0" ],
         "defaultTextColor" : "0xe9e8e8 1",
