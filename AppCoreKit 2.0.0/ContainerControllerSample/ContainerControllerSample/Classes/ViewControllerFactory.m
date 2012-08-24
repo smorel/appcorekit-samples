@@ -101,6 +101,7 @@
     return controller;
 }
 
+//This gives a sample of how to customize insertion/deletion/move when setting the spliViewController viewControllers
 + (void)setViewControllers:(NSArray*)viewControllers inSplitter:(CKSplitViewController*)splitter{
     [splitter setViewControllers:viewControllers animationDuration:0.3 startAnimationBlock:^(UIViewController *controller, CGRect beginFrame, CGRect endFrame, CKSplitViewControllerAnimationState state) {
         if(state == CKSplitViewControllerAnimationStateMoving){
