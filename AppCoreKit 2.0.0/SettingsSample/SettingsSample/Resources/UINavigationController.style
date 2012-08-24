@@ -1,0 +1,49 @@
+{
+    "$navigation_title_label" : {
+        "fontName" : "Helvetica-Bold",
+        "fontSize" : "18",
+        "textColor" : "whiteColor"
+    },
+    
+    "$back_button" : {
+        "defaultBackgroundImage" : "btn-back",
+        "highlightedBackgroundImage" : "btn-back-highlight",
+        "width" : 31,
+        "height" : 29,
+        "defaultTitle" : ""
+    },
+    
+    "$bar_button" : {
+        "defaultBackgroundImage" : ["uppernav_button", "10 0" ],
+        "highlightedBackgroundImage" : ["uppernav_button-pressed", "10 0" ],
+        "contentEdgeInsets" : "10 10 10 10",
+        "height" : 34
+    },
+    
+    "UINavigationController" : {
+        "navigationBar" : {
+            "backgroundImage" : "background_nav",
+            "layer" : {
+                "shadowColor" : "blackColor",
+                "shadowRadius" : 2,
+                "shadowOffset" : "0 1",
+                "shadowOpacity" : "0.4"
+            },
+            
+            "titleView" : {
+                "@inherits" : [ "$navigation_title_label" ],
+                "backgroundColor" : "clearColor",
+                "shadowColor" : "darkGrayColor",
+                "shadowOffset" : "0 -1"
+            },
+            
+            "backBarButtonItem" : {
+                "@inherits" : [ "$back_button" ]
+            },
+            
+            "UIBarButtonItem" : {
+                "@inherits" : [ "$bar_button" ]
+            }
+        }
+    }
+}

@@ -133,15 +133,20 @@
     }];
     
     
-    __block CKFormTableViewController* bTable = table;
+    
+    __block CKSplitViewController* bSplitter = Splitter;
     
     //Creates a split view separator controller allowing to show/hide the table or the webBrowser
     CKViewController* splitSeparatorViewController = [self viewControllerForSplitterSeparator];
+    
+    //We creates an array with these controllers that will get retained in the splitSeparatorViewController blocks.
+    //By this way, when removing viewController from splitter, this array will retain the removed viewcontrollers
+    //This avoid them to get killed during this time
+    NSMutableArray* viewControllers = [NSArray arrayWithObjects:table,splitSeparatorViewController,[UINavigationController navigationControllerWithRootViewController:browser],nil];
+    
     splitSeparatorViewController.viewWillAppearBlock = ^(CKViewController* controller, BOOL animated){
         UIButton* ShowHideLeft = [controller.view viewWithKeyPath:@"ShowHideLeft"];
         UIButton* ShowHideRight = [controller.view viewWithKeyPath:@"ShowHideRight"];
-        
-        __block CKViewController* bsplitSeparatorViewController = controller;
         
         [controller beginBindingsContextByRemovingPreviousBindings];
         [ShowHideLeft bindEvent:UIControlEventTouchUpInside withBlock:^(){
@@ -149,17 +154,13 @@
             ShowHideRight.enabled = !ShowHideLeft.selected;
             if(ShowHideLeft.selected){
                 //hide left
-                [Splitter setViewControllers:[NSArray arrayWithObjects:
-                                              bsplitSeparatorViewController,
-                                              [UINavigationController navigationControllerWithRootViewController:bBrowser], 
-                                              nil] animated:YES];
+                [bSplitter setViewControllers:[NSArray arrayWithObjects:
+                                               [viewControllers objectAtIndex:1],
+                                               [viewControllers objectAtIndex:2], 
+                                               nil] animated:YES];
             }else{
                 //show left
-                [Splitter setViewControllers:[NSArray arrayWithObjects:
-                                              bTable,
-                                              bsplitSeparatorViewController,
-                                              [UINavigationController navigationControllerWithRootViewController:bBrowser], 
-                                              nil] animated:YES];
+                [bSplitter setViewControllers:[viewControllers copy] animated:YES];
             }
         }];
         
@@ -168,35 +169,32 @@
         //be flexible in order to fill the whole screen.
         //set it back the original constraint when the right view controller comes back.
         
-        __block CKSplitViewConstraintsType tableOriginalConstraintType;
+        __block CKSplitViewConstraintsType tableOriginalConstraintType = CKSplitViewConstraintsTypeFixedSizeInPixels;
         [ShowHideRight bindEvent:UIControlEventTouchUpInside withBlock:^(){
             ShowHideRight.selected = !ShowHideRight.selected;
             ShowHideLeft.enabled = !ShowHideRight.selected;
+            CKFormTableViewController* table = [viewControllers objectAtIndex:0];
             if(ShowHideRight.selected){
                 //hide right
                 
-                tableOriginalConstraintType = bTable.splitViewConstraints.type;
-                bTable.splitViewConstraints.type = CKSplitViewConstraintsTypeFlexibleSize;
+                tableOriginalConstraintType = table.splitViewConstraints.type;
+                table.splitViewConstraints.type = CKSplitViewConstraintsTypeFlexibleSize;
                 
-                [Splitter setViewControllers:[NSArray arrayWithObjects:
-                                              bTable,
-                                              bsplitSeparatorViewController,
-                                              nil] animated:YES];
+                [bSplitter setViewControllers:[NSArray arrayWithObjects:
+                                               [viewControllers objectAtIndex:0],
+                                               [viewControllers objectAtIndex:1], 
+                                               nil] animated:YES];
             }else{
                 //show right
-                bTable.splitViewConstraints.type = tableOriginalConstraintType;
-                [Splitter setViewControllers:[NSArray arrayWithObjects:
-                                              bTable,
-                                              bsplitSeparatorViewController,
-                                              [UINavigationController navigationControllerWithRootViewController:bBrowser], 
-                                              nil] animated:YES];
+                table.splitViewConstraints.type = tableOriginalConstraintType;
+                [bSplitter setViewControllers:[viewControllers copy] animated:YES];
             }
         }];
         [controller endBindingsContext];
     };
     
     //Initialize the splitter with the 3 viewControllers at launch
-    [Splitter setViewControllers:[NSArray arrayWithObjects:table,splitSeparatorViewController,[UINavigationController navigationControllerWithRootViewController:browser], nil]];
+    [Splitter setViewControllers:[viewControllers copy]];
     
     return Splitter;
 }
@@ -310,7 +308,7 @@
     };
     
     __block NSInteger selectedAnimation = 3;
-    Custom.viewWillAppearBlock = ^(CKViewController* controller,BOOL animated){
+    Custom.viewWillAppearEndBlock = ^(CKViewController* controller,BOOL animated){
         //Retriving the views by keypath
         UIView* background = [controller.view viewWithKeyPath:@"Background"];
         UISlider* slider = [controller.view viewWithKeyPath:@"Background.UISlider"];

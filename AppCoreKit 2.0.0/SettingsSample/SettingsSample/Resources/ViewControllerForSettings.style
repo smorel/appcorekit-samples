@@ -7,14 +7,14 @@
         "style" : "UITableViewStyleGrouped",
         
         "tableView" : {
-            "backgroundColor" : "darkGrayColor"
+            "backgroundColor" : "0.79 0.79 0.79 1"  
         },
         
         "sectionHeaderView" : {
             "backgroundColor" : "clearColor",
             "label" : {
-                "@inherits" : [ "$text_dark_shadow" ],
-                "textColor" : "whiteColor"
+                "@inherits" : [ "$text_light_shadow" ],
+                "textColor" : "blackColor"
             }
         },
         

@@ -15,8 +15,19 @@
     },
     
     "$blueGradient" : {
-        "backgroundGradientColors" : [ "0.3 0.3 0.6 1", "0.3 0.3 0.5 1" ],
-		"backgroundGradientLocations" : [ "0","1" ]
+        "backgroundGradientColors" : [
+                                      "0.412 0.620 0.761 1",
+                                      "0.000 0.424 0.722 1",
+                                      "0.000 0.239 0.455 1",
+                                      "0.000 0.114 0.263 1"
+                                      ],
+		"backgroundGradientLocations" : [
+                                         "0",
+                                         "0.05",
+                                         "0.95",
+                                         "1"
+                                         ],
+        "borderColor" : "clearColor"
     },
     
     "$text_dark_shadow" : {
