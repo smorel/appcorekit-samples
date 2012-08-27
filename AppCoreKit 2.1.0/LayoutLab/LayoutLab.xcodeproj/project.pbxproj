@@ -66,7 +66,7 @@
 
 /* Begin PBXFileReference section */
 		965E71B015E6968C008EFE08 /* AppCoreKit.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppCoreKit.conf; sourceTree = "<group>"; };
-		9668B8D615D5954D00C57715 /* LayoutLab.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LayoutLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9668B8D615D5954D00C57715 /* LayoutLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9668B8DA15D5954D00C57715 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9668B8DC15D5954D00C57715 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9668B8DE15D5954D00C57715 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -176,17 +176,7 @@
 				965E71B015E6968C008EFE08 /* AppCoreKit.conf */,
 				9668B90115D5954D00C57715 /* AppDelegate.h */,
 				9668B90215D5954D00C57715 /* AppDelegate.m */,
-				9668B92D15D9B05500C57715 /* Icon-72.png */,
-				9668B92E15D9B05500C57715 /* Icon-72@2x.png */,
-				96691E1B15DDA12900D73510 /* button-dark-blue-highlight.png */,
-				96691E1C15DDA12900D73510 /* button-dark-blue@2x.png */,
-				96691E1F15DDA13200D73510 /* button-dark-blue-highlight@2x.png */,
-				96691E2315DDA7F500D73510 /* Instagram_Icon_Large1.png */,
-				96691E2515DDB04F00D73510 /* Instagram_Icon_Large1@2x.png */,
-				96691E2015DDA13200D73510 /* button-dark-blue.png */,
-				96B5530915DC42780026D851 /* Controller.style */,
-				96B5530A15DC42780026D851 /* Form.style */,
-				96B5530B15DC42780026D851 /* Sample.style */,
+				96E9A61D15EBAB64009537CC /* Stylesheet */,
 				9668B91015D5954E00C57715 /* Resources */,
 				9668B8F915D5954D00C57715 /* Supporting Files */,
 			);
@@ -210,6 +200,32 @@
 				9668B91115D5954E00C57715 /* Entitlements.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		96E9A61D15EBAB64009537CC /* Stylesheet */ = {
+			isa = PBXGroup;
+			children = (
+				96E9A61E15EBAB72009537CC /* Images */,
+				96B5530915DC42780026D851 /* Controller.style */,
+				96B5530A15DC42780026D851 /* Form.style */,
+				96B5530B15DC42780026D851 /* Sample.style */,
+			);
+			name = Stylesheet;
+			sourceTree = "<group>";
+		};
+		96E9A61E15EBAB72009537CC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9668B92D15D9B05500C57715 /* Icon-72.png */,
+				9668B92E15D9B05500C57715 /* Icon-72@2x.png */,
+				96691E1B15DDA12900D73510 /* button-dark-blue-highlight.png */,
+				96691E1C15DDA12900D73510 /* button-dark-blue@2x.png */,
+				96691E1F15DDA13200D73510 /* button-dark-blue-highlight@2x.png */,
+				96691E2315DDA7F500D73510 /* Instagram_Icon_Large1.png */,
+				96691E2515DDB04F00D73510 /* Instagram_Icon_Large1@2x.png */,
+				96691E2015DDA13200D73510 /* button-dark-blue.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,6 +425,7 @@
 		9668B91815D5954E00C57715 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"${CloudKitFrameworks}/AppCoreKit/2.1.x/",
 					"${CloudKitFrameworks}/VendorsKit/1.0.0/",
@@ -423,6 +440,8 @@
 					"-lxml2",
 					"-licucore",
 					"-lz",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -433,6 +452,7 @@
 		9668B91915D5954E00C57715 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"${CloudKitFrameworks}/AppCoreKit/2.1.x/",
 					"${CloudKitFrameworks}/VendorsKit/1.0.0/",
@@ -447,6 +467,8 @@
 					"-lxml2",
 					"-licucore",
 					"-lz",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

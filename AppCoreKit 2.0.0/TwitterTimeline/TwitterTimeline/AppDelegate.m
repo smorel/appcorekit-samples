@@ -39,19 +39,14 @@
     return self;
 }
 
-- (void)dealloc
-{
-    [_window release];
-    [super dealloc];
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     Timeline* timeline = [Timeline sharedInstance];
     timeline.tweets.feedSource = [FeedSources feedSourceForTweets];
     
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    self.window.rootViewController = [[[UINavigationController alloc]initWithRootViewController:[ViewControllers viewControllerForTimeline:timeline]]autorelease];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[ViewControllers viewControllerForTimeline:timeline]];
     [self.window makeKeyAndVisible];
     return YES;
 }

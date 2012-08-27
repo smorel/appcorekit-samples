@@ -35,9 +35,9 @@ static NSInteger currentButtonTextSample = 0;
 
 @interface TestData : CKObject
 @property(nonatomic,assign) CLLocationCoordinate2D coordinate;
-@property(nonatomic,retain) NSString* name;
-@property(nonatomic,retain) NSDate* date;
-@property(nonatomic,retain) NSString* text;
+@property(nonatomic) NSString* name;
+@property(nonatomic) NSDate* date;
+@property(nonatomic) NSString* text;
 @end
 
 @implementation TestData
@@ -59,11 +59,6 @@ static NSInteger currentButtonTextSample = 0;
 
 @synthesize window = _window;
 
-- (void)dealloc
-{
-    [_window release];
-    [super dealloc];
-}
 
 - (id)init{
     self = [super init];
@@ -78,7 +73,7 @@ static NSInteger currentButtonTextSample = 0;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
     
     //CKViewController* controller = [CKViewController controllerWithName:@"Test"];
@@ -134,10 +129,10 @@ static NSInteger currentButtonTextSample = 0;
     
     CKTableViewCellController* cell1 = [CKTableViewCellController cellControllerWithName:@"first"];
     CKTableViewCellController* cell2 = [CKTableViewCellController cellControllerWithName:@"second"];
-    [controller addSections:[NSArray arrayWithObject:[CKFormSection sectionWithCellControllers:[NSArray arrayWithObjects:cell1,cell2,nil]]]];
+    [controller addSections:[NSArray arrayWithObject:[CKFormSection sectionWithCellControllers:[NSArray arrayWithObjects:/*cell1,*/cell2,nil]]]];
     
     
-    self.window.rootViewController = [[[UINavigationController alloc]initWithRootViewController: controller]autorelease];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController: controller];
     [self.window makeKeyAndVisible];
     return YES;
 }

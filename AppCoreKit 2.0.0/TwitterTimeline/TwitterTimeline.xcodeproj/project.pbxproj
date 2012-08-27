@@ -352,6 +352,7 @@
 		9691A520158246D400E4E6E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"${CloudKitFrameworks}/AppCoreKit/2.0.0/",
 					"${CloudKitFrameworks}/VendorsKit/1.0.0/",
@@ -378,6 +379,7 @@
 		9691A521158246D400E4E6E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"${CloudKitFrameworks}/AppCoreKit/2.0.0/",
 					"${CloudKitFrameworks}/VendorsKit/1.0.0/",

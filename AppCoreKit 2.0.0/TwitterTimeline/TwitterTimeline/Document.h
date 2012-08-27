@@ -16,5 +16,5 @@
 @end
 
 @interface Timeline : CKObject
-@property(nonatomic,retain) CKArrayCollection* tweets;
+@property(nonatomic) CKArrayCollection* tweets;
 @end
