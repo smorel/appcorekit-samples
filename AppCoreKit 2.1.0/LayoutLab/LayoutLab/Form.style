@@ -1,21 +1,21 @@
 {
     "$gray_separator" : {
         "@class" : "UIView",
-        "backgroundColor" : "0.83 0.83 0.83 1"
+        "backgroundColor" : "0.7 0.7 0.7 1"
     },
     
     "$white_separator" : {
         "@class" : "UIView",
-        "backgroundColor" : "1 1 1 0.6"
+        "backgroundColor" : "1 1 1 1"
     },
     
     "$top_label" : {
         "@class" : "UILabel" , 
         "textAlignment" : "UITextAlignmentCenter",
-       "backgroundColor" : "0.91 0.91 0.91 1",
+        "backgroundColor" : "clearColor",
         "textColor" : "0.14 0.14 0.14 1",
-        "font" : ["Helvetica-Bold", 17],
-        "marginBottom" : -2, 
+        "font" : ["NewsGothicStd-Bold", 17],
+        "marginBottom" : -8, 
         "shadowColor" : "whiteColor", 
         "shadowOffset" : "0 1"
     },
@@ -25,13 +25,13 @@
         "textAlignment" : "UITextAlignmentCenter",
         "backgroundColor" : "0.91 0.91 0.91 1",
         "textColor" : "0.54 0.54 0.54 1", 
-        "font" : ["Helvetica-Bold", 11], 
-        "marginTop" : -2 
+        "font" : ["ChaparralPro-Regular", 11], 
+        "marginTop" : -5
     },
     
     "$Cell1View" : {
         "layoutBoxes" : [ 
-             {  "@class" : "CKHorizontalBoxLayout", "fixedHeight" : 80, "verticalAlignment" : "CKLayoutVerticalAlignmentTop", "padding" : "0 0 0 0",
+             {  "@class" : "CKHorizontalBoxLayout", "fixedHeight" : 80, "verticalAlignment" : "CKLayoutVerticalAlignmentTop", "padding" : "1 0 1 1",
                 "layoutBoxes" : [
                     {   "@class" : "CKHorizontalBoxLayout", "fixedSize" : "80 80", "padding" : "8 8 8 8",
                         "layoutBoxes" : [
@@ -83,7 +83,7 @@
                             },
                                          
                             {   "@inherits" : [ "$gray_separator" ], "fixedHeight" : 1 },
-                            {   "@inherits" : [ "$white_separator" ], "fixedHeight" : 1 },
+                            {   "@inherits" : [ "$white_separator" ], "fixedHeight" : 1  },
                                                            
                             {   "@class" : "CKHorizontalBoxLayout","padding" : "8 8 8 8",
                                 "layoutBoxes" : [
@@ -105,7 +105,7 @@
                         "text" : "Instagram",
                         "backgroundColor" : "0.91 0.91 0.91 1",
                         "textColor" : "0.14 0.14 0.14 1",
-                        "font" : ["Helvetica-Bold", 17], 
+                        "font" : ["BasicGothicMobiPro-BlackItalic", 24], 
                         "shadowColor" : "whiteColor", 
                         "shadowOffset" : "0 1",
                         "numberOfLines" : 1
@@ -116,41 +116,58 @@
                         "numberOfLines" : 0, 
                         "marginTop": 5, 
                         "textColor" : "0.44 0.44 0.44 1", 
-                        "font" : ["Helvetica", 13], 
+                        "font" : ["BasicGothicMobiPro-BlackItalic", 13], 
                         "shadowColor" : "whiteColor", 
                         "shadowOffset" : "0 1"
                     },
-                    {   "@class" : "UILabel", 
-                        "text" : "bit.ly/onthecouh01",
-                        "backgroundColor" : "0.91 0.91 0.91 1",
-                        "marginTop" :5, 
-                        "font" : ["Helvetica", 13],
-                        "textColor" : "0.31 0.43 0.6 1", 
-                        "shadowColor" : "whiteColor", 
-                        "shadowOffset" : "0 1",
-                        "numberOfLines" : 1
+                                 
+                    {   "@class" : "CKHorizontalBoxLayout","marginTop" :5,
+                        "layoutBoxes" : [
+                                { "@class" : "UIButton", "name" : "URL" },
+                                { "@class" : "CKLayoutFlexibleSpace" }
+                            ]
                     }
                 ]
             }
         ]
     },
     
+    /*
+    "$cellShadow" : {
+        "borderShadowColor" : "1 0 0 1",
+        "borderShadowRadius" : 3,
+        "borderShadowOffset" : "0 0"
+    },
+    */
     
     "CKViewController[name=Form]" : {
-        "tableView" : {
-            "backgroundColor" : "0.79 0.79 0.79 1"  
+        "UITableView,tableViewContainer" : {
+            "backgroundView" : {
+                "backgroundColor" : "clearColor" 
+            },
+            "backgroundColor" : "clearColor" 
+        },
+        "view" : {
+            "backgroundColor" : "0.7 0.7 0.7 1",
+            "backgroundImageContentMode" : "UIViewContentModeScaleToFill"
         },
         "CKTableViewCellController[name=first]" : {
             "cellStyle" : "CKTableViewCellStyleCustomLayout",
             "flags" : "CKItemViewFlagNone",
             "UITableViewCell" : {
                 "backgroundView" : {
+                    //"@inherits" : [ "$cellShadow" ],
+                    "borderShadowColor" : "0 0 0 0.6",
+                    "borderShadowRadius" : 6,
+                    "borderShadowOffset" : "0 0",
+                    
+                    "separatorColor" : "0.6 0.6 0.6 1",
                     "embossTopColor" : "whiteColor",
                     "backgroundColor" : "0.91 0.91 0.91 1",
-                    "borderShadowColor" : "0.3 0.3 0.3 0.6",
-                    "borderShadowRadius" : 4,
                     "cornerSize" : 5,
-                    "borderColor" : "0.3 0.3 0.3 0.6"
+                    "borderColor" : "0.33 0.33 0.33 1",
+                    "embossBottomColor" : "0.7 0.7 0.7 0.6",
+                    "borderWidth" : 2
                 },
                 "contentView" : {
                     "@inherits" : [  "$Cell1View" ],
@@ -168,7 +185,7 @@
                         "highlightedBackgroundImage" : ["button-dark-blue-highlight", "15 0"],
                         "titleLabel " :{
                             "shadowOffset" : "0 1",
-                            "font" : ["Helvetica-Bold", 12]
+                            "font" : ["ChaparralPro-Regular", 12]
                         }
                     },
                     "UIView[name=ImageHighlightBackgroundView]" : {
@@ -190,19 +207,35 @@
             "flags" : "CKItemViewFlagNone",
             "UITableViewCell" : {
                 "backgroundView" : {
+                    //"@inherits" : [ "$cellShadow" ],
+                    "borderShadowColor" : "0 0 0 0.6",
+                    "borderShadowRadius" : 6,
+                    "borderShadowOffset" : "0 0",
+                    
+                    "separatorColor" : "0.6 0.6 0.6 1",
                     "embossTopColor" : "whiteColor",
                     "backgroundColor" : "0.91 0.91 0.91 1",
-                    "borderShadowColor" : "0.3 0.3 0.3 0.6",
-                    "borderShadowRadius" : 4,
                     "cornerSize" : 5,
-                    "borderColor" : "0.3 0.3 0.3 0.6",
-                    "embossBottomColor" : "0.3 0.3 0.3 0.2"
+                    "borderColor" : "0.33 0.33 0.33 1",
+                    "embossBottomColor" : "0.7 0.7 0.7 0.6",
+                    "borderWidth" : 2
                 },
                 "contentView" : {
                     "@inherits" : [  "$Cell2View" ]
+                },
+                "UIButton[name=URL]" : {
+                    "defaultTitle" : "bit.ly/onthecouh01",
+                    "defaultTextColor" : "0.31 0.43 0.6 1", 
+                    "highlightedTextColor" : "whiteColor", 
+                    "defaultShadowColor" : "whiteColor",
+                    "highlightedShadowColor" : "clearColor",
+                    "titleLabel" : {
+                        "shadowOffset" : "0 1",
+                        "font" : ["ChaparralPro-Regular", 12],
+                        "numberOfLines" : 1
+                    }
                 }
             }
         }
-
     }
 }

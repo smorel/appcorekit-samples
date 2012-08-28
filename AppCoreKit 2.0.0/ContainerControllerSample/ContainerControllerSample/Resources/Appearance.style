@@ -148,7 +148,11 @@
     "$tableview_cell_controller_base" : {
         "backgroundView" : {
             "@inherits" : [ "$lightBackground" ],
-            "cornerSize" : 10
+            "cornerSize" : 10,
+
+            "borderShadowColor" : "0 0 0 0.6",
+            "borderShadowRadius" : 6,
+            "borderShadowOffset" : "0 0"
         },
         "selectedBackgroundView" : {
             "@inherits" : [ "$blueGradient" ],

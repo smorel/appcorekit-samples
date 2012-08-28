@@ -52,6 +52,12 @@
 		96B5530C15DC42780026D851 /* Controller.style in Resources */ = {isa = PBXBuildFile; fileRef = 96B5530915DC42780026D851 /* Controller.style */; };
 		96B5530D15DC42780026D851 /* Form.style in Resources */ = {isa = PBXBuildFile; fileRef = 96B5530A15DC42780026D851 /* Form.style */; };
 		96B5530E15DC42780026D851 /* Sample.style in Resources */ = {isa = PBXBuildFile; fileRef = 96B5530B15DC42780026D851 /* Sample.style */; };
+		96E9A63815ED1FF6009537CC /* background-grey-pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E9A63715ED1FF6009537CC /* background-grey-pattern.png */; };
+		96E9A63B15ED22CE009537CC /* testbold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E9A63915ED22CE009537CC /* testbold.ttf */; };
+		96E9A63C15ED22CE009537CC /* test.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E9A63A15ED22CE009537CC /* test.ttf */; };
+		96E9A63F15ED509F009537CC /* ChaparralPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96E9A63E15ED509F009537CC /* ChaparralPro-Regular.otf */; };
+		96EE047615ED5A4100C0584B /* NewsGothicStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96EE047515ED5A4100C0584B /* NewsGothicStd-Bold.otf */; };
+		96EE049515ED6C5A00C0584B /* BasicGothicMobiPro-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96EE049415ED6C5A00C0584B /* BasicGothicMobiPro-BlackItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +107,12 @@
 		96B5530915DC42780026D851 /* Controller.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Controller.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		96B5530A15DC42780026D851 /* Form.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Form.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		96B5530B15DC42780026D851 /* Sample.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sample.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		96E9A63715ED1FF6009537CC /* background-grey-pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background-grey-pattern.png"; path = "../../../../Labs/LayoutLab/LayoutLab/background-grey-pattern.png"; sourceTree = "<group>"; };
+		96E9A63915ED22CE009537CC /* testbold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = testbold.ttf; path = ../../../../Labs/LayoutLab/LayoutLab/testbold.ttf; sourceTree = "<group>"; };
+		96E9A63A15ED22CE009537CC /* test.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = test.ttf; path = ../../../../Labs/LayoutLab/LayoutLab/test.ttf; sourceTree = "<group>"; };
+		96E9A63E15ED509F009537CC /* ChaparralPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ChaparralPro-Regular.otf"; path = "../../../../Labs/LayoutLab/LayoutLab/ChaparralPro-Regular.otf"; sourceTree = "<group>"; };
+		96EE047515ED5A4100C0584B /* NewsGothicStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NewsGothicStd-Bold.otf"; path = "../../../../Labs/LayoutLab/LayoutLab/NewsGothicStd-Bold.otf"; sourceTree = "<group>"; };
+		96EE049415ED6C5A00C0584B /* BasicGothicMobiPro-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BasicGothicMobiPro-BlackItalic.ttf"; path = "../../../../Labs/LayoutLab/LayoutLab/BasicGothicMobiPro-BlackItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +217,7 @@
 		96E9A61D15EBAB64009537CC /* Stylesheet */ = {
 			isa = PBXGroup;
 			children = (
+				96E9A63D15ED22D2009537CC /* Fonts */,
 				96E9A61E15EBAB72009537CC /* Images */,
 				96B5530915DC42780026D851 /* Controller.style */,
 				96B5530A15DC42780026D851 /* Form.style */,
@@ -216,6 +229,7 @@
 		96E9A61E15EBAB72009537CC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				96E9A63715ED1FF6009537CC /* background-grey-pattern.png */,
 				9668B92D15D9B05500C57715 /* Icon-72.png */,
 				9668B92E15D9B05500C57715 /* Icon-72@2x.png */,
 				96691E1B15DDA12900D73510 /* button-dark-blue-highlight.png */,
@@ -226,6 +240,18 @@
 				96691E2015DDA13200D73510 /* button-dark-blue.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		96E9A63D15ED22D2009537CC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				96EE049415ED6C5A00C0584B /* BasicGothicMobiPro-BlackItalic.ttf */,
+				96EE047515ED5A4100C0584B /* NewsGothicStd-Bold.otf */,
+				96E9A63E15ED509F009537CC /* ChaparralPro-Regular.otf */,
+				96E9A63915ED22CE009537CC /* testbold.ttf */,
+				96E9A63A15ED22CE009537CC /* test.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +321,12 @@
 				96691E2415DDA7F500D73510 /* Instagram_Icon_Large1.png in Resources */,
 				96691E2615DDB04F00D73510 /* Instagram_Icon_Large1@2x.png in Resources */,
 				965E71B115E6968C008EFE08 /* AppCoreKit.conf in Resources */,
+				96E9A63815ED1FF6009537CC /* background-grey-pattern.png in Resources */,
+				96E9A63B15ED22CE009537CC /* testbold.ttf in Resources */,
+				96E9A63C15ED22CE009537CC /* test.ttf in Resources */,
+				96E9A63F15ED509F009537CC /* ChaparralPro-Regular.otf in Resources */,
+				96EE047615ED5A4100C0584B /* NewsGothicStd-Bold.otf in Resources */,
+				96EE049515ED6C5A00C0584B /* BasicGothicMobiPro-BlackItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

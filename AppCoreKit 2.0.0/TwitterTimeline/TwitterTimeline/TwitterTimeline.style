@@ -29,7 +29,11 @@
                 "backgroundView" : {
                     "@inherits" : [ "$lightGradient" ],
                     "borderColor" : "lightGrayColor",
-                    "borderWidth" : 2
+                    "borderWidth" : 2,
+                    
+                    "borderShadowColor" : "0 0 0 0.6",
+                    "borderShadowRadius" : 6,
+                    "borderShadowOffset" : "0 0"
                 },
                 "textLabel,detailTextLabel" : {
                     "@inherits" : [ "$big_font", "$background" ]

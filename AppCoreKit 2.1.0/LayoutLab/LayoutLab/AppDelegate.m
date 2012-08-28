@@ -126,10 +126,17 @@ static NSInteger currentButtonTextSample = 0;
                                        ];*/
     
     CKFormTableViewController* controller = [CKFormTableViewController controllerWithName:@"Form"];
+    __block BOOL hidden = YES;
+    [controller.rightButton = [UIBarButtonItem alloc]initWithTitle:@"toolbar" style:UIBarButtonItemStyleBordered block:^{
+        [controller.navigationController setToolbarHidden:!hidden animated:YES];
+        hidden = !hidden;
+    }];
+    
     
     CKTableViewCellController* cell1 = [CKTableViewCellController cellControllerWithName:@"first"];
     CKTableViewCellController* cell2 = [CKTableViewCellController cellControllerWithName:@"second"];
-    [controller addSections:[NSArray arrayWithObject:[CKFormSection sectionWithCellControllers:[NSArray arrayWithObjects:/*cell1,*/cell2,nil]]]];
+    CKTableViewCellController* cell3 = [CKTableViewCellController cellControllerWithName:@"second"];
+    [controller addSections:[NSArray arrayWithObject:[CKFormSection sectionWithCellControllers:[NSArray arrayWithObjects:cell1,cell2,cell3,nil]]]];
     
     
     self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController: controller];
