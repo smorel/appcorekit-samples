@@ -1,6 +1,7 @@
 {
     "@import" : [
-        "Controller",
-        "Form"
+       // "Controller",
+        "Form",
+        "UINavigationController"
     ]
 }

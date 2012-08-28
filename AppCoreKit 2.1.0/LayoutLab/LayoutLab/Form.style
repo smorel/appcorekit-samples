@@ -23,7 +23,7 @@
     "$bottom_label" : {
         "@class" : "UILabel", 
         "textAlignment" : "UITextAlignmentCenter",
-        "backgroundColor" : "0.91 0.91 0.91 1",
+        "backgroundColor" : "clearColor",
         "textColor" : "0.54 0.54 0.54 1", 
         "font" : ["Basic Gothic Mobi Pro Black", 10], 
         "marginTop" : -3
@@ -103,7 +103,7 @@
                 "layoutBoxes" : [
                     {   "@class" : "UILabel", 
                         "text" : "Instagram",
-                        "backgroundColor" : "0.91 0.91 0.91 1",
+                        "backgroundColor" : "clearColor",
                         "textColor" : "0.14 0.14 0.14 1",
                         "font" : ["Basic Gothic Mobi Pro Black", 24], 
                         "shadowColor" : "whiteColor", 
@@ -112,7 +112,7 @@
                     },
                     {   "@class" : "UILabel", 
                         "text" : "Photos straight from ins efibqw fqwef quwe oquwe ruqwhe ru bqwiuebr iuqwbefi bqwigefbwei fbqbwef wbef wbef wbefu wheb fuyvb tagram HQ!",
-                        "backgroundColor" : "0.91 0.91 0.91 1",
+                        "backgroundColor" : "clearColor",
                         "numberOfLines" : 0, 
                         "marginTop": 5, 
                         "textColor" : "0.44 0.44 0.44 1", 
@@ -163,7 +163,8 @@
                     
                     "separatorColor" : "0.6 0.6 0.6 1",
                     "embossTopColor" : "whiteColor",
-                    "backgroundColor" : "0.91 0.91 0.91 1",
+                    "backgroundGradientLocations" : [ 0,0.6, 1 ],
+                    "backgroundGradientColors" : [ "0.91 0.91 0.91 1","0.90 0.90 0.90 1", "0.81 0.81 0.81 1" ],
                     "cornerSize" : 5,
                     "borderColor" : "0.33 0.33 0.33 1",
                     "embossBottomColor" : "0.7 0.7 0.7 0.6",
@@ -214,7 +215,9 @@
                     
                     "separatorColor" : "0.6 0.6 0.6 1",
                     "embossTopColor" : "whiteColor",
-                    "backgroundColor" : "0.91 0.91 0.91 1",
+                    //"backgroundColor" : "0.91 0.91 0.91 1",
+                    "backgroundGradientLocations" : [ 0,0.6, 1 ],
+                    "backgroundGradientColors" : [ "0.91 0.91 0.91 1","0.90 0.90 0.90 1", "0.81 0.81 0.81 1" ],
                     "cornerSize" : 5,
                     "borderColor" : "0.33 0.33 0.33 1",
                     "embossBottomColor" : "0.7 0.7 0.7 0.6",
