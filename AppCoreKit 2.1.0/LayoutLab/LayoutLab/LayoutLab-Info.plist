@@ -30,7 +30,7 @@
 	<string>$SRCROOT</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>BasicGothicMobiPro-BlackItalic</string>
+		<string>BasicGothicMobiPro-BlackItalic.ttf</string>
 		<string>NewsGothicStd-Bold.otf</string>
 		<string>ChaparralPro-Regular.otf</string>
 		<string>test.ttf</string>

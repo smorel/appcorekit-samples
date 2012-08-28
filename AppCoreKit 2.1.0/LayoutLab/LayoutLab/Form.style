@@ -14,8 +14,8 @@
         "textAlignment" : "UITextAlignmentCenter",
         "backgroundColor" : "clearColor",
         "textColor" : "0.14 0.14 0.14 1",
-        "font" : ["NewsGothicStd-Bold", 17],
-        "marginBottom" : -8, 
+        "font" : ["Basic Gothic Mobi Pro Black", 17],
+        "marginBottom" : -3, 
         "shadowColor" : "whiteColor", 
         "shadowOffset" : "0 1"
     },
@@ -25,8 +25,8 @@
         "textAlignment" : "UITextAlignmentCenter",
         "backgroundColor" : "0.91 0.91 0.91 1",
         "textColor" : "0.54 0.54 0.54 1", 
-        "font" : ["ChaparralPro-Regular", 11], 
-        "marginTop" : -5
+        "font" : ["Basic Gothic Mobi Pro Black", 10], 
+        "marginTop" : -3
     },
     
     "$Cell1View" : {
@@ -105,7 +105,7 @@
                         "text" : "Instagram",
                         "backgroundColor" : "0.91 0.91 0.91 1",
                         "textColor" : "0.14 0.14 0.14 1",
-                        "font" : ["BasicGothicMobiPro-BlackItalic", 24], 
+                        "font" : ["Basic Gothic Mobi Pro Black", 24], 
                         "shadowColor" : "whiteColor", 
                         "shadowOffset" : "0 1",
                         "numberOfLines" : 1
@@ -116,7 +116,7 @@
                         "numberOfLines" : 0, 
                         "marginTop": 5, 
                         "textColor" : "0.44 0.44 0.44 1", 
-                        "font" : ["BasicGothicMobiPro-BlackItalic", 13], 
+                        "font" : ["Basic Gothic Mobi Pro Black", 13], 
                         "shadowColor" : "whiteColor", 
                         "shadowOffset" : "0 1"
                     },
@@ -185,7 +185,7 @@
                         "highlightedBackgroundImage" : ["button-dark-blue-highlight", "15 0"],
                         "titleLabel " :{
                             "shadowOffset" : "0 1",
-                            "font" : ["ChaparralPro-Regular", 12]
+                            "font" : ["Basic Gothic Mobi Pro Black", 12]
                         }
                     },
                     "UIView[name=ImageHighlightBackgroundView]" : {
@@ -231,7 +231,7 @@
                     "highlightedShadowColor" : "clearColor",
                     "titleLabel" : {
                         "shadowOffset" : "0 1",
-                        "font" : ["ChaparralPro-Regular", 12],
+                        "font" : ["Basic Gothic Mobi Pro Black", 12],
                         "numberOfLines" : 1
                     }
                 }
