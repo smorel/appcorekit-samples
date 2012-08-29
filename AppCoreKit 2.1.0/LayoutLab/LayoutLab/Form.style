@@ -31,7 +31,7 @@
     
     "$Cell1View" : {
         "layoutBoxes" : [ 
-             {  "@class" : "CKHorizontalBoxLayout", "fixedHeight" : 80, "verticalAlignment" : "CKLayoutVerticalAlignmentTop", "padding" : "1 0 1 1",
+             {  "@class" : "CKHorizontalBoxLayout", "fixedHeight" : 80, "verticalAlignment" : "CKLayoutVerticalAlignmentTop", "padding" : "0 0 1 0",
                 "layoutBoxes" : [
                     {   "@class" : "CKHorizontalBoxLayout", "fixedSize" : "80 80", "padding" : "8 8 8 8",
                         "layoutBoxes" : [
@@ -105,7 +105,7 @@
                         "text" : "Instagram",
                         "backgroundColor" : "clearColor",
                         "textColor" : "0.14 0.14 0.14 1",
-                        "font" : ["Basic Gothic Mobi Pro Black", 24], 
+                        "font" : ["Basic Gothic Mobi Pro Black", 14], 
                         "shadowColor" : "whiteColor", 
                         "shadowOffset" : "0 1",
                         "numberOfLines" : 1
@@ -116,7 +116,7 @@
                         "numberOfLines" : 0, 
                         "marginTop": 5, 
                         "textColor" : "0.44 0.44 0.44 1", 
-                        "font" : ["Basic Gothic Mobi Pro Black", 13], 
+                        "font" : ["Basic Gothic Mobi Pro Black", 8], 
                         "shadowColor" : "whiteColor", 
                         "shadowOffset" : "0 1"
                     },
@@ -159,7 +159,7 @@
                     //"@inherits" : [ "$cellShadow" ],
                     "borderShadowColor" : "0 0 0 0.6",
                     "borderShadowRadius" : 6,
-                    "borderShadowOffset" : "0 0",
+                    "borderShadowOffset" : "0 4",
                     
                     "separatorColor" : "0.6 0.6 0.6 1",
                     "embossTopColor" : "whiteColor",
@@ -168,7 +168,7 @@
                     "cornerSize" : 5,
                     "borderColor" : "0.33 0.33 0.33 1",
                     "embossBottomColor" : "0.7 0.7 0.7 0.6",
-                    "borderWidth" : 2
+                    "borderWidth" : 1
                 },
                 "contentView" : {
                     "@inherits" : [  "$Cell1View" ],
@@ -211,7 +211,7 @@
                     //"@inherits" : [ "$cellShadow" ],
                     "borderShadowColor" : "0 0 0 0.6",
                     "borderShadowRadius" : 6,
-                    "borderShadowOffset" : "0 0",
+                    "borderShadowOffset" : "0 4",
                     
                     "separatorColor" : "0.6 0.6 0.6 1",
                     "embossTopColor" : "whiteColor",
@@ -221,7 +221,7 @@
                     "cornerSize" : 5,
                     "borderColor" : "0.33 0.33 0.33 1",
                     "embossBottomColor" : "0.7 0.7 0.7 0.6",
-                    "borderWidth" : 2
+                    "borderWidth" : 1
                 },
                 "contentView" : {
                     "@inherits" : [  "$Cell2View" ]
@@ -234,7 +234,7 @@
                     "highlightedShadowColor" : "clearColor",
                     "titleLabel" : {
                         "shadowOffset" : "0 1",
-                        "font" : ["Basic Gothic Mobi Pro Black", 12],
+                        "font" : ["Basic Gothic Mobi Pro Black", 10],
                         "numberOfLines" : 1
                     }
                 }

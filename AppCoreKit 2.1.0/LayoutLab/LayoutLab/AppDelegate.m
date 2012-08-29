@@ -134,9 +134,10 @@ static NSInteger currentButtonTextSample = 0;
     
     
     CKTableViewCellController* cell1 = [CKTableViewCellController cellControllerWithName:@"first"];
+    CKTableViewCellController* cell4 = [CKTableViewCellController cellControllerWithName:@"first"];
     CKTableViewCellController* cell2 = [CKTableViewCellController cellControllerWithName:@"second"];
     CKTableViewCellController* cell3 = [CKTableViewCellController cellControllerWithName:@"second"];
-    [controller addSections:[NSArray arrayWithObject:[CKFormSection sectionWithCellControllers:[NSArray arrayWithObjects:cell1,cell2,cell3,nil]]]];
+    [controller addSections:[NSArray arrayWithObject:[CKFormSection sectionWithCellControllers:[NSArray arrayWithObjects:cell1,cell2,cell4,cell3,nil]]]];
     
     
     self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController: controller];

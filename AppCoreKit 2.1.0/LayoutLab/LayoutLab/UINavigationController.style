@@ -17,7 +17,7 @@
         "highlightedBackgroundImage" : ["uppernav_button-pressed", "10 0" ],
         "contentEdgeInsets" : "10 10 10 10",
         "defaultTextColor" : "blackColor",
-        "font" : [ "Helvetica-Bold" , 14 ]
+        "font" : ["Basic Gothic Mobi Pro Black", 14]
     },
     
     "$base_nav" : {
