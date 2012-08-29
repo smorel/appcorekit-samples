@@ -27,8 +27,21 @@
     return NO;
 }
 
++ (void)updatePropertyCell:(CKTableViewCellController*)controller usingSettings:(UserSettings*)settings{
+    BOOL bo = [self hasValidObjects:settings];
+    
+    //Updates selectUserObject detailText when number of objects in userObjects changes.
+    controller.accessoryType = bo ? UITableViewCellAccessoryDisclosureIndicator : UITableViewCellAccessoryNone;
+    controller.flags = bo ? CKItemViewFlagSelectable : CKItemViewFlagNone;
+    controller.selectionStyle = bo ? UITableViewCellSelectionStyleBlue : UITableViewCellSelectionStyleNone;
+    
+    NSString* text = ([settings.userObject text] && [[settings.userObject text]length] > 0)? [settings.userObject text] : _(@"userObject_Placeholder");
+    controller.detailText = bo ? text : _(@"kNoUserObjects");
+}
+
 + (CKFormTableViewController*)viewControllerForSettings:(UserSettings*)settings{
     CKFormTableViewController* form = [CKFormTableViewController controllerWithName:@"Settings"];
+    form.supportedInterfaceOrientations = CKInterfaceOrientationPortrait;
     
     //AppCoreKit provides a lot of helpers to create section or cell controller using runtime.
     //Those helpers choose the right table view cell controller implementation and automatically setup a 2 way connection betwwen the object's property in memory and the controls editing this property.
@@ -88,12 +101,7 @@
     
     CKTableViewCellController* selectUserObject = [CKTableViewCellController cellControllerWithObject:settings keyPath:@"userObject"];
     [selectUserObject setSetupBlock:^(CKTableViewCellController *controller, UITableViewCell *cell) {
-        BOOL bo = [self hasValidObjects:settings];
-        NSString* text = ([settings.userObject text] && [[settings.userObject text]length] > 0)? [settings.userObject text] : _(@"userObject_Placeholder");
-        
-        controller.detailText = bo ? text : _(@"kNoUserObjects");
-        controller.accessoryType = bo ? UITableViewCellAccessoryDisclosureIndicator : UITableViewCellAccessoryNone;
-        controller.flags = bo ? CKItemViewFlagSelectable : CKItemViewFlagNone;
+        [self updatePropertyCell:controller usingSettings:settings];
     }];
     selectUserObject.name = @"selectUserObject";
     
@@ -106,21 +114,17 @@
     
     [form beginBindingsContextByRemovingPreviousBindings];
     [settings.userObjects bind:@"count" executeBlockImmediatly:YES withBlock:^(id value) {
-        BOOL bo = [self hasValidObjects:settings];
-        
         form.editableType = ([settings.userObjects count] > 0) ? CKTableCollectionViewControllerEditingTypeLeft : CKTableCollectionViewControllerEditingTypeNone;
         if([[ settings.userObjects allObjects]indexOfObjectIdenticalTo: settings.userObject] == NSNotFound){
             settings.userObject = nil;
         }
-        
-        //Updates selectUserObject detailText when number of objects in userObjects changes.
-        selectUserObject.accessoryType = bo ? UITableViewCellAccessoryDisclosureIndicator : UITableViewCellAccessoryNone;
-        selectUserObject.flags = bo ? CKItemViewFlagSelectable : CKItemViewFlagNone;
-        
-        NSString* text = ([settings.userObject text] && [[settings.userObject text]length] > 0)? [settings.userObject text] : _(@"userObject_Placeholder");
-        selectUserObject.detailText = bo ? text : _(@"kNoUserObjects");
+        [self updatePropertyCell:selectUserObject usingSettings:settings];
     }];
     [form endBindingsContext];
+    
+    form.viewWillAppearBlock = ^(CKViewController* controller, BOOL animated){
+        [self updatePropertyCell:selectUserObject usingSettings:settings];
+    };
     
     return form;
 }

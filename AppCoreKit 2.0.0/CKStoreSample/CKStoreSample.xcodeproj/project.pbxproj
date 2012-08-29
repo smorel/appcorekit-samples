@@ -32,6 +32,8 @@
 		960F350215E3E5150002DF6F /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 960F350115E3E5150002DF6F /* Localization.strings */; };
 		9696E5EE15E3EAE800CD7C34 /* AppCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9696E5ED15E3EAE800CD7C34 /* AppCoreKit.framework */; };
 		9696E5F015E3EAEF00CD7C34 /* VendorsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9696E5EF15E3EAEF00CD7C34 /* VendorsKit.framework */; };
+		96EE050815EEBDCE00C0584B /* background_nav-480.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE050615EEBDCE00C0584B /* background_nav-480.png */; };
+		96EE050915EEBDCE00C0584B /* background_nav-480@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE050715EEBDCE00C0584B /* background_nav-480@2x.png */; };
 		96F5C06D15E7CBED007121C6 /* UINavigationController.style in Resources */ = {isa = PBXBuildFile; fileRef = 96F5C06C15E7CBED007121C6 /* UINavigationController.style */; };
 		96F5C14715E82969007121C6 /* background_nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F5C13D15E82968007121C6 /* background_nav.png */; };
 		96F5C14815E82969007121C6 /* background_nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F5C13E15E82968007121C6 /* background_nav@2x.png */; };
@@ -78,6 +80,8 @@
 		960F350315E3E5150002DF6F /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		9696E5ED15E3EAE800CD7C34 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = AppCoreKit/2.0.0/AppCoreKit.framework; sourceTree = CloudKitFrameworks; };
 		9696E5EF15E3EAEF00CD7C34 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = VendorsKit/1.0.0/VendorsKit.framework; sourceTree = CloudKitFrameworks; };
+		96EE050615EEBDCE00C0584B /* background_nav-480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background_nav-480.png"; path = "Resources/background_nav-480.png"; sourceTree = "<group>"; };
+		96EE050715EEBDCE00C0584B /* background_nav-480@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background_nav-480@2x.png"; path = "Resources/background_nav-480@2x.png"; sourceTree = "<group>"; };
 		96F5C06C15E7CBED007121C6 /* UINavigationController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = UINavigationController.style; path = Resources/UINavigationController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		96F5C13D15E82968007121C6 /* background_nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background_nav.png; path = Resources/background_nav.png; sourceTree = "<group>"; };
 		96F5C13E15E82968007121C6 /* background_nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background_nav@2x.png"; path = "Resources/background_nav@2x.png"; sourceTree = "<group>"; };
@@ -207,6 +211,8 @@
 				960F34F415E3E5150002DF6F /* Appearance.style */,
 				960F34F615E3E5150002DF6F /* ViewControllerForSettings.style */,
 				96F5C06C15E7CBED007121C6 /* UINavigationController.style */,
+				96EE050615EEBDCE00C0584B /* background_nav-480.png */,
+				96EE050715EEBDCE00C0584B /* background_nav-480@2x.png */,
 				96F5C13D15E82968007121C6 /* background_nav.png */,
 				96F5C13E15E82968007121C6 /* background_nav@2x.png */,
 				96F5C13F15E82968007121C6 /* btn-back-highlight.png */,
@@ -299,6 +305,8 @@
 				96F5C14E15E82969007121C6 /* uppernav_button-pressed@2x.png in Resources */,
 				96F5C14F15E82969007121C6 /* uppernav_button.png in Resources */,
 				96F5C15015E82969007121C6 /* uppernav_button@2x.png in Resources */,
+				96EE050815EEBDCE00C0584B /* background_nav-480.png in Resources */,
+				96EE050915EEBDCE00C0584B /* background_nav-480@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,7 +29,7 @@
                 "backgroundView" : {
                     "@inherits" : [ "$lightGradient" ],
                     "borderColor" : "lightGrayColor",
-                    "borderWidth" : 2,
+                    "borderWidth" : 1,
                     
                     "borderShadowColor" : "0 0 0 0.6",
                     "borderShadowRadius" : 6,

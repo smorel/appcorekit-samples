@@ -76,9 +76,7 @@
     },
     
     "$lightBackground" : {
-        "backgroundColor" : "0.945 0.945 0.945 1",
-		"embossTopColor" : "0.875 0.875 0.875 1",
-		"embossBottomColor" : "1 1 1 1"
+        "backgroundColor" : "0.945 0.945 0.945 1"
     },
     
     "$lightGrayGradient" : {
@@ -148,15 +146,23 @@
     "$tableview_cell_controller_base" : {
         "backgroundView" : {
             "@inherits" : [ "$lightBackground" ],
-            "cornerSize" : 10,
+            "cornerSize" : 6,
 
             "borderShadowColor" : "0 0 0 0.6",
             "borderShadowRadius" : 6,
-            "borderShadowOffset" : "0 0"
+            "borderShadowOffset" : "0 0",
+            "borderColor" : "0.545 0.545 0.545 1",
+            "borderWidth" : 1
         },
         "selectedBackgroundView" : {
             "@inherits" : [ "$blueGradient" ],
-            "cornerSize" : 6
+            "cornerSize" : 6,
+            
+            "borderColor" : "0.000 0.114 0.263 1",
+            "borderShadowColor" : "0.000 0.114 0.263 1",
+            "borderShadowRadius" : 10,
+            "borderShadowOffset" : "0 0",
+            "borderStyle" : "CKViewBorderStyleAll"
         },
         "textLabel" : {
             "@inherits" : [ "$darkGreyLabel", "$title", "$bold" ],

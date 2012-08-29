@@ -9,6 +9,7 @@
 
 + (CKFormTableViewController*)viewControllerForSettings:(UserSettings*)settings{
     CKFormTableViewController* form = [CKFormTableViewController controllerWithName:@"Settings"];
+    form.supportedInterfaceOrientations = CKInterfaceOrientationPortrait;
     
     //AppCoreKit provides a lot of helpers to create section or cell controller using runtime.
     //Those helpers choose the right table view cell controller implementation and automatically setup a 2 way connection betwwen the object's property in memory and the controls editing this property.

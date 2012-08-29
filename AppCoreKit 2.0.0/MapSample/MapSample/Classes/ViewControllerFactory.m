@@ -14,8 +14,8 @@
     //This could have been setuped in stylesheets
     form.style = UITableViewStylePlain;
     form.viewDidLoadBlock = ^(CKViewController* controller){
-        form.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        form.tableView.scrollEnabled = NO;
+        bform.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        bform.tableView.scrollEnabled = NO;
     };
     
     //Creates a cell controller displaying our model details

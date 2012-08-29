@@ -26,7 +26,7 @@
                 "backgroundView" : {
                     "@inherits" : [ "$lightGradient" ],
                     "borderColor" : "lightGrayColor",
-                    "borderWidth" : 2,
+                    "borderWidth" : 1,
                     "cornerSize" : 5,
                     
                     "borderShadowColor" : "0 0 0 0.6",
@@ -36,7 +36,8 @@
                 "selectedBackgroundView" : {
                     "@inherits" : [ "$blueGradient" ],
                     "borderColor" : "lightGrayColor",
-                    "borderWidth" : 2
+                    "cornerSize" : 5,
+                    "borderWidth" : 1
                 },
                 "textLabel" : {
                     "@inherits" : [ "$cell_title_font", "$transparent_background", "$text_light_shadow" ]
