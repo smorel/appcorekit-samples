@@ -13,6 +13,7 @@
 @property(nonatomic,copy) NSURL* imageUrl;
 @property(nonatomic,copy) NSString* name;
 @property(nonatomic,copy) NSString* message;
+@property(nonatomic,copy) NSString* identifier;
 @end
 
 @interface Timeline : CKObject

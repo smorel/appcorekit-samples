@@ -3,6 +3,7 @@
         "@class" : "Tweet",
         "imageUrl" : "user.profile_image_url",
         "name" : "user.name",
-        "message" : "text"
+        "message" : "text",
+        "identifier" : "id_str"
     }
 }

@@ -9,7 +9,7 @@
 #import "Document.h"
 
 @implementation Tweet
-@synthesize imageUrl,name,message;
+@synthesize imageUrl,name,message,identifier;
 @end
 
 @implementation Timeline

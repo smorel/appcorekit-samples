@@ -112,9 +112,10 @@
     
     //Manage the form state depending on the number of userObjects
     
+    __block CKFormTableViewController* bForm = form;
     [form beginBindingsContextByRemovingPreviousBindings];
     [settings.userObjects bind:@"count" executeBlockImmediatly:YES withBlock:^(id value) {
-        form.editableType = ([settings.userObjects count] > 0) ? CKTableCollectionViewControllerEditingTypeLeft : CKTableCollectionViewControllerEditingTypeNone;
+        bForm.editableType = ([settings.userObjects count] > 0) ? CKTableCollectionViewControllerEditingTypeLeft : CKTableCollectionViewControllerEditingTypeNone;
         if([[ settings.userObjects allObjects]indexOfObjectIdenticalTo: settings.userObject] == NSNotFound){
             settings.userObject = nil;
         }

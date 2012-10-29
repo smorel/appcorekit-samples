@@ -8,3 +8,6 @@
 
 
 "kTimelineTitle" = "Timeline Public";
+"kFeedSourceForTweetsAlertTitle" = "Twitter Authentification Failed";
+"kFeedSourceForTweetsAlertMessage" = "Please register a Twitter account in your settings";
+"kOK" = "Ok";
