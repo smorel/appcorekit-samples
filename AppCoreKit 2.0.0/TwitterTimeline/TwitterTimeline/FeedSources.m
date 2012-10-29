@@ -79,6 +79,8 @@
     CKFeedSource* feedSource = [CKFeedSource feedSource];
     
     feedSource.fetchBlock = ^(CKFeedSource* feedSource, NSRange range){
+        NSString* lastId = (range.location > 0) ? [[[[Timeline sharedInstance]tweets]objectAtIndex:range.location-1]identifier] : nil;
+        
         [self requestTwitterAccountWithCompletionBlock:^(ACAccount* account){
             if(!account){
                 [self performSelector:@selector(authentificationError) onThread:[NSThread mainThread] withObject:nil waitUntilDone:NO];
@@ -86,7 +88,10 @@
                 TWRequest *request = [[TWRequest alloc] initWithURL:[NSURL URLWithString:
                                                                      @"https://api.twitter.com/1.1/statuses/home_timeline.json"]
                                                          parameters:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                                     [NSString stringWithFormat:@"%d",range.length],@"count",
+                                                                     
+                                                                     //As max_id returns the previous one in the payload we ask for 1 more
+                                                                     [NSString stringWithFormat:@"%d",range.length + (lastId ? 1 : 0)],@"count",
+                                                                     lastId,@"max_id",
                                                                      nil]
                                                       requestMethod:TWRequestMethodGET];
                 request.account = account;
@@ -101,7 +106,12 @@
                          CKMappingContext* context = [CKMappingContext contextWithIdentifier:@"$Tweet"];
                          NSArray* tweets = [context objectsFromValue:dict error:&error];
                          
-                         [feedSource addItems:tweets];
+                         if([tweets count] > 1){
+                             //As max_id returns the previous one in the payload weremove the ist item from the returned list
+                             [feedSource addItems:[NSArray arrayWithArray:[tweets objectsAtIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(1, [tweets count] - 1)]]]];
+                         }else{
+                             [feedSource cancelFetch];
+                         }
                      }
                      else{
                          [feedSource cancelFetch];
