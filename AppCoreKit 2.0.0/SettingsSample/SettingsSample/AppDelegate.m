@@ -35,6 +35,8 @@
     [CKConfiguration initWithContentOfFileNames:@"AppCoreKit" type:CKConfigurationTypeRelease];
 #endif
     
+    [[CKConfiguration sharedInstance]setUsingARC:YES];
+    
    return self;
 }
 
