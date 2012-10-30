@@ -17,48 +17,50 @@
 @implementation CustomFeedSource
 
 - (BOOL)fetchRange:(NSRange)theRange{
-    [super fetchRange:theRange];
-    
-    //Loads the payload from the LocalApiResults.json file
-    NSString* filePath = [[[NSBundle mainBundle]URLForResource:@"LocalApiResults" withExtension:@"json"]path];
-    NSData* data = [NSData dataWithContentsOfFile:filePath];
-    
-    //Parse the json payload to get a dictionary
-    NSDictionary* dico = [NSObject objectFromJSONData:data];
-    CKAssert([[dico objectForKey:@"results"]count] > 0,@"Invalid data format!");
-    
-    //Gets the requested range objects from the dictionary
-    NSArray* results = [dico objectForKey:@"results"];
-    NSInteger length = MIN([results count] - theRange.location,theRange.length);
-    if(length <= 0){
-        self.hasMore = NO;
-        return NO;
+    if([super fetchRange:theRange]){
+        
+        //Loads the payload from the LocalApiResults.json file
+        NSString* filePath = [[[NSBundle mainBundle]URLForResource:@"LocalApiResults" withExtension:@"json"]path];
+        NSData* data = [NSData dataWithContentsOfFile:filePath];
+        
+        //Parse the json payload to get a dictionary
+        NSDictionary* dico = [NSObject objectFromJSONData:data];
+        CKAssert([[dico objectForKey:@"results"]count] > 0,@"Invalid data format!");
+        
+        //Gets the requested range objects from the dictionary
+        NSArray* results = [dico objectForKey:@"results"];
+        NSInteger length = MIN([results count] - theRange.location,theRange.length);
+        if(length <= 0){
+            self.hasMore = NO;
+            return NO;
+        }
+        
+        NSArray* items = [results objectsAtIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(theRange.location,(NSUInteger)length)]];
+        
+        //Transform the array of dictionaries to Model objects using the '$Model' mapping defined in Api.mapping.
+        CKMappingContext* context =[CKMappingContext contextWithIdentifier:@"$Model"];
+        
+        NSError* error = nil;
+        NSArray* transformedItem = [context objectsFromValue:items error:&error];
+        
+        //Asynchronously gets the geo localization from the address and notify the feedsource delegate (in this case, our collection) that we have new objects to insert.
+        __block NSInteger numberOfReceivedLocalization = 0;
+        __block CustomFeedSource* bself = self;
+        for(Model* model in transformedItem){
+            [FeedSourceFactory reverseGeolocalizationUsingAddress:model.address completionBlock:^(CLLocationCoordinate2D coordinates){
+                model.longitude = coordinates.longitude;
+                model.latitude = coordinates.latitude;
+                
+                numberOfReceivedLocalization++;
+                if(numberOfReceivedLocalization >= [transformedItem count]){
+                    [bself addItems:transformedItem];
+                }
+            }];
+        }
+        
+        return YES;
     }
-    
-    NSArray* items = [results objectsAtIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(theRange.location,(NSUInteger)length)]];
-    
-    //Transform the array of dictionaries to Model objects using the '$Model' mapping defined in Api.mapping.
-    CKMappingContext* context =[CKMappingContext contextWithIdentifier:@"$Model"];
-    
-    NSError* error = nil;
-    NSArray* transformedItem = [context objectsFromValue:items error:&error];
-    
-    //Asynchronously gets the geo localization from the address and notify the feedsource delegate (in this case, our collection) that we have new objects to insert.
-    __block NSInteger numberOfReceivedLocalization = 0;
-    __block CustomFeedSource* bself = self;
-    for(Model* model in transformedItem){
-        [FeedSourceFactory reverseGeolocalizationUsingAddress:model.address completionBlock:^(CLLocationCoordinate2D coordinates){
-            model.longitude = coordinates.longitude;
-            model.latitude = coordinates.latitude;
-            
-            numberOfReceivedLocalization++;
-            if(numberOfReceivedLocalization >= [transformedItem count]){
-                [bself addItems:transformedItem];
-            }
-        }];
-    }
-    
-    return YES;
+    return NO;
 }
 
 @end
