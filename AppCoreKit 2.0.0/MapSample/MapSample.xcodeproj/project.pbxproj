@@ -77,8 +77,8 @@
 		960F349D15E3C86F0002DF6F /* pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pin@2x.png"; path = "Resources/pin@2x.png"; sourceTree = "<group>"; };
 		960F34A015E3CF100002DF6F /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = placeholder.png; path = Resources/placeholder.png; sourceTree = "<group>"; };
 		960F34A115E3CF100002DF6F /* placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "placeholder@2x.png"; path = "Resources/placeholder@2x.png"; sourceTree = "<group>"; };
-		9696E5F215E3EB0700CD7C34 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = AppCoreKit/2.0.0/AppCoreKit.framework; sourceTree = CloudKitFrameworks; };
-		9696E5F415E3EB0F00CD7C34 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = VendorsKit/1.0.0/VendorsKit.framework; sourceTree = CloudKitFrameworks; };
+		9696E5F215E3EB0700CD7C34 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = AppCoreKit/Versions/2.0.0/AppCoreKit.framework; sourceTree = CloudKitFrameworks; };
+		9696E5F415E3EB0F00CD7C34 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = VendorsKit/Versions/1.0.0/VendorsKit.framework; sourceTree = CloudKitFrameworks; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

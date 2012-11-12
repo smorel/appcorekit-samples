@@ -79,8 +79,8 @@
 		9691A53315824FB000E4E6E8 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		9691A5371582531700E4E6E8 /* default_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_avatar.png; sourceTree = "<group>"; };
 		96951A3015E69AE800408239 /* AppCoreKit.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppCoreKit.conf; sourceTree = "<group>"; };
-		9696E5F715E3EB5500CD7C34 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = VendorsKit/1.0.0/VendorsKit.framework; sourceTree = CloudKitFrameworks; };
-		9696E5F915E3EB6100CD7C34 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = AppCoreKit/2.0.0/AppCoreKit.framework; sourceTree = CloudKitFrameworks; };
+		9696E5F715E3EB5500CD7C34 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = VendorsKit/Versions/1.0.0/VendorsKit.framework; sourceTree = CloudKitFrameworks; };
+		9696E5F915E3EB6100CD7C34 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = AppCoreKit/Versions/2.0.0/AppCoreKit.framework; sourceTree = CloudKitFrameworks; };
 		96F5C12415E82931007121C6 /* background_nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background_nav@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

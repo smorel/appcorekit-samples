@@ -56,8 +56,8 @@
 		9696E66A15E3F01800CD7C34 /* ViewControllerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewControllerFactory.h; path = Classes/ViewControllerFactory.h; sourceTree = "<group>"; };
 		9696E67B15E3F01900CD7C34 /* Localization.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localization.strings; path = Resources/Localization.strings; sourceTree = "<group>"; };
 		9696E67D15E3F01900CD7C34 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
-		9696E68615E40E5800CD7C34 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = AppCoreKit/2.0.0/AppCoreKit.framework; sourceTree = CloudKitFrameworks; };
-		9696E68815E40E5F00CD7C34 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = VendorsKit/1.0.0/VendorsKit.framework; sourceTree = CloudKitFrameworks; };
+		9696E68615E40E5800CD7C34 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = AppCoreKit/Versions/2.0.0/AppCoreKit.framework; sourceTree = CloudKitFrameworks; };
+		9696E68815E40E5F00CD7C34 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = VendorsKit/Versions/1.0.0/VendorsKit.framework; sourceTree = CloudKitFrameworks; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

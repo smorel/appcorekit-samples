@@ -106,9 +106,9 @@
 		9668B90115D5954D00C57715 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9668B90215D5954D00C57715 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9668B91115D5954E00C57715 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
-		9668B91A15D5958300C57715 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = AppCoreKit/2.1.x/AppCoreKit.framework; sourceTree = CloudKitFrameworks; };
+		9668B91A15D5958300C57715 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = AppCoreKit/Versions/2.0.0/AppCoreKit.framework; sourceTree = CloudKitFrameworks; };
 		9668B92215D59A5B00C57715 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
-		9668B92415D59ACB00C57715 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = VendorsKit/1.0.0/VendorsKit.framework; sourceTree = CloudKitFrameworks; };
+		9668B92415D59ACB00C57715 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = VendorsKit/Versions/1.0.0/VendorsKit.framework; sourceTree = CloudKitFrameworks; };
 		9668B92D15D9B05500C57715 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		9668B92E15D9B05500C57715 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		96691E1B15DDA12900D73510 /* button-dark-blue-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-dark-blue-highlight.png"; sourceTree = "<group>"; };
