@@ -323,9 +323,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"${CloudKitFrameworks}/VendorsKit/1.0.0/",
-					"${CloudKitFrameworks}/AppCoreKit/2.0.0/",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"${CloudKitFrameworks}/VendorsKit/",
+					"${CloudKitFrameworks}/AppCoreKit/",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BindingsSample/BindingsSample-Prefix.pch";
@@ -350,9 +349,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"${CloudKitFrameworks}/VendorsKit/1.0.0/",
-					"${CloudKitFrameworks}/AppCoreKit/2.0.0/",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"${CloudKitFrameworks}/VendorsKit/",
+					"${CloudKitFrameworks}/AppCoreKit/",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BindingsSample/BindingsSample-Prefix.pch";

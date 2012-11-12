@@ -409,8 +409,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"${CloudKitFrameworks}/VendorsKit/1.0.0/",
-					"${CloudKitFrameworks}/AppCoreKit/2.0.0/",
+					"${CloudKitFrameworks}/VendorsKit/",
+					"${CloudKitFrameworks}/AppCoreKit/",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "SettingsSample/SettingsSample-Info.plist";
@@ -434,8 +434,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"${CloudKitFrameworks}/VendorsKit/1.0.0/",
-					"${CloudKitFrameworks}/AppCoreKit/2.0.0/",
+					"${CloudKitFrameworks}/VendorsKit/",
+					"${CloudKitFrameworks}/AppCoreKit/",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "SettingsSample/SettingsSample-Info.plist";

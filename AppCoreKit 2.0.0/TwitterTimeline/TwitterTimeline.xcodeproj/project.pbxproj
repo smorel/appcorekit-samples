@@ -362,8 +362,8 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"${CloudKitFrameworks}/AppCoreKit/2.0.0/",
-					"${CloudKitFrameworks}/VendorsKit/1.0.0/",
+					"${CloudKitFrameworks}/VendorsKit/",
+					"${CloudKitFrameworks}/AppCoreKit/",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TwitterTimeline/TwitterTimeline-Prefix.pch";
@@ -389,8 +389,8 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"${CloudKitFrameworks}/AppCoreKit/2.0.0/",
-					"${CloudKitFrameworks}/VendorsKit/1.0.0/",
+					"${CloudKitFrameworks}/VendorsKit/",
+					"${CloudKitFrameworks}/AppCoreKit/",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TwitterTimeline/TwitterTimeline-Prefix.pch";
