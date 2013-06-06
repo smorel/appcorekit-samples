@@ -1,15 +1,14 @@
 //
-//  FeedSourceFactory.h
+//  CKSampleMapDataSources.h
 //  Copyright (c) 2012 WhereCloud Inc. All rights reserved.
 //
 
 #import <AppCoreKit/AppCoreKit.h>
-#import "Document.h"
+#import "CKSampleMapModel.h"
 
-@interface FeedSourceFactory : NSObject
+@interface CKSampleMapDataSources : NSObject
 
 + (void)reverseGeolocalizationUsingAddress:(NSString*)address completionBlock:(void(^)(CLLocationCoordinate2D coordinates))completionBlock;
-
 + (CKFeedSource*)feedSourceForModels;
 
 @end

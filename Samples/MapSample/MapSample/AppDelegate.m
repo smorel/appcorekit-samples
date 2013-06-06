@@ -6,18 +6,8 @@
 //
 
 #import "AppDelegate.h"
-#import "FlowManager.h"
 #import <AppCoreKit/AppCoreKit.h>
-
-
-@implementation CKLicense(YourAppName)
-
-+ (NSString*)licenseKey{
-    //Return your license key here.
-    return @"__APPCOREKIT_LICENSE_KEY__";
-}
-
-@end
+#import "CKSampleMapViewController.h"
 
 
 @implementation AppDelegate
@@ -26,7 +16,7 @@
 
 - (id)init{
    self = [super init];
-   [CKMappingContext loadContentOfFileNamed:@"Api"];
+   [CKMappingContext loadContentOfFileNamed:@"CKSampleMapDataSources"];
     
 #ifdef DEBUG
     [CKConfiguration initWithContentOfFileNames:@"AppCoreKit" type:CKConfigurationTypeDebug];
@@ -41,9 +31,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    UINavigationController* navigationController = [UINavigationController navigationControllerWithRootViewController:[CKSampleMapViewController controller]];
+    
     self.window = [UIWindow  viewWithFrame:[[UIScreen mainScreen] bounds]];
-    [[FlowManager sharedInstance] startInWindow:self.window];
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

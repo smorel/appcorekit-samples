@@ -4,8 +4,8 @@
         "@transformSelector" : "transformStringByTrimmingValue:error:"
     },
     
-    "$Model" : {
-        "@class" : "Model",
+    "$CKSampleMapModel" : {
+        "@class" : "CKSampleMapModel",
         "name" : {
             "@keyPath" : "name",
             "@inherits" : [ "$trimmed_string" ]

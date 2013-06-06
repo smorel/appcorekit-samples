@@ -1,9 +1,9 @@
 //
-//  FeedSourceFactory.m
+//  CKSampleMapDataSources.m
 //  Copyright (c) 2012 WhereCloud Inc. All rights reserved.
 //
 
-#import "FeedSourceFactory.h"
+#import "CKSampleMapDataSources.h"
 
 
 //----------------------- CustomFeedSource
@@ -38,7 +38,7 @@
         NSArray* items = [results objectsAtIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(theRange.location,(NSUInteger)length)]];
         
         //Transform the array of dictionaries to Model objects using the '$Model' mapping defined in Api.mapping.
-        CKMappingContext* context =[CKMappingContext contextWithIdentifier:@"$Model"];
+        CKMappingContext* context =[CKMappingContext contextWithIdentifier:@"$CKSampleMapModel"];
         
         NSError* error = nil;
         NSArray* transformedItem = [context objectsFromValue:items error:&error];
@@ -46,8 +46,8 @@
         //Asynchronously gets the geo localization from the address and notify the feedsource delegate (in this case, our collection) that we have new objects to insert.
         __block NSInteger numberOfReceivedLocalization = 0;
         __block CustomFeedSource* bself = self;
-        for(Model* model in transformedItem){
-            [FeedSourceFactory reverseGeolocalizationUsingAddress:model.address completionBlock:^(CLLocationCoordinate2D coordinates){
+        for(CKSampleMapModel* model in transformedItem){
+            [CKSampleMapDataSources reverseGeolocalizationUsingAddress:model.address completionBlock:^(CLLocationCoordinate2D coordinates){
                 model.longitude = coordinates.longitude;
                 model.latitude = coordinates.latitude;
                 
@@ -68,10 +68,10 @@
 
 
 
-//----------------------- FeedSourceFactory
+//----------------------- CKSampleMapDataSources
 
 
-@implementation FeedSourceFactory
+@implementation CKSampleMapDataSources
 
 //Retrieves the CLLocationCoordinate2D from an address using the google API.
 + (void)reverseGeolocalizationUsingAddress:(NSString*)address completionBlock:(void(^)(CLLocationCoordinate2D coordinates))completionBlock{
