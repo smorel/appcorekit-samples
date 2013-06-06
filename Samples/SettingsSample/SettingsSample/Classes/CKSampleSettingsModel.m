@@ -1,12 +1,16 @@
 //
-//  Document.m
-//  Copyright (c) 2012 WhereCloud Inc. All rights reserved.
+//  CKSampleSettingsModel.m
+//  SettingsSample
+//
+//  Created by Sebastien Morel on 13-06-06.
+//  Copyright (c) 2013 WhereCloud Inc. All rights reserved.
 //
 
-#import "Document.h"
+#import "CKSampleSettingsModel.h"
 
-@implementation UserSettings
-@synthesize name, forname, phoneNumber, birthDate, numberOfChildren,title,phoneNumberConfirmation;
+
+
+@implementation CKSampleSettingsModel
 
 //ExtendedAttributes is a non formal dynamic protocol based on property name.
 //The AppCoreKit framework uses runtime to generate selector to access extended attributes on specific properties when needed.
@@ -29,7 +33,7 @@
     attributes.validationPredicate = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
         return ([evaluatedObject intValue] >= CKGenderMister) && ([evaluatedObject intValue] <= CKGenderMisses);
     }];
-
+    
 }
 
 - (void)phoneNumberExtendedAttributes:(CKPropertyExtendedAttributes*)attributes{
@@ -47,7 +51,7 @@
         return [NSString formatAsPhoneNumberUsingTextField:textInputView range:range replacementString:replacementString];
     };
     
-    __block UserSettings* bself = self;
+    __block CKSampleSettingsModel* bself = self;
     attributes.validationPredicate = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
         return evaluatedObject && [evaluatedObject isEqualToString:[bself phoneNumber]];
     }];
@@ -76,5 +80,6 @@
 - (void)numberOfChildrenExtendedAttributes:(CKPropertyExtendedAttributes*)attributes{
     attributes.placeholderValue = [NSNumber numberWithInt:0];
 }
+
 
 @end

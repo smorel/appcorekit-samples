@@ -1,6 +1,9 @@
 //
-//  Document.h
-//  Copyright (c) 2012 WhereCloud Inc. All rights reserved.
+//  CKSampleSettingsModel.h
+//  SettingsSample
+//
+//  Created by Sebastien Morel on 13-06-06.
+//  Copyright (c) 2013 WhereCloud Inc. All rights reserved.
 //
 
 #import <AppCoreKit/AppCoreKit.h>
@@ -14,7 +17,8 @@ typedef enum CKUserTitle{
     CKGenderMisses = 3
 }CKUserTitle;
 
-@interface UserSettings : CKUserDefaults
+@interface CKSampleSettingsModel : CKUserDefaults
+
 @property(nonatomic,copy)   NSString* name;
 @property(nonatomic,copy)   NSString* forname;
 @property(nonatomic,copy)   NSString* phoneNumber;
@@ -22,4 +26,5 @@ typedef enum CKUserTitle{
 @property(nonatomic,copy)   NSDate*   birthDate;
 @property(nonatomic,assign) NSInteger numberOfChildren;
 @property(nonatomic,assign) CKUserTitle title;
+
 @end

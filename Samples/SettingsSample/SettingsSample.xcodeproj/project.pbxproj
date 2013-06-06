@@ -24,15 +24,15 @@
 		960F33FE15E2D0890002DF6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 960F33FD15E2D0890002DF6F /* main.m */; };
 		960F340215E2D0890002DF6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 960F340115E2D0890002DF6F /* AppDelegate.m */; };
 		960F340415E2D0890002DF6F /* AppCoreKit.conf in Resources */ = {isa = PBXBuildFile; fileRef = 960F340315E2D0890002DF6F /* AppCoreKit.conf */; };
-		960F340B15E2D0890002DF6F /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 960F340A15E2D0890002DF6F /* Document.m */; };
-		960F341015E2D0890002DF6F /* ViewControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 960F340F15E2D0890002DF6F /* ViewControllerFactory.m */; };
 		960F341415E2D0890002DF6F /* Stylesheet.style in Resources */ = {isa = PBXBuildFile; fileRef = 960F341315E2D0890002DF6F /* Stylesheet.style */; };
 		960F341615E2D0890002DF6F /* Appearance.style in Resources */ = {isa = PBXBuildFile; fileRef = 960F341515E2D0890002DF6F /* Appearance.style */; };
-		960F341815E2D0890002DF6F /* ViewControllerForSettings.style in Resources */ = {isa = PBXBuildFile; fileRef = 960F341715E2D0890002DF6F /* ViewControllerForSettings.style */; };
+		960F341815E2D0890002DF6F /* ViewControllers.style in Resources */ = {isa = PBXBuildFile; fileRef = 960F341715E2D0890002DF6F /* ViewControllers.style */; };
 		960F342315E2D0890002DF6F /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 960F342215E2D0890002DF6F /* Localization.strings */; };
 		963BF4851760DE99003E3D94 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF4841760DE99003E3D94 /* AdSupport.framework */; };
 		963BF4941760DF0C003E3D94 /* AppCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF4921760DF0C003E3D94 /* AppCoreKit.framework */; };
 		963BF4951760DF0C003E3D94 /* VendorsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF4931760DF0C003E3D94 /* VendorsKit.framework */; };
+		96DC22C8176142850058BA15 /* CKSampleSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22C5176142840058BA15 /* CKSampleSettingsModel.m */; };
+		96DC22C9176142850058BA15 /* CKSampleSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22C7176142850058BA15 /* CKSampleSettingsViewController.m */; };
 		96EE050D15EEBDE700C0584B /* background_nav-480.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE050B15EEBDE700C0584B /* background_nav-480.png */; };
 		96EE050E15EEBDE700C0584B /* background_nav-480@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE050C15EEBDE700C0584B /* background_nav-480@2x.png */; };
 		96F5C08815E7D45F007121C6 /* UINavigationController.style in Resources */ = {isa = PBXBuildFile; fileRef = 96F5C08715E7D45F007121C6 /* UINavigationController.style */; };
@@ -70,18 +70,18 @@
 		960F340015E2D0890002DF6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		960F340115E2D0890002DF6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		960F340315E2D0890002DF6F /* AppCoreKit.conf */ = {isa = PBXFileReference; lastKnownFileType = text; name = AppCoreKit.conf; path = Resources/AppCoreKit.conf; sourceTree = "<group>"; };
-		960F340915E2D0890002DF6F /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Document.h; path = Classes/Document.h; sourceTree = "<group>"; };
-		960F340A15E2D0890002DF6F /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Document.m; path = Classes/Document.m; sourceTree = "<group>"; };
-		960F340F15E2D0890002DF6F /* ViewControllerFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewControllerFactory.m; path = Classes/ViewControllerFactory.m; sourceTree = "<group>"; };
-		960F341115E2D0890002DF6F /* ViewControllerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewControllerFactory.h; path = Classes/ViewControllerFactory.h; sourceTree = "<group>"; };
 		960F341315E2D0890002DF6F /* Stylesheet.style */ = {isa = PBXFileReference; lastKnownFileType = text; name = Stylesheet.style; path = Resources/Stylesheet.style; sourceTree = "<group>"; };
 		960F341515E2D0890002DF6F /* Appearance.style */ = {isa = PBXFileReference; lastKnownFileType = text; name = Appearance.style; path = Resources/Appearance.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
-		960F341715E2D0890002DF6F /* ViewControllerForSettings.style */ = {isa = PBXFileReference; lastKnownFileType = text; name = ViewControllerForSettings.style; path = Resources/ViewControllerForSettings.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		960F341715E2D0890002DF6F /* ViewControllers.style */ = {isa = PBXFileReference; lastKnownFileType = text; name = ViewControllers.style; path = Resources/ViewControllers.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		960F342215E2D0890002DF6F /* Localization.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localization.strings; path = Resources/Localization.strings; sourceTree = "<group>"; };
 		960F342415E2D0890002DF6F /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		963BF4841760DE99003E3D94 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		963BF4921760DF0C003E3D94 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = ../../Frameworks/AppCoreKit.framework; sourceTree = "<group>"; };
 		963BF4931760DF0C003E3D94 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = ../../Frameworks/VendorsKit.framework; sourceTree = "<group>"; };
+		96DC22C4176142840058BA15 /* CKSampleSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleSettingsModel.h; path = Classes/CKSampleSettingsModel.h; sourceTree = "<group>"; };
+		96DC22C5176142840058BA15 /* CKSampleSettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleSettingsModel.m; path = Classes/CKSampleSettingsModel.m; sourceTree = "<group>"; };
+		96DC22C6176142840058BA15 /* CKSampleSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleSettingsViewController.h; path = Classes/CKSampleSettingsViewController.h; sourceTree = "<group>"; };
+		96DC22C7176142850058BA15 /* CKSampleSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleSettingsViewController.m; path = Classes/CKSampleSettingsViewController.m; sourceTree = "<group>"; };
 		96EE050B15EEBDE700C0584B /* background_nav-480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background_nav-480.png"; path = "Resources/background_nav-480.png"; sourceTree = "<group>"; };
 		96EE050C15EEBDE700C0584B /* background_nav-480@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background_nav-480@2x.png"; path = "Resources/background_nav-480@2x.png"; sourceTree = "<group>"; };
 		96F5C08715E7D45F007121C6 /* UINavigationController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = UINavigationController.style; path = Resources/UINavigationController.style; sourceTree = "<group>"; };
@@ -170,9 +170,14 @@
 				960F340315E2D0890002DF6F /* AppCoreKit.conf */,
 				960F340015E2D0890002DF6F /* AppDelegate.h */,
 				960F340115E2D0890002DF6F /* AppDelegate.m */,
-				960F340815E2D0890002DF6F /* Document */,
-				960F340E15E2D0890002DF6F /* ViewControllers */,
-				960F341215E2D0890002DF6F /* Stylesheets */,
+				96DC22C4176142840058BA15 /* CKSampleSettingsModel.h */,
+				96DC22C5176142840058BA15 /* CKSampleSettingsModel.m */,
+				960F341315E2D0890002DF6F /* Stylesheet.style */,
+				960F341515E2D0890002DF6F /* Appearance.style */,
+				960F341715E2D0890002DF6F /* ViewControllers.style */,
+				96F5C08715E7D45F007121C6 /* UINavigationController.style */,
+				96DC22C6176142840058BA15 /* CKSampleSettingsViewController.h */,
+				96DC22C7176142850058BA15 /* CKSampleSettingsViewController.m */,
 				960F342115E2D0890002DF6F /* Resources */,
 				960F33F815E2D0890002DF6F /* Supporting Files */,
 			);
@@ -190,31 +195,9 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		960F340815E2D0890002DF6F /* Document */ = {
+		960F342115E2D0890002DF6F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				960F340915E2D0890002DF6F /* Document.h */,
-				960F340A15E2D0890002DF6F /* Document.m */,
-			);
-			name = Document;
-			sourceTree = "<group>";
-		};
-		960F340E15E2D0890002DF6F /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				960F340F15E2D0890002DF6F /* ViewControllerFactory.m */,
-				960F341115E2D0890002DF6F /* ViewControllerFactory.h */,
-			);
-			name = ViewControllers;
-			sourceTree = "<group>";
-		};
-		960F341215E2D0890002DF6F /* Stylesheets */ = {
-			isa = PBXGroup;
-			children = (
-				960F341315E2D0890002DF6F /* Stylesheet.style */,
-				960F341515E2D0890002DF6F /* Appearance.style */,
-				960F341715E2D0890002DF6F /* ViewControllerForSettings.style */,
-				96F5C08715E7D45F007121C6 /* UINavigationController.style */,
 				96EE050B15EEBDE700C0584B /* background_nav-480.png */,
 				96EE050C15EEBDE700C0584B /* background_nav-480@2x.png */,
 				96F5C12815E82950007121C6 /* background_nav.png */,
@@ -227,13 +210,6 @@
 				96F5C12F15E82950007121C6 /* uppernav_button-pressed@2x.png */,
 				96F5C13015E82950007121C6 /* uppernav_button.png */,
 				96F5C13115E82950007121C6 /* uppernav_button@2x.png */,
-			);
-			name = Stylesheets;
-			sourceTree = "<group>";
-		};
-		960F342115E2D0890002DF6F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
 				960F342215E2D0890002DF6F /* Localization.strings */,
 				960F342415E2D0890002DF6F /* Entitlements.plist */,
 			);
@@ -296,7 +272,7 @@
 				960F340415E2D0890002DF6F /* AppCoreKit.conf in Resources */,
 				960F341415E2D0890002DF6F /* Stylesheet.style in Resources */,
 				960F341615E2D0890002DF6F /* Appearance.style in Resources */,
-				960F341815E2D0890002DF6F /* ViewControllerForSettings.style in Resources */,
+				960F341815E2D0890002DF6F /* ViewControllers.style in Resources */,
 				960F342315E2D0890002DF6F /* Localization.strings in Resources */,
 				96F5C08815E7D45F007121C6 /* UINavigationController.style in Resources */,
 				96F5C13215E82950007121C6 /* background_nav.png in Resources */,
@@ -340,8 +316,8 @@
 			files = (
 				960F33FE15E2D0890002DF6F /* main.m in Sources */,
 				960F340215E2D0890002DF6F /* AppDelegate.m in Sources */,
-				960F340B15E2D0890002DF6F /* Document.m in Sources */,
-				960F341015E2D0890002DF6F /* ViewControllerFactory.m in Sources */,
+				96DC22C8176142850058BA15 /* CKSampleSettingsModel.m in Sources */,
+				96DC22C9176142850058BA15 /* CKSampleSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
