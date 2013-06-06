@@ -2,7 +2,7 @@
 # build script
 
 function echo_usage_and_exit() {
-echo "Usage: `basename $0` --system-developer-dir=<SYSTEM_DEVELOPER_DIR> --executable-name=<EXECUTABLE_NAME> --frameworks-dir=<FRAMEWORKS_DIR> --target-build-dir=<TARGET_BUILD_DIR> --project=<PROJECT> --project-dir=<PROJECT_DIR>"
+echo "Usage: `basename $0` --system-developer-dir <SYSTEM_DEVELOPER_DIR> --executable-name <EXECUTABLE_NAME> --frameworks-dir <FRAMEWORKS_DIR> --target-build-dir <TARGET_BUILD_DIR> --project <PROJECT> --project-dir <PROJECT_DIR>"
 exit 1
 }
 
@@ -13,16 +13,25 @@ fi
 
 
 while [ $# -gt 0 ]; do
-case $1 in
---system-developer-dir) SYSTEM_DEVELOPER_DIR=$2;;
---executable-name) EXECUTABLE_NAME=$2;;
---frameworks-dir) FRAMEWORKS_DIR=$2;;
---target-build-dir) TARGET_BUILD_DIR=$2;;
---project) PROJECT=$2;;
---project-dir) PROJECT_DIR=$2;;
---help) echo_usage_and_exit;;
-esac
-shift
+
+   PARAM=$1
+   VALUE=$2
+   echo "PARAM : \"$PARAM\""
+   echo " VALUE : \"$VALUE\""
+
+   case $PARAM in
+      --system-developer-dir) SYSTEM_DEVELOPER_DIR=$VALUE;;
+      --executable-name)      EXECUTABLE_NAME=$VALUE;;
+      --frameworks-dir)       FRAMEWORKS_DIR=$VALUE;;
+      --target-build-dir)     TARGET_BUILD_DIR=$VALUE;;
+      --project)              PROJECT=$VALUE;;
+      --project-dir)          PROJECT_DIR=$VALUE;;
+      --help)                 echo_usage_and_exit;;
+   esac
+
+   shift
+   shift
+
 done
 
 echo "CURRENT PATH : $PWD"
@@ -49,7 +58,7 @@ FRAMEWORKS=$(find . -name "*.framework")
 
 cd "$PROJECT_DIR/"
 PROJ_FILE=$(find . -path "*${PROJECT}.xcodeproj/project.pbxproj")
-echo $PROJ_FILE
+echo "PROJECT_FILE: $PROJ_FILE"
 
 for f in ${FRAMEWORKS}
 do

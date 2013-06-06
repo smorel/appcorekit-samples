@@ -401,7 +401,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh \"${SRCROOT}/../../Frameworks/copy_framework_resources.sh\" --system-developer-dir=\"$SYSTEM_DEVELOPER_DIR\" --executable-name=\"$EXECUTABLE_NAME\" --frameworks-dir=\"${SRCROOT}/../../Frameworks\" --target-build-dir=\"$TARGET_BUILD_DIR\" --project=\"$PROJECT\" --project-dir=\"$PROJECT_DIR\"";
+			shellScript = "sh \"$PROJECT_DIR/../../Frameworks/copy_framework_resources.sh\" --system-developer-dir \"$SYSTEM_DEVELOPER_DIR\" --executable-name \"$EXECUTABLE_NAME\" --frameworks-dir \"$PROJECT_DIR/../../Frameworks/\" --target-build-dir \"$TARGET_BUILD_DIR\" --project \"$PROJECT\" --project-dir \"$PROJECT_DIR\"";
 		};
 		9668B8F415D5954D00C57715 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
