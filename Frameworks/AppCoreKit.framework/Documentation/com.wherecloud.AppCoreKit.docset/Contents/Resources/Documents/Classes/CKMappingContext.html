@@ -1,0 +1,1451 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CKMappingContext Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AppCoreKit </a></h1>
+				<a id="developerHome" href="../index.html">Wherecloud</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CKMappingContext Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/identifier">&nbsp;&nbsp;&nbsp;&nbsp;identifier</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/contextWithIdentifier:">&nbsp;&nbsp;&nbsp;&nbsp;+ contextWithIdentifier:</option>
+	
+	<option value="//api/name/loadContentOfFileNamed:">&nbsp;&nbsp;&nbsp;&nbsp;+ loadContentOfFileNamed:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/mapValue:toObject:error:">&nbsp;&nbsp;&nbsp;&nbsp;- mapValue:toObject:error:</option>
+	
+	<option value="//api/name/mapValue:toObject:reversed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- mapValue:toObject:reversed:error:</option>
+	
+	<option value="//api/name/objectFromValue:error:">&nbsp;&nbsp;&nbsp;&nbsp;- objectFromValue:error:</option>
+	
+	<option value="//api/name/objectFromValue:ofClass:error:">&nbsp;&nbsp;&nbsp;&nbsp;- objectFromValue:ofClass:error:</option>
+	
+	<option value="//api/name/objectFromValue:ofClass:reversed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- objectFromValue:ofClass:reversed:error:</option>
+	
+	<option value="//api/name/objectFromValue:reversed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- objectFromValue:reversed:error:</option>
+	
+	<option value="//api/name/objectsFromValue:error:">&nbsp;&nbsp;&nbsp;&nbsp;- objectsFromValue:error:</option>
+	
+	<option value="//api/name/objectsFromValue:ofClass:error:">&nbsp;&nbsp;&nbsp;&nbsp;- objectsFromValue:ofClass:error:</option>
+	
+	<option value="//api/name/objectsFromValue:ofClass:reversed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- objectsFromValue:ofClass:reversed:error:</option>
+	
+	<option value="//api/name/objectsFromValue:reversed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- objectsFromValue:reversed:error:</option>
+	
+	<option value="//api/name/setKeyPath:fromKeyPath:">&nbsp;&nbsp;&nbsp;&nbsp;- setKeyPath:fromKeyPath:</option>
+	
+	<option value="//api/name/setKeyPath:fromKeyPath:defaultValue:">&nbsp;&nbsp;&nbsp;&nbsp;- setKeyPath:fromKeyPath:defaultValue:</option>
+	
+	<option value="//api/name/setKeyPath:fromKeyPath:defaultValue:transformBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- setKeyPath:fromKeyPath:defaultValue:transformBlock:</option>
+	
+	<option value="//api/name/setKeyPath:fromKeyPath:defaultValue:transformTarget:action:">&nbsp;&nbsp;&nbsp;&nbsp;- setKeyPath:fromKeyPath:defaultValue:transformTarget:action:</option>
+	
+	<option value="//api/name/setKeyPath:fromKeyPath:objectClass:withMappingsContextIdentifier:">&nbsp;&nbsp;&nbsp;&nbsp;- setKeyPath:fromKeyPath:objectClass:withMappingsContextIdentifier:</option>
+	
+	<option value="//api/name/setKeyPath:fromKeyPath:optional:">&nbsp;&nbsp;&nbsp;&nbsp;- setKeyPath:fromKeyPath:optional:</option>
+	
+	<option value="//api/name/setKeyPath:fromKeyPath:optional:objectClass:withMappingsContextIdentifier:">&nbsp;&nbsp;&nbsp;&nbsp;- setKeyPath:fromKeyPath:optional:objectClass:withMappingsContextIdentifier:</option>
+	
+	<option value="//api/name/setKeyPath:fromKeyPath:optional:transformBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- setKeyPath:fromKeyPath:optional:transformBlock:</option>
+	
+	<option value="//api/name/setKeyPath:fromKeyPath:optional:transformTarget:action:">&nbsp;&nbsp;&nbsp;&nbsp;- setKeyPath:fromKeyPath:optional:transformTarget:action:</option>
+	
+	<option value="//api/name/setKeyPath:fromKeyPath:optional:withMappingsContextIdentifier:">&nbsp;&nbsp;&nbsp;&nbsp;- setKeyPath:fromKeyPath:optional:withMappingsContextIdentifier:</option>
+	
+	<option value="//api/name/setKeyPath:fromKeyPath:transformBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- setKeyPath:fromKeyPath:transformBlock:</option>
+	
+	<option value="//api/name/setKeyPath:fromKeyPath:transformTarget:action:">&nbsp;&nbsp;&nbsp;&nbsp;- setKeyPath:fromKeyPath:transformTarget:action:</option>
+	
+	<option value="//api/name/setKeyPath:fromKeyPath:withMappingsContextIdentifier:">&nbsp;&nbsp;&nbsp;&nbsp;- setKeyPath:fromKeyPath:withMappingsContextIdentifier:</option>
+	
+	<option value="//api/name/setObjectClass:">&nbsp;&nbsp;&nbsp;&nbsp;- setObjectClass:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Identifying the mapping context at runtime">Identifying the mapping context at runtime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing instance of CKMappingContext">Accessing instance of CKMappingContext</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Importing .mappings files content">Importing .mappings files content</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Applying Mapping from value">Applying Mapping from value</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Defining mapping context programmatically">Defining mapping context programmatically</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/identifier">identifier</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contextWithIdentifier:">contextWithIdentifier:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadContentOfFileNamed:">loadContentOfFileNamed:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapValue:toObject:error:">mapValue:toObject:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapValue:toObject:reversed:error:">mapValue:toObject:reversed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectFromValue:error:">objectFromValue:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectFromValue:ofClass:error:">objectFromValue:ofClass:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectFromValue:ofClass:reversed:error:">objectFromValue:ofClass:reversed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectFromValue:reversed:error:">objectFromValue:reversed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectsFromValue:error:">objectsFromValue:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectsFromValue:ofClass:error:">objectsFromValue:ofClass:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectsFromValue:ofClass:reversed:error:">objectsFromValue:ofClass:reversed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectsFromValue:reversed:error:">objectsFromValue:reversed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setKeyPath:fromKeyPath:">setKeyPath:fromKeyPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setKeyPath:fromKeyPath:defaultValue:">setKeyPath:fromKeyPath:defaultValue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setKeyPath:fromKeyPath:defaultValue:transformBlock:">setKeyPath:fromKeyPath:defaultValue:transformBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setKeyPath:fromKeyPath:defaultValue:transformTarget:action:">setKeyPath:fromKeyPath:defaultValue:transformTarget:action:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setKeyPath:fromKeyPath:objectClass:withMappingsContextIdentifier:">setKeyPath:fromKeyPath:objectClass:withMappingsContextIdentifier:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setKeyPath:fromKeyPath:optional:">setKeyPath:fromKeyPath:optional:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setKeyPath:fromKeyPath:optional:objectClass:withMappingsContextIdentifier:">setKeyPath:fromKeyPath:optional:objectClass:withMappingsContextIdentifier:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setKeyPath:fromKeyPath:optional:transformBlock:">setKeyPath:fromKeyPath:optional:transformBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setKeyPath:fromKeyPath:optional:transformTarget:action:">setKeyPath:fromKeyPath:optional:transformTarget:action:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setKeyPath:fromKeyPath:optional:withMappingsContextIdentifier:">setKeyPath:fromKeyPath:optional:withMappingsContextIdentifier:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setKeyPath:fromKeyPath:transformBlock:">setKeyPath:fromKeyPath:transformBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setKeyPath:fromKeyPath:transformTarget:action:">setKeyPath:fromKeyPath:transformTarget:action:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setKeyPath:fromKeyPath:withMappingsContextIdentifier:">setKeyPath:fromKeyPath:withMappingsContextIdentifier:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setObjectClass:">setObjectClass:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CKMappingContext Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CKMappingContext Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CKMappingContext.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Identifying the mapping context at runtime" name="task_Identifying the mapping context at runtime"></a>
+						<h3 class="subsubtitle task-title">Identifying the mapping context at runtime</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/identifier">&nbsp;&nbsp;identifier</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing instance of CKMappingContext" name="task_Accessing instance of CKMappingContext"></a>
+						<h3 class="subsubtitle task-title">Accessing instance of CKMappingContext</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contextWithIdentifier:">+&nbsp;contextWithIdentifier:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Importing .mappings files content" name="task_Importing .mappings files content"></a>
+						<h3 class="subsubtitle task-title">Importing .mappings files content</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadContentOfFileNamed:">+&nbsp;loadContentOfFileNamed:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Applying Mapping from value" name="task_Applying Mapping from value"></a>
+						<h3 class="subsubtitle task-title">Applying Mapping from value</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectsFromValue:ofClass:error:">&ndash;&nbsp;objectsFromValue:ofClass:error:</a></code>
+		<span class="tooltip"><p>value should be a collection (NSArray, <a href="../Classes/CKCollection.html">CKCollection</a>)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectsFromValue:ofClass:reversed:error:">&ndash;&nbsp;objectsFromValue:ofClass:reversed:error:</a></code>
+		<span class="tooltip"><p>value should be a collection (NSArray, <a href="../Classes/CKCollection.html">CKCollection</a>)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectFromValue:ofClass:error:">&ndash;&nbsp;objectFromValue:ofClass:error:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectFromValue:ofClass:reversed:error:">&ndash;&nbsp;objectFromValue:ofClass:reversed:error:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mapValue:toObject:error:">&ndash;&nbsp;mapValue:toObject:error:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mapValue:toObject:reversed:error:">&ndash;&nbsp;mapValue:toObject:reversed:error:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectFromValue:error:">&ndash;&nbsp;objectFromValue:error:</a></code>
+		<span class="tooltip"><p>Reserved for mappings definitions containing the object definition for the return object
+//if source is collection return a NSArray else return an instance defined by the objectClass of the mapping definition</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectFromValue:reversed:error:">&ndash;&nbsp;objectFromValue:reversed:error:</a></code>
+		<span class="tooltip"><p>Reserved for mappings definitions containing the object definition for the return object
+//if source is collection return a NSArray else return an instance defined by the objectClass of the mapping definition</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectsFromValue:error:">&ndash;&nbsp;objectsFromValue:error:</a></code>
+		<span class="tooltip"><p>Reserved for mappings definitions containing the object definition for the return object
+//if source is collection return a NSArray else return an instance defined by the objectClass of the mapping definition</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectsFromValue:reversed:error:">&ndash;&nbsp;objectsFromValue:reversed:error:</a></code>
+		<span class="tooltip"><p>Reserved for mappings definitions containing the object definition for the return object
+//if source is collection return a NSArray else return an instance defined by the objectClass of the mapping definition</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Defining mapping context programmatically" name="task_Defining mapping context programmatically"></a>
+						<h3 class="subsubtitle task-title">Defining mapping context programmatically</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setObjectClass:">&ndash;&nbsp;setObjectClass:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setKeyPath:fromKeyPath:">&ndash;&nbsp;setKeyPath:fromKeyPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setKeyPath:fromKeyPath:transformBlock:">&ndash;&nbsp;setKeyPath:fromKeyPath:transformBlock:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setKeyPath:fromKeyPath:transformTarget:action:">&ndash;&nbsp;setKeyPath:fromKeyPath:transformTarget:action:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setKeyPath:fromKeyPath:defaultValue:">&ndash;&nbsp;setKeyPath:fromKeyPath:defaultValue:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setKeyPath:fromKeyPath:defaultValue:transformBlock:">&ndash;&nbsp;setKeyPath:fromKeyPath:defaultValue:transformBlock:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setKeyPath:fromKeyPath:defaultValue:transformTarget:action:">&ndash;&nbsp;setKeyPath:fromKeyPath:defaultValue:transformTarget:action:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setKeyPath:fromKeyPath:optional:">&ndash;&nbsp;setKeyPath:fromKeyPath:optional:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setKeyPath:fromKeyPath:optional:transformBlock:">&ndash;&nbsp;setKeyPath:fromKeyPath:optional:transformBlock:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setKeyPath:fromKeyPath:optional:transformTarget:action:">&ndash;&nbsp;setKeyPath:fromKeyPath:optional:transformTarget:action:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setKeyPath:fromKeyPath:objectClass:withMappingsContextIdentifier:">&ndash;&nbsp;setKeyPath:fromKeyPath:objectClass:withMappingsContextIdentifier:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setKeyPath:fromKeyPath:optional:objectClass:withMappingsContextIdentifier:">&ndash;&nbsp;setKeyPath:fromKeyPath:optional:objectClass:withMappingsContextIdentifier:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setKeyPath:fromKeyPath:withMappingsContextIdentifier:">&ndash;&nbsp;setKeyPath:fromKeyPath:withMappingsContextIdentifier:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setKeyPath:fromKeyPath:optional:withMappingsContextIdentifier:">&ndash;&nbsp;setKeyPath:fromKeyPath:optional:withMappingsContextIdentifier:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/identifier" title="identifier"></a>
+	<h3 class="subsubtitle method-title">identifier</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) id identifier</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/contextWithIdentifier:" title="contextWithIdentifier:"></a>
+	<h3 class="subsubtitle method-title">contextWithIdentifier:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (CKMappingContext *)contextWithIdentifier:(id)<em>identifier</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadContentOfFileNamed:" title="loadContentOfFileNamed:"></a>
+	<h3 class="subsubtitle method-title">loadContentOfFileNamed:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (void)loadContentOfFileNamed:(NSString *)<em>name</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/mapValue:toObject:error:" title="mapValue:toObject:error:"></a>
+	<h3 class="subsubtitle method-title">mapValue:toObject:error:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)mapValue:(id)<em>value</em> toObject:(id)<em>object</em> error:(NSError **)<em>error</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mapValue:toObject:reversed:error:" title="mapValue:toObject:reversed:error:"></a>
+	<h3 class="subsubtitle method-title">mapValue:toObject:reversed:error:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)mapValue:(id)<em>value</em> toObject:(id)<em>object</em> reversed:(BOOL)<em>reversed</em> error:(NSError **)<em>error</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectFromValue:error:" title="objectFromValue:error:"></a>
+	<h3 class="subsubtitle method-title">objectFromValue:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Reserved for mappings definitions containing the object definition for the return object
+//if source is collection return a NSArray else return an instance defined by the objectClass of the mapping definition</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)objectFromValue:(id)<em>value</em> error:(NSError **)<em>error</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectFromValue:ofClass:error:" title="objectFromValue:ofClass:error:"></a>
+	<h3 class="subsubtitle method-title">objectFromValue:ofClass:error:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)objectFromValue:(id)<em>value</em> ofClass:(Class)<em>type</em> error:(NSError **)<em>error</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectFromValue:ofClass:reversed:error:" title="objectFromValue:ofClass:reversed:error:"></a>
+	<h3 class="subsubtitle method-title">objectFromValue:ofClass:reversed:error:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)objectFromValue:(id)<em>value</em> ofClass:(Class)<em>type</em> reversed:(BOOL)<em>reversed</em> error:(NSError **)<em>error</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectFromValue:reversed:error:" title="objectFromValue:reversed:error:"></a>
+	<h3 class="subsubtitle method-title">objectFromValue:reversed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Reserved for mappings definitions containing the object definition for the return object
+//if source is collection return a NSArray else return an instance defined by the objectClass of the mapping definition</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)objectFromValue:(id)<em>value</em> reversed:(BOOL)<em>reversed</em> error:(NSError **)<em>error</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectsFromValue:error:" title="objectsFromValue:error:"></a>
+	<h3 class="subsubtitle method-title">objectsFromValue:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Reserved for mappings definitions containing the object definition for the return object
+//if source is collection return a NSArray else return an instance defined by the objectClass of the mapping definition</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)objectsFromValue:(id)<em>value</em> error:(NSError **)<em>error</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectsFromValue:ofClass:error:" title="objectsFromValue:ofClass:error:"></a>
+	<h3 class="subsubtitle method-title">objectsFromValue:ofClass:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>value should be a collection (NSArray, <a href="../Classes/CKCollection.html">CKCollection</a>)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)objectsFromValue:(id)<em>value</em> ofClass:(Class)<em>type</em> error:(NSError **)<em>error</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectsFromValue:ofClass:reversed:error:" title="objectsFromValue:ofClass:reversed:error:"></a>
+	<h3 class="subsubtitle method-title">objectsFromValue:ofClass:reversed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>value should be a collection (NSArray, <a href="../Classes/CKCollection.html">CKCollection</a>)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)objectsFromValue:(id)<em>value</em> ofClass:(Class)<em>type</em> reversed:(BOOL)<em>reversed</em> error:(NSError **)<em>error</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectsFromValue:reversed:error:" title="objectsFromValue:reversed:error:"></a>
+	<h3 class="subsubtitle method-title">objectsFromValue:reversed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Reserved for mappings definitions containing the object definition for the return object
+//if source is collection return a NSArray else return an instance defined by the objectClass of the mapping definition</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)objectsFromValue:(id)<em>value</em> reversed:(BOOL)<em>reversed</em> error:(NSError **)<em>error</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setKeyPath:fromKeyPath:" title="setKeyPath:fromKeyPath:"></a>
+	<h3 class="subsubtitle method-title">setKeyPath:fromKeyPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setKeyPath:(NSString *)<em>keyPath</em> fromKeyPath:(NSString *)<em>sourceKeyPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setKeyPath:fromKeyPath:defaultValue:" title="setKeyPath:fromKeyPath:defaultValue:"></a>
+	<h3 class="subsubtitle method-title">setKeyPath:fromKeyPath:defaultValue:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setKeyPath:(NSString *)<em>keyPath</em> fromKeyPath:(NSString *)<em>sourceKeyPath</em> defaultValue:(id)<em>value</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setKeyPath:fromKeyPath:defaultValue:transformBlock:" title="setKeyPath:fromKeyPath:defaultValue:transformBlock:"></a>
+	<h3 class="subsubtitle method-title">setKeyPath:fromKeyPath:defaultValue:transformBlock:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setKeyPath:(NSString *)<em>keyPath</em> fromKeyPath:(NSString *)<em>sourceKeyPath</em> defaultValue:(id)<em>value</em> transformBlock:(id ( ^ ) ( id source ))<em>transformBlock</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setKeyPath:fromKeyPath:defaultValue:transformTarget:action:" title="setKeyPath:fromKeyPath:defaultValue:transformTarget:action:"></a>
+	<h3 class="subsubtitle method-title">setKeyPath:fromKeyPath:defaultValue:transformTarget:action:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setKeyPath:(NSString *)<em>keyPath</em> fromKeyPath:(NSString *)<em>sourceKeyPath</em> defaultValue:(id)<em>value</em> transformTarget:(id)<em>target</em> action:(SEL)<em>action</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setKeyPath:fromKeyPath:objectClass:withMappingsContextIdentifier:" title="setKeyPath:fromKeyPath:objectClass:withMappingsContextIdentifier:"></a>
+	<h3 class="subsubtitle method-title">setKeyPath:fromKeyPath:objectClass:withMappingsContextIdentifier:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setKeyPath:(NSString *)<em>keyPath</em> fromKeyPath:(NSString *)<em>sourceKeyPath</em> objectClass:(Class)<em>objectClass</em> withMappingsContextIdentifier:(id)<em>contextIdentifier</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setKeyPath:fromKeyPath:optional:" title="setKeyPath:fromKeyPath:optional:"></a>
+	<h3 class="subsubtitle method-title">setKeyPath:fromKeyPath:optional:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setKeyPath:(NSString *)<em>keyPath</em> fromKeyPath:(NSString *)<em>sourceKeyPath</em> optional:(BOOL)<em>optional</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setKeyPath:fromKeyPath:optional:objectClass:withMappingsContextIdentifier:" title="setKeyPath:fromKeyPath:optional:objectClass:withMappingsContextIdentifier:"></a>
+	<h3 class="subsubtitle method-title">setKeyPath:fromKeyPath:optional:objectClass:withMappingsContextIdentifier:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setKeyPath:(NSString *)<em>keyPath</em> fromKeyPath:(NSString *)<em>sourceKeyPath</em> optional:(BOOL)<em>optional</em> objectClass:(Class)<em>objectClass</em> withMappingsContextIdentifier:(id)<em>contextIdentifier</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setKeyPath:fromKeyPath:optional:transformBlock:" title="setKeyPath:fromKeyPath:optional:transformBlock:"></a>
+	<h3 class="subsubtitle method-title">setKeyPath:fromKeyPath:optional:transformBlock:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setKeyPath:(NSString *)<em>keyPath</em> fromKeyPath:(NSString *)<em>sourceKeyPath</em> optional:(BOOL)<em>optional</em> transformBlock:(id ( ^ ) ( id source ))<em>transformBlock</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setKeyPath:fromKeyPath:optional:transformTarget:action:" title="setKeyPath:fromKeyPath:optional:transformTarget:action:"></a>
+	<h3 class="subsubtitle method-title">setKeyPath:fromKeyPath:optional:transformTarget:action:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setKeyPath:(NSString *)<em>keyPath</em> fromKeyPath:(NSString *)<em>sourceKeyPath</em> optional:(BOOL)<em>optional</em> transformTarget:(id)<em>target</em> action:(SEL)<em>action</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setKeyPath:fromKeyPath:optional:withMappingsContextIdentifier:" title="setKeyPath:fromKeyPath:optional:withMappingsContextIdentifier:"></a>
+	<h3 class="subsubtitle method-title">setKeyPath:fromKeyPath:optional:withMappingsContextIdentifier:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setKeyPath:(NSString *)<em>keyPath</em> fromKeyPath:(NSString *)<em>sourceKeyPath</em> optional:(BOOL)<em>optional</em> withMappingsContextIdentifier:(id)<em>contextIdentifier</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setKeyPath:fromKeyPath:transformBlock:" title="setKeyPath:fromKeyPath:transformBlock:"></a>
+	<h3 class="subsubtitle method-title">setKeyPath:fromKeyPath:transformBlock:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setKeyPath:(NSString *)<em>keyPath</em> fromKeyPath:(NSString *)<em>sourceKeyPath</em> transformBlock:(id ( ^ ) ( id source ))<em>transformBlock</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setKeyPath:fromKeyPath:transformTarget:action:" title="setKeyPath:fromKeyPath:transformTarget:action:"></a>
+	<h3 class="subsubtitle method-title">setKeyPath:fromKeyPath:transformTarget:action:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setKeyPath:(NSString *)<em>keyPath</em> fromKeyPath:(NSString *)<em>sourceKeyPath</em> transformTarget:(id)<em>target</em> action:(SEL)<em>action</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setKeyPath:fromKeyPath:withMappingsContextIdentifier:" title="setKeyPath:fromKeyPath:withMappingsContextIdentifier:"></a>
+	<h3 class="subsubtitle method-title">setKeyPath:fromKeyPath:withMappingsContextIdentifier:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setKeyPath:(NSString *)<em>keyPath</em> fromKeyPath:(NSString *)<em>sourceKeyPath</em> withMappingsContextIdentifier:(id)<em>contextIdentifier</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setObjectClass:" title="setObjectClass:"></a>
+	<h3 class="subsubtitle method-title">setObjectClass:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setObjectClass:(Class)<em>type</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMappingContext.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Wherecloud. All rights reserved. (Last updated: 2013-06-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

@@ -1,0 +1,769 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CKObjectController Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AppCoreKit </a></h1>
+				<a id="developerHome" href="../index.html">Wherecloud</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CKObjectController Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/fetchRange:forSection:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchRange:forSection:</option>
+	
+	<option value="//api/name/footerTitleForSection:">&nbsp;&nbsp;&nbsp;&nbsp;- footerTitleForSection:</option>
+	
+	<option value="//api/name/footerViewForSection:">&nbsp;&nbsp;&nbsp;&nbsp;- footerViewForSection:</option>
+	
+	<option value="//api/name/headerTitleForSection:">&nbsp;&nbsp;&nbsp;&nbsp;- headerTitleForSection:</option>
+	
+	<option value="//api/name/headerViewForSection:">&nbsp;&nbsp;&nbsp;&nbsp;- headerViewForSection:</option>
+	
+	<option value="//api/name/moveObjectFromIndexPath:toIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- moveObjectFromIndexPath:toIndexPath:</option>
+	
+	<option value="//api/name/numberOfObjectsForSection:">&nbsp;&nbsp;&nbsp;&nbsp;- numberOfObjectsForSection:</option>
+	
+	<option value="//api/name/numberOfSections">&nbsp;&nbsp;&nbsp;&nbsp;- numberOfSections</option>
+	
+	<option value="//api/name/objectAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- objectAtIndexPath:</option>
+	
+	<option value="//api/name/removeObjectAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- removeObjectAtIndexPath:</option>
+	
+	<option value="//api/name/setDelegate:">&nbsp;&nbsp;&nbsp;&nbsp;- setDelegate:</option>
+	
+	<option value="//api/name/targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing the delegate">Managing the delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing the Sections">Managing the Sections</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing the Content">Managing the Content</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Fetching More Content">Fetching More Content</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchRange:forSection:">fetchRange:forSection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/footerTitleForSection:">footerTitleForSection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/footerViewForSection:">footerViewForSection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/headerTitleForSection:">headerTitleForSection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/headerViewForSection:">headerViewForSection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/moveObjectFromIndexPath:toIndexPath:">moveObjectFromIndexPath:toIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/numberOfObjectsForSection:">numberOfObjectsForSection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/numberOfSections">numberOfSections</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectAtIndexPath:">objectAtIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeObjectAtIndexPath:">removeObjectAtIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDelegate:">setDelegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:">targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CKObjectController Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CKObjectController Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CKObjectController.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Managing the delegate" name="task_Managing the delegate"></a>
+						<h3 class="subsubtitle task-title">Managing the delegate</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDelegate:">&ndash;&nbsp;setDelegate:</a></code>
+		<span class="tooltip"><p><a href="../Protocols/CKObjectControllerDelegate.html">CKObjectControllerDelegate</a> (Usually a <a href="../Classes/CKCollectionViewController.html">CKCollectionViewController</a>)</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing the Sections" name="task_Managing the Sections"></a>
+						<h3 class="subsubtitle task-title">Managing the Sections</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/numberOfSections">&ndash;&nbsp;numberOfSections</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/numberOfObjectsForSection:">&ndash;&nbsp;numberOfObjectsForSection:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/headerTitleForSection:">&ndash;&nbsp;headerTitleForSection:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/headerViewForSection:">&ndash;&nbsp;headerViewForSection:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/footerTitleForSection:">&ndash;&nbsp;footerTitleForSection:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/footerViewForSection:">&ndash;&nbsp;footerViewForSection:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing the Content" name="task_Managing the Content"></a>
+						<h3 class="subsubtitle task-title">Managing the Content</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectAtIndexPath:">&ndash;&nbsp;objectAtIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeObjectAtIndexPath:">&ndash;&nbsp;removeObjectAtIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:">&ndash;&nbsp;targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/moveObjectFromIndexPath:toIndexPath:">&ndash;&nbsp;moveObjectFromIndexPath:toIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Fetching More Content" name="task_Fetching More Content"></a>
+						<h3 class="subsubtitle task-title">Fetching More Content</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchRange:forSection:">&ndash;&nbsp;fetchRange:forSection:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchRange:forSection:" title="fetchRange:forSection:"></a>
+	<h3 class="subsubtitle method-title">fetchRange:forSection:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)fetchRange:(NSRange)<em>range</em> forSection:(int)<em>section</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKObjectController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/footerTitleForSection:" title="footerTitleForSection:"></a>
+	<h3 class="subsubtitle method-title">footerTitleForSection:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)footerTitleForSection:(NSInteger)<em>section</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKObjectController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/footerViewForSection:" title="footerViewForSection:"></a>
+	<h3 class="subsubtitle method-title">footerViewForSection:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (UIView *)footerViewForSection:(NSInteger)<em>section</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKObjectController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/headerTitleForSection:" title="headerTitleForSection:"></a>
+	<h3 class="subsubtitle method-title">headerTitleForSection:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)headerTitleForSection:(NSInteger)<em>section</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKObjectController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/headerViewForSection:" title="headerViewForSection:"></a>
+	<h3 class="subsubtitle method-title">headerViewForSection:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (UIView *)headerViewForSection:(NSInteger)<em>section</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKObjectController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/moveObjectFromIndexPath:toIndexPath:" title="moveObjectFromIndexPath:toIndexPath:"></a>
+	<h3 class="subsubtitle method-title">moveObjectFromIndexPath:toIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)moveObjectFromIndexPath:(NSIndexPath *)<em>indexPath</em> toIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKObjectController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/numberOfObjectsForSection:" title="numberOfObjectsForSection:"></a>
+	<h3 class="subsubtitle method-title">numberOfObjectsForSection:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)numberOfObjectsForSection:(NSInteger)<em>section</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKObjectController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/numberOfSections" title="numberOfSections"></a>
+	<h3 class="subsubtitle method-title">numberOfSections</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)numberOfSections</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKObjectController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectAtIndexPath:" title="objectAtIndexPath:"></a>
+	<h3 class="subsubtitle method-title">objectAtIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)objectAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKObjectController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeObjectAtIndexPath:" title="removeObjectAtIndexPath:"></a>
+	<h3 class="subsubtitle method-title">removeObjectAtIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)removeObjectAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKObjectController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDelegate:" title="setDelegate:"></a>
+	<h3 class="subsubtitle method-title">setDelegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p><a href="../Protocols/CKObjectControllerDelegate.html">CKObjectControllerDelegate</a> (Usually a <a href="../Classes/CKCollectionViewController.html">CKCollectionViewController</a>)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setDelegate:(id)<em>delegate</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKObjectController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:" title="targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:"></a>
+	<h3 class="subsubtitle method-title">targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSIndexPath *)targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)<em>sourceIndexPath</em> toProposedIndexPath:(NSIndexPath *)<em>proposedDestinationIndexPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKObjectController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Wherecloud. All rights reserved. (Last updated: 2013-06-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

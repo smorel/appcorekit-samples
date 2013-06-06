@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSManagedObjectModel_CurrentVersionName</key>
+	<string>CloudKit-1.1</string>
+	<key>NSManagedObjectModel_VersionHashes</key>
+	<dict>
+		<key>CloudKit</key>
+		<dict>
+			<key>CKAttribute</key>
+			<data>
+			10fQTJCYsw85/2NfUIQMagaiWO4iuuR1ZjchD2M8uxc=
+			</data>
+			<key>CKDomain</key>
+			<data>
+			mdbiM8a+zlB8rNHzMCpR2XYG067aO7P12tqvtb7A3HM=
+			</data>
+			<key>CKItem</key>
+			<data>
+			jTsY/cDCJGXv6U/f0ZSFsy8AJEkVcXSxaNkCBFXNBR8=
+			</data>
+		</dict>
+		<key>CloudKit-1.1</key>
+		<dict>
+			<key>CKAttribute</key>
+			<data>
+			1RHxjardQ5GjHSGpEZEmmRKu3GHqemN71DbpKvPPQzk=
+			</data>
+			<key>CKDomain</key>
+			<data>
+			mdbiM8a+zlB8rNHzMCpR2XYG067aO7P12tqvtb7A3HM=
+			</data>
+			<key>CKItem</key>
+			<data>
+			0JQL9Tt8VMBMZZOyQZWbF0zRVU3XMcQfD26g+dWFvX8=
+			</data>
+			<key>CKItemAttributeReference</key>
+			<data>
+			q7Ly526cwK9vu9YU2zItMl8G0XVo9abXF40Do6w7LVI=
+			</data>
+		</dict>
+		<key>CloudKit-1.1000</key>
+		<dict>
+			<key>CKAttribute</key>
+			<data>
+			1RHxjardQ5GjHSGpEZEmmRKu3GHqemN71DbpKvPPQzk=
+			</data>
+			<key>CKDomain</key>
+			<data>
+			mdbiM8a+zlB8rNHzMCpR2XYG067aO7P12tqvtb7A3HM=
+			</data>
+			<key>CKItem</key>
+			<data>
+			0JQL9Tt8VMBMZZOyQZWbF0zRVU3XMcQfD26g+dWFvX8=
+			</data>
+			<key>CKItemAttributeReference</key>
+			<data>
+			q7Ly526cwK9vu9YU2zItMl8G0XVo9abXF40Do6w7LVI=
+			</data>
+		</dict>
+	</dict>
+</dict>
+</plist>

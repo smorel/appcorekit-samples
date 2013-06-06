@@ -1,0 +1,2099 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CKCollectionViewController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AppCoreKit </a></h1>
+				<a id="developerHome" href="../index.html">Wherecloud</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CKCollectionViewController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/autoFetchCollections">&nbsp;&nbsp;&nbsp;&nbsp;autoFetchCollections</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/minimumNumberOfSupplementaryObjectsInSections">&nbsp;&nbsp;&nbsp;&nbsp;minimumNumberOfSupplementaryObjectsInSections</option>
+	
+	<option value="//api/name/rotating">&nbsp;&nbsp;&nbsp;&nbsp;rotating</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/controllerAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- controllerAtIndexPath:</option>
+	
+	<option value="//api/name/createViewAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- createViewAtIndexPath:</option>
+	
+	<option value="//api/name/dequeueReusableViewWithIdentifier:">&nbsp;&nbsp;&nbsp;&nbsp;- dequeueReusableViewWithIdentifier:</option>
+	
+	<option value="//api/name/didBeginUpdates">&nbsp;&nbsp;&nbsp;&nbsp;- didBeginUpdates</option>
+	
+	<option value="//api/name/didEndUpdates">&nbsp;&nbsp;&nbsp;&nbsp;- didEndUpdates</option>
+	
+	<option value="//api/name/didInsertObjects:atIndexPaths:">&nbsp;&nbsp;&nbsp;&nbsp;- didInsertObjects:atIndexPaths:</option>
+	
+	<option value="//api/name/didInsertSectionAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- didInsertSectionAtIndex:</option>
+	
+	<option value="//api/name/didMoveViewAtIndexPath:toIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- didMoveViewAtIndexPath:toIndexPath:</option>
+	
+	<option value="//api/name/didReload">&nbsp;&nbsp;&nbsp;&nbsp;- didReload</option>
+	
+	<option value="//api/name/didRemoveObjects:atIndexPaths:">&nbsp;&nbsp;&nbsp;&nbsp;- didRemoveObjects:atIndexPaths:</option>
+	
+	<option value="//api/name/didRemoveSectionAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- didRemoveSectionAtIndex:</option>
+	
+	<option value="//api/name/didRemoveViewAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- didRemoveViewAtIndexPath:</option>
+	
+	<option value="//api/name/didSelectAccessoryViewAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- didSelectAccessoryViewAtIndexPath:</option>
+	
+	<option value="//api/name/didSelectViewAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- didSelectViewAtIndexPath:</option>
+	
+	<option value="//api/name/fetchMoreData">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMoreData</option>
+	
+	<option value="//api/name/fetchMoreIfNeededFromIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchMoreIfNeededFromIndexPath:</option>
+	
+	<option value="//api/name/fetchObjectsInRange:forSection:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchObjectsInRange:forSection:</option>
+	
+	<option value="//api/name/flagsForViewAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- flagsForViewAtIndexPath:</option>
+	
+	<option value="//api/name/indexOfObject:inSection:">&nbsp;&nbsp;&nbsp;&nbsp;- indexOfObject:inSection:</option>
+	
+	<option value="//api/name/indexPathForObject:">&nbsp;&nbsp;&nbsp;&nbsp;- indexPathForObject:</option>
+	
+	<option value="//api/name/indexPathForView:">&nbsp;&nbsp;&nbsp;&nbsp;- indexPathForView:</option>
+	
+	<option value="//api/name/initWithCollection:factory:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithCollection:factory:</option>
+	
+	<option value="//api/name/isValidIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- isValidIndexPath:</option>
+	
+	<option value="//api/name/isViewEditableAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- isViewEditableAtIndexPath:</option>
+	
+	<option value="//api/name/isViewMovableAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- isViewMovableAtIndexPath:</option>
+	
+	<option value="//api/name/numberOfObjectsForSection:">&nbsp;&nbsp;&nbsp;&nbsp;- numberOfObjectsForSection:</option>
+	
+	<option value="//api/name/numberOfSections">&nbsp;&nbsp;&nbsp;&nbsp;- numberOfSections</option>
+	
+	<option value="//api/name/objectAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- objectAtIndexPath:</option>
+	
+	<option value="//api/name/objectsForSection:">&nbsp;&nbsp;&nbsp;&nbsp;- objectsForSection:</option>
+	
+	<option value="//api/name/reload">&nbsp;&nbsp;&nbsp;&nbsp;- reload</option>
+	
+	<option value="//api/name/setupWithCollection:factory:">&nbsp;&nbsp;&nbsp;&nbsp;- setupWithCollection:factory:</option>
+	
+	<option value="//api/name/sizeForViewAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- sizeForViewAtIndexPath:</option>
+	
+	<option value="//api/name/targetIndexPathForMoveFromIndexPath:toProposedIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- targetIndexPathForMoveFromIndexPath:toProposedIndexPath:</option>
+	
+	<option value="//api/name/updateSizeForControllerAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- updateSizeForControllerAtIndexPath:</option>
+	
+	<option value="//api/name/viewAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- viewAtIndexPath:</option>
+	
+	<option value="//api/name/visibleIndexPaths">&nbsp;&nbsp;&nbsp;&nbsp;- visibleIndexPaths</option>
+	
+	<option value="//api/name/willSelectViewAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- willSelectViewAtIndexPath:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initializing a CKCollectionViewController Object">Initializing a CKCollectionViewController Object</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Setupping a CKCollectionViewController Object at runtime">Setupping a CKCollectionViewController Object at runtime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing the delegate">Managing the delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing the asynchronous data to be fetched">Managing the asynchronous data to be fetched</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting the CKCollectionViewController status">Getting the CKCollectionViewController status</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing the cell views/controllers">Managing the cell views/controllers</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing the Document Objects">Managing the Document Objects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing the Data source">Managing the Data source</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Fetching more data from the document">Fetching more data from the document</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing views interactions">Managing views interactions</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CollectionView Delegate Helpers">CollectionView Delegate Helpers</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_ObjectController Callbacks">ObjectController Callbacks</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Reloading the Collection View">Reloading the Collection View</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/autoFetchCollections">autoFetchCollections</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minimumNumberOfSupplementaryObjectsInSections">minimumNumberOfSupplementaryObjectsInSections</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rotating">rotating</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controllerAtIndexPath:">controllerAtIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createViewAtIndexPath:">createViewAtIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dequeueReusableViewWithIdentifier:">dequeueReusableViewWithIdentifier:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didBeginUpdates">didBeginUpdates</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didEndUpdates">didEndUpdates</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didInsertObjects:atIndexPaths:">didInsertObjects:atIndexPaths:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didInsertSectionAtIndex:">didInsertSectionAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didMoveViewAtIndexPath:toIndexPath:">didMoveViewAtIndexPath:toIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didReload">didReload</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didRemoveObjects:atIndexPaths:">didRemoveObjects:atIndexPaths:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didRemoveSectionAtIndex:">didRemoveSectionAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didRemoveViewAtIndexPath:">didRemoveViewAtIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didSelectAccessoryViewAtIndexPath:">didSelectAccessoryViewAtIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didSelectViewAtIndexPath:">didSelectViewAtIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMoreData">fetchMoreData</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchMoreIfNeededFromIndexPath:">fetchMoreIfNeededFromIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchObjectsInRange:forSection:">fetchObjectsInRange:forSection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flagsForViewAtIndexPath:">flagsForViewAtIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/indexOfObject:inSection:">indexOfObject:inSection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/indexPathForObject:">indexPathForObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/indexPathForView:">indexPathForView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithCollection:factory:">initWithCollection:factory:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isValidIndexPath:">isValidIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isViewEditableAtIndexPath:">isViewEditableAtIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isViewMovableAtIndexPath:">isViewMovableAtIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/numberOfObjectsForSection:">numberOfObjectsForSection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/numberOfSections">numberOfSections</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectAtIndexPath:">objectAtIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectsForSection:">objectsForSection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reload">reload</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setupWithCollection:factory:">setupWithCollection:factory:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sizeForViewAtIndexPath:">sizeForViewAtIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/targetIndexPathForMoveFromIndexPath:toProposedIndexPath:">targetIndexPathForMoveFromIndexPath:toProposedIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateSizeForControllerAtIndexPath:">updateSizeForControllerAtIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewAtIndexPath:">viewAtIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/visibleIndexPaths">visibleIndexPaths</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/willSelectViewAtIndexPath:">willSelectViewAtIndexPath:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CKCollectionViewController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CKCollectionViewController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/CKViewController.html">CKViewController</a> : UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/CKObjectControllerDelegate.html">CKObjectControllerDelegate</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CKCollectionViewController.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This controller implements the logic to deals with objects via objectcontroller and cellControllerfactory.
+   It will gives all the basic logic for live update from documents/view creation and reusing, controller creation/reusing
+   and manage the cell controller flags/selection/remove, &hellip;</p>
+
+<p>   By derivating this controller, you&rsquo;ll just have to implement the UIKit specific delegates and view creation and redirect
+   to the basic implementation of CKCollectionViewController</p>
+
+<p>   By this way we centralize all the document/cellcontroller logic that is redondant in this class</p>
+
+<p>   For some specific implementations see : <a href="../Classes/CKFormTableViewController.html">CKFormTableViewController</a>, <a href="../Classes/CKTableCollectionViewController.html">CKTableCollectionViewController</a>, <a href="../Classes/CKCarouselCollectionViewController.html">CKCarouselCollectionViewController</a>, <a href="../Classes/CKMapCollectionViewController.html">CKMapCollectionViewController</a> and <a href="../Classes/CKGridCollectionViewController.html">CKGridCollectionViewController</a></p>
+
+<ul>
+<li> derivating this controller means</li>
+</ul>
+
+
+<p>   you MUST implement :</p>
+
+<pre><code> - (UIView*)viewAtIndexPath:(NSIndexPath *)indexPath
+ - (NSIndexPath*)indexPathForView:(UIView*)view
+ - (UIView*)dequeueReusableViewWithIdentifier:(NSString*)identifier
+</code></pre>
+
+<p>   you SHOULD implement :</p>
+
+<pre><code> - (void)didReload
+ - (void)didBeginUpdates
+ - (void)didEndUpdates
+ - (void)didInsertObjects:(NSArray*)objects atIndexPaths:(NSArray*)indexPaths
+ - (void)didRemoveObjects:(NSArray*)objects atIndexPaths:(NSArray*)indexPaths
+</code></pre>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Initializing a CKCollectionViewController Object" name="task_Initializing a CKCollectionViewController Object"></a>
+						<h3 class="subsubtitle task-title">Initializing a CKCollectionViewController Object</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithCollection:factory:">&ndash;&nbsp;initWithCollection:factory:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Setupping a CKCollectionViewController Object at runtime" name="task_Setupping a CKCollectionViewController Object at runtime"></a>
+						<h3 class="subsubtitle task-title">Setupping a CKCollectionViewController Object at runtime</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setupWithCollection:factory:">&ndash;&nbsp;setupWithCollection:factory:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing the delegate" name="task_Managing the delegate"></a>
+						<h3 class="subsubtitle task-title">Managing the delegate</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing the asynchronous data to be fetched" name="task_Managing the asynchronous data to be fetched"></a>
+						<h3 class="subsubtitle task-title">Managing the asynchronous data to be fetched</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/minimumNumberOfSupplementaryObjectsInSections">&nbsp;&nbsp;minimumNumberOfSupplementaryObjectsInSections</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Getting the CKCollectionViewController status" name="task_Getting the CKCollectionViewController status"></a>
+						<h3 class="subsubtitle task-title">Getting the CKCollectionViewController status</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rotating">&nbsp;&nbsp;rotating</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing the cell views/controllers" name="task_Managing the cell views/controllers"></a>
+						<h3 class="subsubtitle task-title">Managing the cell views/controllers</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/controllerAtIndexPath:">&ndash;&nbsp;controllerAtIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewAtIndexPath:">&ndash;&nbsp;viewAtIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/indexPathForView:">&ndash;&nbsp;indexPathForView:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/visibleIndexPaths">&ndash;&nbsp;visibleIndexPaths</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createViewAtIndexPath:">&ndash;&nbsp;createViewAtIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dequeueReusableViewWithIdentifier:">&ndash;&nbsp;dequeueReusableViewWithIdentifier:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isValidIndexPath:">&ndash;&nbsp;isValidIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing the Document Objects" name="task_Managing the Document Objects"></a>
+						<h3 class="subsubtitle task-title">Managing the Document Objects</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectAtIndexPath:">&ndash;&nbsp;objectAtIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectsForSection:">&ndash;&nbsp;objectsForSection:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/indexOfObject:inSection:">&ndash;&nbsp;indexOfObject:inSection:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/indexPathForObject:">&ndash;&nbsp;indexPathForObject:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing the Data source" name="task_Managing the Data source"></a>
+						<h3 class="subsubtitle task-title">Managing the Data source</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/numberOfSections">&ndash;&nbsp;numberOfSections</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/numberOfObjectsForSection:">&ndash;&nbsp;numberOfObjectsForSection:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Fetching more data from the document" name="task_Fetching more data from the document"></a>
+						<h3 class="subsubtitle task-title">Fetching more data from the document</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchObjectsInRange:forSection:">&ndash;&nbsp;fetchObjectsInRange:forSection:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMoreData">&ndash;&nbsp;fetchMoreData</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchMoreIfNeededFromIndexPath:">&ndash;&nbsp;fetchMoreIfNeededFromIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/autoFetchCollections">&nbsp;&nbsp;autoFetchCollections</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing views interactions" name="task_Managing views interactions"></a>
+						<h3 class="subsubtitle task-title">Managing views interactions</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sizeForViewAtIndexPath:">&ndash;&nbsp;sizeForViewAtIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flagsForViewAtIndexPath:">&ndash;&nbsp;flagsForViewAtIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/willSelectViewAtIndexPath:">&ndash;&nbsp;willSelectViewAtIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didSelectViewAtIndexPath:">&ndash;&nbsp;didSelectViewAtIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didSelectAccessoryViewAtIndexPath:">&ndash;&nbsp;didSelectAccessoryViewAtIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isViewEditableAtIndexPath:">&ndash;&nbsp;isViewEditableAtIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isViewMovableAtIndexPath:">&ndash;&nbsp;isViewMovableAtIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="CollectionView Delegate Helpers" name="task_CollectionView Delegate Helpers"></a>
+						<h3 class="subsubtitle task-title">CollectionView Delegate Helpers</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didRemoveViewAtIndexPath:">&ndash;&nbsp;didRemoveViewAtIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didMoveViewAtIndexPath:toIndexPath:">&ndash;&nbsp;didMoveViewAtIndexPath:toIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/targetIndexPathForMoveFromIndexPath:toProposedIndexPath:">&ndash;&nbsp;targetIndexPathForMoveFromIndexPath:toProposedIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="ObjectController Callbacks" name="task_ObjectController Callbacks"></a>
+						<h3 class="subsubtitle task-title">ObjectController Callbacks</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didReload">&ndash;&nbsp;didReload</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didBeginUpdates">&ndash;&nbsp;didBeginUpdates</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didEndUpdates">&ndash;&nbsp;didEndUpdates</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didInsertObjects:atIndexPaths:">&ndash;&nbsp;didInsertObjects:atIndexPaths:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didRemoveObjects:atIndexPaths:">&ndash;&nbsp;didRemoveObjects:atIndexPaths:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didInsertSectionAtIndex:">&ndash;&nbsp;didInsertSectionAtIndex:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didRemoveSectionAtIndex:">&ndash;&nbsp;didRemoveSectionAtIndex:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateSizeForControllerAtIndexPath:">&ndash;&nbsp;updateSizeForControllerAtIndexPath:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Reloading the Collection View" name="task_Reloading the Collection View"></a>
+						<h3 class="subsubtitle task-title">Reloading the Collection View</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reload">&ndash;&nbsp;reload</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/autoFetchCollections" title="autoFetchCollections"></a>
+	<h3 class="subsubtitle method-title">autoFetchCollections</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL autoFetchCollections</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id delegate</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/minimumNumberOfSupplementaryObjectsInSections" title="minimumNumberOfSupplementaryObjectsInSections"></a>
+	<h3 class="subsubtitle method-title">minimumNumberOfSupplementaryObjectsInSections</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) int minimumNumberOfSupplementaryObjectsInSections</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rotating" title="rotating"></a>
+	<h3 class="subsubtitle method-title">rotating</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly, getter=isRotating) BOOL rotating</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/controllerAtIndexPath:" title="controllerAtIndexPath:"></a>
+	<h3 class="subsubtitle method-title">controllerAtIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (CKCollectionCellController *)controllerAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createViewAtIndexPath:" title="createViewAtIndexPath:"></a>
+	<h3 class="subsubtitle method-title">createViewAtIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (UIView *)createViewAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dequeueReusableViewWithIdentifier:" title="dequeueReusableViewWithIdentifier:"></a>
+	<h3 class="subsubtitle method-title">dequeueReusableViewWithIdentifier:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (UIView *)dequeueReusableViewWithIdentifier:(NSString *)<em>identifier</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didBeginUpdates" title="didBeginUpdates"></a>
+	<h3 class="subsubtitle method-title">didBeginUpdates</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didBeginUpdates</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didEndUpdates" title="didEndUpdates"></a>
+	<h3 class="subsubtitle method-title">didEndUpdates</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didEndUpdates</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didInsertObjects:atIndexPaths:" title="didInsertObjects:atIndexPaths:"></a>
+	<h3 class="subsubtitle method-title">didInsertObjects:atIndexPaths:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didInsertObjects:(NSArray *)<em>objects</em> atIndexPaths:(NSArray *)<em>indexPaths</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didInsertSectionAtIndex:" title="didInsertSectionAtIndex:"></a>
+	<h3 class="subsubtitle method-title">didInsertSectionAtIndex:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didInsertSectionAtIndex:(NSInteger)<em>index</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didMoveViewAtIndexPath:toIndexPath:" title="didMoveViewAtIndexPath:toIndexPath:"></a>
+	<h3 class="subsubtitle method-title">didMoveViewAtIndexPath:toIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didMoveViewAtIndexPath:(NSIndexPath *)<em>fromIndexPath</em> toIndexPath:(NSIndexPath *)<em>toIndexPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didReload" title="didReload"></a>
+	<h3 class="subsubtitle method-title">didReload</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didReload</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didRemoveObjects:atIndexPaths:" title="didRemoveObjects:atIndexPaths:"></a>
+	<h3 class="subsubtitle method-title">didRemoveObjects:atIndexPaths:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didRemoveObjects:(NSArray *)<em>objects</em> atIndexPaths:(NSArray *)<em>indexPaths</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didRemoveSectionAtIndex:" title="didRemoveSectionAtIndex:"></a>
+	<h3 class="subsubtitle method-title">didRemoveSectionAtIndex:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didRemoveSectionAtIndex:(NSInteger)<em>index</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didRemoveViewAtIndexPath:" title="didRemoveViewAtIndexPath:"></a>
+	<h3 class="subsubtitle method-title">didRemoveViewAtIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didRemoveViewAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didSelectAccessoryViewAtIndexPath:" title="didSelectAccessoryViewAtIndexPath:"></a>
+	<h3 class="subsubtitle method-title">didSelectAccessoryViewAtIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didSelectAccessoryViewAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didSelectViewAtIndexPath:" title="didSelectViewAtIndexPath:"></a>
+	<h3 class="subsubtitle method-title">didSelectViewAtIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didSelectViewAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMoreData" title="fetchMoreData"></a>
+	<h3 class="subsubtitle method-title">fetchMoreData</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)fetchMoreData</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchMoreIfNeededFromIndexPath:" title="fetchMoreIfNeededFromIndexPath:"></a>
+	<h3 class="subsubtitle method-title">fetchMoreIfNeededFromIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)fetchMoreIfNeededFromIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchObjectsInRange:forSection:" title="fetchObjectsInRange:forSection:"></a>
+	<h3 class="subsubtitle method-title">fetchObjectsInRange:forSection:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)fetchObjectsInRange:(NSRange)<em>range</em> forSection:(NSInteger)<em>section</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/flagsForViewAtIndexPath:" title="flagsForViewAtIndexPath:"></a>
+	<h3 class="subsubtitle method-title">flagsForViewAtIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (CKItemViewFlags)flagsForViewAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/indexOfObject:inSection:" title="indexOfObject:inSection:"></a>
+	<h3 class="subsubtitle method-title">indexOfObject:inSection:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)indexOfObject:(id)<em>object</em> inSection:(NSInteger)<em>section</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/indexPathForObject:" title="indexPathForObject:"></a>
+	<h3 class="subsubtitle method-title">indexPathForObject:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSIndexPath *)indexPathForObject:(id)<em>object</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/indexPathForView:" title="indexPathForView:"></a>
+	<h3 class="subsubtitle method-title">indexPathForView:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSIndexPath *)indexPathForView:(UIView *)<em>view</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithCollection:factory:" title="initWithCollection:factory:"></a>
+	<h3 class="subsubtitle method-title">initWithCollection:factory:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initWithCollection:(CKCollection *)<em>collection</em> factory:(CKCollectionCellControllerFactory *)<em>factory</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isValidIndexPath:" title="isValidIndexPath:"></a>
+	<h3 class="subsubtitle method-title">isValidIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)isValidIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isViewEditableAtIndexPath:" title="isViewEditableAtIndexPath:"></a>
+	<h3 class="subsubtitle method-title">isViewEditableAtIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)isViewEditableAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isViewMovableAtIndexPath:" title="isViewMovableAtIndexPath:"></a>
+	<h3 class="subsubtitle method-title">isViewMovableAtIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)isViewMovableAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/numberOfObjectsForSection:" title="numberOfObjectsForSection:"></a>
+	<h3 class="subsubtitle method-title">numberOfObjectsForSection:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)numberOfObjectsForSection:(NSInteger)<em>section</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/numberOfSections" title="numberOfSections"></a>
+	<h3 class="subsubtitle method-title">numberOfSections</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)numberOfSections</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectAtIndexPath:" title="objectAtIndexPath:"></a>
+	<h3 class="subsubtitle method-title">objectAtIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)objectAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectsForSection:" title="objectsForSection:"></a>
+	<h3 class="subsubtitle method-title">objectsForSection:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)objectsForSection:(NSInteger)<em>section</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reload" title="reload"></a>
+	<h3 class="subsubtitle method-title">reload</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)reload</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setupWithCollection:factory:" title="setupWithCollection:factory:"></a>
+	<h3 class="subsubtitle method-title">setupWithCollection:factory:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setupWithCollection:(CKCollection *)<em>collection</em> factory:(CKCollectionCellControllerFactory *)<em>factory</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sizeForViewAtIndexPath:" title="sizeForViewAtIndexPath:"></a>
+	<h3 class="subsubtitle method-title">sizeForViewAtIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (CGSize)sizeForViewAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/targetIndexPathForMoveFromIndexPath:toProposedIndexPath:" title="targetIndexPathForMoveFromIndexPath:toProposedIndexPath:"></a>
+	<h3 class="subsubtitle method-title">targetIndexPathForMoveFromIndexPath:toProposedIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSIndexPath *)targetIndexPathForMoveFromIndexPath:(NSIndexPath *)<em>sourceIndexPath</em> toProposedIndexPath:(NSIndexPath *)<em>proposedDestinationIndexPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateSizeForControllerAtIndexPath:" title="updateSizeForControllerAtIndexPath:"></a>
+	<h3 class="subsubtitle method-title">updateSizeForControllerAtIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)updateSizeForControllerAtIndexPath:(NSIndexPath *)<em>index</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewAtIndexPath:" title="viewAtIndexPath:"></a>
+	<h3 class="subsubtitle method-title">viewAtIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (UIView *)viewAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/visibleIndexPaths" title="visibleIndexPaths"></a>
+	<h3 class="subsubtitle method-title">visibleIndexPaths</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)visibleIndexPaths</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/willSelectViewAtIndexPath:" title="willSelectViewAtIndexPath:"></a>
+	<h3 class="subsubtitle method-title">willSelectViewAtIndexPath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)willSelectViewAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Wherecloud. All rights reserved. (Last updated: 2013-06-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

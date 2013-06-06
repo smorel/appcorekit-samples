@@ -1,0 +1,813 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>NSDate(NSDateCalculationsAdditions) Category Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AppCoreKit </a></h1>
+				<a id="developerHome" href="../index.html">Wherecloud</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">NSDate(NSDateCalculationsAdditions) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/dateAtBeginningOfDay">&nbsp;&nbsp;&nbsp;&nbsp;- dateAtBeginningOfDay</option>
+	
+	<option value="//api/name/dateAtLastWeek">&nbsp;&nbsp;&nbsp;&nbsp;- dateAtLastWeek</option>
+	
+	<option value="//api/name/dateAtNextWeek">&nbsp;&nbsp;&nbsp;&nbsp;- dateAtNextWeek</option>
+	
+	<option value="//api/name/dateAtTomorrow">&nbsp;&nbsp;&nbsp;&nbsp;- dateAtTomorrow</option>
+	
+	<option value="//api/name/dateAtYesterday">&nbsp;&nbsp;&nbsp;&nbsp;- dateAtYesterday</option>
+	
+	<option value="//api/name/dateByAdvancingDays:">&nbsp;&nbsp;&nbsp;&nbsp;- dateByAdvancingDays:</option>
+	
+	<option value="//api/name/dateByAdvancingWeeks:">&nbsp;&nbsp;&nbsp;&nbsp;- dateByAdvancingWeeks:</option>
+	
+	<option value="//api/name/dateByAdvancingYears:">&nbsp;&nbsp;&nbsp;&nbsp;- dateByAdvancingYears:</option>
+	
+	<option value="//api/name/isAtBeginningOfDay">&nbsp;&nbsp;&nbsp;&nbsp;- isAtBeginningOfDay</option>
+	
+	<option value="//api/name/isBefore:">&nbsp;&nbsp;&nbsp;&nbsp;- isBefore:</option>
+	
+	<option value="//api/name/isBetweenDate:andDate:">&nbsp;&nbsp;&nbsp;&nbsp;- isBetweenDate:andDate:</option>
+	
+	<option value="//api/name/timeIntervalSinceDateInHours:">&nbsp;&nbsp;&nbsp;&nbsp;- timeIntervalSinceDateInHours:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating and Initializing Date Objects">Creating and Initializing Date Objects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing date components">Accessing date components</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Comparing Dates">Comparing Dates</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting Time Intervals">Getting Time Intervals</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateAtBeginningOfDay">dateAtBeginningOfDay</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateAtLastWeek">dateAtLastWeek</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateAtNextWeek">dateAtNextWeek</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateAtTomorrow">dateAtTomorrow</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateAtYesterday">dateAtYesterday</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateByAdvancingDays:">dateByAdvancingDays:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateByAdvancingWeeks:">dateByAdvancingWeeks:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateByAdvancingYears:">dateByAdvancingYears:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isAtBeginningOfDay">isAtBeginningOfDay</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isBefore:">isBefore:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isBetweenDate:andDate:">isBetweenDate:andDate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/timeIntervalSinceDateInHours:">timeIntervalSinceDateInHours:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="NSDate(NSDateCalculationsAdditions) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">NSDate(NSDateCalculationsAdditions) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">NSDate+Calculations.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating and Initializing Date Objects" name="task_Creating and Initializing Date Objects"></a>
+						<h3 class="subsubtitle task-title">Creating and Initializing Date Objects</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateAtBeginningOfDay">&ndash;&nbsp;dateAtBeginningOfDay</a></code>
+		<span class="tooltip"><p>Returns a copy of the date with the time set to midnight on the same day.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateAtYesterday">&ndash;&nbsp;dateAtYesterday</a></code>
+		<span class="tooltip"><p>Returns a copy of the date with the time set to 24h earlier.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateAtTomorrow">&ndash;&nbsp;dateAtTomorrow</a></code>
+		<span class="tooltip"><p>Returns a copy of the date with the time set to 24h later.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateAtLastWeek">&ndash;&nbsp;dateAtLastWeek</a></code>
+		<span class="tooltip"><p>Returns a copy of the date with the time set to 1 week earlier.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateAtNextWeek">&ndash;&nbsp;dateAtNextWeek</a></code>
+		<span class="tooltip"><p>Returns a copy of the date with the time set to 1 week later.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateByAdvancingDays:">&ndash;&nbsp;dateByAdvancingDays:</a></code>
+		<span class="tooltip"><p>Returns a copy of the date with days added</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateByAdvancingWeeks:">&ndash;&nbsp;dateByAdvancingWeeks:</a></code>
+		<span class="tooltip"><p>Returns a copy of the date with weeks added</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateByAdvancingYears:">&ndash;&nbsp;dateByAdvancingYears:</a></code>
+		<span class="tooltip"><p>Returns a copy of the date with years added</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing date components" name="task_Accessing date components"></a>
+						<h3 class="subsubtitle task-title">Accessing date components</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isAtBeginningOfDay">&ndash;&nbsp;isAtBeginningOfDay</a></code>
+		<span class="tooltip"><p>Returns TRUE is the date time is set at midnight</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Comparing Dates" name="task_Comparing Dates"></a>
+						<h3 class="subsubtitle task-title">Comparing Dates</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isBefore:">&ndash;&nbsp;isBefore:</a></code>
+		<span class="tooltip"><p>Returns TRUE if the receiver is before another given date</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isBetweenDate:andDate:">&ndash;&nbsp;isBetweenDate:andDate:</a></code>
+		<span class="tooltip"><p>Returns TRUE if the receiver is between to dates</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Getting Time Intervals" name="task_Getting Time Intervals"></a>
+						<h3 class="subsubtitle task-title">Getting Time Intervals</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/timeIntervalSinceDateInHours:">&ndash;&nbsp;timeIntervalSinceDateInHours:</a></code>
+		<span class="tooltip"><p>Returns the interval between the receiver and another given date expressed in hours.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/dateAtBeginningOfDay" title="dateAtBeginningOfDay"></a>
+	<h3 class="subsubtitle method-title">dateAtBeginningOfDay</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a copy of the date with the time set to midnight on the same day.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSDate *)dateAtBeginningOfDay</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+Calculations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateAtLastWeek" title="dateAtLastWeek"></a>
+	<h3 class="subsubtitle method-title">dateAtLastWeek</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a copy of the date with the time set to 1 week earlier.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSDate *)dateAtLastWeek</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+Calculations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateAtNextWeek" title="dateAtNextWeek"></a>
+	<h3 class="subsubtitle method-title">dateAtNextWeek</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a copy of the date with the time set to 1 week later.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSDate *)dateAtNextWeek</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+Calculations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateAtTomorrow" title="dateAtTomorrow"></a>
+	<h3 class="subsubtitle method-title">dateAtTomorrow</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a copy of the date with the time set to 24h later.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSDate *)dateAtTomorrow</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+Calculations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateAtYesterday" title="dateAtYesterday"></a>
+	<h3 class="subsubtitle method-title">dateAtYesterday</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a copy of the date with the time set to 24h earlier.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSDate *)dateAtYesterday</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+Calculations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateByAdvancingDays:" title="dateByAdvancingDays:"></a>
+	<h3 class="subsubtitle method-title">dateByAdvancingDays:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a copy of the date with days added</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSDate *)dateByAdvancingDays:(NSInteger)<em>days</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+Calculations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateByAdvancingWeeks:" title="dateByAdvancingWeeks:"></a>
+	<h3 class="subsubtitle method-title">dateByAdvancingWeeks:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a copy of the date with weeks added</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSDate *)dateByAdvancingWeeks:(NSInteger)<em>weeks</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+Calculations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateByAdvancingYears:" title="dateByAdvancingYears:"></a>
+	<h3 class="subsubtitle method-title">dateByAdvancingYears:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a copy of the date with years added</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSDate *)dateByAdvancingYears:(NSInteger)<em>years</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+Calculations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isAtBeginningOfDay" title="isAtBeginningOfDay"></a>
+	<h3 class="subsubtitle method-title">isAtBeginningOfDay</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns TRUE is the date time is set at midnight</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)isAtBeginningOfDay</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+Calculations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isBefore:" title="isBefore:"></a>
+	<h3 class="subsubtitle method-title">isBefore:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns TRUE if the receiver is before another given date</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)isBefore:(NSDate *)<em>date</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+Calculations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isBetweenDate:andDate:" title="isBetweenDate:andDate:"></a>
+	<h3 class="subsubtitle method-title">isBetweenDate:andDate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns TRUE if the receiver is between to dates</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)isBetweenDate:(NSDate *)<em>startDate</em> andDate:(NSDate *)<em>endDate</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+Calculations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/timeIntervalSinceDateInHours:" title="timeIntervalSinceDateInHours:"></a>
+	<h3 class="subsubtitle method-title">timeIntervalSinceDateInHours:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the interval between the receiver and another given date expressed in hours.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (double)timeIntervalSinceDateInHours:(NSDate *)<em>anotherDate</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+Calculations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Wherecloud. All rights reserved. (Last updated: 2013-06-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

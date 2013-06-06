@@ -1,0 +1,1561 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CKViewController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AppCoreKit </a></h1>
+				<a id="developerHome" href="../index.html">Wherecloud</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CKViewController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/deallocBlock">&nbsp;&nbsp;&nbsp;&nbsp;deallocBlock</option>
+	
+	<option value="//api/name/editingBlock">&nbsp;&nbsp;&nbsp;&nbsp;editingBlock</option>
+	
+	<option value="//api/name/inlineDebuggerController">&nbsp;&nbsp;&nbsp;&nbsp;inlineDebuggerController</option>
+	
+	<option value="//api/name/isViewDisplayed">&nbsp;&nbsp;&nbsp;&nbsp;isViewDisplayed</option>
+	
+	<option value="//api/name/leftButton">&nbsp;&nbsp;&nbsp;&nbsp;leftButton</option>
+	
+	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
+	
+	<option value="//api/name/orientationChangeBlock">&nbsp;&nbsp;&nbsp;&nbsp;orientationChangeBlock</option>
+	
+	<option value="//api/name/rightButton">&nbsp;&nbsp;&nbsp;&nbsp;rightButton</option>
+	
+	<option value="//api/name/state">&nbsp;&nbsp;&nbsp;&nbsp;state</option>
+	
+	<option value="//api/name/supportedInterfaceOrientations">&nbsp;&nbsp;&nbsp;&nbsp;supportedInterfaceOrientations</option>
+	
+	<option value="//api/name/viewDidAppearBlock">&nbsp;&nbsp;&nbsp;&nbsp;viewDidAppearBlock</option>
+	
+	<option value="//api/name/viewDidDisappearBlock">&nbsp;&nbsp;&nbsp;&nbsp;viewDidDisappearBlock</option>
+	
+	<option value="//api/name/viewDidLoadBlock">&nbsp;&nbsp;&nbsp;&nbsp;viewDidLoadBlock</option>
+	
+	<option value="//api/name/viewDidUnloadBlock">&nbsp;&nbsp;&nbsp;&nbsp;viewDidUnloadBlock</option>
+	
+	<option value="//api/name/viewWillAppearBlock">&nbsp;&nbsp;&nbsp;&nbsp;viewWillAppearBlock</option>
+	
+	<option value="//api/name/viewWillAppearEndBlock">&nbsp;&nbsp;&nbsp;&nbsp;viewWillAppearEndBlock</option>
+	
+	<option value="//api/name/viewWillDisappearBlock">&nbsp;&nbsp;&nbsp;&nbsp;viewWillDisappearBlock</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/controller">&nbsp;&nbsp;&nbsp;&nbsp;+ controller</option>
+	
+	<option value="//api/name/controllerWithName:">&nbsp;&nbsp;&nbsp;&nbsp;+ controllerWithName:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/applyStyleForController">&nbsp;&nbsp;&nbsp;&nbsp;- applyStyleForController</option>
+	
+	<option value="//api/name/applyStyleForLeftBarButtonItem">&nbsp;&nbsp;&nbsp;&nbsp;- applyStyleForLeftBarButtonItem</option>
+	
+	<option value="//api/name/applyStyleForNavigation">&nbsp;&nbsp;&nbsp;&nbsp;- applyStyleForNavigation</option>
+	
+	<option value="//api/name/applyStyleForRightBarButtonItem">&nbsp;&nbsp;&nbsp;&nbsp;- applyStyleForRightBarButtonItem</option>
+	
+	<option value="//api/name/postInit">&nbsp;&nbsp;&nbsp;&nbsp;- postInit</option>
+	
+	<option value="//api/name/stylesheet">&nbsp;&nbsp;&nbsp;&nbsp;- stylesheet</option>
+	
+	<option value="//api/name/updateStylesheets">&nbsp;&nbsp;&nbsp;&nbsp;- updateStylesheets</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating initialized View Controller Objects">Creating initialized View Controller Objects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Identifying View Controller at runtime">Identifying View Controller at runtime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Customizing View Controller behaviour">Customizing View Controller behaviour</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Interface Orientation">Managing Interface Orientation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing the Inline Debugger">Managing the Inline Debugger</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Navigation Bar Button Items">Managing Navigation Bar Button Items</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting the View Controller State">Getting the View Controller State</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Stylesheets">Managing Stylesheets</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Private">Private</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deallocBlock">deallocBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editingBlock">editingBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inlineDebuggerController">inlineDebuggerController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isViewDisplayed">isViewDisplayed</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/leftButton">leftButton</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/orientationChangeBlock">orientationChangeBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rightButton">rightButton</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/state">state</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/supportedInterfaceOrientations">supportedInterfaceOrientations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDidAppearBlock">viewDidAppearBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDidDisappearBlock">viewDidDisappearBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDidLoadBlock">viewDidLoadBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDidUnloadBlock">viewDidUnloadBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewWillAppearBlock">viewWillAppearBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewWillAppearEndBlock">viewWillAppearEndBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewWillDisappearBlock">viewWillDisappearBlock</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controller">controller</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controllerWithName:">controllerWithName:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/applyStyleForController">applyStyleForController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/applyStyleForLeftBarButtonItem">applyStyleForLeftBarButtonItem</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/applyStyleForNavigation">applyStyleForNavigation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/applyStyleForRightBarButtonItem">applyStyleForRightBarButtonItem</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postInit">postInit</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stylesheet">stylesheet</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateStylesheets">updateStylesheets</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CKViewController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CKViewController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CKViewController.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>CKViewController is the base class providing helpers to build a view <a href="#//api/name/controller">controller</a> and manage customization with <a href="#//api/name/stylesheet">stylesheet</a>.
+It also provides convenient blocks to define a view <a href="#//api/name/controller">controller</a> inline instead of subclassing it.
+You can define some elements for navigation like left/right bar buttons and the supported interface orientations without having to subclass it.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating initialized View Controller Objects" name="task_Creating initialized View Controller Objects"></a>
+						<h3 class="subsubtitle task-title">Creating initialized View Controller Objects</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/controller">+&nbsp;controller</a></code>
+		<span class="tooltip"><p>This returns an autorelease view controller of the calling class.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/controllerWithName:">+&nbsp;controllerWithName:</a></code>
+		<span class="tooltip"><p>This returns an autorelease view <a href="#//api/name/controller">controller</a> of the calling class by initializing its <a href="#//api/name/name">name</a> property with the specified <a href="#//api/name/name">name</a>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Identifying View Controller at runtime" name="task_Identifying View Controller at runtime"></a>
+						<h3 class="subsubtitle task-title">Identifying View Controller at runtime</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
+		<span class="tooltip"><p>Setting a name is almost only used for stylesheets.
+You can then target this view <a href="#//api/name/controller">controller</a> easily for customization using &ldquo;CKViewController[name=YourControllerName] : { &hellip; }&rdquo;.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Customizing View Controller behaviour" name="task_Customizing View Controller behaviour"></a>
+						<h3 class="subsubtitle task-title">Customizing View Controller behaviour</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewWillAppearBlock">&nbsp;&nbsp;viewWillAppearBlock</a></code>
+		<span class="tooltip"><p>This block is called at the begining of viewWillAppear
+Use this block to setup bindings between your document data and the views.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewWillAppearEndBlock">&nbsp;&nbsp;viewWillAppearEndBlock</a></code>
+		<span class="tooltip"><p>This block is called at the end of viewWillAppear when styles have been applied.
+Use this block if some of your code is dependent of data set by style.
+For exemple, if you need to layout some views and you defined size or frames for some elements in the stylesheets.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewDidAppearBlock">&nbsp;&nbsp;viewDidAppearBlock</a></code>
+		<span class="tooltip"><p>This block is called at the begining of viewDidAppear</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewWillDisappearBlock">&nbsp;&nbsp;viewWillDisappearBlock</a></code>
+		<span class="tooltip"><p>This block is called at the end of viewWillDisappear</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewDidDisappearBlock">&nbsp;&nbsp;viewDidDisappearBlock</a></code>
+		<span class="tooltip"><p>This block is called at the end of viewDidDisappear</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewDidLoadBlock">&nbsp;&nbsp;viewDidLoadBlock</a></code>
+		<span class="tooltip"><p>This block is called at the end of viewDidLoad.
+Use this block to setup your view by adding subviews.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewDidUnloadBlock">&nbsp;&nbsp;viewDidUnloadBlock</a></code>
+		<span class="tooltip"><p>This block is called at the end of viewWillDisappear</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deallocBlock">&nbsp;&nbsp;deallocBlock</a></code>
+		<span class="tooltip"><p>This block is called when the <a href="#//api/name/controller">controller</a> is deallocated</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/orientationChangeBlock">&nbsp;&nbsp;orientationChangeBlock</a></code>
+		<span class="tooltip"><p>This block is called when the <a href="#//api/name/controller">controller</a> orientation changes</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Interface Orientation" name="task_Managing Interface Orientation"></a>
+						<h3 class="subsubtitle task-title">Managing Interface Orientation</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/supportedInterfaceOrientations">&nbsp;&nbsp;supportedInterfaceOrientations</a></code>
+		<span class="tooltip"><p>This bitmask defines the interface orientations supported by this view <a href="#//api/name/controller">controller</a>.
+The possible values are:
+* CKInterfaceOrientationPortrait
+* UIInterfaceOrientationMaskPortrait (IOS6 and later)
+* CKInterfaceOrientationLandscape
+* UIInterfaceOrientationMaskLandscape (IOS6 and later)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing the Inline Debugger" name="task_Managing the Inline Debugger"></a>
+						<h3 class="subsubtitle task-title">Managing the Inline Debugger</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inlineDebuggerController">&nbsp;&nbsp;inlineDebuggerController</a></code>
+		<span class="tooltip"><p>This is an access to the inline debugger for this view <a href="#//api/name/controller">controller</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Navigation Bar Button Items" name="task_Managing Navigation Bar Button Items"></a>
+						<h3 class="subsubtitle task-title">Managing Navigation Bar Button Items</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rightButton">&nbsp;&nbsp;rightButton</a></code>
+		<span class="tooltip"><p>Specify the bar button item that should be displayed at the right of the navigation bar.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/leftButton">&nbsp;&nbsp;leftButton</a></code>
+		<span class="tooltip"><p>Specify the bar button item that should be displayed at the left of the navigation bar.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Getting the View Controller State" name="task_Getting the View Controller State"></a>
+						<h3 class="subsubtitle task-title">Getting the View Controller State</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/state">&nbsp;&nbsp;state</a></code>
+		<span class="tooltip"><p>Specify the bar button item that should be displayed at the left of the navigation bar.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isViewDisplayed">&nbsp;&nbsp;isViewDisplayed</a></code>
+		<span class="tooltip"><p>Returns whether the view is currently displayed on screen or not</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/editingBlock">&nbsp;&nbsp;editingBlock</a></code>
+		<span class="tooltip"><p>This block is called when the <a href="#//api/name/controller">controller</a> editing property changes changes</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Stylesheets" name="task_Managing Stylesheets"></a>
+						<h3 class="subsubtitle task-title">Managing Stylesheets</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/applyStyleForLeftBarButtonItem">&ndash;&nbsp;applyStyleForLeftBarButtonItem</a></code>
+		<span class="tooltip"><p>This method find the left style for the left bar button and apply this style on it.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/applyStyleForRightBarButtonItem">&ndash;&nbsp;applyStyleForRightBarButtonItem</a></code>
+		<span class="tooltip"><p>This method find the right style for the left bar button and apply this style on it.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/applyStyleForNavigation">&ndash;&nbsp;applyStyleForNavigation</a></code>
+		<span class="tooltip"><p>This method applies style on the view <a href="#//api/name/controller">controller</a> and its subview,the navigation <a href="#//api/name/controller">controller</a>, its navigationbar and toolbar and bar buttons.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/applyStyleForController">&ndash;&nbsp;applyStyleForController</a></code>
+		<span class="tooltip"><p>This method applies style on the view <a href="#//api/name/controller">controller</a> and its subviews..</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stylesheet">&ndash;&nbsp;stylesheet</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Private" name="task_Private"></a>
+						<h3 class="subsubtitle task-title">Private</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postInit">&ndash;&nbsp;postInit</a></code>
+		<span class="tooltip"><p>This method is called upon initialization. Subclasses can override this method.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateStylesheets">&ndash;&nbsp;updateStylesheets</a></code>
+		<span class="tooltip"><p>This method forces a complete reload of the view and its style. This is mainly usefull while reloading <a href="#//api/name/stylesheet">stylesheet</a> definitions at runtime.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/deallocBlock" title="deallocBlock"></a>
+	<h3 class="subsubtitle method-title">deallocBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This block is called when the <a href="#//api/name/controller">controller</a> is deallocated</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) CKViewControllerBlock deallocBlock</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/editingBlock" title="editingBlock"></a>
+	<h3 class="subsubtitle method-title">editingBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This block is called when the <a href="#//api/name/controller">controller</a> editing property changes changes</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) CKViewControllerEditingBlock editingBlock</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inlineDebuggerController" title="inlineDebuggerController"></a>
+	<h3 class="subsubtitle method-title">inlineDebuggerController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is an access to the inline debugger for this view <a href="#//api/name/controller">controller</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readonly) CKInlineDebuggerController *inlineDebuggerController</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> This property is only available in DEBUG.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isViewDisplayed" title="isViewDisplayed"></a>
+	<h3 class="subsubtitle method-title">isViewDisplayed</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns whether the view is currently displayed on screen or not</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) BOOL isViewDisplayed</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/leftButton" title="leftButton"></a>
+	<h3 class="subsubtitle method-title">leftButton</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specify the bar button item that should be displayed at the left of the navigation bar.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UIBarButtonItem *leftButton</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="subsubtitle method-title">name</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Setting a name is almost only used for stylesheets.
+You can then target this view <a href="#//api/name/controller">controller</a> easily for customization using &ldquo;CKViewController[name=YourControllerName] : { &hellip; }&rdquo;.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *name</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/orientationChangeBlock" title="orientationChangeBlock"></a>
+	<h3 class="subsubtitle method-title">orientationChangeBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This block is called when the <a href="#//api/name/controller">controller</a> orientation changes</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) CKViewControllerOrientationBlock orientationChangeBlock</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rightButton" title="rightButton"></a>
+	<h3 class="subsubtitle method-title">rightButton</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specify the bar button item that should be displayed at the right of the navigation bar.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UIBarButtonItem *rightButton</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/state" title="state"></a>
+	<h3 class="subsubtitle method-title">state</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specify the bar button item that should be displayed at the left of the navigation bar.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) CKViewControllerState state</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/supportedInterfaceOrientations" title="supportedInterfaceOrientations"></a>
+	<h3 class="subsubtitle method-title">supportedInterfaceOrientations</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This bitmask defines the interface orientations supported by this view <a href="#//api/name/controller">controller</a>.
+The possible values are:
+* CKInterfaceOrientationPortrait
+* UIInterfaceOrientationMaskPortrait (IOS6 and later)
+* CKInterfaceOrientationLandscape
+* UIInterfaceOrientationMaskLandscape (IOS6 and later)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CKInterfaceOrientation supportedInterfaceOrientations</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewDidAppearBlock" title="viewDidAppearBlock"></a>
+	<h3 class="subsubtitle method-title">viewDidAppearBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This block is called at the begining of viewDidAppear</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) CKViewControllerAnimatedBlock viewDidAppearBlock</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewDidDisappearBlock" title="viewDidDisappearBlock"></a>
+	<h3 class="subsubtitle method-title">viewDidDisappearBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This block is called at the end of viewDidDisappear</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) CKViewControllerAnimatedBlock viewDidDisappearBlock</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewDidLoadBlock" title="viewDidLoadBlock"></a>
+	<h3 class="subsubtitle method-title">viewDidLoadBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This block is called at the end of viewDidLoad.
+Use this block to setup your view by adding subviews.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) CKViewControllerBlock viewDidLoadBlock</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewDidUnloadBlock" title="viewDidUnloadBlock"></a>
+	<h3 class="subsubtitle method-title">viewDidUnloadBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This block is called at the end of viewWillDisappear</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) CKViewControllerBlock viewDidUnloadBlock</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewWillAppearBlock" title="viewWillAppearBlock"></a>
+	<h3 class="subsubtitle method-title">viewWillAppearBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This block is called at the begining of viewWillAppear
+Use this block to setup bindings between your document data and the views.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) CKViewControllerAnimatedBlock viewWillAppearBlock</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewWillAppearEndBlock" title="viewWillAppearEndBlock"></a>
+	<h3 class="subsubtitle method-title">viewWillAppearEndBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This block is called at the end of viewWillAppear when styles have been applied.
+Use this block if some of your code is dependent of data set by style.
+For exemple, if you need to layout some views and you defined size or frames for some elements in the stylesheets.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) CKViewControllerAnimatedBlock viewWillAppearEndBlock</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewWillDisappearBlock" title="viewWillDisappearBlock"></a>
+	<h3 class="subsubtitle method-title">viewWillDisappearBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This block is called at the end of viewWillDisappear</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) CKViewControllerAnimatedBlock viewWillDisappearBlock</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/controller" title="controller"></a>
+	<h3 class="subsubtitle method-title">controller</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This returns an autorelease view controller of the calling class.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (id)controller</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/controllerWithName:" title="controllerWithName:"></a>
+	<h3 class="subsubtitle method-title">controllerWithName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This returns an autorelease view <a href="#//api/name/controller">controller</a> of the calling class by initializing its <a href="#//api/name/name">name</a> property with the specified <a href="#//api/name/name">name</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (id)controllerWithName:(NSString *)<em>name</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/applyStyleForController" title="applyStyleForController"></a>
+	<h3 class="subsubtitle method-title">applyStyleForController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method applies style on the view <a href="#//api/name/controller">controller</a> and its subviews..</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)applyStyleForController</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/applyStyleForLeftBarButtonItem" title="applyStyleForLeftBarButtonItem"></a>
+	<h3 class="subsubtitle method-title">applyStyleForLeftBarButtonItem</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method find the left style for the left bar button and apply this style on it.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)applyStyleForLeftBarButtonItem</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/applyStyleForNavigation" title="applyStyleForNavigation"></a>
+	<h3 class="subsubtitle method-title">applyStyleForNavigation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method applies style on the view <a href="#//api/name/controller">controller</a> and its subview,the navigation <a href="#//api/name/controller">controller</a>, its navigationbar and toolbar and bar buttons.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)applyStyleForNavigation</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/applyStyleForRightBarButtonItem" title="applyStyleForRightBarButtonItem"></a>
+	<h3 class="subsubtitle method-title">applyStyleForRightBarButtonItem</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method find the right style for the left bar button and apply this style on it.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)applyStyleForRightBarButtonItem</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postInit" title="postInit"></a>
+	<h3 class="subsubtitle method-title">postInit</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method is called upon initialization. Subclasses can override this method.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)postInit</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> You should not call this method directly.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stylesheet" title="stylesheet"></a>
+	<h3 class="subsubtitle method-title">stylesheet</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSMutableDictionary *)stylesheet</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateStylesheets" title="updateStylesheets"></a>
+	<h3 class="subsubtitle method-title">updateStylesheets</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method forces a complete reload of the view and its style. This is mainly usefull while reloading <a href="#//api/name/stylesheet">stylesheet</a> definitions at runtime.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)updateStylesheets</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> In theory you should not need to call this method directly.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Wherecloud. All rights reserved. (Last updated: 2013-06-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

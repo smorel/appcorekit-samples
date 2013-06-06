@@ -1,0 +1,1842 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CKCollectionCellController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AppCoreKit </a></h1>
+				<a id="developerHome" href="../index.html">Wherecloud</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CKCollectionCellController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/accessorySelectionCallback">&nbsp;&nbsp;&nbsp;&nbsp;accessorySelectionCallback</option>
+	
+	<option value="//api/name/becomeFirstResponderCallback">&nbsp;&nbsp;&nbsp;&nbsp;becomeFirstResponderCallback</option>
+	
+	<option value="//api/name/containerController">&nbsp;&nbsp;&nbsp;&nbsp;containerController</option>
+	
+	<option value="//api/name/createCallback">&nbsp;&nbsp;&nbsp;&nbsp;createCallback</option>
+	
+	<option value="//api/name/deallocCallback">&nbsp;&nbsp;&nbsp;&nbsp;deallocCallback</option>
+	
+	<option value="//api/name/flags">&nbsp;&nbsp;&nbsp;&nbsp;flags</option>
+	
+	<option value="//api/name/indexPath">&nbsp;&nbsp;&nbsp;&nbsp;indexPath</option>
+	
+	<option value="//api/name/initCallback">&nbsp;&nbsp;&nbsp;&nbsp;initCallback</option>
+	
+	<option value="//api/name/layoutCallback">&nbsp;&nbsp;&nbsp;&nbsp;layoutCallback</option>
+	
+	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
+	
+	<option value="//api/name/removeCallback">&nbsp;&nbsp;&nbsp;&nbsp;removeCallback</option>
+	
+	<option value="//api/name/resignFirstResponderCallback">&nbsp;&nbsp;&nbsp;&nbsp;resignFirstResponderCallback</option>
+	
+	<option value="//api/name/selectionCallback">&nbsp;&nbsp;&nbsp;&nbsp;selectionCallback</option>
+	
+	<option value="//api/name/setupCallback">&nbsp;&nbsp;&nbsp;&nbsp;setupCallback</option>
+	
+	<option value="//api/name/size">&nbsp;&nbsp;&nbsp;&nbsp;size</option>
+	
+	<option value="//api/name/value">&nbsp;&nbsp;&nbsp;&nbsp;value</option>
+	
+	<option value="//api/name/view">&nbsp;&nbsp;&nbsp;&nbsp;view</option>
+	
+	<option value="//api/name/viewDidAppearCallback">&nbsp;&nbsp;&nbsp;&nbsp;viewDidAppearCallback</option>
+	
+	<option value="//api/name/viewDidDisappearCallback">&nbsp;&nbsp;&nbsp;&nbsp;viewDidDisappearCallback</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/applyControllerStyle">&nbsp;&nbsp;&nbsp;&nbsp;- applyControllerStyle</option>
+	
+	<option value="//api/name/applyStyle">&nbsp;&nbsp;&nbsp;&nbsp;- applyStyle</option>
+	
+	<option value="//api/name/didBecomeFirstResponder">&nbsp;&nbsp;&nbsp;&nbsp;- didBecomeFirstResponder</option>
+	
+	<option value="//api/name/didResignFirstResponder">&nbsp;&nbsp;&nbsp;&nbsp;- didResignFirstResponder</option>
+	
+	<option value="//api/name/didSelect">&nbsp;&nbsp;&nbsp;&nbsp;- didSelect</option>
+	
+	<option value="//api/name/didSelectAccessoryView">&nbsp;&nbsp;&nbsp;&nbsp;- didSelectAccessoryView</option>
+	
+	<option value="//api/name/identifier">&nbsp;&nbsp;&nbsp;&nbsp;- identifier</option>
+	
+	<option value="//api/name/initView:">&nbsp;&nbsp;&nbsp;&nbsp;- initView:</option>
+	
+	<option value="//api/name/invalidateSize">&nbsp;&nbsp;&nbsp;&nbsp;- invalidateSize</option>
+	
+	<option value="//api/name/loadView">&nbsp;&nbsp;&nbsp;&nbsp;- loadView</option>
+	
+	<option value="//api/name/postInit">&nbsp;&nbsp;&nbsp;&nbsp;- postInit</option>
+	
+	<option value="//api/name/rotateView:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- rotateView:animated:</option>
+	
+	<option value="//api/name/setSize:notifyingContainerForUpdate:">&nbsp;&nbsp;&nbsp;&nbsp;- setSize:notifyingContainerForUpdate:</option>
+	
+	<option value="//api/name/setupView:">&nbsp;&nbsp;&nbsp;&nbsp;- setupView:</option>
+	
+	<option value="//api/name/stylesheet">&nbsp;&nbsp;&nbsp;&nbsp;- stylesheet</option>
+	
+	<option value="//api/name/viewDidAppear:">&nbsp;&nbsp;&nbsp;&nbsp;- viewDidAppear:</option>
+	
+	<option value="//api/name/viewDidDisappear">&nbsp;&nbsp;&nbsp;&nbsp;- viewDidDisappear</option>
+	
+	<option value="//api/name/willSelect">&nbsp;&nbsp;&nbsp;&nbsp;- willSelect</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Identifying the Controller at runtime">Identifying the Controller at runtime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Content">Managing Content</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Customizing the Controller Interactions And Visual Appearance">Customizing the Controller Interactions And Visual Appearance</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Responding to ContainerController Events">Responding to ContainerController Events</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Stylesheets">Managing Stylesheets</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initializing a Controller">Initializing a Controller</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/accessorySelectionCallback">accessorySelectionCallback</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/becomeFirstResponderCallback">becomeFirstResponderCallback</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/containerController">containerController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createCallback">createCallback</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deallocCallback">deallocCallback</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flags">flags</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/indexPath">indexPath</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initCallback">initCallback</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/layoutCallback">layoutCallback</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeCallback">removeCallback</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resignFirstResponderCallback">resignFirstResponderCallback</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectionCallback">selectionCallback</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setupCallback">setupCallback</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/size">size</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/value">value</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/view">view</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDidAppearCallback">viewDidAppearCallback</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDidDisappearCallback">viewDidDisappearCallback</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/applyControllerStyle">applyControllerStyle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/applyStyle">applyStyle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didBecomeFirstResponder">didBecomeFirstResponder</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didResignFirstResponder">didResignFirstResponder</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didSelect">didSelect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didSelectAccessoryView">didSelectAccessoryView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/identifier">identifier</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initView:">initView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/invalidateSize">invalidateSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadView">loadView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postInit">postInit</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rotateView:animated:">rotateView:animated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSize:notifyingContainerForUpdate:">setSize:notifyingContainerForUpdate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setupView:">setupView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stylesheet">stylesheet</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDidAppear:">viewDidAppear:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDidDisappear">viewDidDisappear</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/willSelect">willSelect</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CKCollectionCellController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CKCollectionCellController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CKCollectionCellController.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Identifying the Controller at runtime" name="task_Identifying the Controller at runtime"></a>
+						<h3 class="subsubtitle task-title">Identifying the Controller at runtime</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/indexPath">&nbsp;&nbsp;indexPath</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/identifier">&ndash;&nbsp;identifier</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Content" name="task_Managing Content"></a>
+						<h3 class="subsubtitle task-title">Managing Content</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/containerController">&nbsp;&nbsp;containerController</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/value">&nbsp;&nbsp;value</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/view">&nbsp;&nbsp;view</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Customizing the Controller Interactions And Visual Appearance" name="task_Customizing the Controller Interactions And Visual Appearance"></a>
+						<h3 class="subsubtitle task-title">Customizing the Controller Interactions And Visual Appearance</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flags">&nbsp;&nbsp;flags</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/size">&nbsp;&nbsp;size</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deallocCallback">&nbsp;&nbsp;deallocCallback</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createCallback">&nbsp;&nbsp;createCallback</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initCallback">&nbsp;&nbsp;initCallback</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setupCallback">&nbsp;&nbsp;setupCallback</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectionCallback">&nbsp;&nbsp;selectionCallback</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/accessorySelectionCallback">&nbsp;&nbsp;accessorySelectionCallback</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/becomeFirstResponderCallback">&nbsp;&nbsp;becomeFirstResponderCallback</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resignFirstResponderCallback">&nbsp;&nbsp;resignFirstResponderCallback</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewDidAppearCallback">&nbsp;&nbsp;viewDidAppearCallback</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewDidDisappearCallback">&nbsp;&nbsp;viewDidDisappearCallback</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/layoutCallback">&nbsp;&nbsp;layoutCallback</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeCallback">&nbsp;&nbsp;removeCallback</a></code>
+		<span class="tooltip"><p>This callback is called when the collection <a href="#//api/name/view">view</a> commits editing changes to this cell controller.
+By default, removeCallback is nil.
+If you implements it you will have to manually remove the cell or the object from the binded collections.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Responding to ContainerController Events" name="task_Responding to ContainerController Events"></a>
+						<h3 class="subsubtitle task-title">Responding to ContainerController Events</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewDidAppear:">&ndash;&nbsp;viewDidAppear:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewDidDisappear">&ndash;&nbsp;viewDidDisappear</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadView">&ndash;&nbsp;loadView</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initView:">&ndash;&nbsp;initView:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setupView:">&ndash;&nbsp;setupView:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rotateView:animated:">&ndash;&nbsp;rotateView:animated:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/willSelect">&ndash;&nbsp;willSelect</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didSelect">&ndash;&nbsp;didSelect</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didSelectAccessoryView">&ndash;&nbsp;didSelectAccessoryView</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didBecomeFirstResponder">&ndash;&nbsp;didBecomeFirstResponder</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didResignFirstResponder">&ndash;&nbsp;didResignFirstResponder</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Stylesheets" name="task_Managing Stylesheets"></a>
+						<h3 class="subsubtitle task-title">Managing Stylesheets</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/applyStyle">&ndash;&nbsp;applyStyle</a></code>
+		<span class="tooltip"><p>This will apply the style to the sub views</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/applyControllerStyle">&ndash;&nbsp;applyControllerStyle</a></code>
+		<span class="tooltip"><p>This will apply the style to the controller itself</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stylesheet">&ndash;&nbsp;stylesheet</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Initializing a Controller" name="task_Initializing a Controller"></a>
+						<h3 class="subsubtitle task-title">Initializing a Controller</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postInit">&ndash;&nbsp;postInit</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/invalidateSize">&ndash;&nbsp;invalidateSize</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSize:notifyingContainerForUpdate:">&ndash;&nbsp;setSize:notifyingContainerForUpdate:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/accessorySelectionCallback" title="accessorySelectionCallback"></a>
+	<h3 class="subsubtitle method-title">accessorySelectionCallback</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) CKCallback *accessorySelectionCallback</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/becomeFirstResponderCallback" title="becomeFirstResponderCallback"></a>
+	<h3 class="subsubtitle method-title">becomeFirstResponderCallback</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) CKCallback *becomeFirstResponderCallback</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/containerController" title="containerController"></a>
+	<h3 class="subsubtitle method-title">containerController</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) CKCollectionViewController *containerController</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createCallback" title="createCallback"></a>
+	<h3 class="subsubtitle method-title">createCallback</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) CKCallback *createCallback</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deallocCallback" title="deallocCallback"></a>
+	<h3 class="subsubtitle method-title">deallocCallback</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) CKCallback *deallocCallback</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/flags" title="flags"></a>
+	<h3 class="subsubtitle method-title">flags</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CKItemViewFlags flags</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/indexPath" title="indexPath"></a>
+	<h3 class="subsubtitle method-title">indexPath</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSIndexPath *indexPath</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initCallback" title="initCallback"></a>
+	<h3 class="subsubtitle method-title">initCallback</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) CKCallback *initCallback</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/layoutCallback" title="layoutCallback"></a>
+	<h3 class="subsubtitle method-title">layoutCallback</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) CKCallback *layoutCallback</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="subsubtitle method-title">name</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *name</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeCallback" title="removeCallback"></a>
+	<h3 class="subsubtitle method-title">removeCallback</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This callback is called when the collection <a href="#//api/name/view">view</a> commits editing changes to this cell controller.
+By default, removeCallback is nil.
+If you implements it you will have to manually remove the cell or the object from the binded collections.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) CKCallback *removeCallback</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resignFirstResponderCallback" title="resignFirstResponderCallback"></a>
+	<h3 class="subsubtitle method-title">resignFirstResponderCallback</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) CKCallback *resignFirstResponderCallback</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectionCallback" title="selectionCallback"></a>
+	<h3 class="subsubtitle method-title">selectionCallback</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) CKCallback *selectionCallback</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setupCallback" title="setupCallback"></a>
+	<h3 class="subsubtitle method-title">setupCallback</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) CKCallback *setupCallback</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/size" title="size"></a>
+	<h3 class="subsubtitle method-title">size</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGSize size</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/value" title="value"></a>
+	<h3 class="subsubtitle method-title">value</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) id value</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/view" title="view"></a>
+	<h3 class="subsubtitle method-title">view</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) UIView *view</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewDidAppearCallback" title="viewDidAppearCallback"></a>
+	<h3 class="subsubtitle method-title">viewDidAppearCallback</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) CKCallback *viewDidAppearCallback</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewDidDisappearCallback" title="viewDidDisappearCallback"></a>
+	<h3 class="subsubtitle method-title">viewDidDisappearCallback</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) CKCallback *viewDidDisappearCallback</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/applyControllerStyle" title="applyControllerStyle"></a>
+	<h3 class="subsubtitle method-title">applyControllerStyle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This will apply the style to the controller itself</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)applyControllerStyle</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/applyStyle" title="applyStyle"></a>
+	<h3 class="subsubtitle method-title">applyStyle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This will apply the style to the sub views</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)applyStyle</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didBecomeFirstResponder" title="didBecomeFirstResponder"></a>
+	<h3 class="subsubtitle method-title">didBecomeFirstResponder</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didBecomeFirstResponder</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didResignFirstResponder" title="didResignFirstResponder"></a>
+	<h3 class="subsubtitle method-title">didResignFirstResponder</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didResignFirstResponder</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didSelect" title="didSelect"></a>
+	<h3 class="subsubtitle method-title">didSelect</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didSelect</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didSelectAccessoryView" title="didSelectAccessoryView"></a>
+	<h3 class="subsubtitle method-title">didSelectAccessoryView</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didSelectAccessoryView</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/identifier" title="identifier"></a>
+	<h3 class="subsubtitle method-title">identifier</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)identifier</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initView:" title="initView:"></a>
+	<h3 class="subsubtitle method-title">initView:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)initView:(UIView *)<em>view</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/invalidateSize" title="invalidateSize"></a>
+	<h3 class="subsubtitle method-title">invalidateSize</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)invalidateSize</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadView" title="loadView"></a>
+	<h3 class="subsubtitle method-title">loadView</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (UIView *)loadView</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postInit" title="postInit"></a>
+	<h3 class="subsubtitle method-title">postInit</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)postInit</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rotateView:animated:" title="rotateView:animated:"></a>
+	<h3 class="subsubtitle method-title">rotateView:animated:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)rotateView:(UIView *)<em>view</em> animated:(BOOL)<em>animated</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSize:notifyingContainerForUpdate:" title="setSize:notifyingContainerForUpdate:"></a>
+	<h3 class="subsubtitle method-title">setSize:notifyingContainerForUpdate:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setSize:(CGSize)<em>size</em> notifyingContainerForUpdate:(BOOL)<em>notifyingContainerForUpdate</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setupView:" title="setupView:"></a>
+	<h3 class="subsubtitle method-title">setupView:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setupView:(UIView *)<em>view</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stylesheet" title="stylesheet"></a>
+	<h3 class="subsubtitle method-title">stylesheet</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSMutableDictionary *)stylesheet</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewDidAppear:" title="viewDidAppear:"></a>
+	<h3 class="subsubtitle method-title">viewDidAppear:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)viewDidAppear:(UIView *)<em>view</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewDidDisappear" title="viewDidDisappear"></a>
+	<h3 class="subsubtitle method-title">viewDidDisappear</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)viewDidDisappear</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/willSelect" title="willSelect"></a>
+	<h3 class="subsubtitle method-title">willSelect</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSIndexPath *)willSelect</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionCellController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Wherecloud. All rights reserved. (Last updated: 2013-06-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

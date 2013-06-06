@@ -1,0 +1,1119 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CKMapCollectionViewController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AppCoreKit </a></h1>
+				<a id="developerHome" href="../index.html">Wherecloud</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CKMapCollectionViewController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/annotationToSelect">&nbsp;&nbsp;&nbsp;&nbsp;annotationToSelect</option>
+	
+	<option value="//api/name/annotations">&nbsp;&nbsp;&nbsp;&nbsp;annotations</option>
+	
+	<option value="//api/name/centerCoordinate">&nbsp;&nbsp;&nbsp;&nbsp;centerCoordinate</option>
+	
+	<option value="//api/name/deselectionBlock">&nbsp;&nbsp;&nbsp;&nbsp;deselectionBlock</option>
+	
+	<option value="//api/name/didScrollBlock">&nbsp;&nbsp;&nbsp;&nbsp;didScrollBlock</option>
+	
+	<option value="//api/name/includeUserLocationWhenZooming">&nbsp;&nbsp;&nbsp;&nbsp;includeUserLocationWhenZooming</option>
+	
+	<option value="//api/name/mapView">&nbsp;&nbsp;&nbsp;&nbsp;mapView</option>
+	
+	<option value="//api/name/selectionBlock">&nbsp;&nbsp;&nbsp;&nbsp;selectionBlock</option>
+	
+	<option value="//api/name/selectionStrategy">&nbsp;&nbsp;&nbsp;&nbsp;selectionStrategy</option>
+	
+	<option value="//api/name/smartZoomDefaultRadius">&nbsp;&nbsp;&nbsp;&nbsp;smartZoomDefaultRadius</option>
+	
+	<option value="//api/name/smartZoomMinimumNumberOfAnnotations">&nbsp;&nbsp;&nbsp;&nbsp;smartZoomMinimumNumberOfAnnotations</option>
+	
+	<option value="//api/name/zoomStrategy">&nbsp;&nbsp;&nbsp;&nbsp;zoomStrategy</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/initWithAnnotations:atCoordinate:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithAnnotations:atCoordinate:</option>
+	
+	<option value="//api/name/panToCenterCoordinate:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- panToCenterCoordinate:animated:</option>
+	
+	<option value="//api/name/smartZoomWithAnnotations:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- smartZoomWithAnnotations:animated:</option>
+	
+	<option value="//api/name/zoomOnAnnotations:withStrategy:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- zoomOnAnnotations:withStrategy:animated:</option>
+	
+	<option value="//api/name/zoomToCenterCoordinate:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- zoomToCenterCoordinate:animated:</option>
+	
+	<option value="//api/name/zoomToCenterCoordinate:radius:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- zoomToCenterCoordinate:radius:animated:</option>
+	
+	<option value="//api/name/zoomToRegionEnclosingAnnotations:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- zoomToRegionEnclosingAnnotations:animated:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initializing a Map View Controller">Initializing a Map View Controller</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting the Map View">Getting the Map View</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing the annotations">Accessing the annotations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Customizing the annotation selection behaviour">Customizing the annotation selection behaviour</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Panning">Panning</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Zooming">Zooming</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/annotationToSelect">annotationToSelect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/annotations">annotations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/centerCoordinate">centerCoordinate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deselectionBlock">deselectionBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didScrollBlock">didScrollBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/includeUserLocationWhenZooming">includeUserLocationWhenZooming</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapView">mapView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectionBlock">selectionBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectionStrategy">selectionStrategy</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/smartZoomDefaultRadius">smartZoomDefaultRadius</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/smartZoomMinimumNumberOfAnnotations">smartZoomMinimumNumberOfAnnotations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/zoomStrategy">zoomStrategy</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithAnnotations:atCoordinate:">initWithAnnotations:atCoordinate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/panToCenterCoordinate:animated:">panToCenterCoordinate:animated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/smartZoomWithAnnotations:animated:">smartZoomWithAnnotations:animated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/zoomOnAnnotations:withStrategy:animated:">zoomOnAnnotations:withStrategy:animated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/zoomToCenterCoordinate:animated:">zoomToCenterCoordinate:animated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/zoomToCenterCoordinate:radius:animated:">zoomToCenterCoordinate:radius:animated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/zoomToRegionEnclosingAnnotations:animated:">zoomToRegionEnclosingAnnotations:animated:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CKMapCollectionViewController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CKMapCollectionViewController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/CKCollectionViewController.html">CKCollectionViewController</a> : <a href="../Classes/CKViewController.html">CKViewController</a> : UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">MKMapViewDelegate</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CKMapCollectionViewController.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Initializing a Map View Controller" name="task_Initializing a Map View Controller"></a>
+						<h3 class="subsubtitle task-title">Initializing a Map View Controller</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithAnnotations:atCoordinate:">&ndash;&nbsp;initWithAnnotations:atCoordinate:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Getting the Map View" name="task_Getting the Map View"></a>
+						<h3 class="subsubtitle task-title">Getting the Map View</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mapView">&nbsp;&nbsp;mapView</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing the annotations" name="task_Accessing the annotations"></a>
+						<h3 class="subsubtitle task-title">Accessing the annotations</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/annotations">&nbsp;&nbsp;annotations</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Customizing the annotation selection behaviour" name="task_Customizing the annotation selection behaviour"></a>
+						<h3 class="subsubtitle task-title">Customizing the annotation selection behaviour</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectionStrategy">&nbsp;&nbsp;selectionStrategy</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectionBlock">&nbsp;&nbsp;selectionBlock</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deselectionBlock">&nbsp;&nbsp;deselectionBlock</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Panning" name="task_Panning"></a>
+						<h3 class="subsubtitle task-title">Panning</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/panToCenterCoordinate:animated:">&ndash;&nbsp;panToCenterCoordinate:animated:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didScrollBlock">&nbsp;&nbsp;didScrollBlock</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/centerCoordinate">&nbsp;&nbsp;centerCoordinate</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Zooming" name="task_Zooming"></a>
+						<h3 class="subsubtitle task-title">Zooming</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/zoomStrategy">&nbsp;&nbsp;zoomStrategy</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/smartZoomDefaultRadius">&nbsp;&nbsp;smartZoomDefaultRadius</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/smartZoomMinimumNumberOfAnnotations">&nbsp;&nbsp;smartZoomMinimumNumberOfAnnotations</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/includeUserLocationWhenZooming">&nbsp;&nbsp;includeUserLocationWhenZooming</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/annotationToSelect">&nbsp;&nbsp;annotationToSelect</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/zoomToCenterCoordinate:animated:">&ndash;&nbsp;zoomToCenterCoordinate:animated:</a></code>
+		<span class="tooltip"><p>Zooms to a default radius of 500m</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/zoomToRegionEnclosingAnnotations:animated:">&ndash;&nbsp;zoomToRegionEnclosingAnnotations:animated:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/smartZoomWithAnnotations:animated:">&ndash;&nbsp;smartZoomWithAnnotations:animated:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/zoomOnAnnotations:withStrategy:animated:">&ndash;&nbsp;zoomOnAnnotations:withStrategy:animated:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/zoomToCenterCoordinate:radius:animated:">&ndash;&nbsp;zoomToCenterCoordinate:radius:animated:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/annotationToSelect" title="annotationToSelect"></a>
+	<h3 class="subsubtitle method-title">annotationToSelect</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) id annotationToSelect</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/annotations" title="annotations"></a>
+	<h3 class="subsubtitle method-title">annotations</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readwrite) NSArray *annotations</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/centerCoordinate" title="centerCoordinate"></a>
+	<h3 class="subsubtitle method-title">centerCoordinate</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CLLocationCoordinate2D centerCoordinate</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deselectionBlock" title="deselectionBlock"></a>
+	<h3 class="subsubtitle method-title">deselectionBlock</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) CKMapCollectionViewControllerSelectionBlock deselectionBlock</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didScrollBlock" title="didScrollBlock"></a>
+	<h3 class="subsubtitle method-title">didScrollBlock</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) CKMapCollectionViewControllerScrollBlock didScrollBlock</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/includeUserLocationWhenZooming" title="includeUserLocationWhenZooming"></a>
+	<h3 class="subsubtitle method-title">includeUserLocationWhenZooming</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL includeUserLocationWhenZooming</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mapView" title="mapView"></a>
+	<h3 class="subsubtitle method-title">mapView</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) IBOutlet MKMapView *mapView</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectionBlock" title="selectionBlock"></a>
+	<h3 class="subsubtitle method-title">selectionBlock</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) CKMapCollectionViewControllerSelectionBlock selectionBlock</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectionStrategy" title="selectionStrategy"></a>
+	<h3 class="subsubtitle method-title">selectionStrategy</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CKMapCollectionViewControllerSelectionStrategy selectionStrategy</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/smartZoomDefaultRadius" title="smartZoomDefaultRadius"></a>
+	<h3 class="subsubtitle method-title">smartZoomDefaultRadius</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat smartZoomDefaultRadius</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/smartZoomMinimumNumberOfAnnotations" title="smartZoomMinimumNumberOfAnnotations"></a>
+	<h3 class="subsubtitle method-title">smartZoomMinimumNumberOfAnnotations</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSInteger smartZoomMinimumNumberOfAnnotations</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/zoomStrategy" title="zoomStrategy"></a>
+	<h3 class="subsubtitle method-title">zoomStrategy</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CKMapCollectionViewControllerZoomStrategy zoomStrategy</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithAnnotations:atCoordinate:" title="initWithAnnotations:atCoordinate:"></a>
+	<h3 class="subsubtitle method-title">initWithAnnotations:atCoordinate:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initWithAnnotations:(NSArray *)<em>annotations</em> atCoordinate:(CLLocationCoordinate2D)<em>centerCoordinate</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/panToCenterCoordinate:animated:" title="panToCenterCoordinate:animated:"></a>
+	<h3 class="subsubtitle method-title">panToCenterCoordinate:animated:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)panToCenterCoordinate:(CLLocationCoordinate2D)<em>coordinate</em> animated:(BOOL)<em>animated</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/smartZoomWithAnnotations:animated:" title="smartZoomWithAnnotations:animated:"></a>
+	<h3 class="subsubtitle method-title">smartZoomWithAnnotations:animated:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)smartZoomWithAnnotations:(NSArray *)<em>annotations</em> animated:(BOOL)<em>animated</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/zoomOnAnnotations:withStrategy:animated:" title="zoomOnAnnotations:withStrategy:animated:"></a>
+	<h3 class="subsubtitle method-title">zoomOnAnnotations:withStrategy:animated:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)zoomOnAnnotations:(NSArray *)<em>annotations</em> withStrategy:(CKMapCollectionViewControllerZoomStrategy)<em>strategy</em> animated:(BOOL)<em>animated</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/zoomToCenterCoordinate:animated:" title="zoomToCenterCoordinate:animated:"></a>
+	<h3 class="subsubtitle method-title">zoomToCenterCoordinate:animated:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Zooms to a default radius of 500m</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)zoomToCenterCoordinate:(CLLocationCoordinate2D)<em>coordinate</em> animated:(BOOL)<em>animated</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>coordinate</em></dt>
+			<dd><p>The center coordinate</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animated</em></dt>
+			<dd><p>Animates the zoom</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/zoomToCenterCoordinate:radius:animated:">&ndash; zoomToCenterCoordinate:radius:animated:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/zoomToCenterCoordinate:radius:animated:" title="zoomToCenterCoordinate:radius:animated:"></a>
+	<h3 class="subsubtitle method-title">zoomToCenterCoordinate:radius:animated:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)zoomToCenterCoordinate:(CLLocationCoordinate2D)<em>coordinate</em> radius:(CGFloat)<em>radius</em> animated:(BOOL)<em>animated</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/zoomToRegionEnclosingAnnotations:animated:" title="zoomToRegionEnclosingAnnotations:animated:"></a>
+	<h3 class="subsubtitle method-title">zoomToRegionEnclosingAnnotations:animated:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)zoomToRegionEnclosingAnnotations:(NSArray *)<em>annotations</em> animated:(BOOL)<em>animated</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Wherecloud. All rights reserved. (Last updated: 2013-06-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>
