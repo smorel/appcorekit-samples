@@ -1,31 +1,43 @@
 //
-//  Document.m
-//  Copyright (c) 2012 WhereCloud Inc. All rights reserved.
+//  CKSampleStoreUserSettingsModel.m
+//  CKStoreSample
+//
+//  Created by Sebastien Morel on 13-06-06.
+//  Copyright (c) 2013 WhereCloud Inc. All rights reserved.
 //
 
-#import "Document.h"
+#import "CKSampleStoreUserSettingsModel.h"
+
 
 //While serializing CKObjects hierarchy in CKStore, each object gets a unique UUID.
 //We have to set a specific UUID for our root object to be able to load it later.
 static NSString* kUserSettingsUUID = @"00000000-0000-0000-0000-000000000010";
 
-@implementation UserSettings
-@synthesize name, forname, phoneNumber, birthDate, numberOfChildren,title,phoneNumberConfirmation,userObjects,userObject;
 
+@implementation CKSampleStoreUserSettingsModel
+
+#pragma mark Initialization
+
+//This method is called when executing [CKSampleStoreUserSettingsModel sharedInstance]
+//This allow to customize the way your shared instance must be allocated/initialized
 + (id)newSharedInstance{
-    UserSettings* shared = (UserSettings*)[CKObject loadObjectWithUniqueId:kUserSettingsUUID];
+    CKSampleStoreUserSettingsModel* shared = (CKSampleStoreUserSettingsModel*)[CKObject loadObjectWithUniqueId:kUserSettingsUUID];
     if(!shared){
-        shared = [[UserSettings alloc]init];
+        shared = [[CKSampleStoreUserSettingsModel alloc]init];
         shared.uniqueId = kUserSettingsUUID;
     }
     return shared;
 }
 
+
+#pragma mark Serialization
+
+//By setting recursive to YES here, we ensure we'll save the whole CKSampleStoreUserSettingsModel objects graph.
 - (void)save{
-    //By setting recursive to YES here, we ensure we'll save the whole UserSettings objects graph.
-    //In this particular case, we do not have  objects or collections properties in ou model ...
-    [self saveObjectToDomainNamed:@"CKStoreSampleDomain" recursive:YES];
+    [self saveObjectToDomainNamed:@"CKSampleStoreUserSettingsModelDomain" recursive:YES];
 }
+
+#pragma mark Properties Extended Attributes
 
 //ExtendedAttributes is a non formal dynamic protocol based on property name.
 //The AppCoreKit framework uses runtime to generate selector to access extended attributes on specific properties when needed.
@@ -66,7 +78,7 @@ static NSString* kUserSettingsUUID = @"00000000-0000-0000-0000-000000000010";
         return [NSString formatAsPhoneNumberUsingTextField:textInputView range:range replacementString:replacementString];
     };
     
-    __block UserSettings* bself = self;
+    __block CKSampleStoreUserSettingsModel* bself = self;
     attributes.validationPredicate = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
         return evaluatedObject && [evaluatedObject isEqualToString:[bself phoneNumber]];
     }];
@@ -98,7 +110,7 @@ static NSString* kUserSettingsUUID = @"00000000-0000-0000-0000-000000000010";
 
 - (void)userObjectExtendedAttributes:(CKPropertyExtendedAttributes*)attributes{
     NSMutableDictionary* dico = [NSMutableDictionary dictionary];
-    for(UserObject* obj in [self.userObjects allObjects]){
+    for(CKSampleStoreUserObjectModel* obj in [self.userObjects allObjects]){
         if(obj.text){
             [dico setValue:obj forKey:obj.text];
         }
@@ -106,11 +118,15 @@ static NSString* kUserSettingsUUID = @"00000000-0000-0000-0000-000000000010";
     attributes.valuesAndLabels = dico;
 }
 
+
+- (BOOL)hasValidUserObjects{
+    for(CKSampleStoreUserObjectModel* object in [self userObjects]){
+        if([[object text]length] > 0){
+            return YES;
+        }
+    }
+    return NO;
+}
+
+
 @end
-
-
-
-@implementation UserObject
-@synthesize text;
-@end
-

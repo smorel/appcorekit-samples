@@ -24,15 +24,17 @@
 		960F34DD15E3E5150002DF6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 960F34DC15E3E5150002DF6F /* main.m */; };
 		960F34E115E3E5150002DF6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 960F34E015E3E5150002DF6F /* AppDelegate.m */; };
 		960F34E315E3E5150002DF6F /* AppCoreKit.conf in Resources */ = {isa = PBXBuildFile; fileRef = 960F34E215E3E5150002DF6F /* AppCoreKit.conf */; };
-		960F34EA15E3E5150002DF6F /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 960F34E915E3E5150002DF6F /* Document.m */; };
-		960F34EF15E3E5150002DF6F /* ViewControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 960F34EE15E3E5150002DF6F /* ViewControllerFactory.m */; };
 		960F34F315E3E5150002DF6F /* Stylesheet.style in Resources */ = {isa = PBXBuildFile; fileRef = 960F34F215E3E5150002DF6F /* Stylesheet.style */; };
 		960F34F515E3E5150002DF6F /* Appearance.style in Resources */ = {isa = PBXBuildFile; fileRef = 960F34F415E3E5150002DF6F /* Appearance.style */; };
-		960F34F715E3E5150002DF6F /* ViewControllerForSettings.style in Resources */ = {isa = PBXBuildFile; fileRef = 960F34F615E3E5150002DF6F /* ViewControllerForSettings.style */; };
+		960F34F715E3E5150002DF6F /* CKSampleStoreSettingsViewController.style in Resources */ = {isa = PBXBuildFile; fileRef = 960F34F615E3E5150002DF6F /* CKSampleStoreSettingsViewController.style */; };
 		960F350215E3E5150002DF6F /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 960F350115E3E5150002DF6F /* Localization.strings */; };
 		963BF48D1760DEBB003E3D94 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF48C1760DEBB003E3D94 /* AdSupport.framework */; };
 		963BF4A41760DF3E003E3D94 /* AppCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF4A21760DF3E003E3D94 /* AppCoreKit.framework */; };
 		963BF4A51760DF3E003E3D94 /* VendorsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF4A31760DF3E003E3D94 /* VendorsKit.framework */; };
+		96DC229C1760F8940058BA15 /* CKSampleStoreSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC229B1760F8940058BA15 /* CKSampleStoreSettingsViewController.m */; };
+		96DC229F1760F8BD0058BA15 /* CKSampleStoreUserObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC229E1760F8BD0058BA15 /* CKSampleStoreUserObjectModel.m */; };
+		96DC22A21760F8D60058BA15 /* CKSampleStoreUserSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22A11760F8D60058BA15 /* CKSampleStoreUserSettingsModel.m */; };
+		96DC22A517610ECA0058BA15 /* CKSampleStoreUserObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22A417610ECA0058BA15 /* CKSampleStoreUserObjectViewController.m */; };
 		96EE050815EEBDCE00C0584B /* background_nav-480.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE050615EEBDCE00C0584B /* background_nav-480.png */; };
 		96EE050915EEBDCE00C0584B /* background_nav-480@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE050715EEBDCE00C0584B /* background_nav-480@2x.png */; };
 		96F5C06D15E7CBED007121C6 /* UINavigationController.style in Resources */ = {isa = PBXBuildFile; fileRef = 96F5C06C15E7CBED007121C6 /* UINavigationController.style */; };
@@ -70,18 +72,22 @@
 		960F34DF15E3E5150002DF6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		960F34E015E3E5150002DF6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		960F34E215E3E5150002DF6F /* AppCoreKit.conf */ = {isa = PBXFileReference; lastKnownFileType = text; name = AppCoreKit.conf; path = Resources/AppCoreKit.conf; sourceTree = "<group>"; };
-		960F34E815E3E5150002DF6F /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Document.h; path = Classes/Document.h; sourceTree = "<group>"; };
-		960F34E915E3E5150002DF6F /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Document.m; path = Classes/Document.m; sourceTree = "<group>"; };
-		960F34EE15E3E5150002DF6F /* ViewControllerFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewControllerFactory.m; path = Classes/ViewControllerFactory.m; sourceTree = "<group>"; };
-		960F34F015E3E5150002DF6F /* ViewControllerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewControllerFactory.h; path = Classes/ViewControllerFactory.h; sourceTree = "<group>"; };
-		960F34F215E3E5150002DF6F /* Stylesheet.style */ = {isa = PBXFileReference; lastKnownFileType = text; name = Stylesheet.style; path = Resources/Stylesheet.style; sourceTree = "<group>"; };
-		960F34F415E3E5150002DF6F /* Appearance.style */ = {isa = PBXFileReference; lastKnownFileType = text; name = Appearance.style; path = Resources/Appearance.style; sourceTree = "<group>"; };
-		960F34F615E3E5150002DF6F /* ViewControllerForSettings.style */ = {isa = PBXFileReference; lastKnownFileType = text; name = ViewControllerForSettings.style; path = Resources/ViewControllerForSettings.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		960F34F215E3E5150002DF6F /* Stylesheet.style */ = {isa = PBXFileReference; lastKnownFileType = text; name = Stylesheet.style; path = Resources/Stylesheet.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		960F34F415E3E5150002DF6F /* Appearance.style */ = {isa = PBXFileReference; lastKnownFileType = text; name = Appearance.style; path = Resources/Appearance.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		960F34F615E3E5150002DF6F /* CKSampleStoreSettingsViewController.style */ = {isa = PBXFileReference; lastKnownFileType = text; name = CKSampleStoreSettingsViewController.style; path = Resources/CKSampleStoreSettingsViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		960F350115E3E5150002DF6F /* Localization.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localization.strings; path = Resources/Localization.strings; sourceTree = "<group>"; };
 		960F350315E3E5150002DF6F /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		963BF48C1760DEBB003E3D94 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		963BF4A21760DF3E003E3D94 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = ../../Frameworks/AppCoreKit.framework; sourceTree = "<group>"; };
 		963BF4A31760DF3E003E3D94 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = ../../Frameworks/VendorsKit.framework; sourceTree = "<group>"; };
+		96DC229A1760F8940058BA15 /* CKSampleStoreSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleStoreSettingsViewController.h; path = Classes/CKSampleStoreSettingsViewController.h; sourceTree = "<group>"; };
+		96DC229B1760F8940058BA15 /* CKSampleStoreSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleStoreSettingsViewController.m; path = Classes/CKSampleStoreSettingsViewController.m; sourceTree = "<group>"; };
+		96DC229D1760F8BD0058BA15 /* CKSampleStoreUserObjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleStoreUserObjectModel.h; path = Classes/CKSampleStoreUserObjectModel.h; sourceTree = "<group>"; };
+		96DC229E1760F8BD0058BA15 /* CKSampleStoreUserObjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleStoreUserObjectModel.m; path = Classes/CKSampleStoreUserObjectModel.m; sourceTree = "<group>"; };
+		96DC22A01760F8D60058BA15 /* CKSampleStoreUserSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleStoreUserSettingsModel.h; path = Classes/CKSampleStoreUserSettingsModel.h; sourceTree = "<group>"; };
+		96DC22A11760F8D60058BA15 /* CKSampleStoreUserSettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleStoreUserSettingsModel.m; path = Classes/CKSampleStoreUserSettingsModel.m; sourceTree = "<group>"; };
+		96DC22A317610ECA0058BA15 /* CKSampleStoreUserObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleStoreUserObjectViewController.h; path = Classes/CKSampleStoreUserObjectViewController.h; sourceTree = "<group>"; };
+		96DC22A417610ECA0058BA15 /* CKSampleStoreUserObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleStoreUserObjectViewController.m; path = Classes/CKSampleStoreUserObjectViewController.m; sourceTree = "<group>"; };
 		96EE050615EEBDCE00C0584B /* background_nav-480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background_nav-480.png"; path = "Resources/background_nav-480.png"; sourceTree = "<group>"; };
 		96EE050715EEBDCE00C0584B /* background_nav-480@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background_nav-480@2x.png"; path = "Resources/background_nav-480@2x.png"; sourceTree = "<group>"; };
 		96F5C06C15E7CBED007121C6 /* UINavigationController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = UINavigationController.style; path = Resources/UINavigationController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
@@ -170,9 +176,18 @@
 				960F34E215E3E5150002DF6F /* AppCoreKit.conf */,
 				960F34DF15E3E5150002DF6F /* AppDelegate.h */,
 				960F34E015E3E5150002DF6F /* AppDelegate.m */,
-				960F34E715E3E5150002DF6F /* Document */,
-				960F34ED15E3E5150002DF6F /* ViewControllers */,
-				960F34F115E3E5150002DF6F /* Stylesheets */,
+				96DC229D1760F8BD0058BA15 /* CKSampleStoreUserObjectModel.h */,
+				96DC229E1760F8BD0058BA15 /* CKSampleStoreUserObjectModel.m */,
+				96DC22A01760F8D60058BA15 /* CKSampleStoreUserSettingsModel.h */,
+				96DC22A11760F8D60058BA15 /* CKSampleStoreUserSettingsModel.m */,
+				960F34F215E3E5150002DF6F /* Stylesheet.style */,
+				960F34F415E3E5150002DF6F /* Appearance.style */,
+				96F5C06C15E7CBED007121C6 /* UINavigationController.style */,
+				960F34F615E3E5150002DF6F /* CKSampleStoreSettingsViewController.style */,
+				96DC229A1760F8940058BA15 /* CKSampleStoreSettingsViewController.h */,
+				96DC229B1760F8940058BA15 /* CKSampleStoreSettingsViewController.m */,
+				96DC22A317610ECA0058BA15 /* CKSampleStoreUserObjectViewController.h */,
+				96DC22A417610ECA0058BA15 /* CKSampleStoreUserObjectViewController.m */,
 				960F350015E3E5150002DF6F /* Resources */,
 				960F34D715E3E5150002DF6F /* Supporting Files */,
 			);
@@ -190,31 +205,9 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		960F34E715E3E5150002DF6F /* Document */ = {
+		960F350015E3E5150002DF6F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				960F34E815E3E5150002DF6F /* Document.h */,
-				960F34E915E3E5150002DF6F /* Document.m */,
-			);
-			name = Document;
-			sourceTree = "<group>";
-		};
-		960F34ED15E3E5150002DF6F /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				960F34EE15E3E5150002DF6F /* ViewControllerFactory.m */,
-				960F34F015E3E5150002DF6F /* ViewControllerFactory.h */,
-			);
-			name = ViewControllers;
-			sourceTree = "<group>";
-		};
-		960F34F115E3E5150002DF6F /* Stylesheets */ = {
-			isa = PBXGroup;
-			children = (
-				960F34F215E3E5150002DF6F /* Stylesheet.style */,
-				960F34F415E3E5150002DF6F /* Appearance.style */,
-				960F34F615E3E5150002DF6F /* ViewControllerForSettings.style */,
-				96F5C06C15E7CBED007121C6 /* UINavigationController.style */,
 				96EE050615EEBDCE00C0584B /* background_nav-480.png */,
 				96EE050715EEBDCE00C0584B /* background_nav-480@2x.png */,
 				96F5C13D15E82968007121C6 /* background_nav.png */,
@@ -227,13 +220,6 @@
 				96F5C14415E82969007121C6 /* uppernav_button-pressed@2x.png */,
 				96F5C14515E82969007121C6 /* uppernav_button.png */,
 				96F5C14615E82969007121C6 /* uppernav_button@2x.png */,
-			);
-			name = Stylesheets;
-			sourceTree = "<group>";
-		};
-		960F350015E3E5150002DF6F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
 				960F350115E3E5150002DF6F /* Localization.strings */,
 				960F350315E3E5150002DF6F /* Entitlements.plist */,
 			);
@@ -296,7 +282,7 @@
 				960F34E315E3E5150002DF6F /* AppCoreKit.conf in Resources */,
 				960F34F315E3E5150002DF6F /* Stylesheet.style in Resources */,
 				960F34F515E3E5150002DF6F /* Appearance.style in Resources */,
-				960F34F715E3E5150002DF6F /* ViewControllerForSettings.style in Resources */,
+				960F34F715E3E5150002DF6F /* CKSampleStoreSettingsViewController.style in Resources */,
 				960F350215E3E5150002DF6F /* Localization.strings in Resources */,
 				96F5C06D15E7CBED007121C6 /* UINavigationController.style in Resources */,
 				96F5C14715E82969007121C6 /* background_nav.png in Resources */,
@@ -340,8 +326,10 @@
 			files = (
 				960F34DD15E3E5150002DF6F /* main.m in Sources */,
 				960F34E115E3E5150002DF6F /* AppDelegate.m in Sources */,
-				960F34EA15E3E5150002DF6F /* Document.m in Sources */,
-				960F34EF15E3E5150002DF6F /* ViewControllerFactory.m in Sources */,
+				96DC229C1760F8940058BA15 /* CKSampleStoreSettingsViewController.m in Sources */,
+				96DC229F1760F8BD0058BA15 /* CKSampleStoreUserObjectModel.m in Sources */,
+				96DC22A21760F8D60058BA15 /* CKSampleStoreUserSettingsModel.m in Sources */,
+				96DC22A517610ECA0058BA15 /* CKSampleStoreUserObjectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
