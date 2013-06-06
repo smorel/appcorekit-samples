@@ -27,7 +27,6 @@
 		9696E6C315E410A200CD7C34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9696E6C215E410A200CD7C34 /* main.m */; };
 		9696E6C715E410A200CD7C34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9696E6C615E410A200CD7C34 /* AppDelegate.m */; };
 		9696E6C915E410A200CD7C34 /* AppCoreKit.conf in Resources */ = {isa = PBXBuildFile; fileRef = 9696E6C815E410A200CD7C34 /* AppCoreKit.conf */; };
-		9696E6D515E410A200CD7C34 /* ViewControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9696E6D415E410A200CD7C34 /* ViewControllerFactory.m */; };
 		9696E6D915E410A200CD7C34 /* Stylesheet.style in Resources */ = {isa = PBXBuildFile; fileRef = 9696E6D815E410A200CD7C34 /* Stylesheet.style */; };
 		9696E6DB15E410A200CD7C34 /* Appearance.style in Resources */ = {isa = PBXBuildFile; fileRef = 9696E6DA15E410A200CD7C34 /* Appearance.style */; };
 		9696E6DF15E410A200CD7C34 /* UINavigationController.style in Resources */ = {isa = PBXBuildFile; fileRef = 9696E6DE15E410A200CD7C34 /* UINavigationController.style */; };
@@ -45,6 +44,14 @@
 		9696E71C15E53B5B00CD7C34 /* segmented-left.png in Resources */ = {isa = PBXBuildFile; fileRef = 9696E71815E53B5A00CD7C34 /* segmented-left.png */; };
 		9696E71D15E53B5B00CD7C34 /* segmented-right-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 9696E71915E53B5A00CD7C34 /* segmented-right-highlight.png */; };
 		9696E71E15E53B5B00CD7C34 /* segmented-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 9696E71A15E53B5B00CD7C34 /* segmented-right.png */; };
+		96DC22A817611B190058BA15 /* CKSampleContainerTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22A717611B190058BA15 /* CKSampleContainerTabViewController.m */; };
+		96DC22AB17611BB50058BA15 /* CKSampleContainerSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22AA17611BB50058BA15 /* CKSampleContainerSplitViewController.m */; };
+		96DC22AE17611BC10058BA15 /* CKSampleContainerSegmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22AD17611BC10058BA15 /* CKSampleContainerSegmentedViewController.m */; };
+		96DC22B117611BCE0058BA15 /* CKSampleContainerBreadCrumbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22B017611BCE0058BA15 /* CKSampleContainerBreadCrumbViewController.m */; };
+		96DC22B417611BDA0058BA15 /* CKSampleContainerCustomContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22B317611BDA0058BA15 /* CKSampleContainerCustomContainerViewController.m */; };
+		96DC22B717611EB80058BA15 /* CKSampleContainerWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22B617611EB80058BA15 /* CKSampleContainerWebBrowserViewController.m */; };
+		96DC22BA17611F5D0058BA15 /* CKSampleContainerWebBrowserUrlTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22B917611F5C0058BA15 /* CKSampleContainerWebBrowserUrlTableViewController.m */; };
+		96DC22BD1761217A0058BA15 /* CKSampleContainerSplitSeparatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22BC1761217A0058BA15 /* CKSampleContainerSplitSeparatorViewController.m */; };
 		96F5C11915E828D0007121C6 /* breadcrumb_button_highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F5C10F15E828D0007121C6 /* breadcrumb_button_highlighted@2x.png */; };
 		96F5C11A15E828D0007121C6 /* breadcrumb_button_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F5C11015E828D0007121C6 /* breadcrumb_button_normal@2x.png */; };
 		96F5C11B15E828D0007121C6 /* mainnav_button-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F5C11115E828D0007121C6 /* mainnav_button-pressed@2x.png */; };
@@ -82,8 +89,6 @@
 		9696E6C515E410A200CD7C34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9696E6C615E410A200CD7C34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9696E6C815E410A200CD7C34 /* AppCoreKit.conf */ = {isa = PBXFileReference; lastKnownFileType = text; name = AppCoreKit.conf; path = Resources/AppCoreKit.conf; sourceTree = "<group>"; };
-		9696E6D415E410A200CD7C34 /* ViewControllerFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewControllerFactory.m; path = Classes/ViewControllerFactory.m; sourceTree = "<group>"; };
-		9696E6D615E410A200CD7C34 /* ViewControllerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewControllerFactory.h; path = Classes/ViewControllerFactory.h; sourceTree = "<group>"; };
 		9696E6D815E410A200CD7C34 /* Stylesheet.style */ = {isa = PBXFileReference; lastKnownFileType = text; name = Stylesheet.style; path = Resources/Stylesheet.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		9696E6DA15E410A200CD7C34 /* Appearance.style */ = {isa = PBXFileReference; lastKnownFileType = text; name = Appearance.style; path = Resources/Appearance.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		9696E6DE15E410A200CD7C34 /* UINavigationController.style */ = {isa = PBXFileReference; lastKnownFileType = text; name = UINavigationController.style; path = Resources/UINavigationController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
@@ -102,6 +107,22 @@
 		9696E71815E53B5A00CD7C34 /* segmented-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "segmented-left.png"; path = "Resources/segmented-left.png"; sourceTree = "<group>"; };
 		9696E71915E53B5A00CD7C34 /* segmented-right-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "segmented-right-highlight.png"; path = "Resources/segmented-right-highlight.png"; sourceTree = "<group>"; };
 		9696E71A15E53B5B00CD7C34 /* segmented-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "segmented-right.png"; path = "Resources/segmented-right.png"; sourceTree = "<group>"; };
+		96DC22A617611B190058BA15 /* CKSampleContainerTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleContainerTabViewController.h; path = Classes/CKSampleContainerTabViewController.h; sourceTree = "<group>"; };
+		96DC22A717611B190058BA15 /* CKSampleContainerTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleContainerTabViewController.m; path = Classes/CKSampleContainerTabViewController.m; sourceTree = "<group>"; };
+		96DC22A917611BB50058BA15 /* CKSampleContainerSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleContainerSplitViewController.h; path = Classes/CKSampleContainerSplitViewController.h; sourceTree = "<group>"; };
+		96DC22AA17611BB50058BA15 /* CKSampleContainerSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleContainerSplitViewController.m; path = Classes/CKSampleContainerSplitViewController.m; sourceTree = "<group>"; };
+		96DC22AC17611BC10058BA15 /* CKSampleContainerSegmentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleContainerSegmentedViewController.h; path = Classes/CKSampleContainerSegmentedViewController.h; sourceTree = "<group>"; };
+		96DC22AD17611BC10058BA15 /* CKSampleContainerSegmentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleContainerSegmentedViewController.m; path = Classes/CKSampleContainerSegmentedViewController.m; sourceTree = "<group>"; };
+		96DC22AF17611BCE0058BA15 /* CKSampleContainerBreadCrumbViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleContainerBreadCrumbViewController.h; path = Classes/CKSampleContainerBreadCrumbViewController.h; sourceTree = "<group>"; };
+		96DC22B017611BCE0058BA15 /* CKSampleContainerBreadCrumbViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleContainerBreadCrumbViewController.m; path = Classes/CKSampleContainerBreadCrumbViewController.m; sourceTree = "<group>"; };
+		96DC22B217611BDA0058BA15 /* CKSampleContainerCustomContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleContainerCustomContainerViewController.h; path = Classes/CKSampleContainerCustomContainerViewController.h; sourceTree = "<group>"; };
+		96DC22B317611BDA0058BA15 /* CKSampleContainerCustomContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleContainerCustomContainerViewController.m; path = Classes/CKSampleContainerCustomContainerViewController.m; sourceTree = "<group>"; };
+		96DC22B517611EB80058BA15 /* CKSampleContainerWebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleContainerWebBrowserViewController.h; path = Classes/CKSampleContainerWebBrowserViewController.h; sourceTree = "<group>"; };
+		96DC22B617611EB80058BA15 /* CKSampleContainerWebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleContainerWebBrowserViewController.m; path = Classes/CKSampleContainerWebBrowserViewController.m; sourceTree = "<group>"; };
+		96DC22B817611F5C0058BA15 /* CKSampleContainerWebBrowserUrlTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleContainerWebBrowserUrlTableViewController.h; path = Classes/CKSampleContainerWebBrowserUrlTableViewController.h; sourceTree = "<group>"; };
+		96DC22B917611F5C0058BA15 /* CKSampleContainerWebBrowserUrlTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleContainerWebBrowserUrlTableViewController.m; path = Classes/CKSampleContainerWebBrowserUrlTableViewController.m; sourceTree = "<group>"; };
+		96DC22BB1761217A0058BA15 /* CKSampleContainerSplitSeparatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleContainerSplitSeparatorViewController.h; path = Classes/CKSampleContainerSplitSeparatorViewController.h; sourceTree = "<group>"; };
+		96DC22BC1761217A0058BA15 /* CKSampleContainerSplitSeparatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleContainerSplitSeparatorViewController.m; path = Classes/CKSampleContainerSplitSeparatorViewController.m; sourceTree = "<group>"; };
 		96F5C10F15E828D0007121C6 /* breadcrumb_button_highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "breadcrumb_button_highlighted@2x.png"; path = "Resources/breadcrumb_button_highlighted@2x.png"; sourceTree = "<group>"; };
 		96F5C11015E828D0007121C6 /* breadcrumb_button_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "breadcrumb_button_normal@2x.png"; path = "Resources/breadcrumb_button_normal@2x.png"; sourceTree = "<group>"; };
 		96F5C11115E828D0007121C6 /* mainnav_button-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mainnav_button-pressed@2x.png"; path = "Resources/mainnav_button-pressed@2x.png"; sourceTree = "<group>"; };
@@ -187,8 +208,26 @@
 				9696E6C815E410A200CD7C34 /* AppCoreKit.conf */,
 				9696E6C515E410A200CD7C34 /* AppDelegate.h */,
 				9696E6C615E410A200CD7C34 /* AppDelegate.m */,
-				9696E6D315E410A200CD7C34 /* ViewControllers */,
-				9696E6D715E410A200CD7C34 /* Stylesheets */,
+				9696E6D815E410A200CD7C34 /* Stylesheet.style */,
+				9696E6DA15E410A200CD7C34 /* Appearance.style */,
+				9696E6DE15E410A200CD7C34 /* UINavigationController.style */,
+				9696E6F215E416E000CD7C34 /* ViewControllers.style */,
+				96DC22A617611B190058BA15 /* CKSampleContainerTabViewController.h */,
+				96DC22A717611B190058BA15 /* CKSampleContainerTabViewController.m */,
+				96DC22A917611BB50058BA15 /* CKSampleContainerSplitViewController.h */,
+				96DC22AA17611BB50058BA15 /* CKSampleContainerSplitViewController.m */,
+				96DC22BB1761217A0058BA15 /* CKSampleContainerSplitSeparatorViewController.h */,
+				96DC22BC1761217A0058BA15 /* CKSampleContainerSplitSeparatorViewController.m */,
+				96DC22AC17611BC10058BA15 /* CKSampleContainerSegmentedViewController.h */,
+				96DC22AD17611BC10058BA15 /* CKSampleContainerSegmentedViewController.m */,
+				96DC22AF17611BCE0058BA15 /* CKSampleContainerBreadCrumbViewController.h */,
+				96DC22B017611BCE0058BA15 /* CKSampleContainerBreadCrumbViewController.m */,
+				96DC22B217611BDA0058BA15 /* CKSampleContainerCustomContainerViewController.h */,
+				96DC22B317611BDA0058BA15 /* CKSampleContainerCustomContainerViewController.m */,
+				96DC22B517611EB80058BA15 /* CKSampleContainerWebBrowserViewController.h */,
+				96DC22B617611EB80058BA15 /* CKSampleContainerWebBrowserViewController.m */,
+				96DC22B817611F5C0058BA15 /* CKSampleContainerWebBrowserUrlTableViewController.h */,
+				96DC22B917611F5C0058BA15 /* CKSampleContainerWebBrowserUrlTableViewController.m */,
 				9696E6E615E410A200CD7C34 /* Resources */,
 				9696E6BD15E410A200CD7C34 /* Supporting Files */,
 			);
@@ -206,30 +245,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9696E6D315E410A200CD7C34 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				9696E6D415E410A200CD7C34 /* ViewControllerFactory.m */,
-				9696E6D615E410A200CD7C34 /* ViewControllerFactory.h */,
-			);
-			name = ViewControllers;
-			sourceTree = "<group>";
-		};
-		9696E6D715E410A200CD7C34 /* Stylesheets */ = {
-			isa = PBXGroup;
-			children = (
-				9696E71F15E53B5E00CD7C34 /* Images */,
-				9696E6D815E410A200CD7C34 /* Stylesheet.style */,
-				9696E6DA15E410A200CD7C34 /* Appearance.style */,
-				9696E6F215E416E000CD7C34 /* ViewControllers.style */,
-				9696E6DE15E410A200CD7C34 /* UINavigationController.style */,
-			);
-			name = Stylesheets;
-			sourceTree = "<group>";
-		};
 		9696E6E615E410A200CD7C34 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9696E71F15E53B5E00CD7C34 /* Images */,
 				9696E6E715E410A200CD7C34 /* Localization.strings */,
 				9696E6E915E410A200CD7C34 /* Entitlements.plist */,
 			);
@@ -375,7 +394,14 @@
 			files = (
 				9696E6C315E410A200CD7C34 /* main.m in Sources */,
 				9696E6C715E410A200CD7C34 /* AppDelegate.m in Sources */,
-				9696E6D515E410A200CD7C34 /* ViewControllerFactory.m in Sources */,
+				96DC22A817611B190058BA15 /* CKSampleContainerTabViewController.m in Sources */,
+				96DC22AB17611BB50058BA15 /* CKSampleContainerSplitViewController.m in Sources */,
+				96DC22AE17611BC10058BA15 /* CKSampleContainerSegmentedViewController.m in Sources */,
+				96DC22B117611BCE0058BA15 /* CKSampleContainerBreadCrumbViewController.m in Sources */,
+				96DC22B417611BDA0058BA15 /* CKSampleContainerCustomContainerViewController.m in Sources */,
+				96DC22B717611EB80058BA15 /* CKSampleContainerWebBrowserViewController.m in Sources */,
+				96DC22BA17611F5D0058BA15 /* CKSampleContainerWebBrowserUrlTableViewController.m in Sources */,
+				96DC22BD1761217A0058BA15 /* CKSampleContainerSplitSeparatorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
