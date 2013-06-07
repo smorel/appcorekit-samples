@@ -7,18 +7,10 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewControllers.h"
-#import "FeedSources.h"
-
-
-@implementation CKLicense(YourAppName)
-
-+ (NSString*)licenseKey{
-    //Return your license key here.
-    return @"__APPCOREKIT_LICENSE_KEY__";
-}
-
-@end
+#import <AppCoreKit/AppCoreKit.h>
+#import "CKSampleTwitterTimelineModel.h"
+#import "CKSampleTwitterDataSources.h"
+#import "CKSampleTwitterTimelineViewController.h"
 
 @implementation AppDelegate
 
@@ -26,9 +18,8 @@
 
 - (id)init{
     self = [super init];
-    [[CKStyleManager defaultManager]loadContentOfFileNamed:@"TwitterTimeline"];
-    [CKMappingContext loadContentOfFileNamed:@"TwitterTimeline"];
-    //[[CKMockManager defaultManager]loadContentOfFileNamed:@"TwitterTimeline"];
+    [[CKStyleManager defaultManager]loadContentOfFileNamed:@"Stylesheet"];
+    [CKMappingContext loadContentOfFileNamed:@"CKSampleTwitterDataSources"];
     
 #ifdef DEBUG
     [CKConfiguration initWithContentOfFileNames:@"AppCoreKit" type:CKConfigurationTypeDebug];
@@ -44,11 +35,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    Timeline* timeline = [Timeline sharedInstance];
-    timeline.tweets.feedSource = [FeedSources feedSourceForTweets];
+    CKSampleTwitterTimelineModel* timeline = [CKSampleTwitterTimelineModel sharedInstance];
+    timeline.tweets.feedSource = [CKSampleTwitterDataSources feedSourceForTweets];
+    
+    CKSampleTwitterTimelineViewController* viewController = [[CKSampleTwitterTimelineViewController alloc] initWithTimeline:timeline];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[ViewControllers viewControllerForTimeline:timeline]];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:viewController];
     [self.window makeKeyAndVisible];
     return YES;
 }

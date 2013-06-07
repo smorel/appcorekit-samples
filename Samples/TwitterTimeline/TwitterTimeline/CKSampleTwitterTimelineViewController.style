@@ -14,7 +14,7 @@
 		"embossBottomColor" : "whiteColor"
     },
     
-    "UIViewController[name=Timeline]" : {
+    "CKSampleTwitterTimelineViewController" : {
         "rowInsertAnimation" : "UITableViewRowAnimationTop",
         "style" : "UITableViewStyleGrouped",
         
@@ -49,31 +49,6 @@
                         "shadowOpacity" : "0.8"
                     }
                 }
-            }
-        }
-    },
-    
-    "$navigation_title_label" : {
-        "fontName" : "Helvetica-Bold",
-        "fontSize" : "18",
-        "textColor" : "whiteColor"
-    },
-    
-    "UINavigationController" : {
-        "navigationBar" : {
-            "backgroundImage" : "background_nav",
-            "layer" : {
-                "shadowColor" : "blackColor",
-                "shadowRadius" : 4,
-                "shadowOffset" : "0 2",
-                "shadowOpacity" : "0.8"
-            },
-            
-            "titleView" : {
-                "@inherits" : [ "$navigation_title_label" ],
-                "backgroundColor" : "clearColor",
-                "shadowColor" : "darkGrayColor",
-                "shadowOffset" : "0 -1"
             }
         }
     }

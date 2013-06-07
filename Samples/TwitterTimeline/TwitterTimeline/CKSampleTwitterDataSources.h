@@ -1,5 +1,5 @@
 //
-//  FeedSources.h
+//  CKSampleTwitterDataSources.h
 //  TwitterTimeline
 //
 //  Created by  on 12-06-08.
@@ -8,7 +8,7 @@
 
 #import <AppCoreKit/AppCoreKit.h>
 
-@interface FeedSources : NSObject
+@interface CKSampleTwitterDataSources : NSObject
 
 + (CKFeedSource*)feedSourceForTweets;
 

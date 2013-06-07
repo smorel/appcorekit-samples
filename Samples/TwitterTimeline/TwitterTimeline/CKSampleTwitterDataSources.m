@@ -1,17 +1,19 @@
 //
-//  FeedSources.m
+//  CKSampleTwitterDataSources.m
 //  TwitterTimeline
 //
 //  Created by  on 12-06-08.
 //  Copyright (c) 2012 WhereCloud Inc. All rights reserved.
 //
 
-#import "FeedSources.h"
-#import "Document.h"
+#import "CKSampleTwitterDataSources.h"
 #import <Twitter/Twitter.h>
 #import <Accounts/Accounts.h>
 
-@implementation FeedSources
+#import "CKSampleTwitterTweetModel.h"
+#import "CKSampleTwitterTimelineModel.h"
+
+@implementation CKSampleTwitterDataSources
 
 /* The Twitter public Timeline API is not available anymore.
    This sampe illustrates how to fetch data from the web using AppCoreKit high level http requests API that transforms the resulting payload into document objects.
@@ -79,7 +81,7 @@
     CKFeedSource* feedSource = [CKFeedSource feedSource];
     
     feedSource.fetchBlock = ^(CKFeedSource* feedSource, NSRange range){
-        NSString* lastId = (range.location > 0) ? [[[[Timeline sharedInstance]tweets]objectAtIndex:range.location-1]identifier] : nil;
+        NSString* lastId = (range.location > 0) ? [[[[CKSampleTwitterTimelineModel sharedInstance]tweets]objectAtIndex:range.location-1]identifier] : nil;
         
         [self requestTwitterAccountWithCompletionBlock:^(ACAccount* account){
             if(!account){
