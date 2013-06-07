@@ -13,7 +13,10 @@ You can clone this repository and try the samples right now as the framework is 
 
 ## API Documentation
 
-To integrate the AppCoreKit Api documentation into Xcode, copy <b>./Frameworks/AppCoreKit.framework/Documentation/com.wherecloud.AppCoreKit</b> to the <b>~/Library/Developer/Shared/Documentation/DocSets/</b> folder.
+To integrate the AppCoreKit Api documentation into Xcode, copy the following file:
+<pre>./Frameworks/AppCoreKit.framework/Documentation/com.wherecloud.AppCoreKit.docset</pre> 
+to 
+<pre>~/Library/Developer/Shared/Documentation/DocSets/</pre>
 
 ## Installation - Using AppCoreKit in your own application
 
