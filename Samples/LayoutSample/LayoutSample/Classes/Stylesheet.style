@@ -1,6 +1,7 @@
 {
     "@import" : [
         "UINavigationController",
-        "CKSampleLayoutInstagramViewController"
+        "CKSampleLayoutInstagramViewController",
+        "CKSampleLayoutViewController"
     ]
 }

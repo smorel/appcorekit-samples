@@ -9,6 +9,7 @@
 #import "CKSampleLayoutInstagramViewController.h"
 #import "CKSampleLayoutInstagramModel.h"
 #import "CKSampleLayoutInstagramDataSources.h"
+#import "CKSampleLayoutViewController.h"
 
 @interface CKSampleLayoutInstagramViewController ()
 @property(nonatomic,retain) CKSampleLayoutInstagramModel* model;
@@ -25,7 +26,7 @@
 }
 
 - (void)setup{
-    self.title = _(@"Layout Sample - Forms");
+    self.title = _(@"Layout - Forms");
     
     CKTableViewCellController* next = [self cellControllerForNextUser];
     CKFormSection* nextSection = [CKFormSection sectionWithCellControllers:@[next]];
@@ -35,6 +36,13 @@
     CKFormSection* modelSection = [CKFormSection sectionWithCellControllers:@[header,details]];
     
     [self addSections:@[nextSection, modelSection]];
+    
+    __unsafe_unretained CKSampleLayoutInstagramViewController* bself = self;
+    
+    self.rightButton = [[UIBarButtonItem alloc]initWithTitle:_(@"View Controller") style:UIBarButtonItemStyleBordered block:^{
+        CKSampleLayoutViewController* viewController = [CKSampleLayoutViewController controller];
+        [bself.navigationController pushViewController:viewController animated:YES];
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
