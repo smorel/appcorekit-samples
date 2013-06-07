@@ -18,9 +18,9 @@ To integrate the AppCoreKit Api documentation into Xcode, copy the following fil
 to 
 <pre>~/Library/Developer/Shared/Documentation/DocSets/</pre>
 
-## Installation - Using AppCoreKit in your own application
+## Using AppCoreKit in your own application
 
-* Drag'n'drop <b>AppCoreKit.framework</b> and <b>VendorsKit.framework</b> from the <b>/Frameworks</b> folder into your Xcode project.
+* Drag'n'drop <b>AppCoreKit.framework</b> and <b>VendorsKit.framework</b> from the <b>./Frameworks</b> folder into your Xcode project.
 
 * Add the following frameworks and libraries to your project : 
 <pre>
@@ -40,21 +40,26 @@ MobileCoreServices,
 AdSupport.
 </pre>
 
-* Add the following link flags in your build settings (OTHER_LDFLAGS) : 
+* Add the following link flags in your build settings (<b>OTHER_LDFLAGS</b>) : 
 <pre>
  -ObjC -all_load -lxml2 -licucore -lz -weak_library /usr/lib/libstdc++.dylib
 </pre>
 
-* As Xcode do not natively support static frameworks especially for resources, you'll need to add a post build phase if you'd like to use some components. In the build phase for your target, add a "Run Script" build phase and add the following script :
+* As Xcode do not natively support static frameworks especially for resources, you'll need to add a post build phase if you'd like to use some components. In the build phase for your target, add a <b>"Run Script" build phase</b> and add the following script :
 
 <pre>
 YOUR_FRAMEWORS_PATH="$PROJECT_DIR/../../Frameworks/"
 sh "$YOUR_FRAMEWORS_PATH/copy_framework_resources.sh" 
-    --system-developer-dir "$SYSTEM_DEVELOPER_DIR" 
-    --executable-name "$EXECUTABLE_NAME" 
-    --frameworks-dir "$YOUR_FRAMEWORS_PATH" 
-    --target-build-dir "$TARGET_BUILD_DIR" 
-    --project "$PROJECT" 
-    --project-dir "$PROJECT_DIR"
+        --system-developer-dir "$SYSTEM_DEVELOPER_DIR" 
+        --executable-name "$EXECUTABLE_NAME" 
+        --frameworks-dir "$YOUR_FRAMEWORS_PATH" 
+        --target-build-dir "$TARGET_BUILD_DIR" 
+        --project "$PROJECT" 
+        --project-dir "$PROJECT_DIR"
 </pre>
 
+## Credits
+
+If you have any comments, suggestions, question or information request, please contact us at appcorekitsupport@wherecloud.com.
+
+We are working on providing an open source repository for the framework as well. <b>Coming soon !</b>
