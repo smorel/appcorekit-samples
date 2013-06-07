@@ -6,20 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		9668B8F515D5954D00C57715 /* Touch */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 9668B91415D5954E00C57715 /* Build configuration list for PBXAggregateTarget "Touch" */;
-			buildPhases = (
-				9668B8F415D5954D00C57715 /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = Touch;
-			productName = Touch;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		963BF4891760DEAA003E3D94 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF4881760DEAA003E3D94 /* AdSupport.framework */; };
 		963BF49C1760DF28003E3D94 /* AppCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF49A1760DF28003E3D94 /* AppCoreKit.framework */; };
@@ -50,9 +36,15 @@
 		96691E2215DDA13200D73510 /* button-dark-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 96691E2015DDA13200D73510 /* button-dark-blue.png */; };
 		96691E2415DDA7F500D73510 /* Instagram_Icon_Large1.png in Resources */ = {isa = PBXBuildFile; fileRef = 96691E2315DDA7F500D73510 /* Instagram_Icon_Large1.png */; };
 		96691E2615DDB04F00D73510 /* Instagram_Icon_Large1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96691E2515DDB04F00D73510 /* Instagram_Icon_Large1@2x.png */; };
-		96B5530C15DC42780026D851 /* Controller.style in Resources */ = {isa = PBXBuildFile; fileRef = 96B5530915DC42780026D851 /* Controller.style */; };
-		96B5530D15DC42780026D851 /* Form.style in Resources */ = {isa = PBXBuildFile; fileRef = 96B5530A15DC42780026D851 /* Form.style */; };
-		96B5530E15DC42780026D851 /* Sample.style in Resources */ = {isa = PBXBuildFile; fileRef = 96B5530B15DC42780026D851 /* Sample.style */; };
+		96B5530D15DC42780026D851 /* CKSampleLayoutInstagramViewController.style in Resources */ = {isa = PBXBuildFile; fileRef = 96B5530A15DC42780026D851 /* CKSampleLayoutInstagramViewController.style */; };
+		96B5530E15DC42780026D851 /* Stylesheet.style in Resources */ = {isa = PBXBuildFile; fileRef = 96B5530B15DC42780026D851 /* Stylesheet.style */; };
+		96DC22D9176233210058BA15 /* CKSampleLayoutInstagramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22D8176233210058BA15 /* CKSampleLayoutInstagramViewController.m */; };
+		96DC22DB1762382C0058BA15 /* CKSampleLayoutInstagramHeaderCell.style in Resources */ = {isa = PBXBuildFile; fileRef = 96DC22DA1762382C0058BA15 /* CKSampleLayoutInstagramHeaderCell.style */; };
+		96DC22DD176238410058BA15 /* CKSampleLayoutInstagramDetailsCell.style in Resources */ = {isa = PBXBuildFile; fileRef = 96DC22DC176238410058BA15 /* CKSampleLayoutInstagramDetailsCell.style */; };
+		96DC22DF176238580058BA15 /* CKSampleLayoutInstagramAppearance.style in Resources */ = {isa = PBXBuildFile; fileRef = 96DC22DE176238580058BA15 /* CKSampleLayoutInstagramAppearance.style */; };
+		96DC22E2176244D70058BA15 /* CKSampleLayoutInstagramModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22E1176244D70058BA15 /* CKSampleLayoutInstagramModel.m */; };
+		96DC22E517624D390058BA15 /* CKSampleLayoutInstagramDataSources.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22E417624D390058BA15 /* CKSampleLayoutInstagramDataSources.m */; };
+		96DC22E717624F780058BA15 /* CKSampleLayoutInstagramData.json in Resources */ = {isa = PBXBuildFile; fileRef = 96DC22E617624F780058BA15 /* CKSampleLayoutInstagramData.json */; };
 		96EE04BE15ED7B2D00C0584B /* background_nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE04B815ED7B2D00C0584B /* background_nav.png */; };
 		96EE04BF15ED7B2D00C0584B /* background_nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE04B915ED7B2D00C0584B /* background_nav@2x.png */; };
 		96EE04C015ED7B2D00C0584B /* uppernav_button-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE04BA15ED7B2D00C0584B /* uppernav_button-pressed.png */; };
@@ -68,22 +60,12 @@
 		96EE04D115ED7DF000C0584B /* btn-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE04CD15ED7DF000C0584B /* btn-back@2x.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		9668B8F615D5954D00C57715 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9668B8CC15D5954D00C57715 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9668B8F515D5954D00C57715;
-			remoteInfo = Touch;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		963BF4881760DEAA003E3D94 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		963BF49A1760DF28003E3D94 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = ../../Frameworks/AppCoreKit.framework; sourceTree = "<group>"; };
 		963BF49B1760DF28003E3D94 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = ../../Frameworks/VendorsKit.framework; sourceTree = "<group>"; };
-		965E71B015E6968C008EFE08 /* AppCoreKit.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppCoreKit.conf; sourceTree = "<group>"; };
-		9668B8D615D5954D00C57715 /* LayoutLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		965E71B015E6968C008EFE08 /* AppCoreKit.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppCoreKit.conf; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		9668B8D615D5954D00C57715 /* LayoutSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9668B8DA15D5954D00C57715 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9668B8DC15D5954D00C57715 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9668B8DE15D5954D00C57715 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -97,10 +79,10 @@
 		9668B8EE15D5954D00C57715 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		9668B8F015D5954D00C57715 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9668B8F215D5954D00C57715 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		9668B8FA15D5954D00C57715 /* LayoutLab-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LayoutLab-Info.plist"; sourceTree = "<group>"; };
+		9668B8FA15D5954D00C57715 /* LayoutSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LayoutSample-Info.plist"; sourceTree = "<group>"; };
 		9668B8FC15D5954D00C57715 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9668B8FE15D5954D00C57715 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9668B90015D5954D00C57715 /* LayoutLab-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LayoutLab-Prefix.pch"; sourceTree = "<group>"; };
+		9668B90015D5954D00C57715 /* LayoutSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LayoutSample-Prefix.pch"; sourceTree = "<group>"; };
 		9668B90115D5954D00C57715 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9668B90215D5954D00C57715 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9668B91115D5954E00C57715 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
@@ -113,9 +95,18 @@
 		96691E2015DDA13200D73510 /* button-dark-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-dark-blue.png"; sourceTree = "<group>"; };
 		96691E2315DDA7F500D73510 /* Instagram_Icon_Large1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Instagram_Icon_Large1.png; sourceTree = "<group>"; };
 		96691E2515DDB04F00D73510 /* Instagram_Icon_Large1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Instagram_Icon_Large1@2x.png"; sourceTree = "<group>"; };
-		96B5530915DC42780026D851 /* Controller.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Controller.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
-		96B5530A15DC42780026D851 /* Form.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Form.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
-		96B5530B15DC42780026D851 /* Sample.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sample.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		96B5530A15DC42780026D851 /* CKSampleLayoutInstagramViewController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CKSampleLayoutInstagramViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		96B5530B15DC42780026D851 /* Stylesheet.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Stylesheet.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		96DC22D7176233210058BA15 /* CKSampleLayoutInstagramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSampleLayoutInstagramViewController.h; sourceTree = "<group>"; };
+		96DC22D8176233210058BA15 /* CKSampleLayoutInstagramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKSampleLayoutInstagramViewController.m; sourceTree = "<group>"; };
+		96DC22DA1762382C0058BA15 /* CKSampleLayoutInstagramHeaderCell.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CKSampleLayoutInstagramHeaderCell.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		96DC22DC176238410058BA15 /* CKSampleLayoutInstagramDetailsCell.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CKSampleLayoutInstagramDetailsCell.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		96DC22DE176238580058BA15 /* CKSampleLayoutInstagramAppearance.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CKSampleLayoutInstagramAppearance.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		96DC22E0176244D70058BA15 /* CKSampleLayoutInstagramModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSampleLayoutInstagramModel.h; sourceTree = "<group>"; };
+		96DC22E1176244D70058BA15 /* CKSampleLayoutInstagramModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKSampleLayoutInstagramModel.m; sourceTree = "<group>"; };
+		96DC22E317624D390058BA15 /* CKSampleLayoutInstagramDataSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSampleLayoutInstagramDataSources.h; sourceTree = "<group>"; };
+		96DC22E417624D390058BA15 /* CKSampleLayoutInstagramDataSources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKSampleLayoutInstagramDataSources.m; sourceTree = "<group>"; };
+		96DC22E617624F780058BA15 /* CKSampleLayoutInstagramData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CKSampleLayoutInstagramData.json; sourceTree = "<group>"; };
 		96EE04B815ED7B2D00C0584B /* background_nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_nav.png; sourceTree = "<group>"; };
 		96EE04B915ED7B2D00C0584B /* background_nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background_nav@2x.png"; sourceTree = "<group>"; };
 		96EE04BA15ED7B2D00C0584B /* uppernav_button-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uppernav_button-pressed.png"; sourceTree = "<group>"; };
@@ -162,7 +153,7 @@
 		9668B8CA15D5954D00C57715 = {
 			isa = PBXGroup;
 			children = (
-				9668B8F815D5954D00C57715 /* LayoutLab */,
+				9668B8F815D5954D00C57715 /* LayoutSample */,
 				9668B8D915D5954D00C57715 /* Frameworks */,
 				9668B8D715D5954D00C57715 /* Products */,
 			);
@@ -171,7 +162,7 @@
 		9668B8D715D5954D00C57715 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9668B8D615D5954D00C57715 /* LayoutLab.app */,
+				9668B8D615D5954D00C57715 /* LayoutSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,29 +191,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9668B8F815D5954D00C57715 /* LayoutLab */ = {
+		9668B8F815D5954D00C57715 /* LayoutSample */ = {
 			isa = PBXGroup;
 			children = (
 				965E71B015E6968C008EFE08 /* AppCoreKit.conf */,
 				9668B90115D5954D00C57715 /* AppDelegate.h */,
 				9668B90215D5954D00C57715 /* AppDelegate.m */,
-				96B5530915DC42780026D851 /* Controller.style */,
-				96B5530A15DC42780026D851 /* Form.style */,
-				96B5530B15DC42780026D851 /* Sample.style */,
+				96DC22E0176244D70058BA15 /* CKSampleLayoutInstagramModel.h */,
+				96DC22E1176244D70058BA15 /* CKSampleLayoutInstagramModel.m */,
+				96DC22E617624F780058BA15 /* CKSampleLayoutInstagramData.json */,
+				96DC22E317624D390058BA15 /* CKSampleLayoutInstagramDataSources.h */,
+				96DC22E417624D390058BA15 /* CKSampleLayoutInstagramDataSources.m */,
+				96B5530B15DC42780026D851 /* Stylesheet.style */,
 				96EE04C415ED7B4600C0584B /* UINavigationController.style */,
+				96DC22DE176238580058BA15 /* CKSampleLayoutInstagramAppearance.style */,
+				96DC22DA1762382C0058BA15 /* CKSampleLayoutInstagramHeaderCell.style */,
+				96DC22DC176238410058BA15 /* CKSampleLayoutInstagramDetailsCell.style */,
+				96B5530A15DC42780026D851 /* CKSampleLayoutInstagramViewController.style */,
+				96DC22D7176233210058BA15 /* CKSampleLayoutInstagramViewController.h */,
+				96DC22D8176233210058BA15 /* CKSampleLayoutInstagramViewController.m */,
 				9668B91015D5954E00C57715 /* Resources */,
 				9668B8F915D5954D00C57715 /* Supporting Files */,
 			);
+			name = LayoutSample;
 			path = LayoutLab;
 			sourceTree = "<group>";
 		};
 		9668B8F915D5954D00C57715 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9668B8FA15D5954D00C57715 /* LayoutLab-Info.plist */,
+				9668B8FA15D5954D00C57715 /* LayoutSample-Info.plist */,
 				9668B8FB15D5954D00C57715 /* InfoPlist.strings */,
 				9668B8FE15D5954D00C57715 /* main.m */,
-				9668B90015D5954D00C57715 /* LayoutLab-Prefix.pch */,
+				9668B90015D5954D00C57715 /* LayoutSample-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -266,9 +267,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9668B8D515D5954D00C57715 /* LayoutLab */ = {
+		9668B8D515D5954D00C57715 /* LayoutSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9668B91715D5954E00C57715 /* Build configuration list for PBXNativeTarget "LayoutLab" */;
+			buildConfigurationList = 9668B91715D5954E00C57715 /* Build configuration list for PBXNativeTarget "LayoutSample" */;
 			buildPhases = (
 				9668B8D115D5954D00C57715 /* Sources */,
 				9668B8D215D5954D00C57715 /* Frameworks */,
@@ -278,11 +279,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				9668B8F715D5954D00C57715 /* PBXTargetDependency */,
 			);
-			name = LayoutLab;
+			name = LayoutSample;
 			productName = LayoutLab;
-			productReference = 9668B8D615D5954D00C57715 /* LayoutLab.app */;
+			productReference = 9668B8D615D5954D00C57715 /* LayoutSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -294,7 +294,7 @@
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "WhereCloud Inc";
 			};
-			buildConfigurationList = 9668B8CF15D5954D00C57715 /* Build configuration list for PBXProject "LayoutLab" */;
+			buildConfigurationList = 9668B8CF15D5954D00C57715 /* Build configuration list for PBXProject "LayoutSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -306,8 +306,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9668B8D515D5954D00C57715 /* LayoutLab */,
-				9668B8F515D5954D00C57715 /* Touch */,
+				9668B8D515D5954D00C57715 /* LayoutSample */,
 			);
 		};
 /* End PBXProject section */
@@ -320,9 +319,8 @@
 				9668B8FD15D5954D00C57715 /* InfoPlist.strings in Resources */,
 				9668B92F15D9B05500C57715 /* Icon-72.png in Resources */,
 				9668B93015D9B05500C57715 /* Icon-72@2x.png in Resources */,
-				96B5530C15DC42780026D851 /* Controller.style in Resources */,
-				96B5530D15DC42780026D851 /* Form.style in Resources */,
-				96B5530E15DC42780026D851 /* Sample.style in Resources */,
+				96B5530D15DC42780026D851 /* CKSampleLayoutInstagramViewController.style in Resources */,
+				96B5530E15DC42780026D851 /* Stylesheet.style in Resources */,
 				96691E1D15DDA12900D73510 /* button-dark-blue-highlight.png in Resources */,
 				96691E1E15DDA12900D73510 /* button-dark-blue@2x.png in Resources */,
 				96691E2115DDA13200D73510 /* button-dark-blue-highlight@2x.png in Resources */,
@@ -343,6 +341,10 @@
 				96EE04CF15ED7DF000C0584B /* btn-back-highlight@2x.png in Resources */,
 				96EE04D015ED7DF000C0584B /* btn-back.png in Resources */,
 				96EE04D115ED7DF000C0584B /* btn-back@2x.png in Resources */,
+				96DC22DB1762382C0058BA15 /* CKSampleLayoutInstagramHeaderCell.style in Resources */,
+				96DC22DD176238410058BA15 /* CKSampleLayoutInstagramDetailsCell.style in Resources */,
+				96DC22DF176238580058BA15 /* CKSampleLayoutInstagramAppearance.style in Resources */,
+				96DC22E717624F780058BA15 /* CKSampleLayoutInstagramData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,19 +365,6 @@
 			shellPath = /bin/sh;
 			shellScript = "sh \"$PROJECT_DIR/../../Frameworks/copy_framework_resources.sh\" --system-developer-dir \"$SYSTEM_DEVELOPER_DIR\" --executable-name \"$EXECUTABLE_NAME\" --frameworks-dir \"$PROJECT_DIR/../../Frameworks/\" --target-build-dir \"$TARGET_BUILD_DIR\" --project \"$PROJECT\" --project-dir \"$PROJECT_DIR\"";
 		};
-		9668B8F415D5954D00C57715 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "touch \"$SRCROOT/$PROJECT/main.m\"";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -385,18 +374,13 @@
 			files = (
 				9668B8FF15D5954D00C57715 /* main.m in Sources */,
 				9668B90315D5954D00C57715 /* AppDelegate.m in Sources */,
+				96DC22D9176233210058BA15 /* CKSampleLayoutInstagramViewController.m in Sources */,
+				96DC22E2176244D70058BA15 /* CKSampleLayoutInstagramModel.m in Sources */,
+				96DC22E517624D390058BA15 /* CKSampleLayoutInstagramDataSources.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9668B8F715D5954D00C57715 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9668B8F515D5954D00C57715 /* Touch */;
-			targetProxy = 9668B8F615D5954D00C57715 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9668B8FB15D5954D00C57715 /* InfoPlist.strings */ = {
@@ -457,20 +441,6 @@
 			};
 			name = Release;
 		};
-		9668B91515D5954E00C57715 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = LayoutLab;
-			};
-			name = Debug;
-		};
-		9668B91615D5954E00C57715 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = LayoutLab;
-			};
-			name = Release;
-		};
 		9668B91815D5954E00C57715 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -480,8 +450,8 @@
 					"\"$(SRCROOT)/../../Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LayoutLab/LayoutLab-Prefix.pch";
-				INFOPLIST_FILE = "LayoutLab/LayoutLab-Info.plist";
+				GCC_PREFIX_HEADER = "LayoutLab/LayoutSample-Prefix.pch";
+				INFOPLIST_FILE = "LayoutLab/LayoutSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -492,7 +462,7 @@
 					"-weak_library",
 					"/usr/lib/libstdc++.dylib",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LayoutSample;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -507,8 +477,8 @@
 					"\"$(SRCROOT)/../../Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LayoutLab/LayoutLab-Prefix.pch";
-				INFOPLIST_FILE = "LayoutLab/LayoutLab-Info.plist";
+				GCC_PREFIX_HEADER = "LayoutLab/LayoutSample-Prefix.pch";
+				INFOPLIST_FILE = "LayoutLab/LayoutSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -519,7 +489,7 @@
 					"-weak_library",
 					"/usr/lib/libstdc++.dylib",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LayoutSample;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -528,7 +498,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9668B8CF15D5954D00C57715 /* Build configuration list for PBXProject "LayoutLab" */ = {
+		9668B8CF15D5954D00C57715 /* Build configuration list for PBXProject "LayoutSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9668B91215D5954E00C57715 /* Debug */,
@@ -537,16 +507,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9668B91415D5954E00C57715 /* Build configuration list for PBXAggregateTarget "Touch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9668B91515D5954E00C57715 /* Debug */,
-				9668B91615D5954E00C57715 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9668B91715D5954E00C57715 /* Build configuration list for PBXNativeTarget "LayoutLab" */ = {
+		9668B91715D5954E00C57715 /* Build configuration list for PBXNativeTarget "LayoutSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9668B91815D5954E00C57715 /* Debug */,

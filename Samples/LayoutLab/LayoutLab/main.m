@@ -1,9 +1,9 @@
 //
 //  main.m
-//  LayoutLab
+//  LayoutSample
 //
-//  Created by Martin Dufort on 12-08-10.
-//  Copyright (c) 2012 WhereCloud Inc. All rights reserved.
+//  Created by Sebastien Morel on 13-06-07.
+//  Copyright (c) 2013 WhereCloud Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
