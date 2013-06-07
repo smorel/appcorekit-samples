@@ -25,11 +25,8 @@
 		9668B8F115D5954D00C57715 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9668B8F015D5954D00C57715 /* SystemConfiguration.framework */; };
 		9668B8F315D5954D00C57715 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9668B8F215D5954D00C57715 /* MobileCoreServices.framework */; };
 		9668B8FD15D5954D00C57715 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9668B8FB15D5954D00C57715 /* InfoPlist.strings */; };
-		9668B8FF15D5954D00C57715 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9668B8FE15D5954D00C57715 /* main.m */; };
 		9668B90315D5954D00C57715 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9668B90215D5954D00C57715 /* AppDelegate.m */; };
 		9668B92315D59A5B00C57715 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9668B92215D59A5B00C57715 /* libstdc++.dylib */; };
-		9668B92F15D9B05500C57715 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 9668B92D15D9B05500C57715 /* Icon-72.png */; };
-		9668B93015D9B05500C57715 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9668B92E15D9B05500C57715 /* Icon-72@2x.png */; };
 		96691E1D15DDA12900D73510 /* button-dark-blue-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 96691E1B15DDA12900D73510 /* button-dark-blue-highlight.png */; };
 		96691E1E15DDA12900D73510 /* button-dark-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96691E1C15DDA12900D73510 /* button-dark-blue@2x.png */; };
 		96691E2115DDA13200D73510 /* button-dark-blue-highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96691E1F15DDA13200D73510 /* button-dark-blue-highlight@2x.png */; };
@@ -45,6 +42,7 @@
 		96DC22E2176244D70058BA15 /* CKSampleLayoutInstagramModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22E1176244D70058BA15 /* CKSampleLayoutInstagramModel.m */; };
 		96DC22E517624D390058BA15 /* CKSampleLayoutInstagramDataSources.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22E417624D390058BA15 /* CKSampleLayoutInstagramDataSources.m */; };
 		96DC22E717624F780058BA15 /* CKSampleLayoutInstagramData.json in Resources */ = {isa = PBXBuildFile; fileRef = 96DC22E617624F780058BA15 /* CKSampleLayoutInstagramData.json */; };
+		96DC22E917625EC20058BA15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22E817625EC20058BA15 /* main.m */; };
 		96EE04BE15ED7B2D00C0584B /* background_nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE04B815ED7B2D00C0584B /* background_nav.png */; };
 		96EE04BF15ED7B2D00C0584B /* background_nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE04B915ED7B2D00C0584B /* background_nav@2x.png */; };
 		96EE04C015ED7B2D00C0584B /* uppernav_button-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE04BA15ED7B2D00C0584B /* uppernav_button-pressed.png */; };
@@ -64,7 +62,7 @@
 		963BF4881760DEAA003E3D94 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		963BF49A1760DF28003E3D94 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = ../../Frameworks/AppCoreKit.framework; sourceTree = "<group>"; };
 		963BF49B1760DF28003E3D94 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = ../../Frameworks/VendorsKit.framework; sourceTree = "<group>"; };
-		965E71B015E6968C008EFE08 /* AppCoreKit.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppCoreKit.conf; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		965E71B015E6968C008EFE08 /* AppCoreKit.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AppCoreKit.conf; path = Classes/AppCoreKit.conf; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		9668B8D615D5954D00C57715 /* LayoutSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9668B8DA15D5954D00C57715 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9668B8DC15D5954D00C57715 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -81,39 +79,37 @@
 		9668B8F215D5954D00C57715 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		9668B8FA15D5954D00C57715 /* LayoutSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LayoutSample-Info.plist"; sourceTree = "<group>"; };
 		9668B8FC15D5954D00C57715 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9668B8FE15D5954D00C57715 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9668B90015D5954D00C57715 /* LayoutSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LayoutSample-Prefix.pch"; sourceTree = "<group>"; };
 		9668B90115D5954D00C57715 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9668B90215D5954D00C57715 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9668B91115D5954E00C57715 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		9668B92215D59A5B00C57715 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
-		9668B92D15D9B05500C57715 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
-		9668B92E15D9B05500C57715 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		96691E1B15DDA12900D73510 /* button-dark-blue-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-dark-blue-highlight.png"; sourceTree = "<group>"; };
 		96691E1C15DDA12900D73510 /* button-dark-blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-dark-blue@2x.png"; sourceTree = "<group>"; };
 		96691E1F15DDA13200D73510 /* button-dark-blue-highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-dark-blue-highlight@2x.png"; sourceTree = "<group>"; };
 		96691E2015DDA13200D73510 /* button-dark-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-dark-blue.png"; sourceTree = "<group>"; };
 		96691E2315DDA7F500D73510 /* Instagram_Icon_Large1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Instagram_Icon_Large1.png; sourceTree = "<group>"; };
 		96691E2515DDB04F00D73510 /* Instagram_Icon_Large1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Instagram_Icon_Large1@2x.png"; sourceTree = "<group>"; };
-		96B5530A15DC42780026D851 /* CKSampleLayoutInstagramViewController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CKSampleLayoutInstagramViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
-		96B5530B15DC42780026D851 /* Stylesheet.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Stylesheet.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
-		96DC22D7176233210058BA15 /* CKSampleLayoutInstagramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSampleLayoutInstagramViewController.h; sourceTree = "<group>"; };
-		96DC22D8176233210058BA15 /* CKSampleLayoutInstagramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKSampleLayoutInstagramViewController.m; sourceTree = "<group>"; };
-		96DC22DA1762382C0058BA15 /* CKSampleLayoutInstagramHeaderCell.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CKSampleLayoutInstagramHeaderCell.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
-		96DC22DC176238410058BA15 /* CKSampleLayoutInstagramDetailsCell.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CKSampleLayoutInstagramDetailsCell.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
-		96DC22DE176238580058BA15 /* CKSampleLayoutInstagramAppearance.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CKSampleLayoutInstagramAppearance.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
-		96DC22E0176244D70058BA15 /* CKSampleLayoutInstagramModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSampleLayoutInstagramModel.h; sourceTree = "<group>"; };
-		96DC22E1176244D70058BA15 /* CKSampleLayoutInstagramModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKSampleLayoutInstagramModel.m; sourceTree = "<group>"; };
-		96DC22E317624D390058BA15 /* CKSampleLayoutInstagramDataSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSampleLayoutInstagramDataSources.h; sourceTree = "<group>"; };
-		96DC22E417624D390058BA15 /* CKSampleLayoutInstagramDataSources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKSampleLayoutInstagramDataSources.m; sourceTree = "<group>"; };
-		96DC22E617624F780058BA15 /* CKSampleLayoutInstagramData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CKSampleLayoutInstagramData.json; sourceTree = "<group>"; };
+		96B5530A15DC42780026D851 /* CKSampleLayoutInstagramViewController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CKSampleLayoutInstagramViewController.style; path = Classes/CKSampleLayoutInstagramViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		96B5530B15DC42780026D851 /* Stylesheet.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Stylesheet.style; path = Classes/Stylesheet.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		96DC22D7176233210058BA15 /* CKSampleLayoutInstagramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleLayoutInstagramViewController.h; path = Classes/CKSampleLayoutInstagramViewController.h; sourceTree = "<group>"; };
+		96DC22D8176233210058BA15 /* CKSampleLayoutInstagramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleLayoutInstagramViewController.m; path = Classes/CKSampleLayoutInstagramViewController.m; sourceTree = "<group>"; };
+		96DC22DA1762382C0058BA15 /* CKSampleLayoutInstagramHeaderCell.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CKSampleLayoutInstagramHeaderCell.style; path = Classes/CKSampleLayoutInstagramHeaderCell.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		96DC22DC176238410058BA15 /* CKSampleLayoutInstagramDetailsCell.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CKSampleLayoutInstagramDetailsCell.style; path = Classes/CKSampleLayoutInstagramDetailsCell.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		96DC22DE176238580058BA15 /* CKSampleLayoutInstagramAppearance.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CKSampleLayoutInstagramAppearance.style; path = Classes/CKSampleLayoutInstagramAppearance.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		96DC22E0176244D70058BA15 /* CKSampleLayoutInstagramModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleLayoutInstagramModel.h; path = Classes/CKSampleLayoutInstagramModel.h; sourceTree = "<group>"; };
+		96DC22E1176244D70058BA15 /* CKSampleLayoutInstagramModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleLayoutInstagramModel.m; path = Classes/CKSampleLayoutInstagramModel.m; sourceTree = "<group>"; };
+		96DC22E317624D390058BA15 /* CKSampleLayoutInstagramDataSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleLayoutInstagramDataSources.h; path = Classes/CKSampleLayoutInstagramDataSources.h; sourceTree = "<group>"; };
+		96DC22E417624D390058BA15 /* CKSampleLayoutInstagramDataSources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleLayoutInstagramDataSources.m; path = Classes/CKSampleLayoutInstagramDataSources.m; sourceTree = "<group>"; };
+		96DC22E617624F780058BA15 /* CKSampleLayoutInstagramData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CKSampleLayoutInstagramData.json; path = Classes/CKSampleLayoutInstagramData.json; sourceTree = "<group>"; };
+		96DC22E817625EC20058BA15 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = LayoutSample/main.m; sourceTree = SOURCE_ROOT; };
 		96EE04B815ED7B2D00C0584B /* background_nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_nav.png; sourceTree = "<group>"; };
 		96EE04B915ED7B2D00C0584B /* background_nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background_nav@2x.png"; sourceTree = "<group>"; };
 		96EE04BA15ED7B2D00C0584B /* uppernav_button-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uppernav_button-pressed.png"; sourceTree = "<group>"; };
 		96EE04BB15ED7B2D00C0584B /* uppernav_button-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uppernav_button-pressed@2x.png"; sourceTree = "<group>"; };
 		96EE04BC15ED7B2D00C0584B /* uppernav_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uppernav_button.png; sourceTree = "<group>"; };
 		96EE04BD15ED7B2D00C0584B /* uppernav_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uppernav_button@2x.png"; sourceTree = "<group>"; };
-		96EE04C415ED7B4600C0584B /* UINavigationController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UINavigationController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		96EE04C415ED7B4600C0584B /* UINavigationController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = UINavigationController.style; path = Classes/UINavigationController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		96EE04C615ED7C1B00C0584B /* background_nav-480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background_nav-480.png"; sourceTree = "<group>"; };
 		96EE04C715ED7C1B00C0584B /* background_nav-480@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background_nav-480@2x.png"; sourceTree = "<group>"; };
 		96EE04CA15ED7DF000C0584B /* btn-back-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-back-highlight.png"; sourceTree = "<group>"; };
@@ -213,8 +209,7 @@
 				9668B91015D5954E00C57715 /* Resources */,
 				9668B8F915D5954D00C57715 /* Supporting Files */,
 			);
-			name = LayoutSample;
-			path = LayoutLab;
+			path = LayoutSample;
 			sourceTree = "<group>";
 		};
 		9668B8F915D5954D00C57715 /* Supporting Files */ = {
@@ -222,7 +217,7 @@
 			children = (
 				9668B8FA15D5954D00C57715 /* LayoutSample-Info.plist */,
 				9668B8FB15D5954D00C57715 /* InfoPlist.strings */,
-				9668B8FE15D5954D00C57715 /* main.m */,
+				96DC22E817625EC20058BA15 /* main.m */,
 				9668B90015D5954D00C57715 /* LayoutSample-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -252,8 +247,6 @@
 				96EE04BB15ED7B2D00C0584B /* uppernav_button-pressed@2x.png */,
 				96EE04BC15ED7B2D00C0584B /* uppernav_button.png */,
 				96EE04BD15ED7B2D00C0584B /* uppernav_button@2x.png */,
-				9668B92D15D9B05500C57715 /* Icon-72.png */,
-				9668B92E15D9B05500C57715 /* Icon-72@2x.png */,
 				96691E1B15DDA12900D73510 /* button-dark-blue-highlight.png */,
 				96691E1C15DDA12900D73510 /* button-dark-blue@2x.png */,
 				96691E1F15DDA13200D73510 /* button-dark-blue-highlight@2x.png */,
@@ -262,6 +255,7 @@
 				96691E2015DDA13200D73510 /* button-dark-blue.png */,
 			);
 			name = Images;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,8 +311,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9668B8FD15D5954D00C57715 /* InfoPlist.strings in Resources */,
-				9668B92F15D9B05500C57715 /* Icon-72.png in Resources */,
-				9668B93015D9B05500C57715 /* Icon-72@2x.png in Resources */,
 				96B5530D15DC42780026D851 /* CKSampleLayoutInstagramViewController.style in Resources */,
 				96B5530E15DC42780026D851 /* Stylesheet.style in Resources */,
 				96691E1D15DDA12900D73510 /* button-dark-blue-highlight.png in Resources */,
@@ -372,11 +364,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9668B8FF15D5954D00C57715 /* main.m in Sources */,
 				9668B90315D5954D00C57715 /* AppDelegate.m in Sources */,
 				96DC22D9176233210058BA15 /* CKSampleLayoutInstagramViewController.m in Sources */,
 				96DC22E2176244D70058BA15 /* CKSampleLayoutInstagramModel.m in Sources */,
 				96DC22E517624D390058BA15 /* CKSampleLayoutInstagramDataSources.m in Sources */,
+				96DC22E917625EC20058BA15 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,8 +442,8 @@
 					"\"$(SRCROOT)/../../Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LayoutLab/LayoutSample-Prefix.pch";
-				INFOPLIST_FILE = "LayoutLab/LayoutSample-Info.plist";
+				GCC_PREFIX_HEADER = "LayoutSample/LayoutSample-Prefix.pch";
+				INFOPLIST_FILE = "LayoutSample/LayoutSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -477,8 +469,8 @@
 					"\"$(SRCROOT)/../../Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LayoutLab/LayoutSample-Prefix.pch";
-				INFOPLIST_FILE = "LayoutLab/LayoutSample-Info.plist";
+				GCC_PREFIX_HEADER = "LayoutSample/LayoutSample-Prefix.pch";
+				INFOPLIST_FILE = "LayoutSample/LayoutSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
