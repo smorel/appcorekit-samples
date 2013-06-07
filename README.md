@@ -11,9 +11,9 @@ Keep in mind that AppCoreKit is a toolbox. It is non intrusive so that you can c
 
 You can clone this repository and try the samples right now as the framework is embedded in the repository as a pre-compiled binary static framework.
 
-## Installation
+## Installation - Using AppCoreKit in your own application
 
-* If you'd like to integrate the framework in your own application, drag'n'drop "AppCoreKit.framework" and VendorsKit.framework" from the Frameworks folder into your Xcode project.
+* Drag'n'drop <b>AppCoreKit.framework</b> and <b>VendorsKit.framework</b> from the <b>/Frameworks</b> folder into your Xcode project.
 
 * Add the following frameworks and libraries to your project : 
 <pre>
@@ -34,9 +34,9 @@ AdSupport.
 </pre>
 
 * Add the following link flags in your build settings (OTHER_LDFLAGS) : 
-<code>
+<pre>
  -ObjC -all_load -lxml2 -licucore -lz -weak_library /usr/lib/libstdc++.dylib
-</code>
+</pre>
 
 * As Xcode do not natively support static frameworks especially for resources, you'll need to add a post build phase if you'd like to use some components. In the build phase for your target, add a "Run Script" build phase and add the following script :
 
