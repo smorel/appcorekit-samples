@@ -17,7 +17,20 @@ You can clone this repository and try the samples right now as the framework is 
 
 * Add the following frameworks and libraries to your project : 
 <pre>
-libstdc++.dylib, UIKit, Foundation, CoreGraphics, AddressBook, CoreData, QuartzCore, CoreLocation, MapKit, MediaPlayer, CoreFoundation, CFNetwork, SystemConfiguration, MobileCoreServices, AdSupport.
+libstdc++.dylib, 
+UIKit, Foundation, 
+CoreGraphics, 
+AddressBook, 
+CoreData, 
+QuartzCore, 
+CoreLocation, 
+MapKit, 
+MediaPlayer, 
+CoreFoundation, 
+CFNetwork, 
+SystemConfiguration, 
+MobileCoreServices, 
+AdSupport.
 </pre>
 
 * Add the following link flags in your build settings (OTHER_LDFLAGS) : 
@@ -29,6 +42,12 @@ libstdc++.dylib, UIKit, Foundation, CoreGraphics, AddressBook, CoreData, QuartzC
 
 <pre>
 YOUR_FRAMEWORS_PATH="$PROJECT_DIR/../../Frameworks/"
-sh "$YOUR_FRAMEWORS_PATH/copy_framework_resources.sh" --system-developer-dir "$SYSTEM_DEVELOPER_DIR" --executable-name "$EXECUTABLE_NAME" --frameworks-dir "$YOUR_FRAMEWORS_PATH" --target-build-dir "$TARGET_BUILD_DIR" --project "$PROJECT" --project-dir "$PROJECT_DIR"
+sh "$YOUR_FRAMEWORS_PATH/copy_framework_resources.sh" 
+    --system-developer-dir "$SYSTEM_DEVELOPER_DIR" 
+    --executable-name "$EXECUTABLE_NAME" 
+    --frameworks-dir "$YOUR_FRAMEWORS_PATH" 
+    --target-build-dir "$TARGET_BUILD_DIR" 
+    --project "$PROJECT" 
+    --project-dir "$PROJECT_DIR"
 </pre>
 
