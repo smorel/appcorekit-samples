@@ -11,6 +11,10 @@ Keep in mind that AppCoreKit is a toolbox. It is non intrusive so that you can c
 
 You can clone this repository and try the samples right now as the framework is embedded in the repository as a pre-compiled binary static framework.
 
+## API Documentation
+
+To integrate the AppCoreKit Api documentation into Xcode, copy <b>./Frameworks/AppCoreKit.framework/Documentation/com.wherecloud.AppCoreKit</b> to the <b>~/Library/Developer/Shared/Documentation/DocSets/</b> folder.
+
 ## Installation - Using AppCoreKit in your own application
 
 * Drag'n'drop <b>AppCoreKit.framework</b> and <b>VendorsKit.framework</b> from the <b>/Frameworks</b> folder into your Xcode project.
