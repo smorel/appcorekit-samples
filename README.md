@@ -48,8 +48,8 @@ AdSupport.
 * As Xcode do not natively support static frameworks especially for resources, you'll need to add a post build phase if you'd like to use some components. In the build phase for your target, add a <b>"Run Script" build phase</b> and add the following script :
 
 <pre>
-YOUR_FRAMEWORS_PATH="$PROJECT_DIR/../../Frameworks/"
-sh "$YOUR_FRAMEWORS_PATH/copy_framework_resources.sh" 
+YOUR_FRAMEWORKS_PATH="$PROJECT_DIR/../../Frameworks/"
+sh "$YOUR_FRAMEWORKS_PATH/copy_framework_resources.sh" 
         --system-developer-dir "$SYSTEM_DEVELOPER_DIR" 
         --executable-name "$EXECUTABLE_NAME" 
         --frameworks-dir "$YOUR_FRAMEWORS_PATH" 
