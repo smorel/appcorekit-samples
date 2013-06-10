@@ -62,4 +62,4 @@ sh "$YOUR_FRAMEWORKS_PATH/copy_framework_resources.sh"
 
 If you have any comments, suggestions, question or information request, please contact us at appcorekitsupport@wherecloud.com.
 
-We are working on providing an open source repository for the framework as well. <b>Coming soon !</b>
+You can find the sources of the AppCoreKit framework at https://github.com/wherecloud/AppCoreKit
