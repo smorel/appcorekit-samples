@@ -1,7 +1,7 @@
 # AppCoreKit Samples
 
 This repository propose a bunch of samples on how to use the AppCoreKit Framework.
-AppCoreKit is an application framework designed to improve productivity while creating Apps for iOS. This is the fruit of a 3 years experience at Wherecloud and is a production framework that shipped more than 20 apps.
+AppCoreKit is an application framework designed to improve productivity while creating Apps for iOS. This is the result of a 3 years experience at Wherecloud and is a production framework that shipped more than 20 apps.
 
 AppCoreKit do not offers out of the box UI components but the technology to help you manage your data, automatic serialization, type conversions, network, view controllers, ui vs. models synchronization, appearance customization, responsive view layouts, forms, maps, objective-C runtime apis and more.
 
@@ -48,8 +48,8 @@ AdSupport.
 * As Xcode do not natively support static frameworks especially for resources, you'll need to add a post build phase if you'd like to use some components. In the build phase for your target, add a <b>"Run Script" build phase</b> and add the following script :
 
 <pre>
-YOUR_FRAMEWORS_PATH="$PROJECT_DIR/../../Frameworks/"
-sh "$YOUR_FRAMEWORS_PATH/copy_framework_resources.sh" 
+YOUR_FRAMEWORKS_PATH="$PROJECT_DIR/../../Frameworks/"
+sh "$YOUR_FRAMEWORKS_PATH/copy_framework_resources.sh" 
         --system-developer-dir "$SYSTEM_DEVELOPER_DIR" 
         --executable-name "$EXECUTABLE_NAME" 
         --frameworks-dir "$YOUR_FRAMEWORS_PATH" 
