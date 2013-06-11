@@ -36,7 +36,7 @@
 /* This sample illustrates how to take advantage of view controllers for splitting the logic
    and integrate this third party controller's view into our view hierarchy.
    Here, we have a CKMapCollectionViewController taking care of synchronizing the map who's view
-   is displayed as a tableHeaderView in the current form table view controller.
+   is displayed as a section header view in the current form table view controller section.
  
    We have to manage viewWillAppear, viewWillDisappear, viewDidAppear and viewDidDisappear manually.
    Optionally, we'll have to forward device rotation callbacks if we wanted to support orientation changes
@@ -76,15 +76,6 @@
     return controller;
 }
 
-- (void)viewDidLoad{
-    [super viewDidLoad];
-    
-    UIView* mapView = [self.mapViewController view];
-    mapView.frame = CGRectMake(0,0,320,300);
-    
-    self.tableView.tableHeaderView = mapView;
-}
-
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.mapViewController viewWillAppear:animated];
@@ -117,6 +108,12 @@
     }];
     
     CKFormBindedCollectionSection* section = [CKFormBindedCollectionSection sectionWithCollection:self.collection factory:factory];
+    
+    //Grab the map view controller's view and set it as section header view to stay in overlay when scrolling.
+    UIView* mapView = [self.mapViewController view];
+    mapView.frame = CGRectMake(0,0,320,300);
+    section.headerView = mapView;
+    
     [self addSections:@[section]];
 }
 

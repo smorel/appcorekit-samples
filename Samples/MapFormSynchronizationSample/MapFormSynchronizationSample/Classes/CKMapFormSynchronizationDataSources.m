@@ -30,8 +30,7 @@
     CKWebSource* source = [CKWebSource webSource];
     source.requestBlock = ^(NSRange range){
         
-        //Unfortunatly the foursquare API doesn't seems to take paging params correctly into account so we have duplicated results ...
-        NSRange pagedRange = [Paging rangeWithPageOfSize:10 usingRange:range];
+        NSRange pagedRange = [Paging rangeWithPageOfSize:40 usingRange:range];
         
         NSDictionary* params = @{ @"near"          : near,
                                   @"section"       : section,
