@@ -1,10 +1,10 @@
 {
     "$CKMapFormSynchronizationModel" : {
-        "@class" : "CKMapFormSynchronizationModel",
+        "@class"     : "CKMapFormSynchronizationModel",
         "identifier" : "venue.id",
-        "longitude" : "venue.location.lng",
-        "latitude" : "venue.location.lat",
-        "name" : "venue.name",
-        "phone" : "venue.contact.formattedPhone"
+        "longitude"  : "venue.location.lng",
+        "latitude"   : "venue.location.lat",
+        "name"       : "venue.name",
+        "phone"      : "venue.contact.formattedPhone"
     }
 }

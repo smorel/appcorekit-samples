@@ -260,19 +260,19 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Layouting">Layouting</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKDynamicLayout Methods">CKDynamicLayout Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKResponder Methods">CKResponder Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Factory Methods">Factory Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKLayout Methods">CKLayout Methods</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKMenus Methods">CKMenus Methods</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKBlockBasedInterface Methods">CKBlockBasedInterface Methods</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKDynamicLayout Methods">CKDynamicLayout Methods</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Factory Methods">Factory Methods</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKPropertyGrid Methods">CKPropertyGrid Methods</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKLayout Methods">CKLayout Methods</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKResponder Methods">CKResponder Methods</a></span></li>
 	
 </ul></li>
 
@@ -793,6 +793,232 @@ Do not keep any other reference between the tableViewCell and the controller to 
 						</ul>
 						
 						
+						<a title="CKDynamicLayout Methods" name="task_CKDynamicLayout Methods"></a>
+						<h3 class="subsubtitle task-title">CKDynamicLayout Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/computeSize">&ndash;&nbsp;computeSize</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableViewCellWidth">&ndash;&nbsp;tableViewCellWidth</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contentViewWidth">&ndash;&nbsp;contentViewWidth</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/accessoryWidth">&ndash;&nbsp;accessoryWidth</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/editingWidth">&ndash;&nbsp;editingWidth</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="CKResponder Methods" name="task_CKResponder Methods"></a>
+						<h3 class="subsubtitle task-title">CKResponder Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasNextResponder">&ndash;&nbsp;hasNextResponder</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasPreviousResponder">&ndash;&nbsp;hasPreviousResponder</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/activateNextResponder">&ndash;&nbsp;activateNextResponder</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/activatePreviousResponder">&ndash;&nbsp;activatePreviousResponder</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasResponder">&ndash;&nbsp;hasResponder</a></code>
+		<span class="tooltip"><p>If you override CKTableViewCellController, you should implement this method if you need integration with the responder chain.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/becomeFirstResponder">&ndash;&nbsp;becomeFirstResponder</a></code>
+		<span class="tooltip"><p>If you override CKTableViewCellController, you should implement this method if you need integration with the responder chain.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/nextResponder:">&ndash;&nbsp;nextResponder:</a></code>
+		<span class="tooltip"><p>If you override CKTableViewCellController, you should implement this method if you need integration with the responder chain.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Factory Methods" name="task_Factory Methods"></a>
+						<h3 class="subsubtitle task-title">Factory Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellControllerWithName:action:">+&nbsp;cellControllerWithName:action:</a></code>
+		<span class="tooltip"><p>action is triggered when the user tap on the table view cell.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellControllerWithName:value:bindings:">+&nbsp;cellControllerWithName:value:bindings:</a></code>
+		<span class="tooltip"><p>bindings should be a dictionary of keyPath from <a href="#//api/name/tableViewCell">tableViewCell</a> to the target view property as a key, and a keypath for the value&rsquo;s property to bind with.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellControllerWithName:value:bindings:action:">+&nbsp;cellControllerWithName:value:bindings:action:</a></code>
+		<span class="tooltip"><p>action is triggered when the user tap on the table view cell.
+bindings should be a dictionary of keyPath from <a href="#//api/name/tableViewCell">tableViewCell</a> to the target view property as a key, and a keypath for the value&rsquo;s property to bind with.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellControllerWithName:value:bindings:controlActions:">+&nbsp;cellControllerWithName:value:bindings:controlActions:</a></code>
+		<span class="tooltip"><p>bindings should be a dictionary of keyPath from <a href="#//api/name/tableViewCell">tableViewCell</a> to the target view property as a key, and a keypath for the value&rsquo;s property to bind with.
+controlActions should be a dictionary of keyPath from <a href="#//api/name/tableViewCell">tableViewCell</a> to the target control as a key, and a block with the following signature as a value :</p>
+
+<pre><code> void(^actionBlock)(UIControl* control, CKTableViewCellController* controller)
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellControllerWithName:value:bindings:controlActions:action:">+&nbsp;cellControllerWithName:value:bindings:controlActions:action:</a></code>
+		<span class="tooltip"><p>action is triggered when the user tap on the table view cell.
+bindings should be a dictionary of keyPath from <a href="#//api/name/tableViewCell">tableViewCell</a> to the target view property as a key, and a keypath for the value&rsquo;s property to bind with.
+controlActions should be a dictionary of keyPath from <a href="#//api/name/tableViewCell">tableViewCell</a> to the target control as a key, and a block with the following signature as a value :</p>
+
+<pre><code> void(^actionBlock)(UIControl* control, CKTableViewCellController* controller)
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellControllerWithName:setup:">+&nbsp;cellControllerWithName:setup:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellControllerWithName:setup:action:">+&nbsp;cellControllerWithName:setup:action:</a></code>
+		<span class="tooltip"><p>action is triggered when the user tap on the table view cell.
+setup allow you to add additional management of the view using the controller&rsquo;s value. setup is already in a binding context,
+do not call [cell beginBindingContextByRemovingPreviousBindings] in setup or this will break the bindings we set for you in this method.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellControllerWithName:value:bindings:setup:">+&nbsp;cellControllerWithName:value:bindings:setup:</a></code>
+		<span class="tooltip"><p>bindings should be a dictionary of keyPath from tableViewCell to the target view property as a key, and a keypath for the value&rsquo;s property to bind with.
+setup allow you to add additional management of the view using the controller&rsquo;s value. setup is already in a binding context,
+do not call [cell beginBindingContextByRemovingPreviousBindings] in setup or this will break the bindings we set for you in this method.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellControllerWithName:value:bindings:setup:action:">+&nbsp;cellControllerWithName:value:bindings:setup:action:</a></code>
+		<span class="tooltip"><p>action is triggered when the user tap on the table view cell.
+bindings should be a dictionary of keyPath from tableViewCell to the target view property as a key, and a keypath for the value&rsquo;s property to bind with.
+setup allow you to add additional management of the view using the controller&rsquo;s value. setup is already in a binding context,
+do not call [cell beginBindingContextByRemovingPreviousBindings] in setup or this will break the bindings we set for you in this method.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellControllerWithName:value:bindings:controlActions:setup:">+&nbsp;cellControllerWithName:value:bindings:controlActions:setup:</a></code>
+		<span class="tooltip"><p>bindings should be a dictionary of keyPath from <a href="#//api/name/tableViewCell">tableViewCell</a> to the target view property as a key, and a keypath for the value&rsquo;s property to bind with.
+controlActions should be a dictionary of keyPath from <a href="#//api/name/tableViewCell">tableViewCell</a> to the target control as a key, and a block with the following signature as a value :
+void(^actionBlock)(UIControl<em> control, CKTableViewCellController</em> controller)
+setup allow you to add additional management of the view using the controller&rsquo;s value. setup is already in a binding context,
+do not call [cell beginBindingContextByRemovingPreviousBindings] in setup or this will break the bindings we set for you in this method.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellControllerWithName:value:bindings:controlActions:setup:action:">+&nbsp;cellControllerWithName:value:bindings:controlActions:setup:action:</a></code>
+		<span class="tooltip"><p>action is triggered when the user tap on the table view cell.
+bindings should be a dictionary of keyPath from <a href="#//api/name/tableViewCell">tableViewCell</a> to the target view property as a key, and a keypath for the value&rsquo;s property to bind with.
+controlActions should be a dictionary of keyPath from <a href="#//api/name/tableViewCell">tableViewCell</a> to the target control as a key, and a block with the following signature as a value :
+void(^actionBlock)(UIControl<em> control, CKTableViewCellController</em> controller)
+setup allow you to add additional management of the view using the controller&rsquo;s value. setup is already in a binding context,
+do not call [cell beginBindingContextByRemovingPreviousBindings] in setup or this will break the bindings we set for you in this method.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="CKLayout Methods" name="task_CKLayout Methods"></a>
+						<h3 class="subsubtitle task-title">CKLayout Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performLayout">&ndash;&nbsp;performLayout</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
 						<a title="CKMenus Methods" name="task_CKMenus Methods"></a>
 						<h3 class="subsubtitle task-title">CKMenus Methods</h3>
 
@@ -1028,160 +1254,6 @@ If you implements it you will have to manually remove the cell or the object fro
 						</ul>
 						
 						
-						<a title="CKDynamicLayout Methods" name="task_CKDynamicLayout Methods"></a>
-						<h3 class="subsubtitle task-title">CKDynamicLayout Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/computeSize">&ndash;&nbsp;computeSize</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/tableViewCellWidth">&ndash;&nbsp;tableViewCellWidth</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/contentViewWidth">&ndash;&nbsp;contentViewWidth</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/accessoryWidth">&ndash;&nbsp;accessoryWidth</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/editingWidth">&ndash;&nbsp;editingWidth</a></code>
-		
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						<a title="Factory Methods" name="task_Factory Methods"></a>
-						<h3 class="subsubtitle task-title">Factory Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/cellControllerWithName:action:">+&nbsp;cellControllerWithName:action:</a></code>
-		<span class="tooltip"><p>action is triggered when the user tap on the table view cell.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/cellControllerWithName:value:bindings:">+&nbsp;cellControllerWithName:value:bindings:</a></code>
-		<span class="tooltip"><p>bindings should be a dictionary of keyPath from <a href="#//api/name/tableViewCell">tableViewCell</a> to the target view property as a key, and a keypath for the value&rsquo;s property to bind with.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/cellControllerWithName:value:bindings:action:">+&nbsp;cellControllerWithName:value:bindings:action:</a></code>
-		<span class="tooltip"><p>action is triggered when the user tap on the table view cell.
-bindings should be a dictionary of keyPath from <a href="#//api/name/tableViewCell">tableViewCell</a> to the target view property as a key, and a keypath for the value&rsquo;s property to bind with.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/cellControllerWithName:value:bindings:controlActions:">+&nbsp;cellControllerWithName:value:bindings:controlActions:</a></code>
-		<span class="tooltip"><p>bindings should be a dictionary of keyPath from <a href="#//api/name/tableViewCell">tableViewCell</a> to the target view property as a key, and a keypath for the value&rsquo;s property to bind with.
-controlActions should be a dictionary of keyPath from <a href="#//api/name/tableViewCell">tableViewCell</a> to the target control as a key, and a block with the following signature as a value :</p>
-
-<pre><code> void(^actionBlock)(UIControl* control, CKTableViewCellController* controller)
-</code></pre></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/cellControllerWithName:value:bindings:controlActions:action:">+&nbsp;cellControllerWithName:value:bindings:controlActions:action:</a></code>
-		<span class="tooltip"><p>action is triggered when the user tap on the table view cell.
-bindings should be a dictionary of keyPath from <a href="#//api/name/tableViewCell">tableViewCell</a> to the target view property as a key, and a keypath for the value&rsquo;s property to bind with.
-controlActions should be a dictionary of keyPath from <a href="#//api/name/tableViewCell">tableViewCell</a> to the target control as a key, and a block with the following signature as a value :</p>
-
-<pre><code> void(^actionBlock)(UIControl* control, CKTableViewCellController* controller)
-</code></pre></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/cellControllerWithName:setup:">+&nbsp;cellControllerWithName:setup:</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/cellControllerWithName:setup:action:">+&nbsp;cellControllerWithName:setup:action:</a></code>
-		<span class="tooltip"><p>action is triggered when the user tap on the table view cell.
-setup allow you to add additional management of the view using the controller&rsquo;s value. setup is already in a binding context,
-do not call [cell beginBindingContextByRemovingPreviousBindings] in setup or this will break the bindings we set for you in this method.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/cellControllerWithName:value:bindings:setup:">+&nbsp;cellControllerWithName:value:bindings:setup:</a></code>
-		<span class="tooltip"><p>bindings should be a dictionary of keyPath from tableViewCell to the target view property as a key, and a keypath for the value&rsquo;s property to bind with.
-setup allow you to add additional management of the view using the controller&rsquo;s value. setup is already in a binding context,
-do not call [cell beginBindingContextByRemovingPreviousBindings] in setup or this will break the bindings we set for you in this method.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/cellControllerWithName:value:bindings:setup:action:">+&nbsp;cellControllerWithName:value:bindings:setup:action:</a></code>
-		<span class="tooltip"><p>action is triggered when the user tap on the table view cell.
-bindings should be a dictionary of keyPath from tableViewCell to the target view property as a key, and a keypath for the value&rsquo;s property to bind with.
-setup allow you to add additional management of the view using the controller&rsquo;s value. setup is already in a binding context,
-do not call [cell beginBindingContextByRemovingPreviousBindings] in setup or this will break the bindings we set for you in this method.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/cellControllerWithName:value:bindings:controlActions:setup:">+&nbsp;cellControllerWithName:value:bindings:controlActions:setup:</a></code>
-		<span class="tooltip"><p>bindings should be a dictionary of keyPath from <a href="#//api/name/tableViewCell">tableViewCell</a> to the target view property as a key, and a keypath for the value&rsquo;s property to bind with.
-controlActions should be a dictionary of keyPath from <a href="#//api/name/tableViewCell">tableViewCell</a> to the target control as a key, and a block with the following signature as a value :
-void(^actionBlock)(UIControl<em> control, CKTableViewCellController</em> controller)
-setup allow you to add additional management of the view using the controller&rsquo;s value. setup is already in a binding context,
-do not call [cell beginBindingContextByRemovingPreviousBindings] in setup or this will break the bindings we set for you in this method.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/cellControllerWithName:value:bindings:controlActions:setup:action:">+&nbsp;cellControllerWithName:value:bindings:controlActions:setup:action:</a></code>
-		<span class="tooltip"><p>action is triggered when the user tap on the table view cell.
-bindings should be a dictionary of keyPath from <a href="#//api/name/tableViewCell">tableViewCell</a> to the target view property as a key, and a keypath for the value&rsquo;s property to bind with.
-controlActions should be a dictionary of keyPath from <a href="#//api/name/tableViewCell">tableViewCell</a> to the target control as a key, and a block with the following signature as a value :
-void(^actionBlock)(UIControl<em> control, CKTableViewCellController</em> controller)
-setup allow you to add additional management of the view using the controller&rsquo;s value. setup is already in a binding context,
-do not call [cell beginBindingContextByRemovingPreviousBindings] in setup or this will break the bindings we set for you in this method.</p></span>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
 						<a title="CKPropertyGrid Methods" name="task_CKPropertyGrid Methods"></a>
 						<h3 class="subsubtitle task-title">CKPropertyGrid Methods</h3>
 
@@ -1211,78 +1283,6 @@ do not call [cell beginBindingContextByRemovingPreviousBindings] in setup or thi
 	<span class="tooltip">
 		<code><a href="#//api/name/cellControllerWithProperty:readOnly:">+&nbsp;cellControllerWithProperty:readOnly:</a></code>
 		
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						<a title="CKLayout Methods" name="task_CKLayout Methods"></a>
-						<h3 class="subsubtitle task-title">CKLayout Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/performLayout">&ndash;&nbsp;performLayout</a></code>
-		
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						<a title="CKResponder Methods" name="task_CKResponder Methods"></a>
-						<h3 class="subsubtitle task-title">CKResponder Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/hasNextResponder">&ndash;&nbsp;hasNextResponder</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/hasPreviousResponder">&ndash;&nbsp;hasPreviousResponder</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/activateNextResponder">&ndash;&nbsp;activateNextResponder</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/activatePreviousResponder">&ndash;&nbsp;activatePreviousResponder</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/hasResponder">&ndash;&nbsp;hasResponder</a></code>
-		<span class="tooltip"><p>If you override CKTableViewCellController, you should implement this method if you need integration with the responder chain.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/becomeFirstResponder">&ndash;&nbsp;becomeFirstResponder</a></code>
-		<span class="tooltip"><p>If you override CKTableViewCellController, you should implement this method if you need integration with the responder chain.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/nextResponder:">&ndash;&nbsp;nextResponder:</a></code>
-		<span class="tooltip"><p>If you override CKTableViewCellController, you should implement this method if you need integration with the responder chain.</p></span>
 	</span>
 	
 	
@@ -4090,7 +4090,7 @@ If you implements it you will have to manually remove the cell or the object fro
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Wherecloud. All rights reserved. (Last updated: 2013-06-11)</span><br />
+						<p><span class="copyright">&copy; 2013 Wherecloud. All rights reserved. (Last updated: 2013-06-13)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						
