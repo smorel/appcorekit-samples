@@ -56,6 +56,8 @@
 		96267387176F971E00202F97 /* CKStylesheetSamplePlainFormViewController.style in Resources */ = {isa = PBXBuildFile; fileRef = 96267385176F971E00202F97 /* CKStylesheetSamplePlainFormViewController.style */; };
 		9626738A176F986500202F97 /* section-header.png in Resources */ = {isa = PBXBuildFile; fileRef = 96267388176F986500202F97 /* section-header.png */; };
 		9626738B176F986500202F97 /* section-header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96267389176F986500202F97 /* section-header@2x.png */; };
+		9626738E176FB39000202F97 /* CKStylesheetSampleLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9626738D176FB39000202F97 /* CKStylesheetSampleLabelViewController.m */; };
+		96267390176FB3A700202F97 /* CKStylesheetSampleLabelViewController.style in Resources */ = {isa = PBXBuildFile; fileRef = 9626738F176FB3A700202F97 /* CKStylesheetSampleLabelViewController.style */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +121,9 @@
 		96267385176F971E00202F97 /* CKStylesheetSamplePlainFormViewController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CKStylesheetSamplePlainFormViewController.style; path = Classes/CKStylesheetSamplePlainFormViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		96267388176F986500202F97 /* section-header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "section-header.png"; path = "Resources/section-header.png"; sourceTree = "<group>"; };
 		96267389176F986500202F97 /* section-header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "section-header@2x.png"; path = "Resources/section-header@2x.png"; sourceTree = "<group>"; };
+		9626738C176FB39000202F97 /* CKStylesheetSampleLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKStylesheetSampleLabelViewController.h; path = Classes/CKStylesheetSampleLabelViewController.h; sourceTree = "<group>"; };
+		9626738D176FB39000202F97 /* CKStylesheetSampleLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKStylesheetSampleLabelViewController.m; path = Classes/CKStylesheetSampleLabelViewController.m; sourceTree = "<group>"; };
+		9626738F176FB3A700202F97 /* CKStylesheetSampleLabelViewController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CKStylesheetSampleLabelViewController.style; path = Classes/CKStylesheetSampleLabelViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +263,9 @@
 				96267385176F971E00202F97 /* CKStylesheetSamplePlainFormViewController.style */,
 				96267383176F971E00202F97 /* CKStylesheetSamplePlainFormViewController.h */,
 				96267384176F971E00202F97 /* CKStylesheetSamplePlainFormViewController.m */,
+				9626738F176FB3A700202F97 /* CKStylesheetSampleLabelViewController.style */,
+				9626738C176FB39000202F97 /* CKStylesheetSampleLabelViewController.h */,
+				9626738D176FB39000202F97 /* CKStylesheetSampleLabelViewController.m */,
 			);
 			name = Samples;
 			sourceTree = "<group>";
@@ -340,6 +348,7 @@
 				96267387176F971E00202F97 /* CKStylesheetSamplePlainFormViewController.style in Resources */,
 				9626738A176F986500202F97 /* section-header.png in Resources */,
 				9626738B176F986500202F97 /* section-header@2x.png in Resources */,
+				96267390176FB3A700202F97 /* CKStylesheetSampleLabelViewController.style in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +382,7 @@
 				9626734C176F589800202F97 /* CKStylesheetSampleTextViewController.m in Sources */,
 				96267351176F5E2800202F97 /* CKStylesheetSampleGroupedFormViewController.m in Sources */,
 				96267386176F971E00202F97 /* CKStylesheetSamplePlainFormViewController.m in Sources */,
+				9626738E176FB39000202F97 /* CKStylesheetSampleLabelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
