@@ -1,0 +1,55 @@
+//
+//  CKStylesheetSampleViewController.m
+//  StylesheetSample
+//
+//  Created by Sebastien Morel on 2013-06-17.
+//  Copyright (c) 2013 Sebastien Morel. All rights reserved.
+//
+
+#import "CKStylesheetSampleViewController.h"
+#import "CKStylesheetSampleListViewController.h"
+#import "CKStylesheetSampleTextViewController.h"
+
+@interface CKStylesheetSampleViewController ()
+
+@end
+
+@implementation CKStylesheetSampleViewController
+
+- (void)postInit{
+    [super postInit];
+    [self setup];
+}
+
+- (void)setup{
+    CKContainerViewController* rightContainer = [CKContainerViewController controller];
+    CKStylesheetSampleTextViewController* text = [CKStylesheetSampleTextViewController controller];
+    CKStylesheetSampleListViewController* list = [CKStylesheetSampleListViewController controller];
+    
+    self.viewControllers = @[list,
+                             [CKViewController controllerWithName:@"Separator"],
+                             text,
+                             [CKViewController controllerWithName:@"Separator"],
+                             rightContainer];
+    
+    __unsafe_unretained CKStylesheetSampleViewController* bself = self;
+    
+    list.didSelectSample = ^(NSString* stylesheetFileName, Class sampleViewControllerClass){
+        CKViewController* controller = [[sampleViewControllerClass alloc]init];
+        [rightContainer setViewControllers:@[controller]];
+        [rightContainer presentViewControllerAtIndex:0 withTransition:CKTransitionNone];
+        
+        [bself updateTextViewController:text usingStylesheetFileName:stylesheetFileName];
+    };
+}
+         
+- (void)updateTextViewController:(CKStylesheetSampleTextViewController*)textViewController usingStylesheetFileName:(NSString*)filename{
+    NSString* path = [[NSBundle mainBundle]pathForResource:filename ofType:@"style"];
+    
+    NSError* error = nil;
+    NSString* content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
+    
+    textViewController.content = content;
+}
+
+@end

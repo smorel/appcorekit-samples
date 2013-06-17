@@ -1,0 +1,27 @@
+{
+    "@import" : [
+    ],
+    
+    "CKStylesheetSampleTextViewController" : {
+        "view" : {
+            "backgroundColor" : "darkGrayColor"
+        },
+        
+        "scrollView" : {
+            "backgroundColor" : "clearColor",
+            "contentInset" : "10 10 10 10"
+        },
+        
+        "label" : {
+            "backgroundColor" : "clearColor",
+            "numberOfLines" : 0,
+            "font" : ["Helvetica", 14],
+            "textColor" : "lightGrayColor"
+        },
+        
+        "splitViewConstraints" : {
+            "type" : "CKSplitViewConstraintsTypeFixedSizeInPixels",
+            "size" : 480
+        }
+    }
+}

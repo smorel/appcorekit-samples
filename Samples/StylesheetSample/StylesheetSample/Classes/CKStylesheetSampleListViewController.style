@@ -1,0 +1,19 @@
+{
+    "@import" : [
+    ],
+    
+    "CKStylesheetSampleListViewController" : {
+        "view,tableViewContainer" : {
+            "backgroundColor" : "darkGrayColor"
+        },
+        
+        "tableView" : {
+            "backgroundColor" : "clearColor"
+        },
+        
+        "splitViewConstraints" : {
+            "type" : "CKSplitViewConstraintsTypeFixedSizeInPixels",
+            "size" : 200
+        }
+    }
+}
