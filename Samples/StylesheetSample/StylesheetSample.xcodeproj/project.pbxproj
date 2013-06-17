@@ -58,6 +58,11 @@
 		9626738B176F986500202F97 /* section-header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96267389176F986500202F97 /* section-header@2x.png */; };
 		9626738E176FB39000202F97 /* CKStylesheetSampleLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9626738D176FB39000202F97 /* CKStylesheetSampleLabelViewController.m */; };
 		96267390176FB3A700202F97 /* CKStylesheetSampleLabelViewController.style in Resources */ = {isa = PBXBuildFile; fileRef = 9626738F176FB3A700202F97 /* CKStylesheetSampleLabelViewController.style */; };
+		96267394176FB80000202F97 /* CKStylesheetSampleButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96267392176FB7FE00202F97 /* CKStylesheetSampleButtonViewController.m */; };
+		96267395176FB80000202F97 /* CKStylesheetSampleButtonViewController.style in Resources */ = {isa = PBXBuildFile; fileRef = 96267393176FB7FF00202F97 /* CKStylesheetSampleButtonViewController.style */; };
+		96267399176FBFA400202F97 /* button-lighter.png in Resources */ = {isa = PBXBuildFile; fileRef = 96267396176FBFA300202F97 /* button-lighter.png */; };
+		9626739A176FBFA400202F97 /* button-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 96267397176FBFA300202F97 /* button-pressed.png */; };
+		9626739B176FBFA400202F97 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 96267398176FBFA400202F97 /* button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +129,12 @@
 		9626738C176FB39000202F97 /* CKStylesheetSampleLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKStylesheetSampleLabelViewController.h; path = Classes/CKStylesheetSampleLabelViewController.h; sourceTree = "<group>"; };
 		9626738D176FB39000202F97 /* CKStylesheetSampleLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKStylesheetSampleLabelViewController.m; path = Classes/CKStylesheetSampleLabelViewController.m; sourceTree = "<group>"; };
 		9626738F176FB3A700202F97 /* CKStylesheetSampleLabelViewController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CKStylesheetSampleLabelViewController.style; path = Classes/CKStylesheetSampleLabelViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		96267391176FB7FD00202F97 /* CKStylesheetSampleButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKStylesheetSampleButtonViewController.h; path = Classes/CKStylesheetSampleButtonViewController.h; sourceTree = "<group>"; };
+		96267392176FB7FE00202F97 /* CKStylesheetSampleButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKStylesheetSampleButtonViewController.m; path = Classes/CKStylesheetSampleButtonViewController.m; sourceTree = "<group>"; };
+		96267393176FB7FF00202F97 /* CKStylesheetSampleButtonViewController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CKStylesheetSampleButtonViewController.style; path = Classes/CKStylesheetSampleButtonViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		96267396176FBFA300202F97 /* button-lighter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-lighter.png"; path = "Resources/button-lighter.png"; sourceTree = "<group>"; };
+		96267397176FBFA300202F97 /* button-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-pressed.png"; path = "Resources/button-pressed.png"; sourceTree = "<group>"; };
+		96267398176FBFA400202F97 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = Resources/button.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +245,9 @@
 		9626733B176F57A900202F97 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				96267396176FBFA300202F97 /* button-lighter.png */,
+				96267397176FBFA300202F97 /* button-pressed.png */,
+				96267398176FBFA400202F97 /* button.png */,
 				96267388176F986500202F97 /* section-header.png */,
 				96267389176F986500202F97 /* section-header@2x.png */,
 				96267379176F850500202F97 /* accessory-checkmark-highlight.png */,
@@ -266,6 +280,9 @@
 				9626738F176FB3A700202F97 /* CKStylesheetSampleLabelViewController.style */,
 				9626738C176FB39000202F97 /* CKStylesheetSampleLabelViewController.h */,
 				9626738D176FB39000202F97 /* CKStylesheetSampleLabelViewController.m */,
+				96267393176FB7FF00202F97 /* CKStylesheetSampleButtonViewController.style */,
+				96267391176FB7FD00202F97 /* CKStylesheetSampleButtonViewController.h */,
+				96267392176FB7FE00202F97 /* CKStylesheetSampleButtonViewController.m */,
 			);
 			name = Samples;
 			sourceTree = "<group>";
@@ -349,6 +366,10 @@
 				9626738A176F986500202F97 /* section-header.png in Resources */,
 				9626738B176F986500202F97 /* section-header@2x.png in Resources */,
 				96267390176FB3A700202F97 /* CKStylesheetSampleLabelViewController.style in Resources */,
+				96267395176FB80000202F97 /* CKStylesheetSampleButtonViewController.style in Resources */,
+				96267399176FBFA400202F97 /* button-lighter.png in Resources */,
+				9626739A176FBFA400202F97 /* button-pressed.png in Resources */,
+				9626739B176FBFA400202F97 /* button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +404,7 @@
 				96267351176F5E2800202F97 /* CKStylesheetSampleGroupedFormViewController.m in Sources */,
 				96267386176F971E00202F97 /* CKStylesheetSamplePlainFormViewController.m in Sources */,
 				9626738E176FB39000202F97 /* CKStylesheetSampleLabelViewController.m in Sources */,
+				96267394176FB80000202F97 /* CKStylesheetSampleButtonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

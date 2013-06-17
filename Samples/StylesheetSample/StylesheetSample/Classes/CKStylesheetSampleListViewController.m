@@ -28,7 +28,7 @@
     }]];
     
     NSArray* sortedAndFilteredClasses = [filteredClasses sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
-        return [[obj1 description]compare:[obj2 description]];
+        return [[obj1 title]compare:[obj2 title]];
     }];
     
     return sortedAndFilteredClasses;
