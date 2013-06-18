@@ -10,6 +10,8 @@
         "CKStylesheetSamplePlainFormViewController",
         "CKStylesheetSampleUILabelViewController",
         "CKStylesheetSampleUIButtonViewController",
-        "CKStylesheetSampleUISwitchViewController"
+        "CKStylesheetSampleUISwitchViewController",
+        "CKStylesheetSampleUIPageControlViewController",
+        "CKStylesheetSampleUITextFieldViewController"
     ]
 }

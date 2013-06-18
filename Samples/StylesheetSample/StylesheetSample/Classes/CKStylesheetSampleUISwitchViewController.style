@@ -20,7 +20,7 @@
                 { "@class" : "CKHorizontalBoxLayout",
                   "layoutBoxes" : [
                         { "@class" : "CKLayoutFlexibleSpace" },
-                        { "@class" : "UISwitch", "name" : "SWITCH", "fixedSize" : "79 50" },
+                        { "@class" : "UISwitch", "name" : "SWITCH", "fixedSize" : "79 30" },
                         { "@class" : "CKLayoutFlexibleSpace" }
                     ]
                 },
