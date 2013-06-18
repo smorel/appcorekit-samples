@@ -23,21 +23,22 @@
             "returnKeyType" : "UIReturnKeyRoute",
             
             "text" : "Hello World!",
+            "placeholder" : "I'm a placeholder.",
             "textColor" : "redColor",
             
             "font" : [ "Helvetica-Bold", 20 ],
             //"minimumFontSize" : 20,
+            "adjustsFontSizeToFitWidth" : 0,
             
             "textAlignment" : "UITextAlignmentCenter",
             "borderStyle" : "UITextBorderStyleNone",
-            "placeholder" : "I'm a placeholder.",
-            "clearsOnBeginEditing" : 1,
-            "adjustsFontSizeToFitWidth" : 0,
             
             //"background" : "background_image",
             //"disabledBackground" : "disabledBackground_image",
             
+            "clearsOnBeginEditing" : 1,
             "clearButtonMode" : "UITextFieldViewModeWhileEditing",
+            
             "leftView" : {
                 
                 //see UIImageView sample for full customization

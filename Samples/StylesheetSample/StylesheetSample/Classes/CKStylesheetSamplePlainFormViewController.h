@@ -7,8 +7,8 @@
 //
 
 #import <AppCoreKit/AppCoreKit.h>
-#import "CKStylesheetSampleProtocol.h"
+#import "CKStylesheetSampleGroupedFormViewController.h"
 
-@interface CKStylesheetSamplePlainFormViewController : CKFormTableViewController
+@interface CKStylesheetSamplePlainFormViewController : CKStylesheetSampleGroupedFormViewController
 
 @end
