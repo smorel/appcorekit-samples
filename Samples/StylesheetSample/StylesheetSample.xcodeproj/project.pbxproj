@@ -65,6 +65,8 @@
 		9626739D177000FA00202F97 /* CKStylesheetSampleUISwitchViewController.style in Resources */ = {isa = PBXBuildFile; fileRef = 9626739C177000FA00202F97 /* CKStylesheetSampleUISwitchViewController.style */; };
 		9626739F1770030500202F97 /* CKStylesheetSampleUIPageControlViewController.style in Resources */ = {isa = PBXBuildFile; fileRef = 9626739E1770030400202F97 /* CKStylesheetSampleUIPageControlViewController.style */; };
 		962673A11770048800202F97 /* CKStylesheetSampleUITextFieldViewController.style in Resources */ = {isa = PBXBuildFile; fileRef = 962673A01770048800202F97 /* CKStylesheetSampleUITextFieldViewController.style */; };
+		962673A317700FF600202F97 /* CKStylesheetSampleUIActivityIndicatorViewViewController.style in Resources */ = {isa = PBXBuildFile; fileRef = 962673A217700FF400202F97 /* CKStylesheetSampleUIActivityIndicatorViewViewController.style */; };
+		96B9D2681770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B9D2671770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,6 +140,9 @@
 		9626739C177000FA00202F97 /* CKStylesheetSampleUISwitchViewController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CKStylesheetSampleUISwitchViewController.style; path = Classes/CKStylesheetSampleUISwitchViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		9626739E1770030400202F97 /* CKStylesheetSampleUIPageControlViewController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CKStylesheetSampleUIPageControlViewController.style; path = Classes/CKStylesheetSampleUIPageControlViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		962673A01770048800202F97 /* CKStylesheetSampleUITextFieldViewController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CKStylesheetSampleUITextFieldViewController.style; path = Classes/CKStylesheetSampleUITextFieldViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		962673A217700FF400202F97 /* CKStylesheetSampleUIActivityIndicatorViewViewController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CKStylesheetSampleUIActivityIndicatorViewViewController.style; path = Classes/CKStylesheetSampleUIActivityIndicatorViewViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		96B9D2661770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKStylesheetSampleUIActivityIndicatorViewViewController.h; path = Classes/CKStylesheetSampleUIActivityIndicatorViewViewController.h; sourceTree = "<group>"; };
+		96B9D2671770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKStylesheetSampleUIActivityIndicatorViewViewController.m; path = Classes/CKStylesheetSampleUIActivityIndicatorViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +229,7 @@
 				96267354176F5EC200202F97 /* CKStylesheetSampleTextViewController.style */,
 				9626734A176F589700202F97 /* CKStylesheetSampleTextViewController.h */,
 				9626734B176F589700202F97 /* CKStylesheetSampleTextViewController.m */,
+				9626734E176F5A7700202F97 /* CKStylesheetSampleProtocol.h */,
 				9626734D176F59E800202F97 /* Samples */,
 				9626733B176F57A900202F97 /* Resources */,
 				96267314176F57A800202F97 /* Supporting Files */,
@@ -273,7 +279,6 @@
 			isa = PBXGroup;
 			children = (
 				96267381176F915B00202F97 /* TODO.rtf */,
-				9626734E176F5A7700202F97 /* CKStylesheetSampleProtocol.h */,
 				96267358176F5EED00202F97 /* CKStylesheetSampleGroupedFormViewController.style */,
 				9626734F176F5E2800202F97 /* CKStylesheetSampleGroupedFormViewController.h */,
 				96267350176F5E2800202F97 /* CKStylesheetSampleGroupedFormViewController.m */,
@@ -283,6 +288,9 @@
 				96267393176FB7FF00202F97 /* CKStylesheetSampleUIButtonViewController.style */,
 				96267391176FB7FD00202F97 /* CKStylesheetSampleUIButtonViewController.h */,
 				96267392176FB7FE00202F97 /* CKStylesheetSampleUIButtonViewController.m */,
+				962673A217700FF400202F97 /* CKStylesheetSampleUIActivityIndicatorViewViewController.style */,
+				96B9D2661770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.h */,
+				96B9D2671770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.m */,
 				9626738F176FB3A700202F97 /* CKStylesheetSampleUILabelViewController.style */,
 				9626739C177000FA00202F97 /* CKStylesheetSampleUISwitchViewController.style */,
 				9626739E1770030400202F97 /* CKStylesheetSampleUIPageControlViewController.style */,
@@ -377,6 +385,7 @@
 				9626739D177000FA00202F97 /* CKStylesheetSampleUISwitchViewController.style in Resources */,
 				9626739F1770030500202F97 /* CKStylesheetSampleUIPageControlViewController.style in Resources */,
 				962673A11770048800202F97 /* CKStylesheetSampleUITextFieldViewController.style in Resources */,
+				962673A317700FF600202F97 /* CKStylesheetSampleUIActivityIndicatorViewViewController.style in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +420,7 @@
 				96267351176F5E2800202F97 /* CKStylesheetSampleGroupedFormViewController.m in Sources */,
 				96267386176F971E00202F97 /* CKStylesheetSamplePlainFormViewController.m in Sources */,
 				96267394176FB80000202F97 /* CKStylesheetSampleUIButtonViewController.m in Sources */,
+				96B9D2681770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +569,7 @@
 				96267343176F57A900202F97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

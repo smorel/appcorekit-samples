@@ -1,0 +1,38 @@
+{
+    "CKViewController[name=UIActivityIndicatorView]" : {
+
+        "view" : {
+            "backgroundColor" : ".8 .8 .8 1",
+            "@inherits" : [ "$sample_activityindicator_layout" ]
+        },
+        
+        "UIActivityIndicatorView[name=ACTIVITYINDICATOR]" : {
+            "activityIndicatorViewStyle" : "UIActivityIndicatorViewStyleWhiteLarge"
+        },
+        
+        "UIButton[name=STARTSTOPBUTTON]" : {
+            "defaultTitle"   : "Stop Animating",
+            "selectedTitle"  : "Start Animating",
+            "defaultTextColot" : "blackColor"
+        }
+    },
+    
+    
+    "$sample_activityindicator_layout" : {
+        "layoutBoxes" : [
+            { "@class" : "UIActivityIndicatorView", "name" : "ACTIVITYINDICATOR" },
+            { "@class" : "CKVerticalBoxLayout",
+              "layoutBoxes" : [
+                    { "@class" : "CKLayoutFlexibleSpace" },
+                    { "@class" : "CKHorizontalBoxLayout", "marginBottom" : 10,
+                      "layoutBoxes" : [
+                            { "@class" : "CKLayoutFlexibleSpace" },
+                            { "@class" : "UIButton", "name" : "STARTSTOPBUTTON" },
+                            { "@class" : "CKLayoutFlexibleSpace" }
+                      ]
+                    }
+                ]
+            }
+        ]
+    }
+}

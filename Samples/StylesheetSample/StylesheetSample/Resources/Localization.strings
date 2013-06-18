@@ -4,13 +4,23 @@
 */
 
 
-"CKStylesheetSampleGroupedFormViewController" = "Form - Grouped";
-"CKStylesheetSamplePlainFormViewController" = "Form - Plain";
+"CKStylesheetSampleGroupedFormViewController" = "Form";
+"CKStylesheetSampleGroupedFormViewController_subtitle" = "Grouped";
+
+"CKStylesheetSamplePlainFormViewController" = "Form";
+"CKStylesheetSamplePlainFormViewController_subtitle" = "Plain";
+
 "CKStylesheetSampleUIButtonViewController" = "UIButton";
+
 "CKStylesheetSampleUILabelViewController" = "UILabel";
+
 "CKStylesheetSampleUISwitchViewController" = "UISwitch";
+
 "CKStylesheetSampleUIPageControlViewController" = "UIPageControl";
+
 "CKStylesheetSampleUITextFieldViewController" = "UITextField";
+
+"CKStylesheetSampleUIActivityIndicatorViewViewController" = "UIActivityIndicatorView";
 
 "CKTableViewCellStyleIPadForm" = "IPad Form Style";
 "CKTableViewCellStyleIPhoneForm" = "IPhone Form Style";

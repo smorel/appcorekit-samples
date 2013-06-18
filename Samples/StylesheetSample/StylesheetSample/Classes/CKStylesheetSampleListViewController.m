@@ -43,6 +43,12 @@
     return _(self.sampleTitle);
 }
 
+- (NSString*)subtitle{
+    NSString* subtitleKey = [NSString stringWithFormat:@"%@_subtitle",self.sampleTitle];
+    NSString* result =  _(subtitleKey);
+    return [subtitleKey isEqualToString:result] ? nil : result;
+}
+
 @end
 
 
@@ -134,7 +140,7 @@ static char* ignore[3] = {
     
     NSArray* sortedAndFilteredClasses = [self sortedAndFilteredSampleFactories];
     for(id<CKStylesheetSampleProtocol> sampleFactory in sortedAndFilteredClasses){
-        CKTableViewCellController* cell = [CKTableViewCellController cellControllerWithTitle:[sampleFactory title] action:^(CKTableViewCellController *controller) {
+        CKTableViewCellController* cell = [CKTableViewCellController cellControllerWithTitle:[sampleFactory title] subtitle:[sampleFactory subtitle] action:^(CKTableViewCellController *controller) {
             if(bself.didSelectSample){
                 bself.didSelectSample(sampleFactory);
             }

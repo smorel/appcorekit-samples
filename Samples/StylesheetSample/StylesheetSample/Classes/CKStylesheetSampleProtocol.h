@@ -13,5 +13,6 @@
 - (CKViewController*)newViewController;
 - (NSString*)stylesheetFileName;
 - (NSString*)title;
+- (NSString*)subtitle;
 
 @end
