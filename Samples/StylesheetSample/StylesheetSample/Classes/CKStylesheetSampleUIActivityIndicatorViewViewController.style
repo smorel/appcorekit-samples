@@ -11,16 +11,16 @@
         },
         
         "UIButton[name=STARTSTOPBUTTON]" : {
-            "defaultTitle"   : "Stop Animating",
-            "selectedTitle"  : "Start Animating",
-            "defaultTextColot" : "blackColor"
+            "defaultTitle"     : "Stop Animating",
+            "selectedTitle"    : "Start Animating",
+            "defaultTextColor" : "blackColor"
         }
     },
     
     
     "$sample_activityindicator_layout" : {
         "layoutBoxes" : [
-            { "@class" : "UIActivityIndicatorView", "name" : "ACTIVITYINDICATOR" },
+            { "@class" : "UIActivityIndicatorView", "name" : "ACTIVITYINDICATOR" }, //full screen
             { "@class" : "CKVerticalBoxLayout",
               "layoutBoxes" : [
                     { "@class" : "CKLayoutFlexibleSpace" },
