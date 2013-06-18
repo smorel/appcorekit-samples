@@ -62,6 +62,7 @@
 		96267399176FBFA400202F97 /* button-lighter.png in Resources */ = {isa = PBXBuildFile; fileRef = 96267396176FBFA300202F97 /* button-lighter.png */; };
 		9626739A176FBFA400202F97 /* button-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 96267397176FBFA300202F97 /* button-pressed.png */; };
 		9626739B176FBFA400202F97 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 96267398176FBFA400202F97 /* button.png */; };
+		9626739D177000FA00202F97 /* CKStylesheetSampleUISwitchViewController.style in Resources */ = {isa = PBXBuildFile; fileRef = 9626739C177000FA00202F97 /* CKStylesheetSampleUISwitchViewController.style */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -132,6 +133,7 @@
 		96267396176FBFA300202F97 /* button-lighter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-lighter.png"; path = "Resources/button-lighter.png"; sourceTree = "<group>"; };
 		96267397176FBFA300202F97 /* button-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-pressed.png"; path = "Resources/button-pressed.png"; sourceTree = "<group>"; };
 		96267398176FBFA400202F97 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = Resources/button.png; sourceTree = "<group>"; };
+		9626739C177000FA00202F97 /* CKStylesheetSampleUISwitchViewController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CKStylesheetSampleUISwitchViewController.style; path = Classes/CKStylesheetSampleUISwitchViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +280,7 @@
 				96267391176FB7FD00202F97 /* CKStylesheetSampleUIButtonViewController.h */,
 				96267392176FB7FE00202F97 /* CKStylesheetSampleUIButtonViewController.m */,
 				9626738F176FB3A700202F97 /* CKStylesheetSampleUILabelViewController.style */,
+				9626739C177000FA00202F97 /* CKStylesheetSampleUISwitchViewController.style */,
 			);
 			name = Samples;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				96267399176FBFA400202F97 /* button-lighter.png in Resources */,
 				9626739A176FBFA400202F97 /* button-pressed.png in Resources */,
 				9626739B176FBFA400202F97 /* button.png in Resources */,
+				9626739D177000FA00202F97 /* CKStylesheetSampleUISwitchViewController.style in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 "CKStylesheetSamplePlainFormViewController" = "Form - Plain";
 "CKStylesheetSampleUIButtonViewController" = "UIButton";
 "CKStylesheetSampleUILabelViewController" = "UILabel";
+"CKStylesheetSampleUISwitchViewController" = "UISwitch";
 
 "CKTableViewCellStyleIPadForm" = "IPad Form Style";
 "CKTableViewCellStyleIPhoneForm" = "IPhone Form Style";
