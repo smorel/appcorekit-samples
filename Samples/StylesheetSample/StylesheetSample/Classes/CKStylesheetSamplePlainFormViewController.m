@@ -13,14 +13,6 @@
 @end
 
 @implementation CKStylesheetSamplePlainFormViewController
-
-+ (NSString*)stylesheetFileName{
-    return [[self class]description];
-}
-
-+ (NSString*)title{
-    return _(@"Form - Plain");
-}
  
 - (void)postInit{
     [super postInit];

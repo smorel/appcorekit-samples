@@ -10,7 +10,8 @@
 
 @protocol CKStylesheetSampleProtocol <NSObject>
 
-+ (NSString*)stylesheetFileName;
-+ (NSString*)title;
+- (CKViewController*)newViewController;
+- (NSString*)stylesheetFileName;
+- (NSString*)title;
 
 @end

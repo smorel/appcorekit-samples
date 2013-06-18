@@ -7,7 +7,8 @@
 //
 
 #import <AppCoreKit/AppCoreKit.h>
+#import "CKStylesheetSampleProtocol.h"
 
 @interface CKStylesheetSampleListViewController : CKFormTableViewController
-@property(nonatomic,copy)void(^didSelectSample)(NSString* stylesheetFileName, Class sampleViewControllerClass);
+@property(nonatomic,copy)void(^didSelectSample)(id<CKStylesheetSampleProtocol> sample);
 @end

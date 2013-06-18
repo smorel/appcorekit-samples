@@ -8,7 +8,7 @@
         //SAMPLES
         "CKStylesheetSampleGroupedFormViewController",
         "CKStylesheetSamplePlainFormViewController",
-        "CKStylesheetSampleLabelViewController",
-        "CKStylesheetSampleButtonViewController"
+        "CKStylesheetSampleUILabelViewController",
+        "CKStylesheetSampleUIButtonViewController"
     ]
 }

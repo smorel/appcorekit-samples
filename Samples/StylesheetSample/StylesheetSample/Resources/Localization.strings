@@ -4,7 +4,10 @@
 */
 
 
-
+"CKStylesheetSampleGroupedFormViewController" = "Form - Grouped";
+"CKStylesheetSamplePlainFormViewController" = "Form - Plain";
+"CKStylesheetSampleUIButtonViewController" = "UIButton";
+"CKStylesheetSampleUILabelViewController" = "UILabel";
 
 "CKTableViewCellStyleIPadForm" = "IPad Form Style";
 "CKTableViewCellStyleIPhoneForm" = "IPhone Form Style";

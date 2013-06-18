@@ -1,5 +1,5 @@
 {
-    "CKStylesheetSampleLabelViewController" : {
+    "CKViewController[name=UILabel]" : {
 
         "view" : {
             "backgroundColor" : ".8 .8 .8 1",

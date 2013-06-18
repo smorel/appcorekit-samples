@@ -9,6 +9,7 @@
 #import "CKStylesheetSampleViewController.h"
 #import "CKStylesheetSampleListViewController.h"
 #import "CKStylesheetSampleTextViewController.h"
+#import "CKStylesheetSampleProtocol.h"
 
 @interface CKStylesheetSampleViewController ()
 
@@ -34,12 +35,12 @@
     
     __unsafe_unretained CKStylesheetSampleViewController* bself = self;
     
-    list.didSelectSample = ^(NSString* stylesheetFileName, Class sampleViewControllerClass){
-        CKViewController* controller = [[sampleViewControllerClass alloc]init];
+    list.didSelectSample = ^(id<CKStylesheetSampleProtocol> sample){
+        CKViewController* controller = [sample newViewController];
         [rightContainer setViewControllers:@[controller]];
         [rightContainer presentViewControllerAtIndex:0 withTransition:CKTransitionNone];
         
-        [bself updateTextViewController:text usingStylesheetFileName:stylesheetFileName];
+        [bself updateTextViewController:text usingStylesheetFileName:[sample stylesheetFileName]];
     };
 }
          

@@ -10,14 +10,6 @@
 
 @implementation CKStylesheetSampleGroupedFormViewController
 
-+ (NSString*)stylesheetFileName{
-    return [[self class]description];
-}
-
-+ (NSString*)title{
-    return _(@"Form - Grouped");
-}
-
 - (void)postInit{
     [super postInit];
     [self setup];

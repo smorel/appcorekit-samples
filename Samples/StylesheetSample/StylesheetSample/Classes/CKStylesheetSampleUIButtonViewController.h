@@ -1,5 +1,5 @@
 //
-//  CKStylesheetSampleLabelViewController.h
+//  CKStylesheetSampleUIButtonViewController.h
 //  StylesheetSample
 //
 //  Created by Sebastien Morel on 2013-06-17.
@@ -9,6 +9,6 @@
 #import <AppCoreKit/AppCoreKit.h>
 #import "CKStylesheetSampleProtocol.h"
 
-@interface CKStylesheetSampleLabelViewController : CKViewController<CKStylesheetSampleProtocol>
+@interface CKStylesheetSampleUIButtonViewController : CKViewController
 
 @end

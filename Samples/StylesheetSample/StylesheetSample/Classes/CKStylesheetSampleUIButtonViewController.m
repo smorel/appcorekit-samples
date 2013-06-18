@@ -1,26 +1,18 @@
 //
-//  CKStylesheetSampleButtonViewController.m
+//  CKStylesheetSampleUIButtonViewController.m
 //  StylesheetSample
 //
 //  Created by Sebastien Morel on 2013-06-17.
 //  Copyright (c) 2013 Sebastien Morel. All rights reserved.
 //
 
-#import "CKStylesheetSampleButtonViewController.h"
+#import "CKStylesheetSampleUIButtonViewController.h"
 
-@interface CKStylesheetSampleButtonViewController ()
+@interface CKStylesheetSampleUIButtonViewController ()
 
 @end
 
-@implementation CKStylesheetSampleButtonViewController
-
-+ (NSString*)stylesheetFileName{
-    return [[self class]description];
-}
-
-+ (NSString*)title{
-    return _(@"UIButton");
-}
+@implementation CKStylesheetSampleUIButtonViewController
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];

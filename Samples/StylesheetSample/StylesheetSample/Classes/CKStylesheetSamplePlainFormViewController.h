@@ -9,6 +9,6 @@
 #import <AppCoreKit/AppCoreKit.h>
 #import "CKStylesheetSampleProtocol.h"
 
-@interface CKStylesheetSamplePlainFormViewController : CKFormTableViewController<CKStylesheetSampleProtocol>
+@interface CKStylesheetSamplePlainFormViewController : CKFormTableViewController
 
 @end
