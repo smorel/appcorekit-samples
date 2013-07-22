@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>UIView(Layout) Category Reference</title>
+		<title>RMResourceRepositoryDelegate Protocol Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -12,12 +12,12 @@
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">AppCoreKit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">ResourceManager </a></h1>
 				<a id="developerHome" href="../index.html">Wherecloud</a>
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">UIView(Layout) Category Reference</h1>
+				<h1 class="hideInXcode">RMResourceRepositoryDelegate Protocol Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -38,13 +38,17 @@
 	
 	
 	
-	<option value="properties">Properties</option>
-	
-	<option value="//api/name/sizeToFitLayoutBoxes">&nbsp;&nbsp;&nbsp;&nbsp;sizeToFitLayoutBoxes</option>
 	
 	
 	
 	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/repository:didReceiveUpdates:revokedAccess:">&nbsp;&nbsp;&nbsp;&nbsp;- repository:didReceiveUpdates:revokedAccess:</option>
+	
+	<option value="//api/name/repository:requestStoragePathForFileWithRelativePath:">&nbsp;&nbsp;&nbsp;&nbsp;- repository:requestStoragePathForFileWithRelativePath:</option>
+	
+	<option value="//api/name/shouldRepository:updateFileWithRelativePath:modificationDate:">&nbsp;&nbsp;&nbsp;&nbsp;- shouldRepository:updateFileWithRelativePath:modificationDate:</option>
 	
 	
 	
@@ -68,22 +72,26 @@
 
 
 
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sizeToFitLayoutBoxes">sizeToFitLayoutBoxes</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/repository:didReceiveUpdates:revokedAccess:">repository:didReceiveUpdates:revokedAccess:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/repository:requestStoragePathForFileWithRelativePath:">repository:requestStoragePathForFileWithRelativePath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldRepository:updateFileWithRelativePath:modificationDate:">shouldRepository:updateFileWithRelativePath:modificationDate:</a></span></li>
 	
 </ul></li>
-
-
-
-
 
 
 			</ul>
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="UIView(Layout) Category Reference" name="top"></a>
+				<a title="RMResourceRepositoryDelegate Protocol Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -92,7 +100,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">UIView(Layout) Category Reference</h1>
+						<h1 class="title title-header">RMResourceRepositoryDelegate Protocol Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -100,10 +108,10 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Conforms to</td>
-	<td class="specification-value"><a href="../Protocols/CKLayoutBoxProtocol.html">CKLayoutBoxProtocol</a></td>
+	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">CKLayoutBox.h</td>
+	<td class="specification-value">RMResourceRepository.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -125,12 +133,25 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/sizeToFitLayoutBoxes">&nbsp;&nbsp;sizeToFitLayoutBoxes</a></code>
-		<span class="tooltip"><p>Default value is YES. that means layoutting the view will automatically shrink or expand its size to fit the layouted content.
-Views managed by UIViewController or UITableViewCellContentView are forced to NO as the controller, container controller or table view cell controller is responsible to manage it&rsquo;s view frame.</p></span>
+		<code><a href="#//api/name/repository:didReceiveUpdates:revokedAccess:">&ndash;&nbsp;repository:didReceiveUpdates:revokedAccess:</a></code>
+		
 	</span>
-	<span class="task-item-suffix">property</span>
 	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldRepository:updateFileWithRelativePath:modificationDate:">&ndash;&nbsp;shouldRepository:updateFileWithRelativePath:modificationDate:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/repository:requestStoragePathForFileWithRelativePath:">&ndash;&nbsp;repository:requestStoragePathForFileWithRelativePath:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
 </li>
 						</ul>
 						
@@ -140,23 +161,22 @@ Views managed by UIViewController or UITableViewCellContentView are forced to NO
 					
 					
 					
+					
+					
+					
+					
 					<div class="section section-methods">
-						<a title="Properties" name="properties"></a>
-						<h2 class="subtitle subtitle-methods">Properties</h2>
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/sizeToFitLayoutBoxes" title="sizeToFitLayoutBoxes"></a>
-	<h3 class="subsubtitle method-title">sizeToFitLayoutBoxes</h3>
+	<a name="//api/name/repository:didReceiveUpdates:revokedAccess:" title="repository:didReceiveUpdates:revokedAccess:"></a>
+	<h3 class="subsubtitle method-title">repository:didReceiveUpdates:revokedAccess:</h3>
 	
 	
 	
-	<div class="method-subsection brief-description">
-		<p>Default value is YES. that means layoutting the view will automatically shrink or expand its size to fit the layouted content.
-Views managed by UIViewController or UITableViewCellContentView are forced to NO as the controller, container controller or table view cell controller is responsible to manage it&rsquo;s view frame.</p>
-	</div>		
 	
-	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL sizeToFitLayoutBoxes</code></div>
+	<div class="method-subsection method-declaration"><code>- (void)repository:(RMResourceRepository *)<em>repository</em> didReceiveUpdates:(NSArray *)<em>filePaths</em> revokedAccess:(NSArray *)<em>revokedFilePaths</em></code></div>
 	
 	
 	
@@ -173,17 +193,73 @@ Views managed by UIViewController or UITableViewCellContentView are forced to NO
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">CKLayoutBox.h</code><br />
+		<code class="declared-in-ref">RMResourceRepository.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/repository:requestStoragePathForFileWithRelativePath:" title="repository:requestStoragePathForFileWithRelativePath:"></a>
+	<h3 class="subsubtitle method-title">repository:requestStoragePathForFileWithRelativePath:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)repository:(RMResourceRepository *)<em>repository</em> requestStoragePathForFileWithRelativePath:(NSString *)<em>filePath</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RMResourceRepository.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldRepository:updateFileWithRelativePath:modificationDate:" title="shouldRepository:updateFileWithRelativePath:modificationDate:"></a>
+	<h3 class="subsubtitle method-title">shouldRepository:updateFileWithRelativePath:modificationDate:</h3>
+	
+	
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)shouldRepository:(RMResourceRepository *)<em>repository</em> updateFileWithRelativePath:(NSString *)<em>filePath</em> modificationDate:(NSDate *)<em>modificationDate</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RMResourceRepository.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 					</div>
-					
-					
-					
-					
 					
 					
 				</div>
@@ -196,7 +272,7 @@ Views managed by UIViewController or UITableViewCellContentView are forced to NO
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Wherecloud. All rights reserved. (Last updated: 2013-06-17)</span><br />
+						<p><span class="copyright">&copy; 2013 Wherecloud. All rights reserved. (Last updated: 2013-07-22)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						

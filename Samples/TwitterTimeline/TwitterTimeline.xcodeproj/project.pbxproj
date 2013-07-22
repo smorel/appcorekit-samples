@@ -10,6 +10,9 @@
 		9604728D163EEB4A00B39F8F /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9604728C163EEB4A00B39F8F /* Twitter.framework */; };
 		96047294163EF69A00B39F8F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96047293163EF69A00B39F8F /* Accounts.framework */; };
 		9629E83E1587DFC500593E62 /* TwitterTimeline.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9629E83D1587DFC500593E62 /* TwitterTimeline.strings */; };
+		963AB7E6179D68D80076925C /* ResourceManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7E5179D68D80076925C /* ResourceManager.framework */; };
+		963AB7E8179D68DE0076925C /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7E7179D68DE0076925C /* DropboxSDK.framework */; };
+		963AB7EA179D68E90076925C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7E9179D68E90076925C /* Security.framework */; };
 		963BF4831760DE8E003E3D94 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF4821760DE8E003E3D94 /* AdSupport.framework */; };
 		963BF4901760DEFD003E3D94 /* AppCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF48E1760DEFC003E3D94 /* AppCoreKit.framework */; };
 		963BF4911760DEFD003E3D94 /* VendorsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF48F1760DEFC003E3D94 /* VendorsKit.framework */; };
@@ -48,6 +51,9 @@
 		9604728C163EEB4A00B39F8F /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		96047293163EF69A00B39F8F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		9629E83D1587DFC500593E62 /* TwitterTimeline.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = TwitterTimeline.strings; path = Resources/TwitterTimeline.strings; sourceTree = "<group>"; };
+		963AB7E5179D68D80076925C /* ResourceManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ResourceManager.framework; path = ../../Frameworks/ResourceManager.framework; sourceTree = "<group>"; };
+		963AB7E7179D68DE0076925C /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxSDK.framework; path = ../../Frameworks/DropboxSDK.framework; sourceTree = "<group>"; };
+		963AB7E9179D68E90076925C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		963BF4821760DE8E003E3D94 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		963BF48E1760DEFC003E3D94 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = ../../Frameworks/AppCoreKit.framework; sourceTree = "<group>"; };
 		963BF48F1760DEFC003E3D94 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = ../../Frameworks/VendorsKit.framework; sourceTree = "<group>"; };
@@ -96,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				963AB7EA179D68E90076925C /* Security.framework in Frameworks */,
 				963BF4831760DE8E003E3D94 /* AdSupport.framework in Frameworks */,
 				96047294163EF69A00B39F8F /* Accounts.framework in Frameworks */,
 				9604728D163EEB4A00B39F8F /* Twitter.framework in Frameworks */,
@@ -115,6 +122,8 @@
 				9691A4F5158246D300E4E6E8 /* MobileCoreServices.framework in Frameworks */,
 				963BF4901760DEFD003E3D94 /* AppCoreKit.framework in Frameworks */,
 				963BF4911760DEFD003E3D94 /* VendorsKit.framework in Frameworks */,
+				963AB7E6179D68D80076925C /* ResourceManager.framework in Frameworks */,
+				963AB7E8179D68DE0076925C /* DropboxSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +150,9 @@
 		9691A4DB158246D300E4E6E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				963AB7E9179D68E90076925C /* Security.framework */,
+				963AB7E7179D68DE0076925C /* DropboxSDK.framework */,
+				963AB7E5179D68D80076925C /* ResourceManager.framework */,
 				963BF48E1760DEFC003E3D94 /* AppCoreKit.framework */,
 				963BF48F1760DEFC003E3D94 /* VendorsKit.framework */,
 				963BF4821760DE8E003E3D94 /* AdSupport.framework */,

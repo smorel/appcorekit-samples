@@ -66,6 +66,9 @@
 		9626739F1770030500202F97 /* CKStylesheetSampleUIPageControlViewController.style in Resources */ = {isa = PBXBuildFile; fileRef = 9626739E1770030400202F97 /* CKStylesheetSampleUIPageControlViewController.style */; };
 		962673A11770048800202F97 /* CKStylesheetSampleUITextFieldViewController.style in Resources */ = {isa = PBXBuildFile; fileRef = 962673A01770048800202F97 /* CKStylesheetSampleUITextFieldViewController.style */; };
 		962673A317700FF600202F97 /* CKStylesheetSampleUIActivityIndicatorViewViewController.style in Resources */ = {isa = PBXBuildFile; fileRef = 962673A217700FF400202F97 /* CKStylesheetSampleUIActivityIndicatorViewViewController.style */; };
+		963AB7E0179D681A0076925C /* ResourceManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7DF179D681A0076925C /* ResourceManager.framework */; };
+		963AB7E2179D68200076925C /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7E1179D68200076925C /* DropboxSDK.framework */; };
+		963AB7E4179D682D0076925C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7E3179D682D0076925C /* Security.framework */; };
 		96B9D2681770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B9D2671770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +144,9 @@
 		9626739E1770030400202F97 /* CKStylesheetSampleUIPageControlViewController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CKStylesheetSampleUIPageControlViewController.style; path = Classes/CKStylesheetSampleUIPageControlViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		962673A01770048800202F97 /* CKStylesheetSampleUITextFieldViewController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CKStylesheetSampleUITextFieldViewController.style; path = Classes/CKStylesheetSampleUITextFieldViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		962673A217700FF400202F97 /* CKStylesheetSampleUIActivityIndicatorViewViewController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CKStylesheetSampleUIActivityIndicatorViewViewController.style; path = Classes/CKStylesheetSampleUIActivityIndicatorViewViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		963AB7DF179D681A0076925C /* ResourceManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ResourceManager.framework; path = ../../Frameworks/ResourceManager.framework; sourceTree = "<group>"; };
+		963AB7E1179D68200076925C /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxSDK.framework; path = ../../Frameworks/DropboxSDK.framework; sourceTree = "<group>"; };
+		963AB7E3179D682D0076925C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		96B9D2661770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKStylesheetSampleUIActivityIndicatorViewViewController.h; path = Classes/CKStylesheetSampleUIActivityIndicatorViewViewController.h; sourceTree = "<group>"; };
 		96B9D2671770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKStylesheetSampleUIActivityIndicatorViewViewController.m; path = Classes/CKStylesheetSampleUIActivityIndicatorViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				963AB7E4179D682D0076925C /* Security.framework in Frameworks */,
 				962672F4176F57A800202F97 /* UIKit.framework in Frameworks */,
 				962672F6176F57A800202F97 /* Foundation.framework in Frameworks */,
 				962672F8176F57A800202F97 /* CoreGraphics.framework in Frameworks */,
@@ -166,6 +173,8 @@
 				9626730E176F57A800202F97 /* MobileCoreServices.framework in Frameworks */,
 				9626735C176F5F9400202F97 /* AppCoreKit.framework in Frameworks */,
 				9626735D176F5F9400202F97 /* VendorsKit.framework in Frameworks */,
+				963AB7E0179D681A0076925C /* ResourceManager.framework in Frameworks */,
+				963AB7E2179D68200076925C /* DropboxSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +201,9 @@
 		962672F2176F57A800202F97 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				963AB7E3179D682D0076925C /* Security.framework */,
+				963AB7E1179D68200076925C /* DropboxSDK.framework */,
+				963AB7DF179D681A0076925C /* ResourceManager.framework */,
 				9626735A176F5F9400202F97 /* AppCoreKit.framework */,
 				9626735B176F5F9400202F97 /* VendorsKit.framework */,
 				962672F3176F57A800202F97 /* UIKit.framework */,

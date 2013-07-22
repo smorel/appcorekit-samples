@@ -83,6 +83,10 @@
 	
 	<option value="//api/name/controllerWithName:">&nbsp;&nbsp;&nbsp;&nbsp;+ controllerWithName:</option>
 	
+	<option value="//api/name/controllerWithName:stylesheetFileName:">&nbsp;&nbsp;&nbsp;&nbsp;+ controllerWithName:stylesheetFileName:</option>
+	
+	<option value="//api/name/controllerWithStylesheetFileName:">&nbsp;&nbsp;&nbsp;&nbsp;+ controllerWithStylesheetFileName:</option>
+	
 	
 	
 	
@@ -99,8 +103,6 @@
 	<option value="//api/name/postInit">&nbsp;&nbsp;&nbsp;&nbsp;- postInit</option>
 	
 	<option value="//api/name/stylesheet">&nbsp;&nbsp;&nbsp;&nbsp;- stylesheet</option>
-	
-	<option value="//api/name/updateStylesheets">&nbsp;&nbsp;&nbsp;&nbsp;- updateStylesheets</option>
 	
 	
 	
@@ -188,6 +190,10 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controllerWithName:">controllerWithName:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controllerWithName:stylesheetFileName:">controllerWithName:stylesheetFileName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controllerWithStylesheetFileName:">controllerWithStylesheetFileName:</a></span></li>
+	
 </ul></li>
 
 
@@ -205,8 +211,6 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postInit">postInit</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stylesheet">stylesheet</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateStylesheets">updateStylesheets</a></span></li>
 	
 </ul></li>
 
@@ -274,6 +278,20 @@ You can define some elements for navigation like left/right bar buttons and the 
 	<span class="tooltip">
 		<code><a href="#//api/name/controllerWithName:">+&nbsp;controllerWithName:</a></code>
 		<span class="tooltip"><p>This returns an autorelease view <a href="#//api/name/controller">controller</a> of the calling class by initializing its <a href="#//api/name/name">name</a> property with the specified <a href="#//api/name/name">name</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/controllerWithStylesheetFileName:">+&nbsp;controllerWithStylesheetFileName:</a></code>
+		<span class="tooltip"><p>This returns an autorelease view <a href="#//api/name/controller">controller</a> of the calling class initializing it style manager using the specified stylesheetFileName.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/controllerWithName:stylesheetFileName:">+&nbsp;controllerWithName:stylesheetFileName:</a></code>
+		<span class="tooltip"><p>This returns an autorelease view <a href="#//api/name/controller">controller</a> of the calling class by initializing its <a href="#//api/name/name">name</a> property with the specified <a href="#//api/name/name">name</a> and its style manager using the specified stylesheetFileName.</p></span>
 	</span>
 	
 	
@@ -509,13 +527,6 @@ The possible values are:
 	<span class="tooltip">
 		<code><a href="#//api/name/postInit">&ndash;&nbsp;postInit</a></code>
 		<span class="tooltip"><p>This method is called upon initialization. Subclasses can override this method.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/updateStylesheets">&ndash;&nbsp;updateStylesheets</a></code>
-		<span class="tooltip"><p>This method forces a complete reload of the view and its style. This is mainly usefull while reloading <a href="#//api/name/stylesheet">stylesheet</a> definitions at runtime.</p></span>
 	</span>
 	
 	
@@ -1201,6 +1212,74 @@ For exemple, if you need to layout some views and you defined size or frames for
 	
 </div>
 						
+						<div class="section-method">
+	<a name="//api/name/controllerWithName:stylesheetFileName:" title="controllerWithName:stylesheetFileName:"></a>
+	<h3 class="subsubtitle method-title">controllerWithName:stylesheetFileName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This returns an autorelease view <a href="#//api/name/controller">controller</a> of the calling class by initializing its <a href="#//api/name/name">name</a> property with the specified <a href="#//api/name/name">name</a> and its style manager using the specified stylesheetFileName.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (id)controllerWithName:(NSString *)<em>name</em> stylesheetFileName:(NSString *)<em>stylesheetFileName</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/controllerWithStylesheetFileName:" title="controllerWithStylesheetFileName:"></a>
+	<h3 class="subsubtitle method-title">controllerWithStylesheetFileName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This returns an autorelease view <a href="#//api/name/controller">controller</a> of the calling class initializing it style manager using the specified stylesheetFileName.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (id)controllerWithStylesheetFileName:(NSString *)<em>stylesheetFileName</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
 					</div>
 					
 					
@@ -1414,45 +1493,6 @@ For exemple, if you need to layout some views and you defined size or frames for
 	
 </div>
 						
-						<div class="section-method">
-	<a name="//api/name/updateStylesheets" title="updateStylesheets"></a>
-	<h3 class="subsubtitle method-title">updateStylesheets</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>This method forces a complete reload of the view and its style. This is mainly usefull while reloading <a href="#//api/name/stylesheet">stylesheet</a> definitions at runtime.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)updateStylesheets</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<div class="warning"><p><strong>Warning:</strong> In theory you should not need to call this method directly.</p></div>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">CKViewController.h</code><br />
-	</div>				
-	
-	
-</div>
-						
 					</div>
 					
 					
@@ -1466,7 +1506,7 @@ For exemple, if you need to layout some views and you defined size or frames for
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Wherecloud. All rights reserved. (Last updated: 2013-06-17)</span><br />
+						<p><span class="copyright">&copy; 2013 Wherecloud. All rights reserved. (Last updated: 2013-07-22)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						

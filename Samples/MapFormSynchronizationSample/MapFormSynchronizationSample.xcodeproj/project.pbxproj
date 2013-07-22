@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		963AB7CE179D66BB0076925C /* ResourceManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7CD179D66BB0076925C /* ResourceManager.framework */; };
+		963AB7D0179D66C20076925C /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7CF179D66C20076925C /* DropboxSDK.framework */; };
+		963AB7D2179D66CD0076925C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7D1179D66CD0076925C /* Security.framework */; };
 		96DC235F17665D930058BA15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96DC235E17665D930058BA15 /* UIKit.framework */; };
 		96DC236117665D930058BA15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96DC236017665D930058BA15 /* Foundation.framework */; };
 		96DC236317665D930058BA15 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96DC236217665D930058BA15 /* CoreGraphics.framework */; };
@@ -38,6 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		963AB7CD179D66BB0076925C /* ResourceManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ResourceManager.framework; path = ../../Frameworks/ResourceManager.framework; sourceTree = "<group>"; };
+		963AB7CF179D66C20076925C /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxSDK.framework; path = ../../Frameworks/DropboxSDK.framework; sourceTree = "<group>"; };
+		963AB7D1179D66CD0076925C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		96DC235B17665D930058BA15 /* MapFormSynchronizationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapFormSynchronizationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96DC235E17665D930058BA15 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96DC236017665D930058BA15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -81,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				963AB7D2179D66CD0076925C /* Security.framework in Frameworks */,
 				96DC235F17665D930058BA15 /* UIKit.framework in Frameworks */,
 				96DC236117665D930058BA15 /* Foundation.framework in Frameworks */,
 				96DC236317665D930058BA15 /* CoreGraphics.framework in Frameworks */,
@@ -97,6 +104,8 @@
 				96DC237917665D930058BA15 /* MobileCoreServices.framework in Frameworks */,
 				96DC23B017665DCD0058BA15 /* AppCoreKit.framework in Frameworks */,
 				96DC23B217665DD20058BA15 /* VendorsKit.framework in Frameworks */,
+				963AB7CE179D66BB0076925C /* ResourceManager.framework in Frameworks */,
+				963AB7D0179D66C20076925C /* DropboxSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +132,9 @@
 		96DC235D17665D930058BA15 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				963AB7D1179D66CD0076925C /* Security.framework */,
+				963AB7CF179D66C20076925C /* DropboxSDK.framework */,
+				963AB7CD179D66BB0076925C /* ResourceManager.framework */,
 				96DC23B117665DD20058BA15 /* VendorsKit.framework */,
 				96DC23AF17665DCD0058BA15 /* AppCoreKit.framework */,
 				96DC235E17665D930058BA15 /* UIKit.framework */,
@@ -429,6 +441,7 @@
 				96DC23AE17665D940058BA15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

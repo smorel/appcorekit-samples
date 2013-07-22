@@ -33,6 +33,9 @@
 		960F349F15E3C86F0002DF6F /* pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 960F349D15E3C86F0002DF6F /* pin@2x.png */; };
 		960F34A215E3CF100002DF6F /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 960F34A015E3CF100002DF6F /* placeholder.png */; };
 		960F34A315E3CF100002DF6F /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 960F34A115E3CF100002DF6F /* placeholder@2x.png */; };
+		963AB7D4179D67560076925C /* ResourceManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7D3179D67560076925C /* ResourceManager.framework */; };
+		963AB7D6179D675B0076925C /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7D5179D675B0076925C /* DropboxSDK.framework */; };
+		963AB7D8179D67670076925C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7D7179D67670076925C /* Security.framework */; };
 		963BF4871760DEA2003E3D94 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF4861760DEA2003E3D94 /* AdSupport.framework */; };
 		963BF4981760DF18003E3D94 /* AppCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF4961760DF18003E3D94 /* AppCoreKit.framework */; };
 		963BF4991760DF18003E3D94 /* VendorsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF4971760DF18003E3D94 /* VendorsKit.framework */; };
@@ -74,6 +77,9 @@
 		960F349D15E3C86F0002DF6F /* pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pin@2x.png"; path = "Resources/pin@2x.png"; sourceTree = "<group>"; };
 		960F34A015E3CF100002DF6F /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = placeholder.png; path = Resources/placeholder.png; sourceTree = "<group>"; };
 		960F34A115E3CF100002DF6F /* placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "placeholder@2x.png"; path = "Resources/placeholder@2x.png"; sourceTree = "<group>"; };
+		963AB7D3179D67560076925C /* ResourceManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ResourceManager.framework; path = ../../Frameworks/ResourceManager.framework; sourceTree = "<group>"; };
+		963AB7D5179D675B0076925C /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxSDK.framework; path = ../../Frameworks/DropboxSDK.framework; sourceTree = "<group>"; };
+		963AB7D7179D67670076925C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		963BF4861760DEA2003E3D94 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		963BF4961760DF18003E3D94 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = ../../Frameworks/AppCoreKit.framework; sourceTree = "<group>"; };
 		963BF4971760DF18003E3D94 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = ../../Frameworks/VendorsKit.framework; sourceTree = "<group>"; };
@@ -88,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				963AB7D8179D67670076925C /* Security.framework in Frameworks */,
 				963BF4871760DEA2003E3D94 /* AdSupport.framework in Frameworks */,
 				960F343E15E2E7D30002DF6F /* UIKit.framework in Frameworks */,
 				960F344015E2E7D30002DF6F /* Foundation.framework in Frameworks */,
@@ -104,6 +111,8 @@
 				960F345615E2E7D30002DF6F /* MobileCoreServices.framework in Frameworks */,
 				963BF4981760DF18003E3D94 /* AppCoreKit.framework in Frameworks */,
 				963BF4991760DF18003E3D94 /* VendorsKit.framework in Frameworks */,
+				963AB7D4179D67560076925C /* ResourceManager.framework in Frameworks */,
+				963AB7D6179D675B0076925C /* DropboxSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +139,9 @@
 		960F343C15E2E7D30002DF6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				963AB7D7179D67670076925C /* Security.framework */,
+				963AB7D5179D675B0076925C /* DropboxSDK.framework */,
+				963AB7D3179D67560076925C /* ResourceManager.framework */,
 				963BF4961760DF18003E3D94 /* AppCoreKit.framework */,
 				963BF4971760DF18003E3D94 /* VendorsKit.framework */,
 				963BF4861760DEA2003E3D94 /* AdSupport.framework */,

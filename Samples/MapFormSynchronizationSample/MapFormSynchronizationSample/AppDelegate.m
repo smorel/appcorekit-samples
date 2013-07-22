@@ -9,12 +9,26 @@
 #import "AppDelegate.h"
 #import <AppCoreKit/AppCoreKit.h>
 #import "CKMapFormSynchronizationViewController.h"
+#import <ResourceManager/ResourceManager.h>
 
 
 @implementation AppDelegate
 
 - (id)init{
    self = [super init];
+    
+#if TARGET_IPHONE_SIMULATOR
+    NSString* projectPath = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"SRC_ROOT"];
+    RMBundleResourceRepository* localRepository = [[RMBundleResourceRepository alloc]initWithPath:projectPath];
+    localRepository.pullingTimeInterval = 1;
+    
+    RMResourceManager* resourceManager = [[RMResourceManager alloc]initWithRepositories:@[localRepository]];
+    
+    [RMResourceManager setSharedManager:resourceManager];
+#else
+#endif
+    
+    
    [CKMappingContext loadContentOfFileNamed:@"CKMapFormSynchronizationDataSources"];
     
 #ifdef DEBUG
