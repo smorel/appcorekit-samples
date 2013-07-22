@@ -30,7 +30,7 @@ to
 
 ## Using AppCoreKit in your own application
 
-* Drag'n'drop <b>AppCoreKit.framework</b> and <b>VendorsKit.framework</b> from the <b>./Frameworks</b> folder into your Xcode project.
+* Drag'n'drop <b>AppCoreKit.framework</b>, <b>VendorsKit.framework</b>, <b>ResourceManager.framework</b> and <b>DropboxSDK.framework</b> from the <b>./Frameworks</b> folder into your Xcode project.
 
 * Add the following frameworks and libraries to your project : 
 <pre>
@@ -46,7 +46,8 @@ MediaPlayer,
 CoreFoundation, 
 CFNetwork, 
 SystemConfiguration, 
-MobileCoreServices, 
+MobileCoreServices,
+Security, 
 AdSupport.
 </pre>
 
