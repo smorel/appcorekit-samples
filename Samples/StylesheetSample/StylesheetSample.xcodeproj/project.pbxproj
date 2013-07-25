@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68B99E6117A196E1005AE6A4 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68B99E6317A196E1005AE6A4 /* Localization.strings */; };
 		962672F4176F57A800202F97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962672F3176F57A800202F97 /* UIKit.framework */; };
 		962672F6176F57A800202F97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962672F5176F57A800202F97 /* Foundation.framework */; };
 		962672F8176F57A800202F97 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962672F7176F57A800202F97 /* CoreGraphics.framework */; };
@@ -29,7 +30,6 @@
 		96267324176F57A800202F97 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96267323176F57A800202F97 /* Default-568h@2x.png */; };
 		96267326176F57A800202F97 /* AppCoreKit.conf in Resources */ = {isa = PBXBuildFile; fileRef = 96267325176F57A800202F97 /* AppCoreKit.conf */; };
 		96267334176F57A800202F97 /* Stylesheet.style in Resources */ = {isa = PBXBuildFile; fileRef = 96267333176F57A800202F97 /* Stylesheet.style */; };
-		9626733D176F57A900202F97 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9626733C176F57A900202F97 /* Localization.strings */; };
 		96267346176F57FF00202F97 /* CKStylesheetSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96267345176F57FF00202F97 /* CKStylesheetSampleViewController.m */; };
 		96267349176F586700202F97 /* CKStylesheetSampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96267348176F586700202F97 /* CKStylesheetSampleListViewController.m */; };
 		9626734C176F589800202F97 /* CKStylesheetSampleTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9626734B176F589700202F97 /* CKStylesheetSampleTextViewController.m */; };
@@ -73,6 +73,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68B99E6017A196DB005AE6A4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		68B99E6217A196E1005AE6A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localization.strings; sourceTree = "<group>"; };
+		68B99E6417A196E4005AE6A4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file; name = fr; path = fr.lproj/Localization.strings; sourceTree = "<group>"; };
 		962672F0176F57A800202F97 /* StylesheetSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StylesheetSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		962672F3176F57A800202F97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		962672F5176F57A800202F97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -99,7 +102,6 @@
 		96267323176F57A800202F97 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		96267325176F57A800202F97 /* AppCoreKit.conf */ = {isa = PBXFileReference; lastKnownFileType = text; name = AppCoreKit.conf; path = Resources/AppCoreKit.conf; sourceTree = "<group>"; };
 		96267333176F57A800202F97 /* Stylesheet.style */ = {isa = PBXFileReference; lastKnownFileType = text; name = Stylesheet.style; path = Resources/Stylesheet.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
-		9626733C176F57A900202F97 /* Localization.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localization.strings; path = Resources/Localization.strings; sourceTree = "<group>"; };
 		9626733E176F57A900202F97 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		96267344176F57FF00202F97 /* CKStylesheetSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKStylesheetSampleViewController.h; path = Classes/CKStylesheetSampleViewController.h; sourceTree = "<group>"; };
 		96267345176F57FF00202F97 /* CKStylesheetSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKStylesheetSampleViewController.m; path = Classes/CKStylesheetSampleViewController.m; sourceTree = "<group>"; };
@@ -230,7 +232,7 @@
 				9626731C176F57A800202F97 /* AppDelegate.h */,
 				9626731D176F57A800202F97 /* AppDelegate.m */,
 				96267325176F57A800202F97 /* AppCoreKit.conf */,
-				9626733C176F57A900202F97 /* Localization.strings */,
+				68B99E6317A196E1005AE6A4 /* Localization.strings */,
 				96267333176F57A800202F97 /* Stylesheet.style */,
 				96267352176F5EAA00202F97 /* CKStylesheetSampleViewController.style */,
 				96267344176F57FF00202F97 /* CKStylesheetSampleViewController.h */,
@@ -347,6 +349,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				fr,
 			);
 			mainGroup = 962672E6176F57A800202F97;
 			productRefGroup = 962672F1176F57A800202F97 /* Products */;
@@ -369,7 +372,7 @@
 				96267324176F57A800202F97 /* Default-568h@2x.png in Resources */,
 				96267326176F57A800202F97 /* AppCoreKit.conf in Resources */,
 				96267334176F57A800202F97 /* Stylesheet.style in Resources */,
-				9626733D176F57A900202F97 /* Localization.strings in Resources */,
+				68B99E6117A196E1005AE6A4 /* Localization.strings in Resources */,
 				96267353176F5EAA00202F97 /* CKStylesheetSampleViewController.style in Resources */,
 				96267355176F5EC200202F97 /* CKStylesheetSampleTextViewController.style in Resources */,
 				96267357176F5ED700202F97 /* CKStylesheetSampleListViewController.style in Resources */,
@@ -439,10 +442,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		68B99E6317A196E1005AE6A4 /* Localization.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68B99E6217A196E1005AE6A4 /* en */,
+				68B99E6417A196E4005AE6A4 /* fr */,
+			);
+			name = Localization.strings;
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		96267316176F57A800202F97 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				96267317176F57A800202F97 /* en */,
+				68B99E6017A196DB005AE6A4 /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
