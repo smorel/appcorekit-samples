@@ -69,6 +69,7 @@
 		963AB7E0179D681A0076925C /* ResourceManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7DF179D681A0076925C /* ResourceManager.framework */; };
 		963AB7E2179D68200076925C /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7E1179D68200076925C /* DropboxSDK.framework */; };
 		963AB7E4179D682D0076925C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7E3179D682D0076925C /* Security.framework */; };
+		9686228017CE92A00081248D /* JSONSyntaxHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 9686227F17CE92A00081248D /* JSONSyntaxHighlight.m */; };
 		96B9D2681770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B9D2671770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -147,6 +148,8 @@
 		963AB7DF179D681A0076925C /* ResourceManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ResourceManager.framework; path = ../../Frameworks/ResourceManager.framework; sourceTree = "<group>"; };
 		963AB7E1179D68200076925C /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxSDK.framework; path = ../../Frameworks/DropboxSDK.framework; sourceTree = "<group>"; };
 		963AB7E3179D682D0076925C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9686227E17CE92A00081248D /* JSONSyntaxHighlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONSyntaxHighlight.h; path = Vendors/JSONSyntaxHighlight.h; sourceTree = "<group>"; };
+		9686227F17CE92A00081248D /* JSONSyntaxHighlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONSyntaxHighlight.m; path = Vendors/JSONSyntaxHighlight.m; sourceTree = "<group>"; };
 		96B9D2661770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKStylesheetSampleUIActivityIndicatorViewViewController.h; path = Classes/CKStylesheetSampleUIActivityIndicatorViewViewController.h; sourceTree = "<group>"; };
 		96B9D2671770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKStylesheetSampleUIActivityIndicatorViewViewController.m; path = Classes/CKStylesheetSampleUIActivityIndicatorViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				96267313176F57A800202F97 /* StylesheetSample */,
+				9686227D17CE92940081248D /* Vendors */,
 				962672F2176F57A800202F97 /* Frameworks */,
 				962672F1176F57A800202F97 /* Products */,
 			);
@@ -311,6 +315,15 @@
 			name = Samples;
 			sourceTree = "<group>";
 		};
+		9686227D17CE92940081248D /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				9686227E17CE92A00081248D /* JSONSyntaxHighlight.h */,
+				9686227F17CE92A00081248D /* JSONSyntaxHighlight.m */,
+			);
+			name = Vendors;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -433,6 +446,7 @@
 				96267386176F971E00202F97 /* CKStylesheetSamplePlainFormViewController.m in Sources */,
 				96267394176FB80000202F97 /* CKStylesheetSampleUIButtonViewController.m in Sources */,
 				96B9D2681770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.m in Sources */,
+				9686228017CE92A00081248D /* JSONSyntaxHighlight.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

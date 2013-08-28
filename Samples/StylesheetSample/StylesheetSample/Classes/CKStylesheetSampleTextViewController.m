@@ -7,6 +7,7 @@
 //
 
 #import "CKStylesheetSampleTextViewController.h"
+#import "JSONSyntaxHighlight.h"
 
 @interface CKStylesheetSampleTextViewController ()
 @property(nonatomic,retain) UILabel* label;
@@ -35,14 +36,29 @@
     _content = theContent;
     
     if(self.label){
-        self.label.text = theContent;
+        if([CKOSVersion() floatValue] >= 6){
+            id JSONObj = [NSJSONSerialization JSONObjectWithData:[_content dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingAllowFragments error:nil];
+            
+            // create the JSONSyntaxHighilight Object
+            JSONSyntaxHighlight *jsh = [[JSONSyntaxHighlight alloc] initWithJSON:JSONObj];
+            
+            // place the text into the view
+            self.label.attributedText = [jsh highlightJSON];
+        }else{
+            self.label.text = theContent;
+        }
         [self update];
     }
 }
 
 - (void)update{
     if(self.label && self.scrollView){
-        CGSize size = [self.label.text sizeWithFont:self.label.font constrainedToSize:CGSizeMake(MAXFLOAT,MAXFLOAT)];
+        CGSize size = CGSizeMake(0, 0);
+        if([CKOSVersion() floatValue] >= 6){
+            size = [self.label sizeThatFits:CGSizeMake(self.view.width, MAXFLOAT)];
+        }else{
+            size = [self.label.text sizeWithFont:self.label.font constrainedToSize:CGSizeMake(self.view.width,MAXFLOAT)];
+        }
         
         self.label.frame = CGRectMake(0,0,size.width,size.height);
         self.scrollView.contentSize = size;
