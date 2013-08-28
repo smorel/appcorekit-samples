@@ -31,6 +31,7 @@
 
 - (CKViewController*)newViewController{
     CKViewController* controller = [[self.sampleClass alloc]init];
+    controller.stylesheetFileName = self.sampleFilename;
     controller.name = self.title;
     return controller;
 }
