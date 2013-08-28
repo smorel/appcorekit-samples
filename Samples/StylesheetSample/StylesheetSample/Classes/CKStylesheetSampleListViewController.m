@@ -152,14 +152,17 @@ static char* ignore[3] = {
     [self addSections:@[[CKFormSection sectionWithCellControllers:cells]]];
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
     
     NSIndexPath* firstRow = [NSIndexPath indexPathForRow:0 inSection:0];
     [self selectRowAtIndexPath:firstRow animated:NO];
     if(self.didSelectSample){
         CKTableViewCellController* cell = (CKTableViewCellController*)[self controllerAtIndexPath:firstRow];
         [cell didSelectRow];
+        
+        NSArray* sortedAndFilteredClasses = [self sortedAndFilteredSampleFactories];
+        self.didSelectSample([sortedAndFilteredClasses objectAtIndex:0]);
     }
 }
 

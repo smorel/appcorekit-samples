@@ -4,7 +4,7 @@
     
     "CKStylesheetSampleTextViewController" : {
         "view" : {
-            "backgroundColor" : "darkGrayColor"
+            "backgroundColor" : "whiteColor"
         },
         
         "scrollView" : {
@@ -16,7 +16,7 @@
             "backgroundColor" : "clearColor",
             "numberOfLines" : 0,
             "font" : ["Helvetica", 14],
-            "textColor" : "lightGrayColor"
+            "textColor" : "0x333333"
         },
         
         "splitViewConstraints" : {
