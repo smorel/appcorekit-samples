@@ -61,6 +61,7 @@
             "UIBarButtonItem" : {
                 //default style for the toolbar bar button items
                 //See UIButton
+                "@inherits" : [ "$base_button_sample" ]
             }
         }
     },
