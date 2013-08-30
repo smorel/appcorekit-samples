@@ -14,6 +14,7 @@ You can clone this repository and try the samples right now as the framework is 
 ## Sources
 
 The AppCoreKit source repository is available at https://github.com/wherecloud/AppCoreKit
+
 The ResourceManager source repository is available at https://github.com/wherecloud/ResourceManager
 
 ## Minimum system requirements
