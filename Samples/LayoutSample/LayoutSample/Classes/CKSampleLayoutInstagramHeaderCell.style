@@ -16,46 +16,37 @@
         }]
     },
     
-    //The following example illustrate how we can use inheritance to
-    //create templates where some part of the sub tree can be overloaded when
-    //inheriting the template
-    
-    "$InstagramHeaderCell_Counter" : {
-        "#vars_topLabel" : {},
-        "#vars_bottomLabel" : {},
+    "$InstagramHeaderCell_PhotoCounters" : {
+        "@class" : "CKVerticalBoxLayout",
         
+        "layoutBoxes" : [
+                { "@class" : "CKLayoutFlexibleSpace" },
+                { "@inherits" : [ "$top_label" ], "name" : "PhotoCounterLabel" },
+                { "@inherits" : [ "$bottom_label" ], "text" : "photos" },
+                { "@class" : "CKLayoutFlexibleSpace" }
+        ]
+    },
+    
+    "$InstagramHeaderCell_FollowersCounters" : {
         "@class" : "CKVerticalBoxLayout",
         
         "layoutBoxes" : [
             { "@class" : "CKLayoutFlexibleSpace" },
-                         
-            // by inheriting #vars_topLabel here, the values that will get injected when inheriting
-            // "$InstagramHeaderCell_Counter" will be the ones that will get defined by
-            // #vars_topLabel of the scope inheriting "$InstagramHeaderCell_Counter"
-            // see. "$InstagramHeaderCell_PhotoCounters", "$InstagramHeaderCell_FollowersCounters", "$InstagramHeaderCell_FollowingCounters"
-                         
-            { "@inherits" : [ "$top_label",    "#vars_topLabel" ] },
-            { "@inherits" : [ "$bottom_label", "#vars_bottomLabel" ] },
+            { "@inherits" : [ "$top_label" ], "name" : "FollowersCounterLabel" },
+            { "@inherits" : [ "$bottom_label" ], "text" : "followers" },
             { "@class" : "CKLayoutFlexibleSpace" }
         ]
     },
     
-    "$InstagramHeaderCell_PhotoCounters" : {
-        "#vars_topLabel"    : { "text" : "177", "name" : "PhotoCounterLabel" },
-        "#vars_bottomLabel" : { "text" : "photos" },
-        "@inherits" : [ "$InstagramHeaderCell_Counter" ]
-    },
-    
-    "$InstagramHeaderCell_FollowersCounters" : {
-        "#vars_topLabel"    : { "text" : "6.4m", "name" : "FollowersCounterLabel"  },
-        "#vars_bottomLabel" : { "text" : "followers" },
-        "@inherits" : [ "$InstagramHeaderCell_Counter" ]
-    },
-    
     "$InstagramHeaderCell_FollowingCounters" : {
-        "#vars_topLabel"    : { "text" : "0", "name" : "FollowingCounterLabel"  },
-        "#vars_bottomLabel" : { "text" : "following" },
-        "@inherits" : [ "$InstagramHeaderCell_Counter" ]
+        "@class" : "CKVerticalBoxLayout",
+        
+        "layoutBoxes" : [
+            { "@class" : "CKLayoutFlexibleSpace" },
+            { "@inherits" : [ "$top_label" ], "name" : "FollowingCounterLabel" },
+            { "@inherits" : [ "$bottom_label" ], "text" : "following" },
+            { "@class" : "CKLayoutFlexibleSpace" }
+        ]
     },
     
     //-----------------------------------------------

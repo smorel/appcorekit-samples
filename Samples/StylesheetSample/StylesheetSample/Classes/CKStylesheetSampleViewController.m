@@ -19,7 +19,7 @@
 
 - (void)postInit{
     [super postInit];
-    [self setup];
+    [self setup]; 
 }
 
 - (void)setup{

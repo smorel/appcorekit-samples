@@ -13,6 +13,7 @@
         "CKStylesheetSampleUISwitchViewController",
         "CKStylesheetSampleUIPageControlViewController",
         "CKStylesheetSampleUITextFieldViewController",
-        "CKStylesheetSampleUIActivityIndicatorViewViewController"
+        "CKStylesheetSampleUIActivityIndicatorViewViewController",
+        "CKStylesheetSampleNavigationControllerViewController"
     ]
 }

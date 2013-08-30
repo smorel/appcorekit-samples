@@ -13,61 +13,14 @@ You can clone this repository and try the samples right now as the framework is 
 
 ## Sources
 
-The AppCoreKit source repository is available at at https://github.com/wherecloud/AppCoreKit
+The AppCoreKit source repository is available at https://github.com/wherecloud/AppCoreKit
+The ResourceManager source repository is available at https://github.com/wherecloud/ResourceManager
 
 ## Minimum system requirements
 
 AppCoreKit supports all iOS versions 4.3 and higher.
 
 The <b>iOS 7</b> integration is in process. We'll regularly release new framework binaries during this phase! Please be patient ;)
-
-## API Documentation
-
-To integrate the AppCoreKit Api documentation into Xcode, copy the following file:
-<pre>./Frameworks/AppCoreKit.framework/Documentation/com.wherecloud.AppCoreKit.docset</pre> 
-to 
-<pre>~/Library/Developer/Shared/Documentation/DocSets/</pre>
-
-## Using AppCoreKit in your own application
-
-* Drag'n'drop <b>AppCoreKit.framework</b>, <b>VendorsKit.framework</b>, <b>ResourceManager.framework</b> and <b>DropboxSDK.framework</b> from the <b>./Frameworks</b> folder into your Xcode project.
-
-* Add the following frameworks and libraries to your project : 
-<pre>
-libstdc++.dylib, 
-UIKit, Foundation, 
-CoreGraphics, 
-AddressBook, 
-CoreData, 
-QuartzCore, 
-CoreLocation, 
-MapKit, 
-MediaPlayer, 
-CoreFoundation, 
-CFNetwork, 
-SystemConfiguration, 
-MobileCoreServices,
-Security, 
-AdSupport.
-</pre>
-
-* Add the following link flags in your build settings (<b>OTHER_LDFLAGS</b>) : 
-<pre>
- -ObjC -all_load -lxml2 -licucore -lz -weak_library /usr/lib/libstdc++.dylib
-</pre>
-
-* As Xcode do not natively support static frameworks especially for resources, you'll need to add a post build phase if you'd like to use some components. In the build phase for your target, add a <b>"Run Script" build phase</b> and add the following script :
-
-<pre>
-YOUR_FRAMEWORKS_PATH="$PROJECT_DIR/../../Frameworks/"
-sh "$YOUR_FRAMEWORKS_PATH/copy_framework_resources.sh" 
-        --system-developer-dir "$SYSTEM_DEVELOPER_DIR" 
-        --executable-name "$EXECUTABLE_NAME" 
-        --frameworks-dir "$YOUR_FRAMEWORKS_PATH" 
-        --target-build-dir "$TARGET_BUILD_DIR" 
-        --project "$PROJECT" 
-        --project-dir "$PROJECT_DIR"
-</pre>
 
 ## Credits
 

@@ -3,12 +3,13 @@
         "Appearance"
     ],
     
-    "CKSampleStoreSettingsViewController, CKSampleStoreUserObjectViewController" : {
+    "UIViewController,CKSampleStoreSettingsViewController, CKSampleStoreUserObjectViewController" : {
         "style" : "UITableViewStyleGrouped",
         
         "tableView" : {
             "backgroundColor" : "0.79 0.79 0.79 1"  
         },
+        
         
         "sectionHeaderView" : {
             "backgroundColor" : "clearColor",

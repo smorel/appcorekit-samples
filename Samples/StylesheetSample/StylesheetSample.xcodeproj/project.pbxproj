@@ -39,7 +39,6 @@
 		96267357176F5ED700202F97 /* CKStylesheetSampleListViewController.style in Resources */ = {isa = PBXBuildFile; fileRef = 96267356176F5ED700202F97 /* CKStylesheetSampleListViewController.style */; };
 		96267359176F5EED00202F97 /* CKStylesheetSampleGroupedFormViewController.style in Resources */ = {isa = PBXBuildFile; fileRef = 96267358176F5EED00202F97 /* CKStylesheetSampleGroupedFormViewController.style */; };
 		9626735C176F5F9400202F97 /* AppCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9626735A176F5F9400202F97 /* AppCoreKit.framework */; };
-		9626735D176F5F9400202F97 /* VendorsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9626735B176F5F9400202F97 /* VendorsKit.framework */; };
 		9626735F176F6CB700202F97 /* more-info-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9626735E176F6CB700202F97 /* more-info-button.png */; };
 		9626736D176F82B300202F97 /* disclosure-indicator-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 96267369176F82B300202F97 /* disclosure-indicator-highlight.png */; };
 		9626736E176F82B300202F97 /* disclosure-indicator-highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9626736A176F82B300202F97 /* disclosure-indicator-highlight@2x.png */; };
@@ -70,13 +69,19 @@
 		963AB7E2179D68200076925C /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7E1179D68200076925C /* DropboxSDK.framework */; };
 		963AB7E4179D682D0076925C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7E3179D682D0076925C /* Security.framework */; };
 		9686228017CE92A00081248D /* JSONSyntaxHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 9686227F17CE92A00081248D /* JSONSyntaxHighlight.m */; };
+		96897F1517CFCFF8004ADED9 /* CKStylesheetSampleNavigationControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96897F1417CFCFF8004ADED9 /* CKStylesheetSampleNavigationControllerViewController.m */; };
+		96897F1717CFD034004ADED9 /* CKStylesheetSampleNavigationControllerViewController.style in Resources */ = {isa = PBXBuildFile; fileRef = 96897F1617CFD034004ADED9 /* CKStylesheetSampleNavigationControllerViewController.style */; };
 		96B9D2681770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B9D2671770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.m */; };
+		96C006F417CFEC1B0085F69F /* back_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C006F017CFEC1B0085F69F /* back_pressed.png */; };
+		96C006F517CFEC1B0085F69F /* back_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C006F117CFEC1B0085F69F /* back_pressed@2x.png */; };
+		96C006F617CFEC1B0085F69F /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C006F217CFEC1B0085F69F /* back.png */; };
+		96C006F717CFEC1B0085F69F /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C006F317CFEC1B0085F69F /* back@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		68B99E6017A196DB005AE6A4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		68B99E6217A196E1005AE6A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localization.strings; sourceTree = "<group>"; };
-		68B99E6417A196E4005AE6A4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file; name = fr; path = fr.lproj/Localization.strings; sourceTree = "<group>"; };
+		68B99E6217A196E1005AE6A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localization.strings; sourceTree = "<group>"; };
+		68B99E6417A196E4005AE6A4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localization.strings; sourceTree = "<group>"; };
 		962672F0176F57A800202F97 /* StylesheetSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StylesheetSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		962672F3176F57A800202F97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		962672F5176F57A800202F97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -118,7 +123,6 @@
 		96267356176F5ED700202F97 /* CKStylesheetSampleListViewController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CKStylesheetSampleListViewController.style; path = Classes/CKStylesheetSampleListViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		96267358176F5EED00202F97 /* CKStylesheetSampleGroupedFormViewController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CKStylesheetSampleGroupedFormViewController.style; path = Classes/CKStylesheetSampleGroupedFormViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		9626735A176F5F9400202F97 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = ../../Frameworks/AppCoreKit.framework; sourceTree = "<group>"; };
-		9626735B176F5F9400202F97 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = ../../Frameworks/VendorsKit.framework; sourceTree = "<group>"; };
 		9626735E176F6CB700202F97 /* more-info-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "more-info-button.png"; path = "Resources/more-info-button.png"; sourceTree = "<group>"; };
 		96267369176F82B300202F97 /* disclosure-indicator-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "disclosure-indicator-highlight.png"; path = "Resources/disclosure-indicator-highlight.png"; sourceTree = "<group>"; };
 		9626736A176F82B300202F97 /* disclosure-indicator-highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "disclosure-indicator-highlight@2x.png"; path = "Resources/disclosure-indicator-highlight@2x.png"; sourceTree = "<group>"; };
@@ -152,8 +156,15 @@
 		963AB7E3179D682D0076925C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		9686227E17CE92A00081248D /* JSONSyntaxHighlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONSyntaxHighlight.h; path = Vendors/JSONSyntaxHighlight.h; sourceTree = "<group>"; };
 		9686227F17CE92A00081248D /* JSONSyntaxHighlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONSyntaxHighlight.m; path = Vendors/JSONSyntaxHighlight.m; sourceTree = "<group>"; };
+		96897F1317CFCFF8004ADED9 /* CKStylesheetSampleNavigationControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKStylesheetSampleNavigationControllerViewController.h; path = Classes/CKStylesheetSampleNavigationControllerViewController.h; sourceTree = "<group>"; };
+		96897F1417CFCFF8004ADED9 /* CKStylesheetSampleNavigationControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKStylesheetSampleNavigationControllerViewController.m; path = Classes/CKStylesheetSampleNavigationControllerViewController.m; sourceTree = "<group>"; };
+		96897F1617CFD034004ADED9 /* CKStylesheetSampleNavigationControllerViewController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CKStylesheetSampleNavigationControllerViewController.style; path = Classes/CKStylesheetSampleNavigationControllerViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		96B9D2661770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKStylesheetSampleUIActivityIndicatorViewViewController.h; path = Classes/CKStylesheetSampleUIActivityIndicatorViewViewController.h; sourceTree = "<group>"; };
 		96B9D2671770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKStylesheetSampleUIActivityIndicatorViewViewController.m; path = Classes/CKStylesheetSampleUIActivityIndicatorViewViewController.m; sourceTree = "<group>"; };
+		96C006F017CFEC1B0085F69F /* back_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back_pressed.png; path = Resources/back_pressed.png; sourceTree = "<group>"; };
+		96C006F117CFEC1B0085F69F /* back_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back_pressed@2x.png"; path = "Resources/back_pressed@2x.png"; sourceTree = "<group>"; };
+		96C006F217CFEC1B0085F69F /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = Resources/back.png; sourceTree = "<group>"; };
+		96C006F317CFEC1B0085F69F /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back@2x.png"; path = "Resources/back@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +188,6 @@
 				9626730C176F57A800202F97 /* SystemConfiguration.framework in Frameworks */,
 				9626730E176F57A800202F97 /* MobileCoreServices.framework in Frameworks */,
 				9626735C176F5F9400202F97 /* AppCoreKit.framework in Frameworks */,
-				9626735D176F5F9400202F97 /* VendorsKit.framework in Frameworks */,
 				963AB7E0179D681A0076925C /* ResourceManager.framework in Frameworks */,
 				963AB7E2179D68200076925C /* DropboxSDK.framework in Frameworks */,
 			);
@@ -211,7 +221,6 @@
 				963AB7E1179D68200076925C /* DropboxSDK.framework */,
 				963AB7DF179D681A0076925C /* ResourceManager.framework */,
 				9626735A176F5F9400202F97 /* AppCoreKit.framework */,
-				9626735B176F5F9400202F97 /* VendorsKit.framework */,
 				962672F3176F57A800202F97 /* UIKit.framework */,
 				962672F5176F57A800202F97 /* Foundation.framework */,
 				962672F7176F57A800202F97 /* CoreGraphics.framework */,
@@ -272,6 +281,10 @@
 		9626733B176F57A900202F97 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				96C006F017CFEC1B0085F69F /* back_pressed.png */,
+				96C006F117CFEC1B0085F69F /* back_pressed@2x.png */,
+				96C006F217CFEC1B0085F69F /* back.png */,
+				96C006F317CFEC1B0085F69F /* back@2x.png */,
 				96267396176FBFA300202F97 /* button-lighter.png */,
 				96267397176FBFA300202F97 /* button-pressed.png */,
 				96267398176FBFA400202F97 /* button.png */,
@@ -313,6 +326,9 @@
 				9626739C177000FA00202F97 /* CKStylesheetSampleUISwitchViewController.style */,
 				9626739E1770030400202F97 /* CKStylesheetSampleUIPageControlViewController.style */,
 				962673A01770048800202F97 /* CKStylesheetSampleUITextFieldViewController.style */,
+				96897F1317CFCFF8004ADED9 /* CKStylesheetSampleNavigationControllerViewController.h */,
+				96897F1417CFCFF8004ADED9 /* CKStylesheetSampleNavigationControllerViewController.m */,
+				96897F1617CFD034004ADED9 /* CKStylesheetSampleNavigationControllerViewController.style */,
 			);
 			name = Samples;
 			sourceTree = "<group>";
@@ -414,6 +430,11 @@
 				9626739F1770030500202F97 /* CKStylesheetSampleUIPageControlViewController.style in Resources */,
 				962673A11770048800202F97 /* CKStylesheetSampleUITextFieldViewController.style in Resources */,
 				962673A317700FF600202F97 /* CKStylesheetSampleUIActivityIndicatorViewViewController.style in Resources */,
+				96897F1717CFD034004ADED9 /* CKStylesheetSampleNavigationControllerViewController.style in Resources */,
+				96C006F417CFEC1B0085F69F /* back_pressed.png in Resources */,
+				96C006F517CFEC1B0085F69F /* back_pressed@2x.png in Resources */,
+				96C006F617CFEC1B0085F69F /* back.png in Resources */,
+				96C006F717CFEC1B0085F69F /* back@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +471,7 @@
 				96267394176FB80000202F97 /* CKStylesheetSampleUIButtonViewController.m in Sources */,
 				96B9D2681770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.m in Sources */,
 				9686228017CE92A00081248D /* JSONSyntaxHighlight.m in Sources */,
+				96897F1517CFCFF8004ADED9 /* CKStylesheetSampleNavigationControllerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,7 +34,6 @@
 		96DC23A217665D940058BA15 /* CKMapFormSynchronizationDataSources.mappings in Resources */ = {isa = PBXBuildFile; fileRef = 96DC23A117665D940058BA15 /* CKMapFormSynchronizationDataSources.mappings */; };
 		96DC23A817665D940058BA15 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96DC23A717665D940058BA15 /* Localization.strings */; };
 		96DC23B017665DCD0058BA15 /* AppCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96DC23AF17665DCD0058BA15 /* AppCoreKit.framework */; };
-		96DC23B217665DD20058BA15 /* VendorsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96DC23B117665DD20058BA15 /* VendorsKit.framework */; };
 		96DC23B517665E1C0058BA15 /* CKMapFormSynchronizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC23B417665E1C0058BA15 /* CKMapFormSynchronizationViewController.m */; };
 		96DC23B8176661F20058BA15 /* CKMapFormSynchronizationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC23B7176661F20058BA15 /* CKMapFormSynchronizationModel.m */; };
 		96DC23BB176663160058BA15 /* CKMapFormSynchronizationDataSources.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC23BA176663160058BA15 /* CKMapFormSynchronizationDataSources.m */; };
@@ -73,7 +72,6 @@
 		96DC23A717665D940058BA15 /* Localization.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localization.strings; path = Resources/Localization.strings; sourceTree = "<group>"; };
 		96DC23A917665D940058BA15 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		96DC23AF17665DCD0058BA15 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = ../../Frameworks/AppCoreKit.framework; sourceTree = "<group>"; };
-		96DC23B117665DD20058BA15 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = ../../Frameworks/VendorsKit.framework; sourceTree = "<group>"; };
 		96DC23B317665E1C0058BA15 /* CKMapFormSynchronizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKMapFormSynchronizationViewController.h; path = Classes/CKMapFormSynchronizationViewController.h; sourceTree = "<group>"; };
 		96DC23B417665E1C0058BA15 /* CKMapFormSynchronizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKMapFormSynchronizationViewController.m; path = Classes/CKMapFormSynchronizationViewController.m; sourceTree = "<group>"; };
 		96DC23B6176661F20058BA15 /* CKMapFormSynchronizationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKMapFormSynchronizationModel.h; path = Classes/CKMapFormSynchronizationModel.h; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 				96DC237717665D930058BA15 /* SystemConfiguration.framework in Frameworks */,
 				96DC237917665D930058BA15 /* MobileCoreServices.framework in Frameworks */,
 				96DC23B017665DCD0058BA15 /* AppCoreKit.framework in Frameworks */,
-				96DC23B217665DD20058BA15 /* VendorsKit.framework in Frameworks */,
 				963AB7CE179D66BB0076925C /* ResourceManager.framework in Frameworks */,
 				963AB7D0179D66C20076925C /* DropboxSDK.framework in Frameworks */,
 			);
@@ -135,7 +132,6 @@
 				963AB7D1179D66CD0076925C /* Security.framework */,
 				963AB7CF179D66C20076925C /* DropboxSDK.framework */,
 				963AB7CD179D66BB0076925C /* ResourceManager.framework */,
-				96DC23B117665DD20058BA15 /* VendorsKit.framework */,
 				96DC23AF17665DCD0058BA15 /* AppCoreKit.framework */,
 				96DC235E17665D930058BA15 /* UIKit.framework */,
 				96DC236017665D930058BA15 /* Foundation.framework */,

@@ -25,3 +25,5 @@
 "CKTableViewCellStyleIPadForm" = "IPad Form Style";
 "CKTableViewCellStyleIPhoneForm" = "IPhone Form Style";
 "CKTableViewCellStyleSubtitle2" = "Multiline Supported Subtitle Style";
+
+"CKStylesheetSampleNavigationControllerViewController" = "UINavigationController";

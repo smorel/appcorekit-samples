@@ -33,7 +33,6 @@
 		963AB7C0179D64C50076925C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7BF179D64C50076925C /* Security.framework */; };
 		963BF48D1760DEBB003E3D94 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF48C1760DEBB003E3D94 /* AdSupport.framework */; };
 		963BF4A41760DF3E003E3D94 /* AppCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF4A21760DF3E003E3D94 /* AppCoreKit.framework */; };
-		963BF4A51760DF3E003E3D94 /* VendorsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF4A31760DF3E003E3D94 /* VendorsKit.framework */; };
 		96DC229C1760F8940058BA15 /* CKSampleStoreSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC229B1760F8940058BA15 /* CKSampleStoreSettingsViewController.m */; };
 		96DC229F1760F8BD0058BA15 /* CKSampleStoreUserObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC229E1760F8BD0058BA15 /* CKSampleStoreUserObjectModel.m */; };
 		96DC22A21760F8D60058BA15 /* CKSampleStoreUserSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22A11760F8D60058BA15 /* CKSampleStoreUserSettingsModel.m */; };
@@ -85,7 +84,6 @@
 		963AB7BF179D64C50076925C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		963BF48C1760DEBB003E3D94 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		963BF4A21760DF3E003E3D94 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = ../../Frameworks/AppCoreKit.framework; sourceTree = "<group>"; };
-		963BF4A31760DF3E003E3D94 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = ../../Frameworks/VendorsKit.framework; sourceTree = "<group>"; };
 		96DC229A1760F8940058BA15 /* CKSampleStoreSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleStoreSettingsViewController.h; path = Classes/CKSampleStoreSettingsViewController.h; sourceTree = "<group>"; };
 		96DC229B1760F8940058BA15 /* CKSampleStoreSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleStoreSettingsViewController.m; path = Classes/CKSampleStoreSettingsViewController.m; sourceTree = "<group>"; };
 		96DC229D1760F8BD0058BA15 /* CKSampleStoreUserObjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleStoreUserObjectModel.h; path = Classes/CKSampleStoreUserObjectModel.h; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 				960F34CB15E3E5150002DF6F /* SystemConfiguration.framework in Frameworks */,
 				960F34CD15E3E5150002DF6F /* MobileCoreServices.framework in Frameworks */,
 				963BF4A41760DF3E003E3D94 /* AppCoreKit.framework in Frameworks */,
-				963BF4A51760DF3E003E3D94 /* VendorsKit.framework in Frameworks */,
 				963AB7BC179D64B70076925C /* ResourceManager.framework in Frameworks */,
 				963AB7BE179D64BC0076925C /* DropboxSDK.framework in Frameworks */,
 			);
@@ -163,7 +160,6 @@
 				963AB7BD179D64BC0076925C /* DropboxSDK.framework */,
 				963AB7BB179D64B70076925C /* ResourceManager.framework */,
 				963BF4A21760DF3E003E3D94 /* AppCoreKit.framework */,
-				963BF4A31760DF3E003E3D94 /* VendorsKit.framework */,
 				963BF48C1760DEBB003E3D94 /* AdSupport.framework */,
 				960F34B415E3E5150002DF6F /* UIKit.framework */,
 				960F34B615E3E5150002DF6F /* Foundation.framework */,

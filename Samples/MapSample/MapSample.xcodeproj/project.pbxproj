@@ -38,7 +38,6 @@
 		963AB7D8179D67670076925C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7D7179D67670076925C /* Security.framework */; };
 		963BF4871760DEA2003E3D94 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF4861760DEA2003E3D94 /* AdSupport.framework */; };
 		963BF4981760DF18003E3D94 /* AppCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF4961760DF18003E3D94 /* AppCoreKit.framework */; };
-		963BF4991760DF18003E3D94 /* VendorsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF4971760DF18003E3D94 /* VendorsKit.framework */; };
 		96DC22C017613B760058BA15 /* CKSampleMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22BF17613B760058BA15 /* CKSampleMapViewController.m */; };
 		96DC22C317613BBE0058BA15 /* CKSampleMapModelCalloutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22C217613BBE0058BA15 /* CKSampleMapModelCalloutViewController.m */; };
 /* End PBXBuildFile section */
@@ -82,7 +81,6 @@
 		963AB7D7179D67670076925C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		963BF4861760DEA2003E3D94 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		963BF4961760DF18003E3D94 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = ../../Frameworks/AppCoreKit.framework; sourceTree = "<group>"; };
-		963BF4971760DF18003E3D94 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = ../../Frameworks/VendorsKit.framework; sourceTree = "<group>"; };
 		96DC22BE17613B760058BA15 /* CKSampleMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleMapViewController.h; path = Classes/CKSampleMapViewController.h; sourceTree = "<group>"; };
 		96DC22BF17613B760058BA15 /* CKSampleMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleMapViewController.m; path = Classes/CKSampleMapViewController.m; sourceTree = "<group>"; };
 		96DC22C117613BBE0058BA15 /* CKSampleMapModelCalloutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleMapModelCalloutViewController.h; path = Classes/CKSampleMapModelCalloutViewController.h; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 				960F345415E2E7D30002DF6F /* SystemConfiguration.framework in Frameworks */,
 				960F345615E2E7D30002DF6F /* MobileCoreServices.framework in Frameworks */,
 				963BF4981760DF18003E3D94 /* AppCoreKit.framework in Frameworks */,
-				963BF4991760DF18003E3D94 /* VendorsKit.framework in Frameworks */,
 				963AB7D4179D67560076925C /* ResourceManager.framework in Frameworks */,
 				963AB7D6179D675B0076925C /* DropboxSDK.framework in Frameworks */,
 			);
@@ -143,7 +140,6 @@
 				963AB7D5179D675B0076925C /* DropboxSDK.framework */,
 				963AB7D3179D67560076925C /* ResourceManager.framework */,
 				963BF4961760DF18003E3D94 /* AppCoreKit.framework */,
-				963BF4971760DF18003E3D94 /* VendorsKit.framework */,
 				963BF4861760DEA2003E3D94 /* AdSupport.framework */,
 				960F343D15E2E7D30002DF6F /* UIKit.framework */,
 				960F343F15E2E7D30002DF6F /* Foundation.framework */,

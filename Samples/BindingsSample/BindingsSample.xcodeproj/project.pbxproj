@@ -11,7 +11,6 @@
 		963AB7B8179D63D70076925C /* ResourceManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7B7179D63D70076925C /* ResourceManager.framework */; };
 		963AB7BA179D64680076925C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7B9179D64680076925C /* Security.framework */; };
 		963BF47E1760DCD9003E3D94 /* AppCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF47C1760DCD9003E3D94 /* AppCoreKit.framework */; };
-		963BF47F1760DCD9003E3D94 /* VendorsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF47D1760DCD9003E3D94 /* VendorsKit.framework */; };
 		963BF4811760DD3D003E3D94 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF4801760DD3D003E3D94 /* AdSupport.framework */; };
 		963BF4A81760DF82003E3D94 /* CKSampleBindingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 963BF4A71760DF82003E3D94 /* CKSampleBindingsViewController.m */; };
 		963BF4AC1760E261003E3D94 /* CKSampleBindingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 963BF4AB1760E261003E3D94 /* CKSampleBindingsModel.m */; };
@@ -40,7 +39,6 @@
 		963AB7B7179D63D70076925C /* ResourceManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ResourceManager.framework; path = ../../Frameworks/ResourceManager.framework; sourceTree = "<group>"; };
 		963AB7B9179D64680076925C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		963BF47C1760DCD9003E3D94 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = ../../Frameworks/AppCoreKit.framework; sourceTree = "<group>"; };
-		963BF47D1760DCD9003E3D94 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = ../../Frameworks/VendorsKit.framework; sourceTree = "<group>"; };
 		963BF4801760DD3D003E3D94 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		963BF4A61760DF82003E3D94 /* CKSampleBindingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleBindingsViewController.h; path = Classes/CKSampleBindingsViewController.h; sourceTree = "<group>"; };
 		963BF4A71760DF82003E3D94 /* CKSampleBindingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleBindingsViewController.m; path = Classes/CKSampleBindingsViewController.m; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 				9696E64515E3F01800CD7C34 /* SystemConfiguration.framework in Frameworks */,
 				9696E64715E3F01800CD7C34 /* MobileCoreServices.framework in Frameworks */,
 				963BF47E1760DCD9003E3D94 /* AppCoreKit.framework in Frameworks */,
-				963BF47F1760DCD9003E3D94 /* VendorsKit.framework in Frameworks */,
 				963AB7B6179D63D00076925C /* DropboxSDK.framework in Frameworks */,
 				963AB7B8179D63D70076925C /* ResourceManager.framework in Frameworks */,
 			);
@@ -125,7 +122,6 @@
 				963AB7B7179D63D70076925C /* ResourceManager.framework */,
 				963AB7B5179D63D00076925C /* DropboxSDK.framework */,
 				963BF47C1760DCD9003E3D94 /* AppCoreKit.framework */,
-				963BF47D1760DCD9003E3D94 /* VendorsKit.framework */,
 				963BF4801760DD3D003E3D94 /* AdSupport.framework */,
 				9696E62E15E3F01800CD7C34 /* UIKit.framework */,
 				9696E63015E3F01800CD7C34 /* Foundation.framework */,
