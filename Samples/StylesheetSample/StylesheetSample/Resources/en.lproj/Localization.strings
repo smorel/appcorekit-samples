@@ -27,3 +27,5 @@
 "CKTableViewCellStyleSubtitle2" = "Multiline Supported Subtitle Style";
 
 "CKStylesheetSampleNavigationControllerViewController" = "UINavigationController";
+
+"CKStylesheetSampleUISliderViewController" = "UISlider";

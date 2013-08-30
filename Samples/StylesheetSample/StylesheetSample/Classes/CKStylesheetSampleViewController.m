@@ -10,6 +10,7 @@
 #import "CKStylesheetSampleListViewController.h"
 #import "CKStylesheetSampleTextViewController.h"
 #import "CKStylesheetSampleProtocol.h"
+#import <ResourceManager/ResourceManager.h>
 
 @interface CKStylesheetSampleViewController ()
 
@@ -45,12 +46,17 @@
 }
          
 - (void)updateTextViewController:(CKStylesheetSampleTextViewController*)textViewController usingStylesheetFileName:(NSString*)filename{
-    NSString* path = [[NSBundle mainBundle]pathForResource:filename ofType:@"style"];
+    NSString* path = [RMResourceManager pathForResource:filename ofType:@"style"];
     
     NSError* error = nil;
     NSString* content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
     
     textViewController.content = content;
+    
+    [NSObject objectFromJSONData:[content dataUsingEncoding:NSUTF8StringEncoding] error:&error];
+    if(error){
+        NSLog(@"StyleSheet at path '%@' contains error : %@",path,error);
+    }
 }
 
 @end

@@ -76,12 +76,19 @@
 		96C006F517CFEC1B0085F69F /* back_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C006F117CFEC1B0085F69F /* back_pressed@2x.png */; };
 		96C006F617CFEC1B0085F69F /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C006F217CFEC1B0085F69F /* back.png */; };
 		96C006F717CFEC1B0085F69F /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C006F317CFEC1B0085F69F /* back@2x.png */; };
+		96D5D08717D0C660001A4534 /* CKStylesheetSampleUISliderViewController.style in Resources */ = {isa = PBXBuildFile; fileRef = 96D5D08617D0C660001A4534 /* CKStylesheetSampleUISliderViewController.style */; };
+		96D5D08A17D0C779001A4534 /* CKStylesheetSampleUISliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D5D08917D0C779001A4534 /* CKStylesheetSampleUISliderViewController.m */; };
+		96D5D0A517D0CDBC001A4534 /* slider-dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 96D5D09F17D0CDBC001A4534 /* slider-dot.png */; };
+		96D5D0A617D0CDBC001A4534 /* slider-dot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96D5D0A017D0CDBC001A4534 /* slider-dot@2x.png */; };
+		96D5D0A717D0CDBC001A4534 /* slider-max.png in Resources */ = {isa = PBXBuildFile; fileRef = 96D5D0A117D0CDBC001A4534 /* slider-max.png */; };
+		96D5D0A817D0CDBC001A4534 /* slider-max@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96D5D0A217D0CDBC001A4534 /* slider-max@2x.png */; };
+		96D5D0A917D0CDBC001A4534 /* slider-min.png in Resources */ = {isa = PBXBuildFile; fileRef = 96D5D0A317D0CDBC001A4534 /* slider-min.png */; };
+		96D5D0AA17D0CDBC001A4534 /* slider-min@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96D5D0A417D0CDBC001A4534 /* slider-min@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		68B99E6017A196DB005AE6A4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		68B99E6217A196E1005AE6A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localization.strings; sourceTree = "<group>"; };
-		68B99E6417A196E4005AE6A4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localization.strings; sourceTree = "<group>"; };
 		962672F0176F57A800202F97 /* StylesheetSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StylesheetSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		962672F3176F57A800202F97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		962672F5176F57A800202F97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -165,6 +172,15 @@
 		96C006F117CFEC1B0085F69F /* back_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back_pressed@2x.png"; path = "Resources/back_pressed@2x.png"; sourceTree = "<group>"; };
 		96C006F217CFEC1B0085F69F /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = Resources/back.png; sourceTree = "<group>"; };
 		96C006F317CFEC1B0085F69F /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back@2x.png"; path = "Resources/back@2x.png"; sourceTree = "<group>"; };
+		96D5D08617D0C660001A4534 /* CKStylesheetSampleUISliderViewController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CKStylesheetSampleUISliderViewController.style; path = Classes/CKStylesheetSampleUISliderViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		96D5D08817D0C779001A4534 /* CKStylesheetSampleUISliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKStylesheetSampleUISliderViewController.h; path = Classes/CKStylesheetSampleUISliderViewController.h; sourceTree = "<group>"; };
+		96D5D08917D0C779001A4534 /* CKStylesheetSampleUISliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKStylesheetSampleUISliderViewController.m; path = Classes/CKStylesheetSampleUISliderViewController.m; sourceTree = "<group>"; };
+		96D5D09F17D0CDBC001A4534 /* slider-dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slider-dot.png"; path = "Resources/slider-dot.png"; sourceTree = "<group>"; };
+		96D5D0A017D0CDBC001A4534 /* slider-dot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slider-dot@2x.png"; path = "Resources/slider-dot@2x.png"; sourceTree = "<group>"; };
+		96D5D0A117D0CDBC001A4534 /* slider-max.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slider-max.png"; path = "Resources/slider-max.png"; sourceTree = "<group>"; };
+		96D5D0A217D0CDBC001A4534 /* slider-max@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slider-max@2x.png"; path = "Resources/slider-max@2x.png"; sourceTree = "<group>"; };
+		96D5D0A317D0CDBC001A4534 /* slider-min.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slider-min.png"; path = "Resources/slider-min.png"; sourceTree = "<group>"; };
+		96D5D0A417D0CDBC001A4534 /* slider-min@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slider-min@2x.png"; path = "Resources/slider-min@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +297,12 @@
 		9626733B176F57A900202F97 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				96D5D09F17D0CDBC001A4534 /* slider-dot.png */,
+				96D5D0A017D0CDBC001A4534 /* slider-dot@2x.png */,
+				96D5D0A117D0CDBC001A4534 /* slider-max.png */,
+				96D5D0A217D0CDBC001A4534 /* slider-max@2x.png */,
+				96D5D0A317D0CDBC001A4534 /* slider-min.png */,
+				96D5D0A417D0CDBC001A4534 /* slider-min@2x.png */,
 				96C006F017CFEC1B0085F69F /* back_pressed.png */,
 				96C006F117CFEC1B0085F69F /* back_pressed@2x.png */,
 				96C006F217CFEC1B0085F69F /* back.png */,
@@ -329,6 +351,9 @@
 				96897F1317CFCFF8004ADED9 /* CKStylesheetSampleNavigationControllerViewController.h */,
 				96897F1417CFCFF8004ADED9 /* CKStylesheetSampleNavigationControllerViewController.m */,
 				96897F1617CFD034004ADED9 /* CKStylesheetSampleNavigationControllerViewController.style */,
+				96D5D08817D0C779001A4534 /* CKStylesheetSampleUISliderViewController.h */,
+				96D5D08917D0C779001A4534 /* CKStylesheetSampleUISliderViewController.m */,
+				96D5D08617D0C660001A4534 /* CKStylesheetSampleUISliderViewController.style */,
 			);
 			name = Samples;
 			sourceTree = "<group>";
@@ -435,6 +460,13 @@
 				96C006F517CFEC1B0085F69F /* back_pressed@2x.png in Resources */,
 				96C006F617CFEC1B0085F69F /* back.png in Resources */,
 				96C006F717CFEC1B0085F69F /* back@2x.png in Resources */,
+				96D5D08717D0C660001A4534 /* CKStylesheetSampleUISliderViewController.style in Resources */,
+				96D5D0A517D0CDBC001A4534 /* slider-dot.png in Resources */,
+				96D5D0A617D0CDBC001A4534 /* slider-dot@2x.png in Resources */,
+				96D5D0A717D0CDBC001A4534 /* slider-max.png in Resources */,
+				96D5D0A817D0CDBC001A4534 /* slider-max@2x.png in Resources */,
+				96D5D0A917D0CDBC001A4534 /* slider-min.png in Resources */,
+				96D5D0AA17D0CDBC001A4534 /* slider-min@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +504,7 @@
 				96B9D2681770AADE00455BE8 /* CKStylesheetSampleUIActivityIndicatorViewViewController.m in Sources */,
 				9686228017CE92A00081248D /* JSONSyntaxHighlight.m in Sources */,
 				96897F1517CFCFF8004ADED9 /* CKStylesheetSampleNavigationControllerViewController.m in Sources */,
+				96D5D08A17D0C779001A4534 /* CKStylesheetSampleUISliderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,7 +515,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				68B99E6217A196E1005AE6A4 /* en */,
-				68B99E6417A196E4005AE6A4 /* fr */,
 			);
 			name = Localization.strings;
 			path = Resources;

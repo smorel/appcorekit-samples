@@ -260,19 +260,19 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Layouting">Layouting</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKPropertyGrid Methods">CKPropertyGrid Methods</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKDynamicLayout Methods">CKDynamicLayout Methods</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKResponder Methods">CKResponder Methods</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKLayout Methods">CKLayout Methods</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKMenus Methods">CKMenus Methods</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Factory Methods">Factory Methods</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKLayout Methods">CKLayout Methods</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKBlockBasedInterface Methods">CKBlockBasedInterface Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKPropertyGrid Methods">CKPropertyGrid Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKResponder Methods">CKResponder Methods</a></span></li>
 	
 </ul></li>
 
@@ -793,42 +793,6 @@ Do not keep any other reference between the tableViewCell and the controller to 
 						</ul>
 						
 						
-						<a title="CKPropertyGrid Methods" name="task_CKPropertyGrid Methods"></a>
-						<h3 class="subsubtitle task-title">CKPropertyGrid Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/cellControllerWithObject:keyPath:">+&nbsp;cellControllerWithObject:keyPath:</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/cellControllerWithObject:keyPath:readOnly:">+&nbsp;cellControllerWithObject:keyPath:readOnly:</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/cellControllerWithProperty:">+&nbsp;cellControllerWithProperty:</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/cellControllerWithProperty:readOnly:">+&nbsp;cellControllerWithProperty:readOnly:</a></code>
-		
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
 						<a title="CKDynamicLayout Methods" name="task_CKDynamicLayout Methods"></a>
 						<h3 class="subsubtitle task-title">CKDynamicLayout Methods</h3>
 
@@ -872,56 +836,14 @@ Do not keep any other reference between the tableViewCell and the controller to 
 						</ul>
 						
 						
-						<a title="CKResponder Methods" name="task_CKResponder Methods"></a>
-						<h3 class="subsubtitle task-title">CKResponder Methods</h3>
+						<a title="CKLayout Methods" name="task_CKLayout Methods"></a>
+						<h3 class="subsubtitle task-title">CKLayout Methods</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/hasNextResponder">&ndash;&nbsp;hasNextResponder</a></code>
+		<code><a href="#//api/name/performLayout">&ndash;&nbsp;performLayout</a></code>
 		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/hasPreviousResponder">&ndash;&nbsp;hasPreviousResponder</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/activateNextResponder">&ndash;&nbsp;activateNextResponder</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/activatePreviousResponder">&ndash;&nbsp;activatePreviousResponder</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/hasResponder">&ndash;&nbsp;hasResponder</a></code>
-		<span class="tooltip"><p>If you override CKTableViewCellController, you should implement this method if you need integration with the responder chain.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/becomeFirstResponder">&ndash;&nbsp;becomeFirstResponder</a></code>
-		<span class="tooltip"><p>If you override CKTableViewCellController, you should implement this method if you need integration with the responder chain.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/nextResponder:">&ndash;&nbsp;nextResponder:</a></code>
-		<span class="tooltip"><p>If you override CKTableViewCellController, you should implement this method if you need integration with the responder chain.</p></span>
 	</span>
 	
 	
@@ -1188,21 +1110,6 @@ do not call [cell beginBindingContextByRemovingPreviousBindings] in setup or thi
 						</ul>
 						
 						
-						<a title="CKLayout Methods" name="task_CKLayout Methods"></a>
-						<h3 class="subsubtitle task-title">CKLayout Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/performLayout">&ndash;&nbsp;performLayout</a></code>
-		
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
 						<a title="CKBlockBasedInterface Methods" name="task_CKBlockBasedInterface Methods"></a>
 						<h3 class="subsubtitle task-title">CKBlockBasedInterface Methods</h3>
 
@@ -1283,6 +1190,99 @@ do not call [cell beginBindingContextByRemovingPreviousBindings] in setup or thi
 		<span class="tooltip"><p>This callback is called when the collection view commits editing changes to this cell controller.
 By default, removeCallback is nil.
 If you implements it you will have to manually remove the cell or the object from the binded collections.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="CKPropertyGrid Methods" name="task_CKPropertyGrid Methods"></a>
+						<h3 class="subsubtitle task-title">CKPropertyGrid Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellControllerWithObject:keyPath:">+&nbsp;cellControllerWithObject:keyPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellControllerWithObject:keyPath:readOnly:">+&nbsp;cellControllerWithObject:keyPath:readOnly:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellControllerWithProperty:">+&nbsp;cellControllerWithProperty:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellControllerWithProperty:readOnly:">+&nbsp;cellControllerWithProperty:readOnly:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="CKResponder Methods" name="task_CKResponder Methods"></a>
+						<h3 class="subsubtitle task-title">CKResponder Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasNextResponder">&ndash;&nbsp;hasNextResponder</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasPreviousResponder">&ndash;&nbsp;hasPreviousResponder</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/activateNextResponder">&ndash;&nbsp;activateNextResponder</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/activatePreviousResponder">&ndash;&nbsp;activatePreviousResponder</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasResponder">&ndash;&nbsp;hasResponder</a></code>
+		<span class="tooltip"><p>If you override CKTableViewCellController, you should implement this method if you need integration with the responder chain.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/becomeFirstResponder">&ndash;&nbsp;becomeFirstResponder</a></code>
+		<span class="tooltip"><p>If you override CKTableViewCellController, you should implement this method if you need integration with the responder chain.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/nextResponder:">&ndash;&nbsp;nextResponder:</a></code>
+		<span class="tooltip"><p>If you override CKTableViewCellController, you should implement this method if you need integration with the responder chain.</p></span>
 	</span>
 	
 	
@@ -4090,7 +4090,7 @@ If you implements it you will have to manually remove the cell or the object fro
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Wherecloud. All rights reserved. (Last updated: 2013-08-29)</span><br />
+						<p><span class="copyright">&copy; 2013 Wherecloud. All rights reserved. (Last updated: 2013-08-30)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						
