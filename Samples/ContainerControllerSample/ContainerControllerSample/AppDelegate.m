@@ -44,9 +44,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     self.window = [UIWindow  viewWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = [CKSampleContainerTabViewController controller];
     [self.window makeKeyAndVisible];
+    
+    [application setStatusBarHidden:YES];
+    
     return YES;
 }
 

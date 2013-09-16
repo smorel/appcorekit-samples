@@ -19,9 +19,7 @@ The ResourceManager source repository is available at https://github.com/wherecl
 
 ## Minimum system requirements
 
-AppCoreKit supports all iOS versions 4.3 and higher.
-
-The <b>iOS 7</b> integration is in process. We'll regularly release new framework binaries during this phase! Please be patient ;)
+AppCoreKit supports all iOS versions 4.3 and higher. Xcode 5 is required as we integrated support for iOS7.
 
 ## Credits
 

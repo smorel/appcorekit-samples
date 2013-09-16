@@ -10,12 +10,12 @@
 #import "NSObject+Singleton.h"
 #import "CKCascadingTree.h"
 
-//#define ENABLE_XCODE5
+#define ENABLE_XCODE5
 
-typedef enum CKConfigurationType{
+typedef NS_ENUM(NSInteger, CKConfigurationType){
     CKConfigurationTypeDebug,
     CKConfigurationTypeRelease
-}CKConfigurationType;
+};
 
 /** CKConfiguration allow to enable/disable debug features in the AppCoreKit. The configuration is defined as a cascading tree in a .conf file.
  To initialize the configuration, just paste this code in your AppDelegate init method:

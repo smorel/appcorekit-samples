@@ -117,30 +117,30 @@
     },
     
     //CKTabViewController
-    
-    "CKTabViewController" : {
+    "CKSampleContainerTabViewController" : {
         "style" : "CKTabViewControllerStyleTop",
-        "tabBar" : {
-            "@inherits" : [ "$bottom_shadow" ],
-            "clipsToBounds" : 0,
-            "height" : 44,
-            "itemsSpace" : 2,
-            "contentInsets" : "2 0 2 0",
-            "backgroundColor" : "0x292929 1",
-            "UIButton" : {
-                "@inherits" : [ "$tabBarButton" ]
+            "tabBar" : {
+                "@inherits" : [ "$bottom_shadow" ],
+                "clipsToBounds" : 0,
+                "height" : 44,
+                "itemsSpace" : 2,
+                "contentInsets" : "2 0 2 0",
+                "backgroundColor" : "0x292929 1",
+                "UIButton" : {
+                    "@inherits" : [ "$tabBarButton" ]
+                }
             }
-        }
     },
     
     //CKBreadCrumbViewController
     
-    "CKBreadCrumbViewController" : {
+    "CKSampleContainerBreadCrumbViewController" : {
         "tabBar" : {
             "@inherits" : [ "$darkGrayGradient" ],
             "itemsSpace" : -20,
             "contentInsets" : "0 -20 0 0",
             "height" : 53,
+            
             "CKTabViewItem" : {
                 "@inherits" : [ "$breadCrumbButton" ]
             }
@@ -159,7 +159,7 @@
                 "defaultShadowColor" : "whiteColor",
                 "height" : "30",
                 "width" : 200
-            },
+            }, 
             "CKSegmentedControlButton[position=CKSegmentedControlButtonPositionFirst]" : {
                 "@inherits" : ["$CKSegmentedControlButtonTemplate"],
                 "defaultBackgroundImage" : ["segmented-left","5 0"],
@@ -207,6 +207,9 @@
         "UITableView" : {
             "backgroundColor" : "blackColor",
             "separatorStyle" : "UITableViewCellSeparatorStyleNone"
+        },
+        "UITableViewCell" : {
+            "backgroundColor" : "blackColor"
         }
     }
 }

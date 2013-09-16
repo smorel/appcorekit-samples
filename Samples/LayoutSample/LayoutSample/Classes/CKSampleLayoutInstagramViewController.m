@@ -45,8 +45,8 @@
     }];
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
     
     [CKSampleLayoutInstagramDataSources fetchRandomUserInModel:self.model completion:nil];
 }

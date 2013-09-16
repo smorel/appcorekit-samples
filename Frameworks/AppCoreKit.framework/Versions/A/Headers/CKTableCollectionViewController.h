@@ -16,26 +16,26 @@
 
 /**
  */
-typedef enum CKTableCollectionViewControllerEditingType{
+typedef NS_ENUM(NSInteger, CKTableCollectionViewControllerEditingType){
     CKTableCollectionViewControllerEditingTypeNone    = 0,
     CKTableCollectionViewControllerEditingTypeLeft    = 1 << 1,
     CKTableCollectionViewControllerEditingTypeRight   = 1 << 2,
     CKTableCollectionViewControllerEditingTypeAnimateTransition = 1 << 3
-}CKTableCollectionViewControllerEditingType;
+};
 
 /**
  */
-typedef enum CKTableCollectionViewControllerScrollingPolicy{
+typedef NS_ENUM(NSInteger, CKTableCollectionViewControllerScrollingPolicy){
     CKTableCollectionViewControllerScrollingPolicyNone,
     CKTableCollectionViewControllerScrollingPolicyResignResponder
-}CKTableCollectionViewControllerScrollingPolicy;
+};
 
 /**
  */
-typedef enum CKTableCollectionViewControllerSnappingPolicy{
+typedef NS_ENUM(NSInteger, CKTableCollectionViewControllerSnappingPolicy){
     CKTableCollectionViewControllerSnappingPolicyNone,
     CKTableCollectionViewControllerSnappingPolicyCenter
-}CKTableCollectionViewControllerSnappingPolicy;
+};
 
 typedef void(^CKTableCollectionViewControllerSearchBlock)(NSString* filter);
 
@@ -105,10 +105,7 @@ typedef UITableViewRowAnimation(^CKTableCollectionViewControllerSectionAnimation
  Specify if the table should resize itself on keyboard or sheet notifications
  */
 @property (nonatomic, assign) BOOL resizeOnKeyboardNotification;
-/** 
- Specify a maximum width for the table to center it easilly if the parent view is bigger.
- */
-@property (nonatomic, assign) CGFloat tableMaximumWidth;
+
 
 ///-----------------------------------
 /// @name Animating
