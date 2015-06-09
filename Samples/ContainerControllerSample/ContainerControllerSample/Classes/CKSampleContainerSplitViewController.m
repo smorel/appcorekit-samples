@@ -20,7 +20,7 @@
 
 - (void)setup{
     self.title = _(@"kSplitterTitle");
-    
+    self.orientation = CKSplitViewOrientationHorizontal;
     
     NSMutableArray* urls = [NSMutableArray arrayWithObjects:
                             [NSURL URLWithString:@"http://www.google.com"],
@@ -53,7 +53,7 @@
 }
 
 - (void)setViewControllersWithCustomAnimation:(NSArray*)viewControllers{
-    [self setViewControllers:viewControllers
+    /*[self setViewControllers:viewControllers
            animationDuration:.4
          startAnimationBlock:^(UIViewController *controller, CGRect beginFrame, CGRect endFrame, CKSplitViewControllerAnimationState state) {
              if(state == CKSplitViewControllerAnimationStateMoving){ controller.view.frame = beginFrame; }
@@ -64,6 +64,8 @@
                   //else do not animate
               }
            endAnimationBlock:nil];
+     */
+    [self setViewControllers:viewControllers];
 }
 
 

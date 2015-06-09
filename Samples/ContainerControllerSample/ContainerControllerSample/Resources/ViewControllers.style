@@ -6,19 +6,19 @@
     
     //WebSitesForm, BreadCrumbForm
 
-    "CKViewController[name=BreadCrumbForm], CKFormTableViewController" : {
+    "CKViewController[name=BreadCrumbForm], CKTableViewController" : {
         "@inherits" : [ "$removes_tableView_background" ],
-        "tableViewContainer" : {
-            //"backgroundImage" : "background-grey-pattern"
-            "backgroundColor" : "scrollViewTexturedBackgroundColor"
-        },
-        "splitViewConstraints" : {
-            "size" : 320,
-            "type" : "CKSplitViewConstraintsTypeFixedSizeInPixels"
-        },
-        "CKTableViewCellController" : {
-            "@inherits" : [ "$tableview_cell_controller_base" ]
+        "view,tableView" : {
+            "backgroundColor" : "scrollViewTexturedBackgroundColor",
+            "fixedWidth" : 320,
+            "separatorColor" : "clearColor",
+            "separatorStyle" : "UITableViewCellSeparatorStyleNone"
         }
+    },
+    
+    
+    "CKReusableViewController" : {
+        "@inherits" : [ "$tableview_cell_controller_base" ]
     },
     
     //SplitterSeparator
@@ -26,6 +26,8 @@
     "CKSampleContainerSplitSeparatorViewController" : {
         "view" : {
             "@inherits" : [ "$horizontal_darkGrayGradient", "$left_shadow" ],
+            "fixedWidth" : 40,
+            
             "layer" : {
                 "zPosition" : 1
             },
@@ -36,10 +38,6 @@
                 }
  
             }
-        },
-        "splitViewConstraints" : {
-            "size" : 40,
-            "type" : "CKSplitViewConstraintsTypeFixedSizeInPixels"
         }
     },
     
@@ -61,6 +59,12 @@
     "CKViewController[name=PlaceHolder]" : {
         "view" : {
             "backgroundColor" : "blueColor"
+        }
+    },
+    
+    "CKViewController[name=PlaceHolder2]" : {
+        "view" : {
+            "backgroundColor" : "redColor"
         }
     },
     

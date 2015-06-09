@@ -14,7 +14,7 @@
 //This is a different way of creating a view controller not by derivation but by extending its behaviour using blocks
 //sometimes it's shorter than creating a class specially for it especially if this is related to the current controller only !
 
-- (CKFormTableViewController*)breadCrumbFormWithIndexSet:(NSIndexPath*)indexSet{
+- (CKTableViewController*)breadCrumbFormWithIndexSet:(NSIndexPath*)indexSet{
     BOOL stop = ([indexSet length] >=5);
     
     NSMutableArray* cells = [NSMutableArray array];
@@ -30,16 +30,16 @@
         }
         
         __unsafe_unretained CKSampleContainerBreadCrumbViewController* bself = self;
-        CKTableViewCellController* cell = [CKTableViewCellController cellControllerWithTitle:title action:stop ? nil : ^(CKTableViewCellController* controller){
-            CKFormTableViewController* newController = [bself breadCrumbFormWithIndexSet:newIndexSet];
+        CKStandardContentViewController* cell = [CKStandardContentViewController controllerWithTitle:title action:stop ? nil : ^(CKStandardContentViewController* controller){
+            CKTableViewController* newController = [bself breadCrumbFormWithIndexSet:newIndexSet];
             newController.title = title;
             [bself pushViewController:newController animated:YES];
         }];
         [cells addObject:cell];
     }
     
-    CKFormTableViewController* form = [CKFormTableViewController controllerWithName:@"BreadCrumbForm"];
-    [form addSections:[NSArray arrayWithObject:[CKFormSection sectionWithCellControllers:cells]]];
+    CKTableViewController* form = [CKTableViewController controllerWithName:@"BreadCrumbForm"];
+    [form addSections:[NSArray arrayWithObject:[CKSection sectionWithControllers:cells]] animated:NO];
     return form;
 }
 
@@ -52,7 +52,7 @@
 - (void)setup{
     self.title = _(@"kBreadCrumbTitle");
     
-    CKFormTableViewController* first = [self breadCrumbFormWithIndexSet:[NSIndexPath indexPathWithIndex:0]];
+    CKTableViewController* first = [self breadCrumbFormWithIndexSet:[NSIndexPath indexPathWithIndex:0]];
     first.title = _(@"kBreadCrumbFirstTitle");
     [self setViewControllers:@[first]];
 }

@@ -64,6 +64,11 @@
 		96F5C12015E828D0007121C6 /* segmented-right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F5C11615E828D0007121C6 /* segmented-right@2x.png */; };
 		96F5C12115E828D0007121C6 /* uppernav_button-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F5C11715E828D0007121C6 /* uppernav_button-pressed@2x.png */; };
 		96F5C12215E828D0007121C6 /* uppernav_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F5C11815E828D0007121C6 /* uppernav_button@2x.png */; };
+		D9C3B0E91B276B7B00B2C07D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B0E81B276B7B00B2C07D /* CoreImage.framework */; };
+		D9C3B0EB1B276B7F00B2C07D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B0EA1B276B7F00B2C07D /* Accelerate.framework */; };
+		D9C3B0ED1B276B8400B2C07D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B0EC1B276B8400B2C07D /* CoreMotion.framework */; };
+		D9C3B0EF1B276B8800B2C07D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B0EE1B276B8800B2C07D /* AVFoundation.framework */; };
+		D9C3B0F11B276B9200B2C07D /* AppPeerIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B0F01B276B9200B2C07D /* AppPeerIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -137,6 +142,11 @@
 		96F5C11615E828D0007121C6 /* segmented-right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "segmented-right@2x.png"; path = "Resources/segmented-right@2x.png"; sourceTree = "<group>"; };
 		96F5C11715E828D0007121C6 /* uppernav_button-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "uppernav_button-pressed@2x.png"; path = "Resources/uppernav_button-pressed@2x.png"; sourceTree = "<group>"; };
 		96F5C11815E828D0007121C6 /* uppernav_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "uppernav_button@2x.png"; path = "Resources/uppernav_button@2x.png"; sourceTree = "<group>"; };
+		D9C3B0E81B276B7B00B2C07D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D9C3B0EA1B276B7F00B2C07D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		D9C3B0EC1B276B8400B2C07D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D9C3B0EE1B276B8800B2C07D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D9C3B0F01B276B9200B2C07D /* AppPeerIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppPeerIOS.framework; path = ../../Frameworks/AppPeerIOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +154,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9C3B0EF1B276B8800B2C07D /* AVFoundation.framework in Frameworks */,
+				D9C3B0F11B276B9200B2C07D /* AppPeerIOS.framework in Frameworks */,
+				D9C3B0ED1B276B8400B2C07D /* CoreMotion.framework in Frameworks */,
+				D9C3B0EB1B276B7F00B2C07D /* Accelerate.framework in Frameworks */,
+				D9C3B0E91B276B7B00B2C07D /* CoreImage.framework in Frameworks */,
 				963AB7C6179D655D0076925C /* Security.framework in Frameworks */,
 				963BF48B1760DEB2003E3D94 /* AdSupport.framework in Frameworks */,
 				9696E69B15E410A200CD7C34 /* UIKit.framework in Frameworks */,
@@ -188,6 +203,11 @@
 		9696E69915E410A200CD7C34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D9C3B0F01B276B9200B2C07D /* AppPeerIOS.framework */,
+				D9C3B0EE1B276B8800B2C07D /* AVFoundation.framework */,
+				D9C3B0EC1B276B8400B2C07D /* CoreMotion.framework */,
+				D9C3B0EA1B276B7F00B2C07D /* Accelerate.framework */,
+				D9C3B0E81B276B7B00B2C07D /* CoreImage.framework */,
 				963AB7C5179D655D0076925C /* Security.framework */,
 				963AB7C3179D65510076925C /* DropboxSDK.framework */,
 				963AB7C1179D654C0076925C /* ResourceManager.framework */,
@@ -302,7 +322,6 @@
 				9696E69115E410A200CD7C34 /* Sources */,
 				9696E69215E410A200CD7C34 /* Frameworks */,
 				9696E69315E410A200CD7C34 /* Resources */,
-				9696E69415E410A200CD7C34 /* Copy Framework Resources */,
 			);
 			buildRules = (
 			);
@@ -377,23 +396,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		9696E69415E410A200CD7C34 /* Copy Framework Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Framework Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sh \"$PROJECT_DIR/../../Frameworks/copy_framework_resources.sh\" --system-developer-dir \"$SYSTEM_DEVELOPER_DIR\" --executable-name \"$EXECUTABLE_NAME\" --frameworks-dir \"$PROJECT_DIR/../../Frameworks/\" --target-build-dir \"$TARGET_BUILD_DIR\" --project \"$PROJECT\" --project-dir \"$PROJECT_DIR\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9696E69115E410A200CD7C34 /* Sources */ = {
@@ -484,11 +486,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Frameworks\"",
+					"/Users/sebastienmorel/Documents/Projects/smorel/appcorekit-samples/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ContainerControllerSample/ContainerControllerSample-Prefix.pch";
 				INFOPLIST_FILE = "ContainerControllerSample/ContainerControllerSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -499,7 +502,7 @@
 					"/usr/lib/libstdc++.dylib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -510,11 +513,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Frameworks\"",
+					"/Users/sebastienmorel/Documents/Projects/smorel/appcorekit-samples/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ContainerControllerSample/ContainerControllerSample-Prefix.pch";
 				INFOPLIST_FILE = "ContainerControllerSample/ContainerControllerSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -525,7 +529,7 @@
 					"/usr/lib/libstdc++.dylib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

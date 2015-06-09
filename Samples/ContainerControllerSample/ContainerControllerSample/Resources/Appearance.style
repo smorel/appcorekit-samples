@@ -145,6 +145,7 @@
     },
     
     "$tableview_cell_controller_base" : {
+        "tableViewCell" : {
         "backgroundView" : {
             "@inherits" : [ "$lightBackground" ],
             "cornerSize" : 6,
@@ -166,12 +167,13 @@
             "borderShadowRadius" : 10,
             "borderShadowOffset" : "0 0",
             "borderStyle" : "CKViewBorderStyleAll"
+        }
         },
-        "textLabel" : {
+        "UILabel[name=TitleLabel]" : {
             "@inherits" : [ "$darkGreyLabel", "$title", "$bold" ],
             "textAlignment" : "UITextAlignmentLeft"
         },
-        "detailTextLabel" : {
+        "UILabel[name=SubTitleLabel]" : {
             "@inherits" : [ "$mediumGreyLabel","$subtitle" ]
         }
     },

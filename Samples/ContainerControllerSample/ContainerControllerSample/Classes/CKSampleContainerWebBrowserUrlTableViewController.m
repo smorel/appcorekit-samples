@@ -28,29 +28,28 @@
     __unsafe_unretained CKSampleContainerWebBrowserUrlTableViewController* bself = self;
     NSMutableArray* cells = [NSMutableArray array];
     for(NSURL* url in self.urls){
-        CKTableViewCellController* cell = [CKTableViewCellController cellControllerWithTitle:[url description] action:^(CKTableViewCellController *controller) {
+        CKStandardContentViewController* cell = [CKStandardContentViewController controllerWithTitle:[url description] action:^(CKStandardContentViewController *controller) {
             if(bself.didSelectUrlBlock){
                 bself.didSelectUrlBlock(url);
             }
         }];
-        cell.value = url;
         [cells addObject:cell];
     }
     
     //Configure the form
     self.stickySelectionEnabled = YES;
-    [self addSections:@[ [CKFormSection sectionWithCellControllers:cells] ]];
+    [self addSections:@[ [CKSection sectionWithControllers:cells] ] animated:NO];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
     //Auto select the first url
-    if(self.selectedIndexPath == nil){
-        [self selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:YES];
+    if(self.selectedIndexPaths.count > 0){
+        [self.tableView selectRowAtIndexPath:self.selectedIndexPaths[0] animated:NO scrollPosition:UITableViewScrollPositionMiddle];
         
         if(self.didSelectUrlBlock){
-            self.didSelectUrlBlock([self.urls objectAtIndex:0]);
+            self.didSelectUrlBlock([self.urls objectAtIndex:[self.selectedIndexPaths[0] row]]);
         }
     }
 }

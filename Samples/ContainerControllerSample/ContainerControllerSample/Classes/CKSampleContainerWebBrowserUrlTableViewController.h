@@ -8,7 +8,7 @@
 
 #import <AppCoreKit/AppCoreKit.h>
 
-@interface CKSampleContainerWebBrowserUrlTableViewController : CKFormTableViewController
+@interface CKSampleContainerWebBrowserUrlTableViewController : CKTableViewController
 @property(nonatomic,copy) void(^didSelectUrlBlock)(NSURL* url);
 
 - (id)initWithUrls:(NSArray*)urls;
