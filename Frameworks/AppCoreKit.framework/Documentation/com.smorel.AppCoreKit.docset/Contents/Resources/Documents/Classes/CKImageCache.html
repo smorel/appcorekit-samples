@@ -1,0 +1,687 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CKImageCache Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AppCoreKit </a></h1>
+				<a id="developerHome" href="../index.html">smorel</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CKImageCache Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/findOrCreateImageWithHandler:handlerCacheIdentifierProperty:cacheIdentifier:generateImageBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- findOrCreateImageWithHandler:handlerCacheIdentifierProperty:cacheIdentifier:generateImageBlock:</option>
+	
+	<option value="//api/name/imageWithIdentifier:">&nbsp;&nbsp;&nbsp;&nbsp;- imageWithIdentifier:</option>
+	
+	<option value="//api/name/imageWithUrl:">&nbsp;&nbsp;&nbsp;&nbsp;- imageWithUrl:</option>
+	
+	<option value="//api/name/registerDelegate:withImageURL:">&nbsp;&nbsp;&nbsp;&nbsp;- registerDelegate:withImageURL:</option>
+	
+	<option value="//api/name/registerHandler:image:withIdentifier:">&nbsp;&nbsp;&nbsp;&nbsp;- registerHandler:image:withIdentifier:</option>
+	
+	<option value="//api/name/reloadImageAtUrl:">&nbsp;&nbsp;&nbsp;&nbsp;- reloadImageAtUrl:</option>
+	
+	<option value="//api/name/unregisterDelegate:withImageURL:">&nbsp;&nbsp;&nbsp;&nbsp;- unregisterDelegate:withImageURL:</option>
+	
+	<option value="//api/name/unregisterHandler:withIdentifier:">&nbsp;&nbsp;&nbsp;&nbsp;- unregisterHandler:withIdentifier:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing remote images">Managing remote images</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing local images">Managing local images</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Generating or fetching local images">Generating or fetching local images</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/findOrCreateImageWithHandler:handlerCacheIdentifierProperty:cacheIdentifier:generateImageBlock:">findOrCreateImageWithHandler:handlerCacheIdentifierProperty:cacheIdentifier:generateImageBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imageWithIdentifier:">imageWithIdentifier:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imageWithUrl:">imageWithUrl:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerDelegate:withImageURL:">registerDelegate:withImageURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerHandler:image:withIdentifier:">registerHandler:image:withIdentifier:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reloadImageAtUrl:">reloadImageAtUrl:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unregisterDelegate:withImageURL:">unregisterDelegate:withImageURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unregisterHandler:withIdentifier:">unregisterHandler:withIdentifier:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CKImageCache Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CKImageCache Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CKImageCache.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Managing remote images" name="task_Managing remote images"></a>
+						<h3 class="subsubtitle task-title">Managing remote images</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/registerDelegate:withImageURL:">&ndash;&nbsp;registerDelegate:withImageURL:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unregisterDelegate:withImageURL:">&ndash;&nbsp;unregisterDelegate:withImageURL:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reloadImageAtUrl:">&ndash;&nbsp;reloadImageAtUrl:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imageWithUrl:">&ndash;&nbsp;imageWithUrl:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing local images" name="task_Managing local images"></a>
+						<h3 class="subsubtitle task-title">Managing local images</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/registerHandler:image:withIdentifier:">&ndash;&nbsp;registerHandler:image:withIdentifier:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unregisterHandler:withIdentifier:">&ndash;&nbsp;unregisterHandler:withIdentifier:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imageWithIdentifier:">&ndash;&nbsp;imageWithIdentifier:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Generating or fetching local images" name="task_Generating or fetching local images"></a>
+						<h3 class="subsubtitle task-title">Generating or fetching local images</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/findOrCreateImageWithHandler:handlerCacheIdentifierProperty:cacheIdentifier:generateImageBlock:">&ndash;&nbsp;findOrCreateImageWithHandler:handlerCacheIdentifierProperty:cacheIdentifier:generateImageBlock:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/findOrCreateImageWithHandler:handlerCacheIdentifierProperty:cacheIdentifier:generateImageBlock:" title="findOrCreateImageWithHandler:handlerCacheIdentifierProperty:cacheIdentifier:generateImageBlock:"></a>
+	<h3 class="subsubtitle method-title">findOrCreateImageWithHandler:handlerCacheIdentifierProperty:cacheIdentifier:generateImageBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>if the cacheIdentifier is different than the handler&rsquo;s handlerCacheIdentifier Property, the handler is unregisters from image cache for the previous identifier.
+then, if the image with the specified cacheIdentifier already exists in cahce, it is returned and the handler is registered for the cacheIdentifier.
+If the image doesn&rsquo;t exists, it is created by calling the generateImageBlock and then returned while the handler is registered for this cache identifier with the created image.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIImage *)findOrCreateImageWithHandler:(id)<em>handler</em> handlerCacheIdentifierProperty:(NSString *)<em>keypath</em> cacheIdentifier:(NSString *)<em>cacheIdentifier</em> generateImageBlock:(UIImage *( ^ ) ( ))<em>generateImageBlock</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>if the cacheIdentifier is different than the handler&rsquo;s handlerCacheIdentifier Property, the handler is unregisters from image cache for the previous identifier.
+then, if the image with the specified cacheIdentifier already exists in cahce, it is returned and the handler is registered for the cacheIdentifier.
+If the image doesn&rsquo;t exists, it is created by calling the generateImageBlock and then returned while the handler is registered for this cache identifier with the created image.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKImageCache.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/imageWithIdentifier:" title="imageWithIdentifier:"></a>
+	<h3 class="subsubtitle method-title">imageWithIdentifier:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the image with the specified identifier. If no handler are registered for this identifier, it will return nil.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIImage *)imageWithIdentifier:(NSString *)<em>identifier</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the image with the specified identifier. If no handler are registered for this identifier, it will return nil.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKImageCache.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/imageWithUrl:" title="imageWithUrl:"></a>
+	<h3 class="subsubtitle method-title">imageWithUrl:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the image loaded at the specified url if they are delegates registered and the image has already been fetched. Returns nil in other cases.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIImage *)imageWithUrl:(NSURL *)<em>url</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the image loaded at the specified url if they are delegates registered and the image has already been fetched. Returns nil in other cases.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKImageCache.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/registerDelegate:withImageURL:" title="registerDelegate:withImageURL:"></a>
+	<h3 class="subsubtitle method-title">registerDelegate:withImageURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Register a delegate to fetch or reuse an image at a specific url. If the image is not loaded yet, the loading will be shared through all the registered delegates for the specified url. At the end of the loading, all the registered delegates will be notified that the image is ready using the didFetchImage: method. If the image was alredy loaded, they will be notified using the imageWasAlreadyFetched: method.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)registerDelegate:(id&lt;CKImageCacheDelegate&gt;)<em>delegate</em> withImageURL:(NSURL *)<em>url</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Register a delegate to fetch or reuse an image at a specific url. If the image is not loaded yet, the loading will be shared through all the registered delegates for the specified url. At the end of the loading, all the registered delegates will be notified that the image is ready using the didFetchImage: method. If the image was alredy loaded, they will be notified using the imageWasAlreadyFetched: method.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKImageCache.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/registerHandler:image:withIdentifier:" title="registerHandler:image:withIdentifier:"></a>
+	<h3 class="subsubtitle method-title">registerHandler:image:withIdentifier:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Register an image with an associated handler. handler serves the purpose of retaining the image with the specified identifier until no more handlers are registered.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)registerHandler:(id)<em>handler</em> image:(UIImage *)<em>image</em> withIdentifier:(NSString *)<em>identifier</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Register an image with an associated handler. handler serves the purpose of retaining the image with the specified identifier until no more handlers are registered.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKImageCache.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reloadImageAtUrl:" title="reloadImageAtUrl:"></a>
+	<h3 class="subsubtitle method-title">reloadImageAtUrl:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Force reloading an image at the specified url. All the registered delegates will be notified of the newly loaded image using didFetchImage: method.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)reloadImageAtUrl:(NSURL *)<em>url</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Force reloading an image at the specified url. All the registered delegates will be notified of the newly loaded image using didFetchImage: method.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKImageCache.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unregisterDelegate:withImageURL:" title="unregisterDelegate:withImageURL:"></a>
+	<h3 class="subsubtitle method-title">unregisterDelegate:withImageURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Unregisters a delegate for the specified url. When no more delegates are registered, the loading is cancelled if it was still in process and the loaded image is released if it was already fetched.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)unregisterDelegate:(id&lt;CKImageCacheDelegate&gt;)<em>delegate</em> withImageURL:(NSURL *)<em>url</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Unregisters a delegate for the specified url. When no more delegates are registered, the loading is cancelled if it was still in process and the loaded image is released if it was already fetched.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKImageCache.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unregisterHandler:withIdentifier:" title="unregisterHandler:withIdentifier:"></a>
+	<h3 class="subsubtitle method-title">unregisterHandler:withIdentifier:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Unregister the specified handler for the specified identifier. If no more habdler are registered for this idntifier, the image will be released.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)unregisterHandler:(id)<em>handler</em> withIdentifier:(NSString *)<em>identifier</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Unregister the specified handler for the specified identifier. If no more habdler are registered for this idntifier, the image will be released.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKImageCache.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 smorel. All rights reserved. (Last updated: 2015-06-09)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

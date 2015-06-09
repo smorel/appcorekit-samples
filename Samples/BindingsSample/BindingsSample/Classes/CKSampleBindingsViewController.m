@@ -40,7 +40,7 @@ static NSString* kNotifications[3] = { @"Notification1", @"Notification2", @"Not
     ];
     
     //Adding a section with the cell controllers
-    [self addSections:@[ [CKFormSection sectionWithCellControllers:cells] ]];
+    [self addSections:@[ [CKSection sectionWithControllers:cells] ] animated:NO];
     
     //Binding the form title with the model's string property
     [self beginBindingsContextByRemovingPreviousBindings];
@@ -50,22 +50,21 @@ static NSString* kNotifications[3] = { @"Notification1", @"Notification2", @"Not
 
 
 
-- (CKTableViewCellController*)cellControllerForString{
+- (CKStandardContentViewController*)cellControllerForString{
     __unsafe_unretained CKSampleBindingsViewController* bself = self;
     
     __block NSInteger currentValueIndex = -1;
-    CKTableViewCellController* cellController = [CKTableViewCellController cellControllerWithTitle:_(@"kModifyString")
-                                                                                            action:^(CKTableViewCellController *controller) {
+    CKStandardContentViewController* cellController = [CKStandardContentViewController controllerWithTitle:_(@"kModifyString")
+                                                                                                    action:^(CKStandardContentViewController *controller) {
         ++currentValueIndex;
         if(currentValueIndex >= 3) currentValueIndex = 0;
         
         //Setting this property implicitly calls stringChanged on Model and cellController detailText will automatically get set thanks to the binding.
         bself.model.string = kStrings[currentValueIndex];
     }];
-    cellController.cellStyle = CKTableViewCellStyleSubtitle2;
     
     [cellController beginBindingsContextByRemovingPreviousBindings];
-    [self.model bind:@"string" toObject:cellController withKeyPath:@"detailText"];
+    [self.model bind:@"string" toObject:cellController withKeyPath:@"subtitle"];
     [cellController endBindingsContext];
     
     return cellController;
@@ -73,12 +72,12 @@ static NSString* kNotifications[3] = { @"Notification1", @"Notification2", @"Not
 
 
 
-- (CKTableViewCellController*)cellControllerForInteger{
+- (CKStandardContentViewController*)cellControllerForInteger{
     __unsafe_unretained CKSampleBindingsViewController* bself = self;
     
     __block NSInteger currentValueIndex = -1;
-    CKTableViewCellController* cellController = [CKTableViewCellController cellControllerWithTitle:_(@"kModifyInteger")
-                                                                                            action:^(CKTableViewCellController *controller) {
+    CKStandardContentViewController* cellController = [CKStandardContentViewController controllerWithTitle:_(@"kModifyInteger")
+                                                                                            action:^(CKStandardContentViewController *controller) {
         ++currentValueIndex;
         if(currentValueIndex >= 3) currentValueIndex = 0;
         
@@ -87,10 +86,9 @@ static NSString* kNotifications[3] = { @"Notification1", @"Notification2", @"Not
         //This conversion system is based on an informal protocol and can be extended as needed to handle conversions that are not supported by default.
         bself.model.integer = kNumbers[currentValueIndex];
     }];
-    cellController.cellStyle = CKTableViewCellStyleSubtitle2;
     
     [cellController beginBindingsContextByRemovingPreviousBindings];
-    [bself.model bind:@"integer" toObject:cellController withKeyPath:@"detailText"];
+    [bself.model bind:@"integer" toObject:cellController withKeyPath:@"subtitle"];
     [cellController endBindingsContext];
 
     return cellController;
@@ -98,11 +96,11 @@ static NSString* kNotifications[3] = { @"Notification1", @"Notification2", @"Not
 
 
 
-- (CKTableViewCellController*)cellControllerForNotification{
+- (CKStandardContentViewController*)cellControllerForNotification{
     __block NSInteger currentValueIndex = -1;
-    CKTableViewCellController* cellController = [CKTableViewCellController cellControllerWithTitle:_(@"kSendNotification")
+    CKStandardContentViewController* cellController = [CKStandardContentViewController controllerWithTitle:_(@"kSendNotification")
                                                                                           subtitle:_(@"kSendNotificationDefaultSubtitle")
-                                                                                            action:^(CKTableViewCellController *controller) {
+                                                                                            action:^(CKStandardContentViewController *controller) {
         ++currentValueIndex;
         if(currentValueIndex >= 3) currentValueIndex = 0;
         
@@ -111,13 +109,12 @@ static NSString* kNotifications[3] = { @"Notification1", @"Notification2", @"Not
                                                            object:nil
                                                          userInfo:@{ @"message" : str} ];
     }];
-    cellController.cellStyle = CKTableViewCellStyleSubtitle2;
     
-    __unsafe_unretained CKTableViewCellController* bCellController = cellController;
+    __unsafe_unretained CKStandardContentViewController* bCellController = cellController;
     
     [cellController beginBindingsContextByRemovingPreviousBindings];
     [NSNotificationCenter bindNotificationName:@"CustomNotif" withBlock:^(NSNotification *notification) {
-        bCellController.detailText = [[notification userInfo]objectForKey:@"message"];
+        bCellController.subtitle = [[notification userInfo]objectForKey:@"message"];
     }];
     [cellController endBindingsContext];
     
@@ -126,21 +123,20 @@ static NSString* kNotifications[3] = { @"Notification1", @"Notification2", @"Not
 
 
 
-- (CKTableViewCellController*)cellControllerForDate{
+- (CKStandardContentViewController*)cellControllerForDate{
     __unsafe_unretained CKSampleBindingsViewController* bself = self;
     
-    CKTableViewCellController* cellController = [CKTableViewCellController cellControllerWithTitle:_(@"kModifyDate")
-                                                                                            action:^(CKTableViewCellController *controller) {
+    CKStandardContentViewController* cellController = [CKStandardContentViewController controllerWithTitle:_(@"kModifyDate")
+                                                                                            action:^(CKStandardContentViewController *controller) {
         NSTimeInterval randomInterval = ((float)rand() / (float)RAND_MAX) * 99999999;
         bself.model.date = [NSDate dateWithTimeIntervalSince1970:randomInterval];
     }];
-    cellController.cellStyle = CKTableViewCellStyleSubtitle2;
     
-    __block CKTableViewCellController* bCellController = cellController;
+    __block CKStandardContentViewController* bCellController = cellController;
     [cellController beginBindingsContextByRemovingPreviousBindings];
     [self.model bind:@"date" executeBlockImmediatly:YES withBlock:^(id value) {
         NSString* str = [bself.model.date stringWithDateFormat: @"dd MMMM YYYY"];
-        bCellController.detailText = str;
+        bCellController.subtitle = str;
     }];
     [cellController endBindingsContext];
 
@@ -149,10 +145,9 @@ static NSString* kNotifications[3] = { @"Notification1", @"Notification2", @"Not
 
 
 
-- (CKTableViewCellController*)cellControllerForContentOffset{
-    CKTableViewCellController* cellController = [CKTableViewCellController cellControllerWithTitle:_(@"kTableContentOffset")
+- (CKStandardContentViewController*)cellControllerForContentOffset{
+    CKStandardContentViewController* cellController = [CKStandardContentViewController controllerWithTitle:_(@"kTableContentOffset")
                                                                                             action:nil];
-    cellController.cellStyle = CKTableViewCellStyleSubtitle2;
     
     [cellController beginBindingsContextByRemovingPreviousBindings];
     
@@ -160,7 +155,7 @@ static NSString* kNotifications[3] = { @"Notification1", @"Notification2", @"Not
     //It will get created in form's viewDidLoad method when the form gets displayed in a container controller.
     //By this way, we ensure that if the tableView or if the contentOffset of the tableView change, the detailText of the cell controller will get updated.
     
-    [self bind:@"tableView.contentOffset" toObject:cellController withKeyPath:@"detailText"];
+    [self bind:@"tableView.contentOffset" toObject:cellController withKeyPath:@"subtitle"];
     [cellController endBindingsContext];
     
     return cellController;
@@ -168,7 +163,7 @@ static NSString* kNotifications[3] = { @"Notification1", @"Notification2", @"Not
 
 
 
-- (CKTableViewCellController*)cellControllerForButtons{
+- (CKReusableViewController*)cellControllerForButtons{
     
     //Here we set the name of the cell controller.
     //The name is part of the reuse identifier. That lets you choose wich cell could be reused.
@@ -176,27 +171,32 @@ static NSString* kNotifications[3] = { @"Notification1", @"Notification2", @"Not
     //But if you experience weird reuse behaviour, ensure to set the name to cell controllers to make them having a unique reuse identifier!
     //The name is also usefull to target specifically cell controller in stylesheets.
     
-    CKTableViewCellController* cellController = [CKTableViewCellController cellControllerWithName:@"ButtonsCell"];
+    CKReusableViewController* cellController = [CKReusableViewController controllerWithName:@"ButtonsCell"];
     
-    [cellController setInitBlock:^(CKTableViewCellController *controller, UITableViewCell *cell) {
-        CGFloat buttonWidth = (cell.contentView.width - (4 * 10)/*Margins*/) / 3 ;
+    cellController.viewDidLoadBlock = ^(UIViewController* controller){
+        CKHorizontalBoxLayout* hBox = [[CKHorizontalBoxLayout alloc]init];
+        hBox.flexibleSize = YES;
+        hBox.padding = UIEdgeInsetsMake(10, 10, 10, 10);
+        
+        NSMutableArray* buttons = [NSMutableArray array];
+        
         for(int i =0;i<3;++i){
             UIButton* button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
             button.name = [NSString stringWithFormat:@"Button%d",i];
             [button setTitle:button.name forState:UIControlStateNormal];
             
-            button.width = buttonWidth;
-            button.x = 10 + (i * (buttonWidth + 10));
-            button.height = cell.contentView.height - (2 * 10) /*Margins*/;
-            button.y = 10;
+            if(i >= 1){
+                button.marginLeft = 10;
+            }
             
-            button.autoresizingMask = UIViewAutoresizingFlexibleSize;
-            
-            [cell.contentView addSubview:button];
+            [buttons addObject:button];
         }
-    }];
+        
+        hBox.layoutBoxes = [CKArrayCollection collectionWithObjectsFromArray:buttons];
+        controller.view.layoutBoxes = [CKArrayCollection collectionWithObjectsFromArray:@[hBox]];
+    };
     
-    [cellController setSetupBlock:^(CKTableViewCellController *controller, UITableViewCell *cell) {
+    cellController.viewWillAppearBlock = ^(UIViewController* controller, BOOL animated){
         
         //Here we open the context on the table view cell as we directly bind views contained by the cell.
         //This is important because the cell is reused. By this way, the next time it is reused, another instance of cell controller named "ButtonsCell"
@@ -204,10 +204,10 @@ static NSString* kNotifications[3] = { @"Notification1", @"Notification2", @"Not
         //that means the bindings that had been setup on the buttons by the previous controller will get flushed and replaced by
         //the new one establishing the connection between the cell subviews and the new cell controller.
         
-        [cell beginBindingsContextByRemovingPreviousBindings];
+        [controller.view beginBindingsContextByRemovingPreviousBindings];
         for(int i=0;i<3;++i){
             NSString* name = [NSString stringWithFormat:@"Button%d",i];
-            UIButton* button = [cell.contentView viewWithKeyPath:name];
+            UIButton* button = [controller.view viewWithKeyPath:name];
             
             [button bindEvent:UIControlEventTouchUpInside withBlock:^{
                 NSString* message = [NSString stringWithFormat:_(@"kAlertViewMessage_UIControlBinding"),name];
@@ -216,8 +216,8 @@ static NSString* kNotifications[3] = { @"Notification1", @"Notification2", @"Not
                 [alert show];
             }];
         }
-        [cell endBindingsContext];
-    }];
+        [controller.view endBindingsContext];
+    };
 
     
     return cellController;

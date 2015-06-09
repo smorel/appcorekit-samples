@@ -1,0 +1,2039 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CKLayoutBoxProtocol Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AppCoreKit </a></h1>
+				<a id="developerHome" href="../index.html">smorel</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CKLayoutBoxProtocol Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/containerLayoutBox">&nbsp;&nbsp;&nbsp;&nbsp;containerLayoutBox</option>
+	
+	<option value="//api/name/containerLayoutView">&nbsp;&nbsp;&nbsp;&nbsp;containerLayoutView</option>
+	
+	<option value="//api/name/containerViewController">&nbsp;&nbsp;&nbsp;&nbsp;containerViewController</option>
+	
+	<option value="//api/name/fixedHeight">&nbsp;&nbsp;&nbsp;&nbsp;fixedHeight</option>
+	
+	<option value="//api/name/fixedSize">&nbsp;&nbsp;&nbsp;&nbsp;fixedSize</option>
+	
+	<option value="//api/name/fixedWidth">&nbsp;&nbsp;&nbsp;&nbsp;fixedWidth</option>
+	
+	<option value="//api/name/flexibleHeight">&nbsp;&nbsp;&nbsp;&nbsp;flexibleHeight</option>
+	
+	<option value="//api/name/flexibleSize">&nbsp;&nbsp;&nbsp;&nbsp;flexibleSize</option>
+	
+	<option value="//api/name/flexibleWidth">&nbsp;&nbsp;&nbsp;&nbsp;flexibleWidth</option>
+	
+	<option value="//api/name/frame">&nbsp;&nbsp;&nbsp;&nbsp;frame</option>
+	
+	<option value="//api/name/hidden">&nbsp;&nbsp;&nbsp;&nbsp;hidden</option>
+	
+	<option value="//api/name/invalidatedLayoutBlock">&nbsp;&nbsp;&nbsp;&nbsp;invalidatedLayoutBlock</option>
+	
+	<option value="//api/name/lastComputedSize">&nbsp;&nbsp;&nbsp;&nbsp;lastComputedSize</option>
+	
+	<option value="//api/name/layoutBoxes">&nbsp;&nbsp;&nbsp;&nbsp;layoutBoxes</option>
+	
+	<option value="//api/name/marginBottom">&nbsp;&nbsp;&nbsp;&nbsp;marginBottom</option>
+	
+	<option value="//api/name/marginLeft">&nbsp;&nbsp;&nbsp;&nbsp;marginLeft</option>
+	
+	<option value="//api/name/marginRight">&nbsp;&nbsp;&nbsp;&nbsp;marginRight</option>
+	
+	<option value="//api/name/marginTop">&nbsp;&nbsp;&nbsp;&nbsp;marginTop</option>
+	
+	<option value="//api/name/margins">&nbsp;&nbsp;&nbsp;&nbsp;margins</option>
+	
+	<option value="//api/name/maximumHeight">&nbsp;&nbsp;&nbsp;&nbsp;maximumHeight</option>
+	
+	<option value="//api/name/maximumSize">&nbsp;&nbsp;&nbsp;&nbsp;maximumSize</option>
+	
+	<option value="//api/name/maximumWidth">&nbsp;&nbsp;&nbsp;&nbsp;maximumWidth</option>
+	
+	<option value="//api/name/minimumHeight">&nbsp;&nbsp;&nbsp;&nbsp;minimumHeight</option>
+	
+	<option value="//api/name/minimumSize">&nbsp;&nbsp;&nbsp;&nbsp;minimumSize</option>
+	
+	<option value="//api/name/minimumWidth">&nbsp;&nbsp;&nbsp;&nbsp;minimumWidth</option>
+	
+	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
+	
+	<option value="//api/name/padding">&nbsp;&nbsp;&nbsp;&nbsp;padding</option>
+	
+	<option value="//api/name/paddingBottom">&nbsp;&nbsp;&nbsp;&nbsp;paddingBottom</option>
+	
+	<option value="//api/name/paddingLeft">&nbsp;&nbsp;&nbsp;&nbsp;paddingLeft</option>
+	
+	<option value="//api/name/paddingRight">&nbsp;&nbsp;&nbsp;&nbsp;paddingRight</option>
+	
+	<option value="//api/name/paddingTop">&nbsp;&nbsp;&nbsp;&nbsp;paddingTop</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addLayoutBox:">&nbsp;&nbsp;&nbsp;&nbsp;- addLayoutBox:</option>
+	
+	<option value="//api/name/insertLayoutBox:atIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- insertLayoutBox:atIndex:</option>
+	
+	<option value="//api/name/invalidateLayout">&nbsp;&nbsp;&nbsp;&nbsp;- invalidateLayout</option>
+	
+	<option value="//api/name/performLayoutWithFrame:">&nbsp;&nbsp;&nbsp;&nbsp;- performLayoutWithFrame:</option>
+	
+	<option value="//api/name/preferredSizeConstraintToSize:">&nbsp;&nbsp;&nbsp;&nbsp;- preferredSizeConstraintToSize:</option>
+	
+	<option value="//api/name/removeAllLayoutBoxes">&nbsp;&nbsp;&nbsp;&nbsp;- removeAllLayoutBoxes</option>
+	
+	<option value="//api/name/removeLayoutBox:">&nbsp;&nbsp;&nbsp;&nbsp;- removeLayoutBox:</option>
+	
+	<option value="//api/name/rootLayoutBox">&nbsp;&nbsp;&nbsp;&nbsp;- rootLayoutBox</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing a layout at runtime">Accessing a layout at runtime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring a LayoutBox’s Visual Appearance">Configuring a LayoutBox’s Visual Appearance</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing the parent UIView and LayoutBox">Accessing the parent UIView and LayoutBox</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Performing the layout">Performing the layout</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/containerLayoutBox">containerLayoutBox</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/containerLayoutView">containerLayoutView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/containerViewController">containerViewController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fixedHeight">fixedHeight</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fixedSize">fixedSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fixedWidth">fixedWidth</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flexibleHeight">flexibleHeight</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flexibleSize">flexibleSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flexibleWidth">flexibleWidth</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/frame">frame</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hidden">hidden</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/invalidatedLayoutBlock">invalidatedLayoutBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lastComputedSize">lastComputedSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/layoutBoxes">layoutBoxes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/marginBottom">marginBottom</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/marginLeft">marginLeft</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/marginRight">marginRight</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/marginTop">marginTop</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/margins">margins</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maximumHeight">maximumHeight</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maximumSize">maximumSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maximumWidth">maximumWidth</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minimumHeight">minimumHeight</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minimumSize">minimumSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minimumWidth">minimumWidth</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/padding">padding</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/paddingBottom">paddingBottom</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/paddingLeft">paddingLeft</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/paddingRight">paddingRight</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/paddingTop">paddingTop</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addLayoutBox:">addLayoutBox:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertLayoutBox:atIndex:">insertLayoutBox:atIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/invalidateLayout">invalidateLayout</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performLayoutWithFrame:">performLayoutWithFrame:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preferredSizeConstraintToSize:">preferredSizeConstraintToSize:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeAllLayoutBoxes">removeAllLayoutBoxes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeLayoutBox:">removeLayoutBox:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rootLayoutBox">rootLayoutBox</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CKLayoutBoxProtocol Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CKLayoutBoxProtocol Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CKLayoutBoxProtocol.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Accessing a layout at runtime" name="task_Accessing a layout at runtime"></a>
+						<h3 class="subsubtitle task-title">Accessing a layout at runtime</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+						
+						<a title="Configuring a LayoutBox’s Visual Appearance" name="task_Configuring a LayoutBox’s Visual Appearance"></a>
+						<h3 class="subsubtitle task-title">Configuring a LayoutBox’s Visual Appearance</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/layoutBoxes">&nbsp;&nbsp;layoutBoxes</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addLayoutBox:">&ndash;&nbsp;addLayoutBox:</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insertLayoutBox:atIndex:">&ndash;&nbsp;insertLayoutBox:atIndex:</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeLayoutBox:">&ndash;&nbsp;removeLayoutBox:</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeAllLayoutBoxes">&ndash;&nbsp;removeAllLayoutBoxes</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maximumSize">&nbsp;&nbsp;maximumSize</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maximumWidth">&nbsp;&nbsp;maximumWidth</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maximumHeight">&nbsp;&nbsp;maximumHeight</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/minimumSize">&nbsp;&nbsp;minimumSize</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/minimumWidth">&nbsp;&nbsp;minimumWidth</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/minimumHeight">&nbsp;&nbsp;minimumHeight</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fixedSize">&nbsp;&nbsp;fixedSize</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fixedWidth">&nbsp;&nbsp;fixedWidth</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fixedHeight">&nbsp;&nbsp;fixedHeight</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flexibleSize">&nbsp;&nbsp;flexibleSize</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flexibleWidth">&nbsp;&nbsp;flexibleWidth</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flexibleHeight">&nbsp;&nbsp;flexibleHeight</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/margins">&nbsp;&nbsp;margins</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/marginLeft">&nbsp;&nbsp;marginLeft</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/marginTop">&nbsp;&nbsp;marginTop</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/marginBottom">&nbsp;&nbsp;marginBottom</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/marginRight">&nbsp;&nbsp;marginRight</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/padding">&nbsp;&nbsp;padding</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/paddingLeft">&nbsp;&nbsp;paddingLeft</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/paddingTop">&nbsp;&nbsp;paddingTop</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/paddingBottom">&nbsp;&nbsp;paddingBottom</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/paddingRight">&nbsp;&nbsp;paddingRight</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hidden">&nbsp;&nbsp;hidden</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+						
+						<a title="Accessing the parent UIView and LayoutBox" name="task_Accessing the parent UIView and LayoutBox"></a>
+						<h3 class="subsubtitle task-title">Accessing the parent UIView and LayoutBox</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/containerLayoutBox">&nbsp;&nbsp;containerLayoutBox</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/containerLayoutView">&nbsp;&nbsp;containerLayoutView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/containerViewController">&nbsp;&nbsp;containerViewController</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rootLayoutBox">&ndash;&nbsp;rootLayoutBox</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+						
+						<a title="Performing the layout" name="task_Performing the layout"></a>
+						<h3 class="subsubtitle task-title">Performing the layout</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/frame">&nbsp;&nbsp;frame</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preferredSizeConstraintToSize:">&ndash;&nbsp;preferredSizeConstraintToSize:</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performLayoutWithFrame:">&ndash;&nbsp;performLayoutWithFrame:</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/invalidateLayout">&ndash;&nbsp;invalidateLayout</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/invalidatedLayoutBlock">&nbsp;&nbsp;invalidatedLayoutBlock</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lastComputedSize">&nbsp;&nbsp;lastComputedSize</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/containerLayoutBox" title="containerLayoutBox"></a>
+	<h3 class="subsubtitle method-title">containerLayoutBox</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The layout box containing the current layout box.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSObject&lt;CKLayoutBoxProtocol&gt; *containerLayoutBox</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The layout box containing the current layout box.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/containerLayoutView" title="containerLayoutView"></a>
+	<h3 class="subsubtitle method-title">containerLayoutView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The UIView containing the current layout box.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) UIView *containerLayoutView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The UIView containing the current layout box.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/containerViewController" title="containerViewController"></a>
+	<h3 class="subsubtitle method-title">containerViewController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The UIView containing the current layout box.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) UIViewController *containerViewController</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The UIView containing the current layout box.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fixedHeight" title="fixedHeight"></a>
+	<h3 class="subsubtitle method-title">fixedHeight</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat fixedHeight</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fixedSize" title="fixedSize"></a>
+	<h3 class="subsubtitle method-title">fixedSize</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGSize fixedSize</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fixedWidth" title="fixedWidth"></a>
+	<h3 class="subsubtitle method-title">fixedWidth</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat fixedWidth</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/flexibleHeight" title="flexibleHeight"></a>
+	<h3 class="subsubtitle method-title">flexibleHeight</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL flexibleHeight</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/flexibleSize" title="flexibleSize"></a>
+	<h3 class="subsubtitle method-title">flexibleSize</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL flexibleSize</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/flexibleWidth" title="flexibleWidth"></a>
+	<h3 class="subsubtitle method-title">flexibleWidth</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL flexibleWidth</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/frame" title="frame"></a>
+	<h3 class="subsubtitle method-title">frame</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This returns the current frame of a layout box. Setting or animating this value in a layouted hierachy will have an unknown effect and will be ignore as soon as layoutSubviews will get called in one of the layouted UIView.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGRect frame</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This returns the current frame of a layout box. Setting or animating this value in a layouted hierachy will have an unknown effect and will be ignore as soon as layoutSubviews will get called in one of the layouted UIView.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hidden" title="hidden"></a>
+	<h3 class="subsubtitle method-title">hidden</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, getter=isHidden) BOOL hidden</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/invalidatedLayoutBlock" title="invalidatedLayoutBlock"></a>
+	<h3 class="subsubtitle method-title">invalidatedLayoutBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This block gets called when parts of the layout has been invalidated.
+You can implement this block to get notified that the global size of the layouted UIView could change (For example a tableViewCell&rsquo;s contentView).
+This block must be set on the root view contaning <a href="#//api/name/layoutBoxes">layoutBoxes</a>. The subViews of subBoxes will not call this for performance reasons.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) CKLayoutBoxInvalidatedBlock invalidatedLayoutBlock</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This block gets called when parts of the layout has been invalidated.
+You can implement this block to get notified that the global size of the layouted UIView could change (For example a tableViewCell&rsquo;s contentView).
+This block must be set on the root view contaning <a href="#//api/name/layoutBoxes">layoutBoxes</a>. The subViews of subBoxes will not call this for performance reasons.</p>
+
+<p>The signature of this block is:
+     void(^)(NSObject<CKLayoutBoxProtocol>* layoutBox);</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lastComputedSize" title="lastComputedSize"></a>
+	<h3 class="subsubtitle method-title">lastComputedSize</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>PRIVATE</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readwrite) CGSize lastComputedSize</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>PRIVATE</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/layoutBoxes" title="layoutBoxes"></a>
+	<h3 class="subsubtitle method-title">layoutBoxes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The children layoutBox that will get layouted by the current layout box.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) CKArrayCollection *layoutBoxes</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The children layoutBox that will get layouted by the current layout box.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/marginBottom" title="marginBottom"></a>
+	<h3 class="subsubtitle method-title">marginBottom</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat marginBottom</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/marginLeft" title="marginLeft"></a>
+	<h3 class="subsubtitle method-title">marginLeft</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat marginLeft</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/marginRight" title="marginRight"></a>
+	<h3 class="subsubtitle method-title">marginRight</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat marginRight</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/marginTop" title="marginTop"></a>
+	<h3 class="subsubtitle method-title">marginTop</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat marginTop</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/margins" title="margins"></a>
+	<h3 class="subsubtitle method-title">margins</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) UIEdgeInsets margins</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maximumHeight" title="maximumHeight"></a>
+	<h3 class="subsubtitle method-title">maximumHeight</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat maximumHeight</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maximumSize" title="maximumSize"></a>
+	<h3 class="subsubtitle method-title">maximumSize</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGSize maximumSize</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maximumWidth" title="maximumWidth"></a>
+	<h3 class="subsubtitle method-title">maximumWidth</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat maximumWidth</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/minimumHeight" title="minimumHeight"></a>
+	<h3 class="subsubtitle method-title">minimumHeight</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat minimumHeight</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/minimumSize" title="minimumSize"></a>
+	<h3 class="subsubtitle method-title">minimumSize</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGSize minimumSize</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/minimumWidth" title="minimumWidth"></a>
+	<h3 class="subsubtitle method-title">minimumWidth</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat minimumWidth</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="subsubtitle method-title">name</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The name of the layout to acces it using <a href="#//api/name/layoutWithName:">layoutWithName:</a> or <a href="#//api/name/layoutWithKeyPath:">layoutWithKeyPath:</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *name</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The name of the layout to acces it using <a href="#//api/name/layoutWithName:">layoutWithName:</a> or <a href="#//api/name/layoutWithKeyPath:">layoutWithKeyPath:</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/padding" title="padding"></a>
+	<h3 class="subsubtitle method-title">padding</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) UIEdgeInsets padding</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/paddingBottom" title="paddingBottom"></a>
+	<h3 class="subsubtitle method-title">paddingBottom</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat paddingBottom</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/paddingLeft" title="paddingLeft"></a>
+	<h3 class="subsubtitle method-title">paddingLeft</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat paddingLeft</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/paddingRight" title="paddingRight"></a>
+	<h3 class="subsubtitle method-title">paddingRight</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat paddingRight</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/paddingTop" title="paddingTop"></a>
+	<h3 class="subsubtitle method-title">paddingTop</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat paddingTop</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addLayoutBox:" title="addLayoutBox:"></a>
+	<h3 class="subsubtitle method-title">addLayoutBox:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addLayoutBox:(id&lt;CKLayoutBoxProtocol&gt;)<em>box</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insertLayoutBox:atIndex:" title="insertLayoutBox:atIndex:"></a>
+	<h3 class="subsubtitle method-title">insertLayoutBox:atIndex:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)insertLayoutBox:(id&lt;CKLayoutBoxProtocol&gt;)<em>box</em> atIndex:(NSInteger)<em>index</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/invalidateLayout" title="invalidateLayout"></a>
+	<h3 class="subsubtitle method-title">invalidateLayout</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)invalidateLayout</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performLayoutWithFrame:" title="performLayoutWithFrame:"></a>
+	<h3 class="subsubtitle method-title">performLayoutWithFrame:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method performs the layout on the box and its sub boxes</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)performLayoutWithFrame:(CGRect)<em>frame</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method performs the layout on the box and its sub boxes</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preferredSizeConstraintToSize:" title="preferredSizeConstraintToSize:"></a>
+	<h3 class="subsubtitle method-title">preferredSizeConstraintToSize:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method computes the prefered size for the layout box including <a href="#//api/name/padding">padding</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGSize)preferredSizeConstraintToSize:(CGSize)<em>size</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method computes the prefered size for the layout box including <a href="#//api/name/padding">padding</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeAllLayoutBoxes" title="removeAllLayoutBoxes"></a>
+	<h3 class="subsubtitle method-title">removeAllLayoutBoxes</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeAllLayoutBoxes</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeLayoutBox:" title="removeLayoutBox:"></a>
+	<h3 class="subsubtitle method-title">removeLayoutBox:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeLayoutBox:(id&lt;CKLayoutBoxProtocol&gt;)<em>box</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rootLayoutBox" title="rootLayoutBox"></a>
+	<h3 class="subsubtitle method-title">rootLayoutBox</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The root layout box of the hierarchy.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSObject&lt;CKLayoutBoxProtocol&gt; *)rootLayoutBox</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The root layout box of the hierarchy.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKLayoutBoxProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 smorel. All rights reserved. (Last updated: 2015-06-09)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

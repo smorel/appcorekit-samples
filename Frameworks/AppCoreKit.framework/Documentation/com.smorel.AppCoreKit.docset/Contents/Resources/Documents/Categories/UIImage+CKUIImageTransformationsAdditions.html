@@ -1,0 +1,883 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>UIImage(CKUIImageTransformationsAdditions) Category Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AppCoreKit </a></h1>
+				<a id="developerHome" href="../index.html">smorel</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">UIImage(CKUIImageTransformationsAdditions) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/colorAtPoint:data:imageSize:">&nbsp;&nbsp;&nbsp;&nbsp;+ colorAtPoint:data:imageSize:</option>
+	
+	<option value="//api/name/filledImageWithColor:path:size:">&nbsp;&nbsp;&nbsp;&nbsp;+ filledImageWithColor:path:size:</option>
+	
+	<option value="//api/name/linearGradientImageWithColors:locations:startPoint:endPoint:size:">&nbsp;&nbsp;&nbsp;&nbsp;+ linearGradientImageWithColors:locations:startPoint:endPoint:size:</option>
+	
+	<option value="//api/name/maskImageWithEvenOddPath:size:">&nbsp;&nbsp;&nbsp;&nbsp;+ maskImageWithEvenOddPath:size:</option>
+	
+	<option value="//api/name/maskImageWithPath:size:">&nbsp;&nbsp;&nbsp;&nbsp;+ maskImageWithPath:size:</option>
+	
+	<option value="//api/name/maskImageWithPath:size:drawingMode:">&nbsp;&nbsp;&nbsp;&nbsp;+ maskImageWithPath:size:drawingMode:</option>
+	
+	<option value="//api/name/maskImageWithStrokePath:width:size:">&nbsp;&nbsp;&nbsp;&nbsp;+ maskImageWithStrokePath:width:size:</option>
+	
+	<option value="//api/name/radialGradientImageWithRadius:startColor:endColor:options:">&nbsp;&nbsp;&nbsp;&nbsp;+ radialGradientImageWithRadius:startColor:endColor:options:</option>
+	
+	<option value="//api/name/strokePathImageWithColor:path:width:size:">&nbsp;&nbsp;&nbsp;&nbsp;+ strokePathImageWithColor:path:width:size:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/imageByAddingBorderWithColor:cornerRadius:">&nbsp;&nbsp;&nbsp;&nbsp;- imageByAddingBorderWithColor:cornerRadius:</option>
+	
+	<option value="//api/name/imageByRemovingLetterBoxing">&nbsp;&nbsp;&nbsp;&nbsp;- imageByRemovingLetterBoxing</option>
+	
+	<option value="//api/name/imageByRemovingLetterBoxingWithColors:precision:tolerance:">&nbsp;&nbsp;&nbsp;&nbsp;- imageByRemovingLetterBoxingWithColors:precision:tolerance:</option>
+	
+	<option value="//api/name/imageInRect:">&nbsp;&nbsp;&nbsp;&nbsp;- imageInRect:</option>
+	
+	<option value="//api/name/imageThatFits:crop:">&nbsp;&nbsp;&nbsp;&nbsp;- imageThatFits:crop:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Transforming an Image">Transforming an Image</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/colorAtPoint:data:imageSize:">colorAtPoint:data:imageSize:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/filledImageWithColor:path:size:">filledImageWithColor:path:size:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/linearGradientImageWithColors:locations:startPoint:endPoint:size:">linearGradientImageWithColors:locations:startPoint:endPoint:size:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maskImageWithEvenOddPath:size:">maskImageWithEvenOddPath:size:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maskImageWithPath:size:">maskImageWithPath:size:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maskImageWithPath:size:drawingMode:">maskImageWithPath:size:drawingMode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maskImageWithStrokePath:width:size:">maskImageWithStrokePath:width:size:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/radialGradientImageWithRadius:startColor:endColor:options:">radialGradientImageWithRadius:startColor:endColor:options:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/strokePathImageWithColor:path:width:size:">strokePathImageWithColor:path:width:size:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imageByAddingBorderWithColor:cornerRadius:">imageByAddingBorderWithColor:cornerRadius:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imageByRemovingLetterBoxing">imageByRemovingLetterBoxing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imageByRemovingLetterBoxingWithColors:precision:tolerance:">imageByRemovingLetterBoxingWithColors:precision:tolerance:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imageInRect:">imageInRect:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imageThatFits:crop:">imageThatFits:crop:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="UIImage(CKUIImageTransformationsAdditions) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">UIImage(CKUIImageTransformationsAdditions) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">UIImage+Transformations.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Transforming an Image" name="task_Transforming an Image"></a>
+						
+<h3 class="subsubtitle task-title">Transforming an Image</h3>
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imageThatFits:crop:">&ndash;&nbsp;imageThatFits:crop:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imageByAddingBorderWithColor:cornerRadius:">&ndash;&nbsp;imageByAddingBorderWithColor:cornerRadius:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imageInRect:">&ndash;&nbsp;imageInRect:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imageByRemovingLetterBoxingWithColors:precision:tolerance:">&ndash;&nbsp;imageByRemovingLetterBoxingWithColors:precision:tolerance:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imageByRemovingLetterBoxing">&ndash;&nbsp;imageByRemovingLetterBoxing</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/colorAtPoint:data:imageSize:">+&nbsp;colorAtPoint:data:imageSize:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/linearGradientImageWithColors:locations:startPoint:endPoint:size:">+&nbsp;linearGradientImageWithColors:locations:startPoint:endPoint:size:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/radialGradientImageWithRadius:startColor:endColor:options:">+&nbsp;radialGradientImageWithRadius:startColor:endColor:options:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maskImageWithPath:size:">+&nbsp;maskImageWithPath:size:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maskImageWithEvenOddPath:size:">+&nbsp;maskImageWithEvenOddPath:size:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maskImageWithPath:size:drawingMode:">+&nbsp;maskImageWithPath:size:drawingMode:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maskImageWithStrokePath:width:size:">+&nbsp;maskImageWithStrokePath:width:size:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/filledImageWithColor:path:size:">+&nbsp;filledImageWithColor:path:size:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/strokePathImageWithColor:path:width:size:">+&nbsp;strokePathImageWithColor:path:width:size:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/colorAtPoint:data:imageSize:" title="colorAtPoint:data:imageSize:"></a>
+	<h3 class="subsubtitle method-title">colorAtPoint:data:imageSize:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (UIColor *)colorAtPoint:(CGPoint)<em>pixelPoint</em> data:(const UInt8 *)<em>data</em> imageSize:(CGSize)<em>imageSize</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIImage+Transformations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/filledImageWithColor:path:size:" title="filledImageWithColor:path:size:"></a>
+	<h3 class="subsubtitle method-title">filledImageWithColor:path:size:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (UIImage *)filledImageWithColor:(UIColor *)<em>color</em> path:(CGPathRef)<em>path</em> size:(CGSize)<em>size</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIImage+Transformations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/linearGradientImageWithColors:locations:startPoint:endPoint:size:" title="linearGradientImageWithColors:locations:startPoint:endPoint:size:"></a>
+	<h3 class="subsubtitle method-title">linearGradientImageWithColors:locations:startPoint:endPoint:size:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (UIImage *)linearGradientImageWithColors:(NSArray *)<em>colors</em> locations:(NSArray *)<em>locations</em> startPoint:(CGPoint)<em>startPoint</em> endPoint:(CGPoint)<em>endPoint</em> size:(CGSize)<em>size</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIImage+Transformations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maskImageWithEvenOddPath:size:" title="maskImageWithEvenOddPath:size:"></a>
+	<h3 class="subsubtitle method-title">maskImageWithEvenOddPath:size:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (UIImage *)maskImageWithEvenOddPath:(CGPathRef)<em>path</em> size:(CGSize)<em>size</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIImage+Transformations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maskImageWithPath:size:" title="maskImageWithPath:size:"></a>
+	<h3 class="subsubtitle method-title">maskImageWithPath:size:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (UIImage *)maskImageWithPath:(CGPathRef)<em>path</em> size:(CGSize)<em>size</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIImage+Transformations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maskImageWithPath:size:drawingMode:" title="maskImageWithPath:size:drawingMode:"></a>
+	<h3 class="subsubtitle method-title">maskImageWithPath:size:drawingMode:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (UIImage *)maskImageWithPath:(CGPathRef)<em>path</em> size:(CGSize)<em>size</em> drawingMode:(CGPathDrawingMode)<em>drawingMode</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIImage+Transformations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maskImageWithStrokePath:width:size:" title="maskImageWithStrokePath:width:size:"></a>
+	<h3 class="subsubtitle method-title">maskImageWithStrokePath:width:size:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (UIImage *)maskImageWithStrokePath:(CGPathRef)<em>path</em> width:(CGFloat)<em>width</em> size:(CGSize)<em>size</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIImage+Transformations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/radialGradientImageWithRadius:startColor:endColor:options:" title="radialGradientImageWithRadius:startColor:endColor:options:"></a>
+	<h3 class="subsubtitle method-title">radialGradientImageWithRadius:startColor:endColor:options:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (UIImage *)radialGradientImageWithRadius:(CGFloat)<em>radius</em> startColor:(UIColor *)<em>startColor</em> endColor:(UIColor *)<em>endColor</em> options:(CGGradientDrawingOptions)<em>options</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIImage+Transformations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/strokePathImageWithColor:path:width:size:" title="strokePathImageWithColor:path:width:size:"></a>
+	<h3 class="subsubtitle method-title">strokePathImageWithColor:path:width:size:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (UIImage *)strokePathImageWithColor:(UIColor *)<em>color</em> path:(CGPathRef)<em>path</em> width:(CGFloat)<em>width</em> size:(CGSize)<em>size</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIImage+Transformations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/imageByAddingBorderWithColor:cornerRadius:" title="imageByAddingBorderWithColor:cornerRadius:"></a>
+	<h3 class="subsubtitle method-title">imageByAddingBorderWithColor:cornerRadius:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIImage *)imageByAddingBorderWithColor:(UIColor *)<em>color</em> cornerRadius:(CGFloat)<em>cornerRadius</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIImage+Transformations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/imageByRemovingLetterBoxing" title="imageByRemovingLetterBoxing"></a>
+	<h3 class="subsubtitle method-title">imageByRemovingLetterBoxing</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Calling imageByRemovingLetterBoxingWithColors:precision:tolerance with default usual parameters from social media images:
+potentialLetterBoxingColors is black or white
+precision is 20
+tolerance is 0.2</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIImage *)imageByRemovingLetterBoxing</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Calling imageByRemovingLetterBoxingWithColors:precision:tolerance with default usual parameters from social media images:
+potentialLetterBoxingColors is black or white
+precision is 20
+tolerance is 0.2</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIImage+Transformations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/imageByRemovingLetterBoxingWithColors:precision:tolerance:" title="imageByRemovingLetterBoxingWithColors:precision:tolerance:"></a>
+	<h3 class="subsubtitle method-title">imageByRemovingLetterBoxingWithColors:precision:tolerance:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Due to compression, the letterboxes can have slightly changing colors. Tolerance helps going through this noise.
+A tolerance of 0.2 is generally correct for white letter boxing in jpg images.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIImage *)imageByRemovingLetterBoxingWithColors:(NSArray *)<em>potentialLetterBoxingColors</em> precision:(NSInteger)<em>precision</em> tolerance:(CGFloat)<em>tolerance</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Due to compression, the letterboxes can have slightly changing colors. Tolerance helps going through this noise.
+A tolerance of 0.2 is generally correct for white letter boxing in jpg images.</p>
+
+<p>Precision is the number of pixels per row that will be analysed to decide if we should remove a line. 10 for example.</p>
+
+<p>potentialLetterBoxingColors is a list of colors we know should be the letter box. generally white or black.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIImage+Transformations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/imageInRect:" title="imageInRect:"></a>
+	<h3 class="subsubtitle method-title">imageInRect:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIImage *)imageInRect:(CGRect)<em>rect</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIImage+Transformations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/imageThatFits:crop:" title="imageThatFits:crop:"></a>
+	<h3 class="subsubtitle method-title">imageThatFits:crop:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIImage *)imageThatFits:(CGSize)<em>size</em> crop:(BOOL)<em>crop</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIImage+Transformations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 smorel. All rights reserved. (Last updated: 2015-06-09)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

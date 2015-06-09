@@ -1,0 +1,17 @@
+{
+
+    "@import" : [
+        ___VARIABLE_stylesheetImports___
+    ],
+
+    "___FILEBASENAMEASIDENTIFIER___" : {
+   
+        "view" : {
+            "layout" : {
+                "UIView" : "MainView"
+            }
+        }
+        
+    }
+
+}

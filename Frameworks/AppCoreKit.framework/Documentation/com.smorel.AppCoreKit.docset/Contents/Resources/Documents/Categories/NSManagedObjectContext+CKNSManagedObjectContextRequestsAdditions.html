@@ -1,0 +1,650 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>NSManagedObjectContext(CKNSManagedObjectContextRequestsAdditions) Category Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AppCoreKit </a></h1>
+				<a id="developerHome" href="../index.html">smorel</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">NSManagedObjectContext(CKNSManagedObjectContextRequestsAdditions) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/countObjectsForEntityForName:predicate:">&nbsp;&nbsp;&nbsp;&nbsp;- countObjectsForEntityForName:predicate:</option>
+	
+	<option value="//api/name/fetchFirstObjectForEntityForName:predicate:sortedBy:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchFirstObjectForEntityForName:predicate:sortedBy:</option>
+	
+	<option value="//api/name/fetchObjectForEntityForName:predicate:createIfNotFound:wasCreated:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchObjectForEntityForName:predicate:createIfNotFound:wasCreated:</option>
+	
+	<option value="//api/name/fetchObjectsForEntityForName:predicate:sortedBy:limit:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchObjectsForEntityForName:predicate:sortedBy:limit:</option>
+	
+	<option value="//api/name/fetchObjectsForEntityForName:predicate:sortedBy:range:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchObjectsForEntityForName:predicate:sortedBy:range:</option>
+	
+	<option value="//api/name/fetchObjectsForEntityForName:predicate:sortedByKeys:limit:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchObjectsForEntityForName:predicate:sortedByKeys:limit:</option>
+	
+	<option value="//api/name/fetchObjectsForEntityForName:predicate:sortedByKeys:range:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchObjectsForEntityForName:predicate:sortedByKeys:range:</option>
+	
+	<option value="//api/name/insertNewObjectForEntityForName:">&nbsp;&nbsp;&nbsp;&nbsp;- insertNewObjectForEntityForName:</option>
+	
+	<option value="//api/name/removeObjects:">&nbsp;&nbsp;&nbsp;&nbsp;- removeObjects:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Inserting entities in managed object context">Inserting entities in managed object context</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Removing entities from managed object context">Removing entities from managed object context</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Querying Managed Object Context">Querying Managed Object Context</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/countObjectsForEntityForName:predicate:">countObjectsForEntityForName:predicate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchFirstObjectForEntityForName:predicate:sortedBy:">fetchFirstObjectForEntityForName:predicate:sortedBy:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchObjectForEntityForName:predicate:createIfNotFound:wasCreated:">fetchObjectForEntityForName:predicate:createIfNotFound:wasCreated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchObjectsForEntityForName:predicate:sortedBy:limit:">fetchObjectsForEntityForName:predicate:sortedBy:limit:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchObjectsForEntityForName:predicate:sortedBy:range:">fetchObjectsForEntityForName:predicate:sortedBy:range:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchObjectsForEntityForName:predicate:sortedByKeys:limit:">fetchObjectsForEntityForName:predicate:sortedByKeys:limit:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchObjectsForEntityForName:predicate:sortedByKeys:range:">fetchObjectsForEntityForName:predicate:sortedByKeys:range:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertNewObjectForEntityForName:">insertNewObjectForEntityForName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeObjects:">removeObjects:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="NSManagedObjectContext(CKNSManagedObjectContextRequestsAdditions) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">NSManagedObjectContext(CKNSManagedObjectContextRequestsAdditions) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">NSManagedObjectContext+Requests.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Inserting entities in managed object context" name="task_Inserting entities in managed object context"></a>
+						<h3 class="subsubtitle task-title">Inserting entities in managed object context</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insertNewObjectForEntityForName:">&ndash;&nbsp;insertNewObjectForEntityForName:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Removing entities from managed object context" name="task_Removing entities from managed object context"></a>
+						<h3 class="subsubtitle task-title">Removing entities from managed object context</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeObjects:">&ndash;&nbsp;removeObjects:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Querying Managed Object Context" name="task_Querying Managed Object Context"></a>
+						<h3 class="subsubtitle task-title">Querying Managed Object Context</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchObjectsForEntityForName:predicate:sortedBy:range:">&ndash;&nbsp;fetchObjectsForEntityForName:predicate:sortedBy:range:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchObjectsForEntityForName:predicate:sortedByKeys:range:">&ndash;&nbsp;fetchObjectsForEntityForName:predicate:sortedByKeys:range:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchObjectsForEntityForName:predicate:sortedBy:limit:">&ndash;&nbsp;fetchObjectsForEntityForName:predicate:sortedBy:limit:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchObjectsForEntityForName:predicate:sortedByKeys:limit:">&ndash;&nbsp;fetchObjectsForEntityForName:predicate:sortedByKeys:limit:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/countObjectsForEntityForName:predicate:">&ndash;&nbsp;countObjectsForEntityForName:predicate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchObjectForEntityForName:predicate:createIfNotFound:wasCreated:">&ndash;&nbsp;fetchObjectForEntityForName:predicate:createIfNotFound:wasCreated:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchFirstObjectForEntityForName:predicate:sortedBy:">&ndash;&nbsp;fetchFirstObjectForEntityForName:predicate:sortedBy:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/countObjectsForEntityForName:predicate:" title="countObjectsForEntityForName:predicate:"></a>
+	<h3 class="subsubtitle method-title">countObjectsForEntityForName:predicate:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)countObjectsForEntityForName:(NSString *)<em>entityName</em> predicate:(NSPredicate *)<em>predicate</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSManagedObjectContext+Requests.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchFirstObjectForEntityForName:predicate:sortedBy:" title="fetchFirstObjectForEntityForName:predicate:sortedBy:"></a>
+	<h3 class="subsubtitle method-title">fetchFirstObjectForEntityForName:predicate:sortedBy:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)fetchFirstObjectForEntityForName:(NSString *)<em>entityName</em> predicate:(NSPredicate *)<em>predicate</em> sortedBy:(NSString *)<em>sortKey</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSManagedObjectContext+Requests.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchObjectForEntityForName:predicate:createIfNotFound:wasCreated:" title="fetchObjectForEntityForName:predicate:createIfNotFound:wasCreated:"></a>
+	<h3 class="subsubtitle method-title">fetchObjectForEntityForName:predicate:createIfNotFound:wasCreated:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)fetchObjectForEntityForName:(NSString *)<em>entityName</em> predicate:(NSPredicate *)<em>predicate</em> createIfNotFound:(BOOL)<em>createIfNotFound</em> wasCreated:(BOOL *)<em>wasCreated</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSManagedObjectContext+Requests.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchObjectsForEntityForName:predicate:sortedBy:limit:" title="fetchObjectsForEntityForName:predicate:sortedBy:limit:"></a>
+	<h3 class="subsubtitle method-title">fetchObjectsForEntityForName:predicate:sortedBy:limit:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)fetchObjectsForEntityForName:(NSString *)<em>entityName</em> predicate:(NSPredicate *)<em>predicate</em> sortedBy:(NSString *)<em>key</em> limit:(NSUInteger)<em>limit</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSManagedObjectContext+Requests.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchObjectsForEntityForName:predicate:sortedBy:range:" title="fetchObjectsForEntityForName:predicate:sortedBy:range:"></a>
+	<h3 class="subsubtitle method-title">fetchObjectsForEntityForName:predicate:sortedBy:range:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)fetchObjectsForEntityForName:(NSString *)<em>entityName</em> predicate:(NSPredicate *)<em>predicate</em> sortedBy:(NSString *)<em>key</em> range:(NSRange)<em>range</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSManagedObjectContext+Requests.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchObjectsForEntityForName:predicate:sortedByKeys:limit:" title="fetchObjectsForEntityForName:predicate:sortedByKeys:limit:"></a>
+	<h3 class="subsubtitle method-title">fetchObjectsForEntityForName:predicate:sortedByKeys:limit:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)fetchObjectsForEntityForName:(NSString *)<em>entityName</em> predicate:(NSPredicate *)<em>predicate</em> sortedByKeys:(NSArray *)<em>keys</em> limit:(NSUInteger)<em>limit</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSManagedObjectContext+Requests.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchObjectsForEntityForName:predicate:sortedByKeys:range:" title="fetchObjectsForEntityForName:predicate:sortedByKeys:range:"></a>
+	<h3 class="subsubtitle method-title">fetchObjectsForEntityForName:predicate:sortedByKeys:range:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)fetchObjectsForEntityForName:(NSString *)<em>entityName</em> predicate:(NSPredicate *)<em>predicate</em> sortedByKeys:(NSArray *)<em>keys</em> range:(NSRange)<em>range</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSManagedObjectContext+Requests.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insertNewObjectForEntityForName:" title="insertNewObjectForEntityForName:"></a>
+	<h3 class="subsubtitle method-title">insertNewObjectForEntityForName:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)insertNewObjectForEntityForName:(NSString *)<em>entityName</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSManagedObjectContext+Requests.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeObjects:" title="removeObjects:"></a>
+	<h3 class="subsubtitle method-title">removeObjects:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeObjects:(NSArray *)<em>objects</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSManagedObjectContext+Requests.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 smorel. All rights reserved. (Last updated: 2015-06-09)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

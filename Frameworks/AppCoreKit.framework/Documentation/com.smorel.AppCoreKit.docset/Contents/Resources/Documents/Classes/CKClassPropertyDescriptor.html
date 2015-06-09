@@ -1,0 +1,1141 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CKClassPropertyDescriptor Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AppCoreKit </a></h1>
+				<a id="developerHome" href="../index.html">smorel</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CKClassPropertyDescriptor Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/assignementType">&nbsp;&nbsp;&nbsp;&nbsp;assignementType</option>
+	
+	<option value="//api/name/attributes">&nbsp;&nbsp;&nbsp;&nbsp;attributes</option>
+	
+	<option value="//api/name/className">&nbsp;&nbsp;&nbsp;&nbsp;className</option>
+	
+	<option value="//api/name/encoding">&nbsp;&nbsp;&nbsp;&nbsp;encoding</option>
+	
+	<option value="//api/name/extendedAttributesSelector">&nbsp;&nbsp;&nbsp;&nbsp;extendedAttributesSelector</option>
+	
+	<option value="//api/name/insertSelector">&nbsp;&nbsp;&nbsp;&nbsp;insertSelector</option>
+	
+	<option value="//api/name/isReadOnly">&nbsp;&nbsp;&nbsp;&nbsp;isReadOnly</option>
+	
+	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
+	
+	<option value="//api/name/propertyType">&nbsp;&nbsp;&nbsp;&nbsp;propertyType</option>
+	
+	<option value="//api/name/removeAllSelector">&nbsp;&nbsp;&nbsp;&nbsp;removeAllSelector</option>
+	
+	<option value="//api/name/removeSelector">&nbsp;&nbsp;&nbsp;&nbsp;removeSelector</option>
+	
+	<option value="//api/name/type">&nbsp;&nbsp;&nbsp;&nbsp;type</option>
+	
+	<option value="//api/name/typeSize">&nbsp;&nbsp;&nbsp;&nbsp;typeSize</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/boolDescriptorForPropertyNamed:readOnly:">&nbsp;&nbsp;&nbsp;&nbsp;+ boolDescriptorForPropertyNamed:readOnly:</option>
+	
+	<option value="//api/name/classDescriptorForNativePropertyNamed:nativeType:readOnly:">&nbsp;&nbsp;&nbsp;&nbsp;+ classDescriptorForNativePropertyNamed:nativeType:readOnly:</option>
+	
+	<option value="//api/name/classDescriptorForPropertyNamed:withClass:assignment:readOnly:">&nbsp;&nbsp;&nbsp;&nbsp;+ classDescriptorForPropertyNamed:withClass:assignment:readOnly:</option>
+	
+	<option value="//api/name/floatDescriptorForPropertyNamed:readOnly:">&nbsp;&nbsp;&nbsp;&nbsp;+ floatDescriptorForPropertyNamed:readOnly:</option>
+	
+	<option value="//api/name/intDescriptorForPropertyNamed:readOnly:">&nbsp;&nbsp;&nbsp;&nbsp;+ intDescriptorForPropertyNamed:readOnly:</option>
+	
+	<option value="//api/name/structDescriptorForPropertyNamed:structName:structEncoding:structSize:readOnly:">&nbsp;&nbsp;&nbsp;&nbsp;+ structDescriptorForPropertyNamed:structName:structEncoding:structSize:readOnly:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/extendedAttributesForInstance:">&nbsp;&nbsp;&nbsp;&nbsp;- extendedAttributesForInstance:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing property descriptor attributes">Accessing property descriptor attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing property extended attributes">Accessing property extended attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating property descriptor objects">Creating property descriptor objects</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/assignementType">assignementType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attributes">attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/className">className</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/encoding">encoding</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/extendedAttributesSelector">extendedAttributesSelector</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertSelector">insertSelector</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isReadOnly">isReadOnly</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/propertyType">propertyType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeAllSelector">removeAllSelector</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeSelector">removeSelector</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/type">type</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/typeSize">typeSize</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/boolDescriptorForPropertyNamed:readOnly:">boolDescriptorForPropertyNamed:readOnly:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/classDescriptorForNativePropertyNamed:nativeType:readOnly:">classDescriptorForNativePropertyNamed:nativeType:readOnly:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/classDescriptorForPropertyNamed:withClass:assignment:readOnly:">classDescriptorForPropertyNamed:withClass:assignment:readOnly:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/floatDescriptorForPropertyNamed:readOnly:">floatDescriptorForPropertyNamed:readOnly:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/intDescriptorForPropertyNamed:readOnly:">intDescriptorForPropertyNamed:readOnly:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/structDescriptorForPropertyNamed:structName:structEncoding:structSize:readOnly:">structDescriptorForPropertyNamed:structName:structEncoding:structSize:readOnly:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/extendedAttributesForInstance:">extendedAttributesForInstance:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CKClassPropertyDescriptor Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CKClassPropertyDescriptor Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CKClassPropertyDescriptor.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Accessing property descriptor attributes" name="task_Accessing property descriptor attributes"></a>
+						<h3 class="subsubtitle task-title">Accessing property descriptor attributes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/type">&nbsp;&nbsp;type</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/typeSize">&nbsp;&nbsp;typeSize</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/className">&nbsp;&nbsp;className</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/encoding">&nbsp;&nbsp;encoding</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attributes">&nbsp;&nbsp;attributes</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/propertyType">&nbsp;&nbsp;propertyType</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/assignementType">&nbsp;&nbsp;assignementType</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isReadOnly">&nbsp;&nbsp;isReadOnly</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/extendedAttributesSelector">&nbsp;&nbsp;extendedAttributesSelector</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insertSelector">&nbsp;&nbsp;insertSelector</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeSelector">&nbsp;&nbsp;removeSelector</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeAllSelector">&nbsp;&nbsp;removeAllSelector</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing property extended attributes" name="task_Accessing property extended attributes"></a>
+						<h3 class="subsubtitle task-title">Accessing property extended attributes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/extendedAttributesForInstance:">&ndash;&nbsp;extendedAttributesForInstance:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Creating property descriptor objects" name="task_Creating property descriptor objects"></a>
+						<h3 class="subsubtitle task-title">Creating property descriptor objects</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/classDescriptorForPropertyNamed:withClass:assignment:readOnly:">+&nbsp;classDescriptorForPropertyNamed:withClass:assignment:readOnly:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/structDescriptorForPropertyNamed:structName:structEncoding:structSize:readOnly:">+&nbsp;structDescriptorForPropertyNamed:structName:structEncoding:structSize:readOnly:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/boolDescriptorForPropertyNamed:readOnly:">+&nbsp;boolDescriptorForPropertyNamed:readOnly:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/floatDescriptorForPropertyNamed:readOnly:">+&nbsp;floatDescriptorForPropertyNamed:readOnly:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/intDescriptorForPropertyNamed:readOnly:">+&nbsp;intDescriptorForPropertyNamed:readOnly:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/classDescriptorForNativePropertyNamed:nativeType:readOnly:">+&nbsp;classDescriptorForNativePropertyNamed:nativeType:readOnly:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/assignementType" title="assignementType"></a>
+	<h3 class="subsubtitle method-title">assignementType</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readwrite) CKClassPropertyDescriptorAssignementType assignementType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKClassPropertyDescriptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/attributes" title="attributes"></a>
+	<h3 class="subsubtitle method-title">attributes</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readwrite) NSString *attributes</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKClassPropertyDescriptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/className" title="className"></a>
+	<h3 class="subsubtitle method-title">className</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readwrite) NSString *className</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKClassPropertyDescriptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/encoding" title="encoding"></a>
+	<h3 class="subsubtitle method-title">encoding</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readwrite) NSString *encoding</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKClassPropertyDescriptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/extendedAttributesSelector" title="extendedAttributesSelector"></a>
+	<h3 class="subsubtitle method-title">extendedAttributesSelector</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readwrite) SEL extendedAttributesSelector</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKClassPropertyDescriptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insertSelector" title="insertSelector"></a>
+	<h3 class="subsubtitle method-title">insertSelector</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readwrite) SEL insertSelector</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKClassPropertyDescriptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isReadOnly" title="isReadOnly"></a>
+	<h3 class="subsubtitle method-title">isReadOnly</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readwrite) BOOL isReadOnly</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKClassPropertyDescriptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="subsubtitle method-title">name</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readwrite) NSString *name</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKClassPropertyDescriptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/propertyType" title="propertyType"></a>
+	<h3 class="subsubtitle method-title">propertyType</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readwrite) CKClassPropertyDescriptorType propertyType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKClassPropertyDescriptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeAllSelector" title="removeAllSelector"></a>
+	<h3 class="subsubtitle method-title">removeAllSelector</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readwrite) SEL removeAllSelector</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKClassPropertyDescriptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeSelector" title="removeSelector"></a>
+	<h3 class="subsubtitle method-title">removeSelector</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readwrite) SEL removeSelector</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKClassPropertyDescriptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="subsubtitle method-title">type</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readwrite) Class type</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKClassPropertyDescriptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/typeSize" title="typeSize"></a>
+	<h3 class="subsubtitle method-title">typeSize</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readwrite) NSInteger typeSize</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKClassPropertyDescriptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/boolDescriptorForPropertyNamed:readOnly:" title="boolDescriptorForPropertyNamed:readOnly:"></a>
+	<h3 class="subsubtitle method-title">boolDescriptorForPropertyNamed:readOnly:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CKClassPropertyDescriptor *)boolDescriptorForPropertyNamed:(NSString *)<em>name</em> readOnly:(BOOL)<em>readOnly</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKClassPropertyDescriptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/classDescriptorForNativePropertyNamed:nativeType:readOnly:" title="classDescriptorForNativePropertyNamed:nativeType:readOnly:"></a>
+	<h3 class="subsubtitle method-title">classDescriptorForNativePropertyNamed:nativeType:readOnly:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CKClassPropertyDescriptor *)classDescriptorForNativePropertyNamed:(NSString *)<em>name</em> nativeType:(CKClassPropertyDescriptorType)<em>type</em> readOnly:(BOOL)<em>readOnly</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKClassPropertyDescriptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/classDescriptorForPropertyNamed:withClass:assignment:readOnly:" title="classDescriptorForPropertyNamed:withClass:assignment:readOnly:"></a>
+	<h3 class="subsubtitle method-title">classDescriptorForPropertyNamed:withClass:assignment:readOnly:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CKClassPropertyDescriptor *)classDescriptorForPropertyNamed:(NSString *)<em>name</em> withClass:(Class)<em>c</em> assignment:(CKClassPropertyDescriptorAssignementType)<em>assignment</em> readOnly:(BOOL)<em>readOnly</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKClassPropertyDescriptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/floatDescriptorForPropertyNamed:readOnly:" title="floatDescriptorForPropertyNamed:readOnly:"></a>
+	<h3 class="subsubtitle method-title">floatDescriptorForPropertyNamed:readOnly:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CKClassPropertyDescriptor *)floatDescriptorForPropertyNamed:(NSString *)<em>name</em> readOnly:(BOOL)<em>readOnly</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKClassPropertyDescriptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/intDescriptorForPropertyNamed:readOnly:" title="intDescriptorForPropertyNamed:readOnly:"></a>
+	<h3 class="subsubtitle method-title">intDescriptorForPropertyNamed:readOnly:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CKClassPropertyDescriptor *)intDescriptorForPropertyNamed:(NSString *)<em>name</em> readOnly:(BOOL)<em>readOnly</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKClassPropertyDescriptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/structDescriptorForPropertyNamed:structName:structEncoding:structSize:readOnly:" title="structDescriptorForPropertyNamed:structName:structEncoding:structSize:readOnly:"></a>
+	<h3 class="subsubtitle method-title">structDescriptorForPropertyNamed:structName:structEncoding:structSize:readOnly:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CKClassPropertyDescriptor *)structDescriptorForPropertyNamed:(NSString *)<em>name</em> structName:(NSString *)<em>structName</em> structEncoding:(NSString *)<em>encoding</em> structSize:(NSInteger)<em>size</em> readOnly:(BOOL)<em>readOnly</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKClassPropertyDescriptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/extendedAttributesForInstance:" title="extendedAttributesForInstance:"></a>
+	<h3 class="subsubtitle method-title">extendedAttributesForInstance:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CKPropertyExtendedAttributes *)extendedAttributesForInstance:(id)<em>instance</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKClassPropertyDescriptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 smorel. All rights reserved. (Last updated: 2015-06-09)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+{
+
+    "@import" : [
+        ___VARIABLE_stylesheetImports___
+    ],
+
+    "___FILEBASENAMEASIDENTIFIER___" : {
+
+        "tableViewCell" : {
+
+        },
+
+        "collectionViewCell" : {
+
+        },
+
+        "view" : {
+            "layout" : {
+                "UIView" : "MainView"
+            }
+        }
+    }
+
+}

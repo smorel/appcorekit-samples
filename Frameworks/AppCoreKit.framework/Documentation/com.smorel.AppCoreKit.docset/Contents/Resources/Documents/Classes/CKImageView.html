@@ -1,0 +1,816 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CKImageView Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AppCoreKit </a></h1>
+				<a id="developerHome" href="../index.html">smorel</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CKImageView Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/animateLoadingOfImagesLoadedFromCache">&nbsp;&nbsp;&nbsp;&nbsp;animateLoadingOfImagesLoadedFromCache</option>
+	
+	<option value="//api/name/defaultImage">&nbsp;&nbsp;&nbsp;&nbsp;defaultImage</option>
+	
+	<option value="//api/name/fadeInDuration">&nbsp;&nbsp;&nbsp;&nbsp;fadeInDuration</option>
+	
+	<option value="//api/name/image">&nbsp;&nbsp;&nbsp;&nbsp;image</option>
+	
+	<option value="//api/name/imageURL">&nbsp;&nbsp;&nbsp;&nbsp;imageURL</option>
+	
+	<option value="//api/name/imageViewContentMode">&nbsp;&nbsp;&nbsp;&nbsp;imageViewContentMode</option>
+	
+	<option value="//api/name/interactive">&nbsp;&nbsp;&nbsp;&nbsp;interactive</option>
+	
+	<option value="//api/name/postProcess">&nbsp;&nbsp;&nbsp;&nbsp;postProcess</option>
+	
+	<option value="//api/name/spinnerStyle">&nbsp;&nbsp;&nbsp;&nbsp;spinnerStyle</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/setImage:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- setImage:animated:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing the image">Managing the image</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing image loading">Managing image loading</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Customizing the appearance">Customizing the appearance</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Deprecated Methods">Deprecated Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/animateLoadingOfImagesLoadedFromCache">animateLoadingOfImagesLoadedFromCache</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultImage">defaultImage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fadeInDuration">fadeInDuration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/image">image</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imageURL">imageURL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imageViewContentMode">imageViewContentMode</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/interactive">interactive</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postProcess">postProcess</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spinnerStyle">spinnerStyle</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setImage:animated:">setImage:animated:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CKImageView Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CKImageView Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIControl</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CKImageView.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>An imageview providing the control interface for handling touch and the ability to load images from file or remote URL.
+This is backed by <a href="../Classes/CKImageCache.html">CKImageCache</a> that allows to share <a href="#//api/name/image">image</a> web requests for the same url between several instances of CKImageView reducing the network consumption. It also keep the loaded <a href="#//api/name/image">image</a> in memory until no more CKImageView are displaying the <a href="#//api/name/image">image</a> at the specified url.</p>
+
+<p>Cross fade animation can be parameterized when switching the <a href="#//api/name/image">image</a> or receiving an <a href="#//api/name/image">image</a> from a remote url. An optional default <a href="#//api/name/image">image</a> can be set to be displayed while the <a href="#//api/name/image">image</a> is fetched from a remote url as well as a spinner type for an optional activity indicator.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Managing the image" name="task_Managing the image"></a>
+						<h3 class="subsubtitle task-title">Managing the image</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultImage">&nbsp;&nbsp;defaultImage</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/image">&nbsp;&nbsp;image</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setImage:animated:">&ndash;&nbsp;setImage:animated:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing image loading" name="task_Managing image loading"></a>
+						<h3 class="subsubtitle task-title">Managing image loading</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imageURL">&nbsp;&nbsp;imageURL</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Customizing the appearance" name="task_Customizing the appearance"></a>
+						<h3 class="subsubtitle task-title">Customizing the appearance</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fadeInDuration">&nbsp;&nbsp;fadeInDuration</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/animateLoadingOfImagesLoadedFromCache">&nbsp;&nbsp;animateLoadingOfImagesLoadedFromCache</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/spinnerStyle">&nbsp;&nbsp;spinnerStyle</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postProcess">&nbsp;&nbsp;postProcess</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Deprecated Methods" name="task_Deprecated Methods"></a>
+						<h3 class="subsubtitle task-title">Deprecated Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imageViewContentMode">&nbsp;&nbsp;imageViewContentMode</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/interactive">&nbsp;&nbsp;interactive</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/animateLoadingOfImagesLoadedFromCache" title="animateLoadingOfImagesLoadedFromCache"></a>
+	<h3 class="subsubtitle method-title">animateLoadingOfImagesLoadedFromCache</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If the <a href="#//api/name/image">image</a> at the specified <a href="#//api/name/imageURL">imageURL</a> is already available in cache or if it is a file URL, this allow to disable cross fade animation to get the imgae displayed instantaneously. This can be interesting in the context of CKImageView2 embedded in reusableViewController in tableView or collectionView.
+Default value is NO</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readwrite) BOOL animateLoadingOfImagesLoadedFromCache</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If the <a href="#//api/name/image">image</a> at the specified <a href="#//api/name/imageURL">imageURL</a> is already available in cache or if it is a file URL, this allow to disable cross fade animation to get the imgae displayed instantaneously. This can be interesting in the context of CKImageView2 embedded in reusableViewController in tableView or collectionView.
+Default value is NO</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKImageView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultImage" title="defaultImage"></a>
+	<h3 class="subsubtitle method-title">defaultImage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>defaultImage will be displayed while and <a href="#//api/name/image">image</a> is loding from a remote URL</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readwrite) UIImage *defaultImage</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>defaultImage will be displayed while and <a href="#//api/name/image">image</a> is loding from a remote URL</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKImageView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fadeInDuration" title="fadeInDuration"></a>
+	<h3 class="subsubtitle method-title">fadeInDuration</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specifies a duration for cross fade between default <a href="#//api/name/image">image</a> and the <a href="#//api/name/image">image</a> loaded from the specified <a href="#//api/name/imageURL">imageURL</a> when fetched from a remote source or when setting the <a href="#//api/name/image">image</a>. A value of 0 means no animation and the <a href="#//api/name/image">image</a> will be displayed instantaneously.
+Default value is 0.25</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readwrite) NSTimeInterval fadeInDuration</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Specifies a duration for cross fade between default <a href="#//api/name/image">image</a> and the <a href="#//api/name/image">image</a> loaded from the specified <a href="#//api/name/imageURL">imageURL</a> when fetched from a remote source or when setting the <a href="#//api/name/image">image</a>. A value of 0 means no animation and the <a href="#//api/name/image">image</a> will be displayed instantaneously.
+Default value is 0.25</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKImageView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/image" title="image"></a>
+	<h3 class="subsubtitle method-title">image</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>image can be set programatically or will be set internally when an image has been fetched from a file or remote URL</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readwrite) UIImage *image</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>image can be set programatically or will be set internally when an image has been fetched from a file or remote URL</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKImageView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/imageURL" title="imageURL"></a>
+	<h3 class="subsubtitle method-title">imageURL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>setting the imageURL will start a task for loding it from a file or a remote URL.
+A caching system is in place so that, if another instance of CKImageView2 already has fetched or starting fetching the same URL, it will reuse the same <a href="#//api/name/image">image</a> or <a href="#//api/name/image">image</a> loader to reduce network consumption and improve preformances. When no more CKImageView2 are displaying or fetching the <a href="#//api/name/image">image</a> with the specified URL, the cached <a href="#//api/name/image">image</a> or <a href="#//api/name/image">image</a> loader is dismissed for the specified URL.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readwrite) NSURL *imageURL</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>setting the imageURL will start a task for loding it from a file or a remote URL.
+A caching system is in place so that, if another instance of CKImageView2 already has fetched or starting fetching the same URL, it will reuse the same <a href="#//api/name/image">image</a> or <a href="#//api/name/image">image</a> loader to reduce network consumption and improve preformances. When no more CKImageView2 are displaying or fetching the <a href="#//api/name/image">image</a> with the specified URL, the cached <a href="#//api/name/image">image</a> or <a href="#//api/name/image">image</a> loader is dismissed for the specified URL.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKImageView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/imageViewContentMode" title="imageViewContentMode"></a>
+	<h3 class="subsubtitle method-title">imageViewContentMode</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>You can use contentMode instead</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readwrite) UIViewContentMode imageViewContentMode</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>You can use contentMode instead</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKImageView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/interactive" title="interactive"></a>
+	<h3 class="subsubtitle method-title">interactive</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>You can use userInteractionEnabled instead</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readwrite) BOOL interactive</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>You can use userInteractionEnabled instead</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKImageView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postProcess" title="postProcess"></a>
+	<h3 class="subsubtitle method-title">postProcess</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An optional postProcess block can be set to modify the <a href="#//api/name/image">image</a> before displaying it. It will be executed when receiving an <a href="#//api/name/image">image</a> from the remote URL, the cache or if you set the <a href="#//api/name/image">image</a> property.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) UIImage *^ ) ( UIImage *image ) postProcess</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>An optional postProcess block can be set to modify the <a href="#//api/name/image">image</a> before displaying it. It will be executed when receiving an <a href="#//api/name/image">image</a> from the remote URL, the cache or if you set the <a href="#//api/name/image">image</a> property.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKImageView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/spinnerStyle" title="spinnerStyle"></a>
+	<h3 class="subsubtitle method-title">spinnerStyle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This specifies a type for displaying a UIActivityIndicatorView on top while fetching an <a href="#//api/name/image">image</a> from a remote URL. UIActivityIndicatorView will be centered in the CKImageView2.
+Default value is CKImageViewSpinnerStyleNone</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readwrite) CKImageViewSpinnerStyle spinnerStyle</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This specifies a type for displaying a UIActivityIndicatorView on top while fetching an <a href="#//api/name/image">image</a> from a remote URL. UIActivityIndicatorView will be centered in the CKImageView2.
+Default value is CKImageViewSpinnerStyleNone</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKImageView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/setImage:animated:" title="setImage:animated:"></a>
+	<h3 class="subsubtitle method-title">setImage:animated:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setImage:(UIImage *)<em>image</em> animated:(BOOL)<em>animated</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKImageView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 smorel. All rights reserved. (Last updated: 2015-06-09)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

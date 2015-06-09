@@ -8,5 +8,5 @@
 
 #import <AppCoreKit/AppCoreKit.h>
 
-@interface CKSampleBindingsViewController : CKFormTableViewController
+@interface CKSampleBindingsViewController : CKTableViewController
 @end

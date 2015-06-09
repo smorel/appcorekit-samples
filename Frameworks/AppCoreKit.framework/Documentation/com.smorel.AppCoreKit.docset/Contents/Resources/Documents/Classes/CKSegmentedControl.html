@@ -1,0 +1,1450 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CKSegmentedControl Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AppCoreKit </a></h1>
+				<a id="developerHome" href="../index.html">smorel</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CKSegmentedControl Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/autoResizeToFitContent">&nbsp;&nbsp;&nbsp;&nbsp;autoResizeToFitContent</option>
+	
+	<option value="//api/name/momentary">&nbsp;&nbsp;&nbsp;&nbsp;momentary</option>
+	
+	<option value="//api/name/numberOfSegments">&nbsp;&nbsp;&nbsp;&nbsp;numberOfSegments</option>
+	
+	<option value="//api/name/selectedSegmentIndex">&nbsp;&nbsp;&nbsp;&nbsp;selectedSegmentIndex</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/contentOffsetForSegmentAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- contentOffsetForSegmentAtIndex:</option>
+	
+	<option value="//api/name/imageForSegmentAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- imageForSegmentAtIndex:</option>
+	
+	<option value="//api/name/initWithItems:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithItems:</option>
+	
+	<option value="//api/name/insertSegmentWithImage:atIndex:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- insertSegmentWithImage:atIndex:animated:</option>
+	
+	<option value="//api/name/insertSegmentWithImage:atIndex:animated:action:">&nbsp;&nbsp;&nbsp;&nbsp;- insertSegmentWithImage:atIndex:animated:action:</option>
+	
+	<option value="//api/name/insertSegmentWithImage:atIndex:animated:target:action:">&nbsp;&nbsp;&nbsp;&nbsp;- insertSegmentWithImage:atIndex:animated:target:action:</option>
+	
+	<option value="//api/name/insertSegmentWithTitle:atIndex:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- insertSegmentWithTitle:atIndex:animated:</option>
+	
+	<option value="//api/name/insertSegmentWithTitle:atIndex:animated:action:">&nbsp;&nbsp;&nbsp;&nbsp;- insertSegmentWithTitle:atIndex:animated:action:</option>
+	
+	<option value="//api/name/insertSegmentWithTitle:atIndex:animated:target:action:">&nbsp;&nbsp;&nbsp;&nbsp;- insertSegmentWithTitle:atIndex:animated:target:action:</option>
+	
+	<option value="//api/name/insertSegmentWithTitle:image:atIndex:animated:action:">&nbsp;&nbsp;&nbsp;&nbsp;- insertSegmentWithTitle:image:atIndex:animated:action:</option>
+	
+	<option value="//api/name/insertSegmentWithTitle:image:atIndex:animated:target:action:">&nbsp;&nbsp;&nbsp;&nbsp;- insertSegmentWithTitle:image:atIndex:animated:target:action:</option>
+	
+	<option value="//api/name/isEnabledForSegmentAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- isEnabledForSegmentAtIndex:</option>
+	
+	<option value="//api/name/removeAllSegments">&nbsp;&nbsp;&nbsp;&nbsp;- removeAllSegments</option>
+	
+	<option value="//api/name/removeSegmentAtIndex:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- removeSegmentAtIndex:animated:</option>
+	
+	<option value="//api/name/segmentAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- segmentAtIndex:</option>
+	
+	<option value="//api/name/setContentOffset:forSegmentAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- setContentOffset:forSegmentAtIndex:</option>
+	
+	<option value="//api/name/setEnabled:forSegmentAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- setEnabled:forSegmentAtIndex:</option>
+	
+	<option value="//api/name/setImage:forSegmentAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- setImage:forSegmentAtIndex:</option>
+	
+	<option value="//api/name/setSelectedSegment:">&nbsp;&nbsp;&nbsp;&nbsp;- setSelectedSegment:</option>
+	
+	<option value="//api/name/setTitle:forSegmentAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- setTitle:forSegmentAtIndex:</option>
+	
+	<option value="//api/name/setWidth:forSegmentAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- setWidth:forSegmentAtIndex:</option>
+	
+	<option value="//api/name/titleForSegmentAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- titleForSegmentAtIndex:</option>
+	
+	<option value="//api/name/widthForSegmentAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- widthForSegmentAtIndex:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initializing a Segmented Control">Initializing a Segmented Control</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Segment Content">Managing Segment Content</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Segments">Managing Segments</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Segment Behavior and Appearance">Managing Segment Behavior and Appearance</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/autoResizeToFitContent">autoResizeToFitContent</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/momentary">momentary</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/numberOfSegments">numberOfSegments</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectedSegmentIndex">selectedSegmentIndex</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentOffsetForSegmentAtIndex:">contentOffsetForSegmentAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imageForSegmentAtIndex:">imageForSegmentAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithItems:">initWithItems:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertSegmentWithImage:atIndex:animated:">insertSegmentWithImage:atIndex:animated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertSegmentWithImage:atIndex:animated:action:">insertSegmentWithImage:atIndex:animated:action:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertSegmentWithImage:atIndex:animated:target:action:">insertSegmentWithImage:atIndex:animated:target:action:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertSegmentWithTitle:atIndex:animated:">insertSegmentWithTitle:atIndex:animated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertSegmentWithTitle:atIndex:animated:action:">insertSegmentWithTitle:atIndex:animated:action:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertSegmentWithTitle:atIndex:animated:target:action:">insertSegmentWithTitle:atIndex:animated:target:action:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertSegmentWithTitle:image:atIndex:animated:action:">insertSegmentWithTitle:image:atIndex:animated:action:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertSegmentWithTitle:image:atIndex:animated:target:action:">insertSegmentWithTitle:image:atIndex:animated:target:action:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEnabledForSegmentAtIndex:">isEnabledForSegmentAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeAllSegments">removeAllSegments</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeSegmentAtIndex:animated:">removeSegmentAtIndex:animated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/segmentAtIndex:">segmentAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setContentOffset:forSegmentAtIndex:">setContentOffset:forSegmentAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setEnabled:forSegmentAtIndex:">setEnabled:forSegmentAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setImage:forSegmentAtIndex:">setImage:forSegmentAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSelectedSegment:">setSelectedSegment:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setTitle:forSegmentAtIndex:">setTitle:forSegmentAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setWidth:forSegmentAtIndex:">setWidth:forSegmentAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/titleForSegmentAtIndex:">titleForSegmentAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/widthForSegmentAtIndex:">widthForSegmentAtIndex:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CKSegmentedControl Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CKSegmentedControl Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIControl</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CKSegmentedControl.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Initializing a Segmented Control" name="task_Initializing a Segmented Control"></a>
+						<h3 class="subsubtitle task-title">Initializing a Segmented Control</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithItems:">&ndash;&nbsp;initWithItems:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Segment Content" name="task_Managing Segment Content"></a>
+						<h3 class="subsubtitle task-title">Managing Segment Content</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imageForSegmentAtIndex:">&ndash;&nbsp;imageForSegmentAtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setImage:forSegmentAtIndex:">&ndash;&nbsp;setImage:forSegmentAtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/titleForSegmentAtIndex:">&ndash;&nbsp;titleForSegmentAtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setTitle:forSegmentAtIndex:">&ndash;&nbsp;setTitle:forSegmentAtIndex:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Segments" name="task_Managing Segments"></a>
+						<h3 class="subsubtitle task-title">Managing Segments</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/numberOfSegments">&nbsp;&nbsp;numberOfSegments</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectedSegmentIndex">&nbsp;&nbsp;selectedSegmentIndex</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insertSegmentWithImage:atIndex:animated:">&ndash;&nbsp;insertSegmentWithImage:atIndex:animated:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insertSegmentWithTitle:atIndex:animated:">&ndash;&nbsp;insertSegmentWithTitle:atIndex:animated:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeAllSegments">&ndash;&nbsp;removeAllSegments</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeSegmentAtIndex:animated:">&ndash;&nbsp;removeSegmentAtIndex:animated:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/segmentAtIndex:">&ndash;&nbsp;segmentAtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSelectedSegment:">&ndash;&nbsp;setSelectedSegment:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insertSegmentWithImage:atIndex:animated:action:">&ndash;&nbsp;insertSegmentWithImage:atIndex:animated:action:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insertSegmentWithTitle:atIndex:animated:action:">&ndash;&nbsp;insertSegmentWithTitle:atIndex:animated:action:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insertSegmentWithTitle:image:atIndex:animated:action:">&ndash;&nbsp;insertSegmentWithTitle:image:atIndex:animated:action:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insertSegmentWithImage:atIndex:animated:target:action:">&ndash;&nbsp;insertSegmentWithImage:atIndex:animated:target:action:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insertSegmentWithTitle:atIndex:animated:target:action:">&ndash;&nbsp;insertSegmentWithTitle:atIndex:animated:target:action:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insertSegmentWithTitle:image:atIndex:animated:target:action:">&ndash;&nbsp;insertSegmentWithTitle:image:atIndex:animated:target:action:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Segment Behavior and Appearance" name="task_Managing Segment Behavior and Appearance"></a>
+						<h3 class="subsubtitle task-title">Managing Segment Behavior and Appearance</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/momentary">&nbsp;&nbsp;momentary</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/autoResizeToFitContent">&nbsp;&nbsp;autoResizeToFitContent</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isEnabledForSegmentAtIndex:">&ndash;&nbsp;isEnabledForSegmentAtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setEnabled:forSegmentAtIndex:">&ndash;&nbsp;setEnabled:forSegmentAtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contentOffsetForSegmentAtIndex:">&ndash;&nbsp;contentOffsetForSegmentAtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setContentOffset:forSegmentAtIndex:">&ndash;&nbsp;setContentOffset:forSegmentAtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/widthForSegmentAtIndex:">&ndash;&nbsp;widthForSegmentAtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setWidth:forSegmentAtIndex:">&ndash;&nbsp;setWidth:forSegmentAtIndex:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/autoResizeToFitContent" title="autoResizeToFitContent"></a>
+	<h3 class="subsubtitle method-title">autoResizeToFitContent</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Default value is YES.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL autoResizeToFitContent</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Default value is YES.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/momentary" title="momentary"></a>
+	<h3 class="subsubtitle method-title">momentary</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL momentary</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/numberOfSegments" title="numberOfSegments"></a>
+	<h3 class="subsubtitle method-title">numberOfSegments</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger numberOfSegments</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectedSegmentIndex" title="selectedSegmentIndex"></a>
+	<h3 class="subsubtitle method-title">selectedSegmentIndex</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSInteger selectedSegmentIndex</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/contentOffsetForSegmentAtIndex:" title="contentOffsetForSegmentAtIndex:"></a>
+	<h3 class="subsubtitle method-title">contentOffsetForSegmentAtIndex:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGSize)contentOffsetForSegmentAtIndex:(NSUInteger)<em>segment</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/imageForSegmentAtIndex:" title="imageForSegmentAtIndex:"></a>
+	<h3 class="subsubtitle method-title">imageForSegmentAtIndex:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIImage *)imageForSegmentAtIndex:(NSUInteger)<em>segment</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithItems:" title="initWithItems:"></a>
+	<h3 class="subsubtitle method-title">initWithItems:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An array of NSString objects (for segment titles) or UIImage objects (for segment images).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithItems:(NSArray *)<em>items</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>An array of NSString objects (for segment titles) or UIImage objects (for segment images).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insertSegmentWithImage:atIndex:animated:" title="insertSegmentWithImage:atIndex:animated:"></a>
+	<h3 class="subsubtitle method-title">insertSegmentWithImage:atIndex:animated:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CKSegmentedControlButton *)insertSegmentWithImage:(UIImage *)<em>image</em> atIndex:(NSUInteger)<em>segment</em> animated:(BOOL)<em>animated</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insertSegmentWithImage:atIndex:animated:action:" title="insertSegmentWithImage:atIndex:animated:action:"></a>
+	<h3 class="subsubtitle method-title">insertSegmentWithImage:atIndex:animated:action:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CKSegmentedControlButton *)insertSegmentWithImage:(UIImage *)<em>image</em> atIndex:(NSUInteger)<em>segment</em> animated:(BOOL)<em>animated</em> action:(void ( ^ ) ( ))<em>action</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insertSegmentWithImage:atIndex:animated:target:action:" title="insertSegmentWithImage:atIndex:animated:target:action:"></a>
+	<h3 class="subsubtitle method-title">insertSegmentWithImage:atIndex:animated:target:action:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CKSegmentedControlButton *)insertSegmentWithImage:(UIImage *)<em>image</em> atIndex:(NSUInteger)<em>segment</em> animated:(BOOL)<em>animated</em> target:(id)<em>target</em> action:(SEL)<em>action</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insertSegmentWithTitle:atIndex:animated:" title="insertSegmentWithTitle:atIndex:animated:"></a>
+	<h3 class="subsubtitle method-title">insertSegmentWithTitle:atIndex:animated:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CKSegmentedControlButton *)insertSegmentWithTitle:(NSString *)<em>title</em> atIndex:(NSUInteger)<em>segment</em> animated:(BOOL)<em>animated</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insertSegmentWithTitle:atIndex:animated:action:" title="insertSegmentWithTitle:atIndex:animated:action:"></a>
+	<h3 class="subsubtitle method-title">insertSegmentWithTitle:atIndex:animated:action:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CKSegmentedControlButton *)insertSegmentWithTitle:(NSString *)<em>title</em> atIndex:(NSUInteger)<em>segment</em> animated:(BOOL)<em>animated</em> action:(void ( ^ ) ( ))<em>action</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insertSegmentWithTitle:atIndex:animated:target:action:" title="insertSegmentWithTitle:atIndex:animated:target:action:"></a>
+	<h3 class="subsubtitle method-title">insertSegmentWithTitle:atIndex:animated:target:action:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CKSegmentedControlButton *)insertSegmentWithTitle:(NSString *)<em>title</em> atIndex:(NSUInteger)<em>segment</em> animated:(BOOL)<em>animated</em> target:(id)<em>target</em> action:(SEL)<em>action</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insertSegmentWithTitle:image:atIndex:animated:action:" title="insertSegmentWithTitle:image:atIndex:animated:action:"></a>
+	<h3 class="subsubtitle method-title">insertSegmentWithTitle:image:atIndex:animated:action:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CKSegmentedControlButton *)insertSegmentWithTitle:(NSString *)<em>title</em> image:(UIImage *)<em>image</em> atIndex:(NSUInteger)<em>segment</em> animated:(BOOL)<em>animated</em> action:(void ( ^ ) ( ))<em>action</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insertSegmentWithTitle:image:atIndex:animated:target:action:" title="insertSegmentWithTitle:image:atIndex:animated:target:action:"></a>
+	<h3 class="subsubtitle method-title">insertSegmentWithTitle:image:atIndex:animated:target:action:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CKSegmentedControlButton *)insertSegmentWithTitle:(NSString *)<em>title</em> image:(UIImage *)<em>image</em> atIndex:(NSUInteger)<em>segment</em> animated:(BOOL)<em>animated</em> target:(id)<em>target</em> action:(SEL)<em>action</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isEnabledForSegmentAtIndex:" title="isEnabledForSegmentAtIndex:"></a>
+	<h3 class="subsubtitle method-title">isEnabledForSegmentAtIndex:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isEnabledForSegmentAtIndex:(NSUInteger)<em>segment</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeAllSegments" title="removeAllSegments"></a>
+	<h3 class="subsubtitle method-title">removeAllSegments</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeAllSegments</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeSegmentAtIndex:animated:" title="removeSegmentAtIndex:animated:"></a>
+	<h3 class="subsubtitle method-title">removeSegmentAtIndex:animated:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeSegmentAtIndex:(NSUInteger)<em>segment</em> animated:(BOOL)<em>animated</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/segmentAtIndex:" title="segmentAtIndex:"></a>
+	<h3 class="subsubtitle method-title">segmentAtIndex:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CKSegmentedControlButton *)segmentAtIndex:(NSInteger)<em>index</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setContentOffset:forSegmentAtIndex:" title="setContentOffset:forSegmentAtIndex:"></a>
+	<h3 class="subsubtitle method-title">setContentOffset:forSegmentAtIndex:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setContentOffset:(CGSize)<em>offset</em> forSegmentAtIndex:(NSUInteger)<em>segment</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setEnabled:forSegmentAtIndex:" title="setEnabled:forSegmentAtIndex:"></a>
+	<h3 class="subsubtitle method-title">setEnabled:forSegmentAtIndex:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setEnabled:(BOOL)<em>enabled</em> forSegmentAtIndex:(NSUInteger)<em>segment</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setImage:forSegmentAtIndex:" title="setImage:forSegmentAtIndex:"></a>
+	<h3 class="subsubtitle method-title">setImage:forSegmentAtIndex:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setImage:(UIImage *)<em>image</em> forSegmentAtIndex:(NSUInteger)<em>segment</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSelectedSegment:" title="setSelectedSegment:"></a>
+	<h3 class="subsubtitle method-title">setSelectedSegment:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setSelectedSegment:(CKSegmentedControlButton *)<em>segment</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setTitle:forSegmentAtIndex:" title="setTitle:forSegmentAtIndex:"></a>
+	<h3 class="subsubtitle method-title">setTitle:forSegmentAtIndex:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setTitle:(NSString *)<em>title</em> forSegmentAtIndex:(NSUInteger)<em>segment</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setWidth:forSegmentAtIndex:" title="setWidth:forSegmentAtIndex:"></a>
+	<h3 class="subsubtitle method-title">setWidth:forSegmentAtIndex:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setWidth:(CGFloat)<em>width</em> forSegmentAtIndex:(NSUInteger)<em>segment</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/titleForSegmentAtIndex:" title="titleForSegmentAtIndex:"></a>
+	<h3 class="subsubtitle method-title">titleForSegmentAtIndex:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)titleForSegmentAtIndex:(NSUInteger)<em>segment</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/widthForSegmentAtIndex:" title="widthForSegmentAtIndex:"></a>
+	<h3 class="subsubtitle method-title">widthForSegmentAtIndex:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGFloat)widthForSegmentAtIndex:(NSUInteger)<em>segment</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSegmentedControl.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 smorel. All rights reserved. (Last updated: 2015-06-09)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

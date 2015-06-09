@@ -1,0 +1,1643 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CKPropertyExtendedAttributes Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AppCoreKit </a></h1>
+				<a id="developerHome" href="../index.html">smorel</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CKPropertyExtendedAttributes Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/attributes">&nbsp;&nbsp;&nbsp;&nbsp;attributes</option>
+	
+	<option value="//api/name/cellControllerCreationBlock">&nbsp;&nbsp;&nbsp;&nbsp;cellControllerCreationBlock</option>
+	
+	<option value="//api/name/comparable">&nbsp;&nbsp;&nbsp;&nbsp;comparable</option>
+	
+	<option value="//api/name/contentProtocol">&nbsp;&nbsp;&nbsp;&nbsp;contentProtocol</option>
+	
+	<option value="//api/name/contentType">&nbsp;&nbsp;&nbsp;&nbsp;contentType</option>
+	
+	<option value="//api/name/copiable">&nbsp;&nbsp;&nbsp;&nbsp;copiable</option>
+	
+	<option value="//api/name/creatable">&nbsp;&nbsp;&nbsp;&nbsp;creatable</option>
+	
+	<option value="//api/name/dateFormat">&nbsp;&nbsp;&nbsp;&nbsp;dateFormat</option>
+	
+	<option value="//api/name/deepCopy">&nbsp;&nbsp;&nbsp;&nbsp;deepCopy</option>
+	
+	<option value="//api/name/editable">&nbsp;&nbsp;&nbsp;&nbsp;editable</option>
+	
+	<option value="//api/name/enumDescriptor">&nbsp;&nbsp;&nbsp;&nbsp;enumDescriptor</option>
+	
+	<option value="//api/name/hashable">&nbsp;&nbsp;&nbsp;&nbsp;hashable</option>
+	
+	<option value="//api/name/maximumDate">&nbsp;&nbsp;&nbsp;&nbsp;maximumDate</option>
+	
+	<option value="//api/name/maximumLength">&nbsp;&nbsp;&nbsp;&nbsp;maximumLength</option>
+	
+	<option value="//api/name/maximumValue">&nbsp;&nbsp;&nbsp;&nbsp;maximumValue</option>
+	
+	<option value="//api/name/minimumDate">&nbsp;&nbsp;&nbsp;&nbsp;minimumDate</option>
+	
+	<option value="//api/name/minimumLength">&nbsp;&nbsp;&nbsp;&nbsp;minimumLength</option>
+	
+	<option value="//api/name/minimumValue">&nbsp;&nbsp;&nbsp;&nbsp;minimumValue</option>
+	
+	<option value="//api/name/minuteInterval">&nbsp;&nbsp;&nbsp;&nbsp;minuteInterval</option>
+	
+	<option value="//api/name/multiLineEnabled">&nbsp;&nbsp;&nbsp;&nbsp;multiLineEnabled</option>
+	
+	<option value="//api/name/multiSelectionEnabled">&nbsp;&nbsp;&nbsp;&nbsp;multiSelectionEnabled</option>
+	
+	<option value="//api/name/optionCellControllerCreationBlock">&nbsp;&nbsp;&nbsp;&nbsp;optionCellControllerCreationBlock</option>
+	
+	<option value="//api/name/placeholderValue">&nbsp;&nbsp;&nbsp;&nbsp;placeholderValue</option>
+	
+	<option value="//api/name/presentationStyle">&nbsp;&nbsp;&nbsp;&nbsp;presentationStyle</option>
+	
+	<option value="//api/name/serializable">&nbsp;&nbsp;&nbsp;&nbsp;serializable</option>
+	
+	<option value="//api/name/sortingBlock">&nbsp;&nbsp;&nbsp;&nbsp;sortingBlock</option>
+	
+	<option value="//api/name/textInputFormatterBlock">&nbsp;&nbsp;&nbsp;&nbsp;textInputFormatterBlock</option>
+	
+	<option value="//api/name/validationPredicate">&nbsp;&nbsp;&nbsp;&nbsp;validationPredicate</option>
+	
+	<option value="//api/name/valuesAndLabels">&nbsp;&nbsp;&nbsp;&nbsp;valuesAndLabels</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/extendedAttributesForObject:property:">&nbsp;&nbsp;&nbsp;&nbsp;+ extendedAttributesForObject:property:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing extended attribute for property at runtime">Accessing extended attribute for property at runtime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Manipulating extended attributes">Manipulating extended attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKPropertyStringViewController Methods">CKPropertyStringViewController Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKPropertyGrid Methods">CKPropertyGrid Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKNSNumberPropertyCellController Methods">CKNSNumberPropertyCellController Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKObject Methods">CKObject Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKPropertyNumberViewController Methods">CKPropertyNumberViewController Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKMultilineNSStringPropertyCellController Methods">CKMultilineNSStringPropertyCellController Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKNSDateViewController Methods">CKNSDateViewController Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKOptionPropertyCellController Methods">CKOptionPropertyCellController Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attributes">attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cellControllerCreationBlock">cellControllerCreationBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/comparable">comparable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentProtocol">contentProtocol</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentType">contentType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/copiable">copiable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/creatable">creatable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateFormat">dateFormat</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deepCopy">deepCopy</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editable">editable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enumDescriptor">enumDescriptor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hashable">hashable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maximumDate">maximumDate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maximumLength">maximumLength</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maximumValue">maximumValue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minimumDate">minimumDate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minimumLength">minimumLength</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minimumValue">minimumValue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minuteInterval">minuteInterval</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineEnabled">multiLineEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiSelectionEnabled">multiSelectionEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/optionCellControllerCreationBlock">optionCellControllerCreationBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/placeholderValue">placeholderValue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/presentationStyle">presentationStyle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/serializable">serializable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sortingBlock">sortingBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textInputFormatterBlock">textInputFormatterBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/validationPredicate">validationPredicate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/valuesAndLabels">valuesAndLabels</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/extendedAttributesForObject:property:">extendedAttributesForObject:property:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CKPropertyExtendedAttributes Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CKPropertyExtendedAttributes Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CKPropertyExtendedAttributes.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Extended Attributes is a way to extend how an object&rsquo;s property will react with several behaviours of the ClouKit like serialization, creation, data migration, property grid display, and conversions.</p>
+
+<p>by defining a selector - (void) yourPropertyExtendedAttributes:(CKPropertyExtendedAttributes*)<a href="#//api/name/attributes">attributes</a> in your classes, you will be able to customize how yourProperty will react in all the cases described previously.</p>
+
+<p>Concerning the property grid representation, there several ways to customize the representation of your property : <a href="#//api/name/enumDescriptor">enumDescriptor</a>, <a href="#//api/name/valuesAndLabels">valuesAndLabels</a>,propertyCellControllerClass or nothing.</p>
+
+<p>propertyCellControllerClass will get used as the top priority. after, we&rsquo;ll use <a href="#//api/name/enumDescriptor">enumDescriptor</a> or <a href="#//api/name/valuesAndLabels">valuesAndLabels</a> that should be used independently depending whether your represent an enum property or something else. and finally, property grids will automatically choose a controller class depending on the property type automatically.</p>
+
+<p>Property extended <a href="#//api/name/attributes">attributes</a> that operates with <a href="../Classes/CKPropertyStringViewController.html">CKPropertyStringViewController</a></p>
+
+<p>Property extended <a href="#//api/name/attributes">attributes</a> that operates with <a href="../Classes/CKPropertyNumberViewController.html">CKPropertyNumberViewController</a></p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Accessing extended attribute for property at runtime" name="task_Accessing extended attribute for property at runtime"></a>
+						<h3 class="subsubtitle task-title">Accessing extended attribute for property at runtime</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/extendedAttributesForObject:property:">+&nbsp;extendedAttributesForObject:property:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Manipulating extended attributes" name="task_Manipulating extended attributes"></a>
+						<h3 class="subsubtitle task-title">Manipulating extended attributes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attributes">&nbsp;&nbsp;attributes</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="CKPropertyStringViewController Methods" name="task_CKPropertyStringViewController Methods"></a>
+						<h3 class="subsubtitle task-title">CKPropertyStringViewController Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textInputFormatterBlock">&nbsp;&nbsp;textInputFormatterBlock</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/minimumLength">&nbsp;&nbsp;minimumLength</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maximumLength">&nbsp;&nbsp;maximumLength</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="CKPropertyGrid Methods" name="task_CKPropertyGrid Methods"></a>
+						<h3 class="subsubtitle task-title">CKPropertyGrid Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/editable">&nbsp;&nbsp;editable</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/valuesAndLabels">&nbsp;&nbsp;valuesAndLabels</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellControllerCreationBlock">&nbsp;&nbsp;cellControllerCreationBlock</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="CKNSNumberPropertyCellController Methods" name="task_CKNSNumberPropertyCellController Methods"></a>
+						<h3 class="subsubtitle task-title">CKNSNumberPropertyCellController Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/minimumValue">&nbsp;&nbsp;minimumValue</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maximumValue">&nbsp;&nbsp;maximumValue</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="CKObject Methods" name="task_CKObject Methods"></a>
+						<h3 class="subsubtitle task-title">CKObject Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/comparable">&nbsp;&nbsp;comparable</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/serializable">&nbsp;&nbsp;serializable</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/copiable">&nbsp;&nbsp;copiable</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deepCopy">&nbsp;&nbsp;deepCopy</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hashable">&nbsp;&nbsp;hashable</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/creatable">&nbsp;&nbsp;creatable</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/validationPredicate">&nbsp;&nbsp;validationPredicate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contentType">&nbsp;&nbsp;contentType</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contentProtocol">&nbsp;&nbsp;contentProtocol</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateFormat">&nbsp;&nbsp;dateFormat</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enumDescriptor">&nbsp;&nbsp;enumDescriptor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="CKPropertyNumberViewController Methods" name="task_CKPropertyNumberViewController Methods"></a>
+						<h3 class="subsubtitle task-title">CKPropertyNumberViewController Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/placeholderValue">&nbsp;&nbsp;placeholderValue</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="CKMultilineNSStringPropertyCellController Methods" name="task_CKMultilineNSStringPropertyCellController Methods"></a>
+						<h3 class="subsubtitle task-title">CKMultilineNSStringPropertyCellController Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineEnabled">&nbsp;&nbsp;multiLineEnabled</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="CKNSDateViewController Methods" name="task_CKNSDateViewController Methods"></a>
+						<h3 class="subsubtitle task-title">CKNSDateViewController Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/minimumDate">&nbsp;&nbsp;minimumDate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maximumDate">&nbsp;&nbsp;maximumDate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/minuteInterval">&nbsp;&nbsp;minuteInterval</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="CKOptionPropertyCellController Methods" name="task_CKOptionPropertyCellController Methods"></a>
+						<h3 class="subsubtitle task-title">CKOptionPropertyCellController Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiSelectionEnabled">&nbsp;&nbsp;multiSelectionEnabled</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/presentationStyle">&nbsp;&nbsp;presentationStyle</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sortingBlock">&nbsp;&nbsp;sortingBlock</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/optionCellControllerCreationBlock">&nbsp;&nbsp;optionCellControllerCreationBlock</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/attributes" title="attributes"></a>
+	<h3 class="subsubtitle method-title">attributes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specify options that could be used by various behaviours in app or in the cloudkit.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableDictionary *attributes</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Specify options that could be used by various behaviours in app or in the cloudkit.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cellControllerCreationBlock" title="cellControllerCreationBlock"></a>
+	<h3 class="subsubtitle method-title">cellControllerCreationBlock</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) CKCellControllerCreationBlock cellControllerCreationBlock</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/comparable" title="comparable"></a>
+	<h3 class="subsubtitle method-title">comparable</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL comparable</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/contentProtocol" title="contentProtocol"></a>
+	<h3 class="subsubtitle method-title">contentProtocol</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) Protocol *contentProtocol</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/contentType" title="contentType"></a>
+	<h3 class="subsubtitle method-title">contentType</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) Class contentType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/copiable" title="copiable"></a>
+	<h3 class="subsubtitle method-title">copiable</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL copiable</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/creatable" title="creatable"></a>
+	<h3 class="subsubtitle method-title">creatable</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL creatable</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateFormat" title="dateFormat"></a>
+	<h3 class="subsubtitle method-title">dateFormat</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *dateFormat</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deepCopy" title="deepCopy"></a>
+	<h3 class="subsubtitle method-title">deepCopy</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL deepCopy</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/editable" title="editable"></a>
+	<h3 class="subsubtitle method-title">editable</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL editable</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enumDescriptor" title="enumDescriptor"></a>
+	<h3 class="subsubtitle method-title">enumDescriptor</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) CKEnumDescriptor *enumDescriptor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hashable" title="hashable"></a>
+	<h3 class="subsubtitle method-title">hashable</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL hashable</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maximumDate" title="maximumDate"></a>
+	<h3 class="subsubtitle method-title">maximumDate</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSDate *maximumDate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maximumLength" title="maximumLength"></a>
+	<h3 class="subsubtitle method-title">maximumLength</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSInteger maximumLength</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyStringViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maximumValue" title="maximumValue"></a>
+	<h3 class="subsubtitle method-title">maximumValue</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *maximumValue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/minimumDate" title="minimumDate"></a>
+	<h3 class="subsubtitle method-title">minimumDate</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSDate *minimumDate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/minimumLength" title="minimumLength"></a>
+	<h3 class="subsubtitle method-title">minimumLength</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSInteger minimumLength</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyStringViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/minimumValue" title="minimumValue"></a>
+	<h3 class="subsubtitle method-title">minimumValue</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *minimumValue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/minuteInterval" title="minuteInterval"></a>
+	<h3 class="subsubtitle method-title">minuteInterval</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSInteger minuteInterval</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineEnabled" title="multiLineEnabled"></a>
+	<h3 class="subsubtitle method-title">multiLineEnabled</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL multiLineEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiSelectionEnabled" title="multiSelectionEnabled"></a>
+	<h3 class="subsubtitle method-title">multiSelectionEnabled</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL multiSelectionEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/optionCellControllerCreationBlock" title="optionCellControllerCreationBlock"></a>
+	<h3 class="subsubtitle method-title">optionCellControllerCreationBlock</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) CKTableViewCellController *^ ) ( NSString *label , id value ) optionCellControllerCreationBlock</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/placeholderValue" title="placeholderValue"></a>
+	<h3 class="subsubtitle method-title">placeholderValue</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *placeholderValue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyNumberViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/presentationStyle" title="presentationStyle"></a>
+	<h3 class="subsubtitle method-title">presentationStyle</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CKOptionPropertyCellControllerPresentationStyle presentationStyle</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/serializable" title="serializable"></a>
+	<h3 class="subsubtitle method-title">serializable</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL serializable</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sortingBlock" title="sortingBlock"></a>
+	<h3 class="subsubtitle method-title">sortingBlock</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) CKOptionPropertyCellControllerSortingBlock sortingBlock</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textInputFormatterBlock" title="textInputFormatterBlock"></a>
+	<h3 class="subsubtitle method-title">textInputFormatterBlock</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) BOOL ( ^ ) ( id textInputView , NSRange range , NSString *replacementString ) textInputFormatterBlock</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyStringViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/validationPredicate" title="validationPredicate"></a>
+	<h3 class="subsubtitle method-title">validationPredicate</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSPredicate *validationPredicate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/valuesAndLabels" title="valuesAndLabels"></a>
+	<h3 class="subsubtitle method-title">valuesAndLabels</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSDictionary *valuesAndLabels</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes+Attributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/extendedAttributesForObject:property:" title="extendedAttributesForObject:property:"></a>
+	<h3 class="subsubtitle method-title">extendedAttributesForObject:property:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CKPropertyExtendedAttributes *)extendedAttributesForObject:(id)<em>object</em> property:(CKClassPropertyDescriptor *)<em>property</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKPropertyExtendedAttributes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 smorel. All rights reserved. (Last updated: 2015-06-09)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

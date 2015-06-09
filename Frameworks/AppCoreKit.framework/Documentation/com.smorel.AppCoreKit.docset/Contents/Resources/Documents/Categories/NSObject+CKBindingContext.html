@@ -1,0 +1,1311 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>NSObject(CKBindingContext) Category Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AppCoreKit </a></h1>
+				<a id="developerHome" href="../index.html">smorel</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">NSObject(CKBindingContext) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/allBindingsDescription">&nbsp;&nbsp;&nbsp;&nbsp;+ allBindingsDescription</option>
+	
+	<option value="//api/name/beginBindingsContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ beginBindingsContext:</option>
+	
+	<option value="//api/name/beginBindingsContext:options:">&nbsp;&nbsp;&nbsp;&nbsp;+ beginBindingsContext:options:</option>
+	
+	<option value="//api/name/beginBindingsContext:policy:">&nbsp;&nbsp;&nbsp;&nbsp;+ beginBindingsContext:policy:</option>
+	
+	<option value="//api/name/beginBindingsContext:policy:options:">&nbsp;&nbsp;&nbsp;&nbsp;+ beginBindingsContext:policy:options:</option>
+	
+	<option value="//api/name/currentBindingContext">&nbsp;&nbsp;&nbsp;&nbsp;+ currentBindingContext</option>
+	
+	<option value="//api/name/currentBindingContextOptions">&nbsp;&nbsp;&nbsp;&nbsp;+ currentBindingContextOptions</option>
+	
+	<option value="//api/name/endBindingsContext">&nbsp;&nbsp;&nbsp;&nbsp;+ endBindingsContext</option>
+	
+	<option value="//api/name/removeAllBindingsForContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ removeAllBindingsForContext:</option>
+	
+	<option value="//api/name/validateCurrentBindingsContext">&nbsp;&nbsp;&nbsp;&nbsp;+ validateCurrentBindingsContext</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/beginBindingsContext">&nbsp;&nbsp;&nbsp;&nbsp;- beginBindingsContext</option>
+	
+	<option value="//api/name/beginBindingsContextByKeepingPreviousBindings">&nbsp;&nbsp;&nbsp;&nbsp;- beginBindingsContextByKeepingPreviousBindings</option>
+	
+	<option value="//api/name/beginBindingsContextByKeepingPreviousBindingsWithOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- beginBindingsContextByKeepingPreviousBindingsWithOptions:</option>
+	
+	<option value="//api/name/beginBindingsContextByKeepingPreviousBindingsWithOptions:scope:">&nbsp;&nbsp;&nbsp;&nbsp;- beginBindingsContextByKeepingPreviousBindingsWithOptions:scope:</option>
+	
+	<option value="//api/name/beginBindingsContextByKeepingPreviousBindingsWithScope:">&nbsp;&nbsp;&nbsp;&nbsp;- beginBindingsContextByKeepingPreviousBindingsWithScope:</option>
+	
+	<option value="//api/name/beginBindingsContextByRemovingPreviousBindings">&nbsp;&nbsp;&nbsp;&nbsp;- beginBindingsContextByRemovingPreviousBindings</option>
+	
+	<option value="//api/name/beginBindingsContextByRemovingPreviousBindingsWithOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- beginBindingsContextByRemovingPreviousBindingsWithOptions:</option>
+	
+	<option value="//api/name/beginBindingsContextByRemovingPreviousBindingsWithOptions:scope:">&nbsp;&nbsp;&nbsp;&nbsp;- beginBindingsContextByRemovingPreviousBindingsWithOptions:scope:</option>
+	
+	<option value="//api/name/beginBindingsContextByRemovingPreviousBindingsWithScope:">&nbsp;&nbsp;&nbsp;&nbsp;- beginBindingsContextByRemovingPreviousBindingsWithScope:</option>
+	
+	<option value="//api/name/beginBindingsContextWithScope:">&nbsp;&nbsp;&nbsp;&nbsp;- beginBindingsContextWithScope:</option>
+	
+	<option value="//api/name/bindingContextWithScope:">&nbsp;&nbsp;&nbsp;&nbsp;- bindingContextWithScope:</option>
+	
+	<option value="//api/name/clearBindingsContext">&nbsp;&nbsp;&nbsp;&nbsp;- clearBindingsContext</option>
+	
+	<option value="//api/name/clearBindingsContextWithScope:">&nbsp;&nbsp;&nbsp;&nbsp;- clearBindingsContextWithScope:</option>
+	
+	<option value="//api/name/endBindingsContext">&nbsp;&nbsp;&nbsp;&nbsp;- endBindingsContext</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Printing bindings description">Printing bindings description</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Contexts">Managing Contexts</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allBindingsDescription">allBindingsDescription</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginBindingsContext:">beginBindingsContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginBindingsContext:options:">beginBindingsContext:options:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginBindingsContext:policy:">beginBindingsContext:policy:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginBindingsContext:policy:options:">beginBindingsContext:policy:options:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentBindingContext">currentBindingContext</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentBindingContextOptions">currentBindingContextOptions</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endBindingsContext">endBindingsContext</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeAllBindingsForContext:">removeAllBindingsForContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/validateCurrentBindingsContext">validateCurrentBindingsContext</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginBindingsContext">beginBindingsContext</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginBindingsContextByKeepingPreviousBindings">beginBindingsContextByKeepingPreviousBindings</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginBindingsContextByKeepingPreviousBindingsWithOptions:">beginBindingsContextByKeepingPreviousBindingsWithOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginBindingsContextByKeepingPreviousBindingsWithOptions:scope:">beginBindingsContextByKeepingPreviousBindingsWithOptions:scope:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginBindingsContextByKeepingPreviousBindingsWithScope:">beginBindingsContextByKeepingPreviousBindingsWithScope:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginBindingsContextByRemovingPreviousBindings">beginBindingsContextByRemovingPreviousBindings</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginBindingsContextByRemovingPreviousBindingsWithOptions:">beginBindingsContextByRemovingPreviousBindingsWithOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginBindingsContextByRemovingPreviousBindingsWithOptions:scope:">beginBindingsContextByRemovingPreviousBindingsWithOptions:scope:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginBindingsContextByRemovingPreviousBindingsWithScope:">beginBindingsContextByRemovingPreviousBindingsWithScope:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginBindingsContextWithScope:">beginBindingsContextWithScope:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bindingContextWithScope:">bindingContextWithScope:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clearBindingsContext">clearBindingsContext</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clearBindingsContextWithScope:">clearBindingsContextWithScope:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endBindingsContext">endBindingsContext</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="NSObject(CKBindingContext) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">NSObject(CKBindingContext) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">NSObject+Bindings.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Creating bindings and opening context MUST be done on the main thread yet or it will assert.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Printing bindings description" name="task_Printing bindings description"></a>
+						<h3 class="subsubtitle task-title">Printing bindings description</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allBindingsDescription">+&nbsp;allBindingsDescription</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Contexts" name="task_Managing Contexts"></a>
+						<h3 class="subsubtitle task-title">Managing Contexts</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginBindingsContext:">+&nbsp;beginBindingsContext:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginBindingsContext:policy:">+&nbsp;beginBindingsContext:policy:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginBindingsContext:options:">+&nbsp;beginBindingsContext:options:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginBindingsContext:policy:options:">+&nbsp;beginBindingsContext:policy:options:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endBindingsContext">+&nbsp;endBindingsContext</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeAllBindingsForContext:">+&nbsp;removeAllBindingsForContext:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginBindingsContext">&ndash;&nbsp;beginBindingsContext</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endBindingsContext">&ndash;&nbsp;endBindingsContext</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clearBindingsContext">&ndash;&nbsp;clearBindingsContext</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bindingContextWithScope:">&ndash;&nbsp;bindingContextWithScope:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginBindingsContextWithScope:">&ndash;&nbsp;beginBindingsContextWithScope:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginBindingsContextByKeepingPreviousBindingsWithScope:">&ndash;&nbsp;beginBindingsContextByKeepingPreviousBindingsWithScope:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginBindingsContextByRemovingPreviousBindingsWithScope:">&ndash;&nbsp;beginBindingsContextByRemovingPreviousBindingsWithScope:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginBindingsContextByKeepingPreviousBindingsWithOptions:scope:">&ndash;&nbsp;beginBindingsContextByKeepingPreviousBindingsWithOptions:scope:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginBindingsContextByRemovingPreviousBindingsWithOptions:scope:">&ndash;&nbsp;beginBindingsContextByRemovingPreviousBindingsWithOptions:scope:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clearBindingsContextWithScope:">&ndash;&nbsp;clearBindingsContextWithScope:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginBindingsContextByKeepingPreviousBindings">&ndash;&nbsp;beginBindingsContextByKeepingPreviousBindings</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginBindingsContextByRemovingPreviousBindings">&ndash;&nbsp;beginBindingsContextByRemovingPreviousBindings</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginBindingsContextByKeepingPreviousBindingsWithOptions:">&ndash;&nbsp;beginBindingsContextByKeepingPreviousBindingsWithOptions:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginBindingsContextByRemovingPreviousBindingsWithOptions:">&ndash;&nbsp;beginBindingsContextByRemovingPreviousBindingsWithOptions:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/validateCurrentBindingsContext">+&nbsp;validateCurrentBindingsContext</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentBindingContextOptions">+&nbsp;currentBindingContextOptions</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentBindingContext">+&nbsp;currentBindingContext</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/allBindingsDescription" title="allBindingsDescription"></a>
+	<h3 class="subsubtitle method-title">allBindingsDescription</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)allBindingsDescription</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beginBindingsContext:" title="beginBindingsContext:"></a>
+	<h3 class="subsubtitle method-title">beginBindingsContext:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)beginBindingsContext:(id)<em>context</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beginBindingsContext:options:" title="beginBindingsContext:options:"></a>
+	<h3 class="subsubtitle method-title">beginBindingsContext:options:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)beginBindingsContext:(id)<em>context</em> options:(CKBindingsContextOptions)<em>options</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beginBindingsContext:policy:" title="beginBindingsContext:policy:"></a>
+	<h3 class="subsubtitle method-title">beginBindingsContext:policy:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)beginBindingsContext:(id)<em>context</em> policy:(CKBindingsContextPolicy)<em>policy</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beginBindingsContext:policy:options:" title="beginBindingsContext:policy:options:"></a>
+	<h3 class="subsubtitle method-title">beginBindingsContext:policy:options:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)beginBindingsContext:(id)<em>context</em> policy:(CKBindingsContextPolicy)<em>policy</em> options:(CKBindingsContextOptions)<em>options</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentBindingContext" title="currentBindingContext"></a>
+	<h3 class="subsubtitle method-title">currentBindingContext</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)currentBindingContext</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentBindingContextOptions" title="currentBindingContextOptions"></a>
+	<h3 class="subsubtitle method-title">currentBindingContextOptions</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CKBindingsContextOptions)currentBindingContextOptions</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endBindingsContext" title="endBindingsContext"></a>
+	<h3 class="subsubtitle method-title">endBindingsContext</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)endBindingsContext</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeAllBindingsForContext:" title="removeAllBindingsForContext:"></a>
+	<h3 class="subsubtitle method-title">removeAllBindingsForContext:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)removeAllBindingsForContext:(id)<em>context</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/validateCurrentBindingsContext" title="validateCurrentBindingsContext"></a>
+	<h3 class="subsubtitle method-title">validateCurrentBindingsContext</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)validateCurrentBindingsContext</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/beginBindingsContext" title="beginBindingsContext"></a>
+	<h3 class="subsubtitle method-title">beginBindingsContext</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>beginBindingsContext is calling <a href="#//api/name/beginBindingsContextByRemovingPreviousBindings">beginBindingsContextByRemovingPreviousBindings</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)beginBindingsContext</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>beginBindingsContext is calling <a href="#//api/name/beginBindingsContextByRemovingPreviousBindings">beginBindingsContextByRemovingPreviousBindings</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beginBindingsContextByKeepingPreviousBindings" title="beginBindingsContextByKeepingPreviousBindings"></a>
+	<h3 class="subsubtitle method-title">beginBindingsContextByKeepingPreviousBindings</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)beginBindingsContextByKeepingPreviousBindings</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beginBindingsContextByKeepingPreviousBindingsWithOptions:" title="beginBindingsContextByKeepingPreviousBindingsWithOptions:"></a>
+	<h3 class="subsubtitle method-title">beginBindingsContextByKeepingPreviousBindingsWithOptions:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)beginBindingsContextByKeepingPreviousBindingsWithOptions:(CKBindingsContextOptions)<em>options</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beginBindingsContextByKeepingPreviousBindingsWithOptions:scope:" title="beginBindingsContextByKeepingPreviousBindingsWithOptions:scope:"></a>
+	<h3 class="subsubtitle method-title">beginBindingsContextByKeepingPreviousBindingsWithOptions:scope:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)beginBindingsContextByKeepingPreviousBindingsWithOptions:(CKBindingsContextOptions)<em>options</em> scope:(NSString *)<em>scope</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beginBindingsContextByKeepingPreviousBindingsWithScope:" title="beginBindingsContextByKeepingPreviousBindingsWithScope:"></a>
+	<h3 class="subsubtitle method-title">beginBindingsContextByKeepingPreviousBindingsWithScope:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)beginBindingsContextByKeepingPreviousBindingsWithScope:(NSString *)<em>scope</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beginBindingsContextByRemovingPreviousBindings" title="beginBindingsContextByRemovingPreviousBindings"></a>
+	<h3 class="subsubtitle method-title">beginBindingsContextByRemovingPreviousBindings</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)beginBindingsContextByRemovingPreviousBindings</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beginBindingsContextByRemovingPreviousBindingsWithOptions:" title="beginBindingsContextByRemovingPreviousBindingsWithOptions:"></a>
+	<h3 class="subsubtitle method-title">beginBindingsContextByRemovingPreviousBindingsWithOptions:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)beginBindingsContextByRemovingPreviousBindingsWithOptions:(CKBindingsContextOptions)<em>options</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beginBindingsContextByRemovingPreviousBindingsWithOptions:scope:" title="beginBindingsContextByRemovingPreviousBindingsWithOptions:scope:"></a>
+	<h3 class="subsubtitle method-title">beginBindingsContextByRemovingPreviousBindingsWithOptions:scope:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)beginBindingsContextByRemovingPreviousBindingsWithOptions:(CKBindingsContextOptions)<em>options</em> scope:(NSString *)<em>scope</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beginBindingsContextByRemovingPreviousBindingsWithScope:" title="beginBindingsContextByRemovingPreviousBindingsWithScope:"></a>
+	<h3 class="subsubtitle method-title">beginBindingsContextByRemovingPreviousBindingsWithScope:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)beginBindingsContextByRemovingPreviousBindingsWithScope:(NSString *)<em>scope</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beginBindingsContextWithScope:" title="beginBindingsContextWithScope:"></a>
+	<h3 class="subsubtitle method-title">beginBindingsContextWithScope:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>It often happend that we want to manage several bindings context per object instance cause all the bindings do not have the same life span.
+Or we want to manage bindings in a class and other bindings in an inherited class.
+Scope is here to allow multiple set of binding per instance.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)beginBindingsContextWithScope:(NSString *)<em>scope</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>It often happend that we want to manage several bindings context per object instance cause all the bindings do not have the same life span.
+Or we want to manage bindings in a class and other bindings in an inherited class.
+Scope is here to allow multiple set of binding per instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bindingContextWithScope:" title="bindingContextWithScope:"></a>
+	<h3 class="subsubtitle method-title">bindingContextWithScope:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)bindingContextWithScope:(NSString *)<em>scope</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/clearBindingsContext" title="clearBindingsContext"></a>
+	<h3 class="subsubtitle method-title">clearBindingsContext</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)clearBindingsContext</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/clearBindingsContextWithScope:" title="clearBindingsContextWithScope:"></a>
+	<h3 class="subsubtitle method-title">clearBindingsContextWithScope:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)clearBindingsContextWithScope:(NSString *)<em>scope</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endBindingsContext" title="endBindingsContext"></a>
+	<h3 class="subsubtitle method-title">endBindingsContext</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)endBindingsContext</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+Bindings.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 smorel. All rights reserved. (Last updated: 2015-06-09)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

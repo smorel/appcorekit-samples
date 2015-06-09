@@ -4,10 +4,9 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>RMResourceManager Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -44,6 +43,8 @@
 	
 	<option value="//api/name/addObserverForResourcesWithExtension:object:usingBlock:">&nbsp;&nbsp;&nbsp;&nbsp;+ addObserverForResourcesWithExtension:object:usingBlock:</option>
 	
+	<option value="//api/name/bundles">&nbsp;&nbsp;&nbsp;&nbsp;+ bundles</option>
+	
 	<option value="//api/name/handleApplication:didFinishLaunchingWithOptions:">&nbsp;&nbsp;&nbsp;&nbsp;+ handleApplication:didFinishLaunchingWithOptions:</option>
 	
 	<option value="//api/name/handleApplication:openURL:">&nbsp;&nbsp;&nbsp;&nbsp;+ handleApplication:openURL:</option>
@@ -51,6 +52,8 @@
 	<option value="//api/name/isResourceManagerConnected">&nbsp;&nbsp;&nbsp;&nbsp;+ isResourceManagerConnected</option>
 	
 	<option value="//api/name/pathForResource:ofType:">&nbsp;&nbsp;&nbsp;&nbsp;+ pathForResource:ofType:</option>
+	
+	<option value="//api/name/registerBundle:">&nbsp;&nbsp;&nbsp;&nbsp;+ registerBundle:</option>
 	
 	<option value="//api/name/setHudEnabled:">&nbsp;&nbsp;&nbsp;&nbsp;+ setHudEnabled:</option>
 	
@@ -93,6 +96,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addObserverForResourcesWithExtension:object:usingBlock:">addObserverForResourcesWithExtension:object:usingBlock:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bundles">bundles</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleApplication:didFinishLaunchingWithOptions:">handleApplication:didFinishLaunchingWithOptions:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleApplication:openURL:">handleApplication:openURL:</a></span></li>
@@ -100,6 +105,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isResourceManagerConnected">isResourceManagerConnected</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathForResource:ofType:">pathForResource:ofType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerBundle:">registerBundle:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setHudEnabled:">setHudEnabled:</a></span></li>
 	
@@ -146,8 +153,8 @@
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -180,63 +187,66 @@ The newer is the winner and the resource manager will fire a notification for yo
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/initWithRepositories:">&ndash;&nbsp;initWithRepositories:</a></code>
-		<span class="tooltip"><p>Initialize a newly created resource manager object to manage sync using the specified repositories.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/registerBundle:">+&nbsp;registerBundle:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bundles">+&nbsp;bundles</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setSharedManager:">+&nbsp;setSharedManager:</a></code>
-		<span class="tooltip"><p>Sets the resource manager that will manage sync.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/isResourceManagerConnected">+&nbsp;isResourceManagerConnected</a></code>
-		<span class="tooltip"><p>return YES if the shared manager has been setup.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/handleApplication:openURL:">+&nbsp;handleApplication:openURL:</a></code>
-		<span class="tooltip"><p>Forward the open application with url event to the dropbox account After authentification.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/handleApplication:didFinishLaunchingWithOptions:">+&nbsp;handleApplication:didFinishLaunchingWithOptions:</a></code>
-		<span class="tooltip"><p>Forward the open application didFinishLaunchingWithOptions event to the dropbox account for authentification.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/pathForResource:ofType:">+&nbsp;pathForResource:ofType:</a></code>
-		<span class="tooltip"><p>Accessing resource files</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addObserverForResourcesWithExtension:object:usingBlock:">+&nbsp;addObserverForResourcesWithExtension:object:usingBlock:</a></code>
-		<span class="tooltip"><p>Managing update observers</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setHudEnabled:">+&nbsp;setHudEnabled:</a></code>
-		<span class="tooltip"><p>default value is yes.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setHudTitle:">+&nbsp;setHudTitle:</a></code>
-		<span class="tooltip"><p>Sets the title displayed in the hud if hud is enabled.</p></span>
 	</span>
 	
 	
@@ -265,9 +275,48 @@ The newer is the winner and the resource manager will fire a notification for yo
 		<p>Managing update observers</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (void)addObserverForResourcesWithExtension:(NSString *)<em>ext</em> object:(id)<em>object</em> usingBlock:(void ( ^ ) ( id observer , NSArray *paths ))<em>updateBlock</em></code></div>
+
+    
 	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Managing update observers</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RMResourceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bundles" title="bundles"></a>
+	<h3 class="subsubtitle method-title">bundles</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSArray *)bundles</code></div>
+
+    
 	
 	
 	
@@ -299,8 +348,11 @@ The newer is the winner and the resource manager will fire a notification for yo
 		<p>Forward the open application didFinishLaunchingWithOptions event to the dropbox account for authentification.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (void)handleApplication:(UIApplication *)<em>application</em> didFinishLaunchingWithOptions:(NSDictionary *)<em>launchOptions</em></code></div>
+
+    
 	
 	
 	
@@ -308,6 +360,10 @@ The newer is the winner and the resource manager will fire a notification for yo
 	
 	
 	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Forward the open application didFinishLaunchingWithOptions event to the dropbox account for authentification.</p>
+	</div>
 	
 	
 	
@@ -333,8 +389,11 @@ The newer is the winner and the resource manager will fire a notification for yo
 		<p>Forward the open application with url event to the dropbox account After authentification.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (void)handleApplication:(UIApplication *)<em>application</em> openURL:(NSURL *)<em>url</em></code></div>
+
+    
 	
 	
 	
@@ -342,6 +401,10 @@ The newer is the winner and the resource manager will fire a notification for yo
 	
 	
 	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Forward the open application with url event to the dropbox account After authentification.</p>
+	</div>
 	
 	
 	
@@ -367,8 +430,11 @@ The newer is the winner and the resource manager will fire a notification for yo
 		<p>return YES if the shared manager has been setup.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (BOOL)isResourceManagerConnected</code></div>
+
+    
 	
 	
 	
@@ -376,6 +442,10 @@ The newer is the winner and the resource manager will fire a notification for yo
 	
 	
 	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>return YES if the shared manager has been setup.</p>
+	</div>
 	
 	
 	
@@ -401,8 +471,11 @@ The newer is the winner and the resource manager will fire a notification for yo
 		<p>Accessing resource files</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (NSString *)pathForResource:(NSString *)<em>name</em> ofType:(NSString *)<em>ext</em></code></div>
+
+    
 	
 	
 	
@@ -410,6 +483,55 @@ The newer is the winner and the resource manager will fire a notification for yo
 	
 	
 	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Accessing resource files</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RMResourceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/registerBundle:" title="registerBundle:"></a>
+	<h3 class="subsubtitle method-title">registerBundle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If you have extra resource you want to manage outside the main bundle,
+you can add these <a href="#//api/name/bundles">bundles</a> here so that you&rsquo;ll be able to access your resources without
+the need to explicitly specify wich bundle it is.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)registerBundle:(NSBundle *)<em>bundle</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If you have extra resource you want to manage outside the main bundle,
+you can add these <a href="#//api/name/bundles">bundles</a> here so that you&rsquo;ll be able to access your resources without
+the need to explicitly specify wich bundle it is.</p>
+	</div>
 	
 	
 	
@@ -435,8 +557,11 @@ The newer is the winner and the resource manager will fire a notification for yo
 		<p>default value is yes.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (void)setHudEnabled:(BOOL)<em>enabled</em></code></div>
+
+    
 	
 	
 	
@@ -444,6 +569,10 @@ The newer is the winner and the resource manager will fire a notification for yo
 	
 	
 	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>default value is yes.</p>
+	</div>
 	
 	
 	
@@ -469,8 +598,11 @@ The newer is the winner and the resource manager will fire a notification for yo
 		<p>Sets the title displayed in the hud if hud is enabled.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (void)setHudTitle:(NSString *)<em>title</em></code></div>
+
+    
 	
 	
 	
@@ -478,6 +610,10 @@ The newer is the winner and the resource manager will fire a notification for yo
 	
 	
 	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the title displayed in the hud if hud is enabled.</p>
+	</div>
 	
 	
 	
@@ -503,8 +639,11 @@ The newer is the winner and the resource manager will fire a notification for yo
 		<p>Sets the resource manager that will manage sync.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (void)setSharedManager:(RMResourceManager *)<em>manager</em></code></div>
+
+    
 	
 	
 	
@@ -512,6 +651,10 @@ The newer is the winner and the resource manager will fire a notification for yo
 	
 	
 	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the resource manager that will manage sync.</p>
+	</div>
 	
 	
 	
@@ -545,8 +688,11 @@ The newer is the winner and the resource manager will fire a notification for yo
 		<p>Initialize a newly created resource manager object to manage sync using the specified repositories.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (id)initWithRepositories:(NSArray *)<em>repositories</em></code></div>
+
+    
 	
 	
 	
@@ -554,6 +700,10 @@ The newer is the winner and the resource manager will fire a notification for yo
 	
 	
 	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initialize a newly created resource manager object to manage sync using the specified repositories.</p>
+	</div>
 	
 	
 	
@@ -572,6 +722,8 @@ The newer is the winner and the resource manager will fire a notification for yo
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -582,9 +734,9 @@ The newer is the winner and the resource manager will fire a notification for yo
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Wherecloud. All rights reserved. (Last updated: 2013-07-22)</span><br />
+						<p><span class="copyright">&copy; 2015 Wherecloud. All rights reserved. (Last updated: 2015-06-09)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -672,6 +824,14 @@ The newer is the winner and the resource manager will fire a notification for yo
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

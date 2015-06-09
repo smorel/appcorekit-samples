@@ -1,0 +1,213 @@
+# AppCoreKit
+
+AppCoreKit is an application framework designed to improve productivity while creating Apps for iOS. This is the result of a 4 years experience and is a production framework that shipped more than 20 apps.
+
+AppCoreKit does not offer out of the box UI components but the technology to help you:
+
+* Manage your data
+* Automatic serialization (KeyValue Store, Core Data)
+* Objective-C runtime apis 
+* Type and data structure conversions
+* View controllers and containers
+* Ui vs. Models synchronization with bindings
+* Appearance customization with cascading stylesheets
+* Responsive view layouts with a horizontal/vertical box model
+* Forms with per cell auto sizing controllers with cutom layout support
+* Maps
+* Network
+* And more.
+
+AppCoreKit supports ios version 7 and more as well as the following architectures: armv7, armv7s, arm64 and i386 for the simulator.
+
+Keep in mind that AppCoreKit is a toolbox. It is non intrusive so that you can cherry pick features and learn how to use it at your own pace.
+The framework is splitted in several modules with the following dependencies:
+
+<div style="text-align:center">
+<img src="https://github.com/smorel/cloudkit/blob/master/Documentation/AppCoreKit-Framework-Overview.png?raw=true"/>
+</div>
+
+
+[![ScreenShot](https://github.com/smorel/AppCoreKit/blob/master/Documentation/screencast-thumbnail.png?raw=true)](http://vimeo.com/49265994)
+
+Screen Cast and high level description of the framework are available at http://www.appcorekit.net
+
+A sample repository with binary versions of the framework is available at https://github.com/smorel/appcorekit-samples
+
+## Documentation
+
+* [Bindings - Synchronizing The UI and models](https://speakerdeck.com/smorel/appcorekit-bindings-for-ios)
+* [Mappings - Converting JSON to native Models](https://speakerdeck.com/smorel/appcorekit-mappings)
+
+* Coming : Network, Conversion, Cascading Tree, Runtime, Models & Collections, Feed Sources, Mock, User Defaults, Automatic Model Serialization using CoreData, UI Extensions, Collection View Controllers, Stylesheets, Layout
+
+
+## Minimum system requirements
+
+AppCoreKit supports all iOS versions 7.0 and higher.
+
+## Additional dependencies
+
+**ResourceManager**
+
+Since the begining the the version 2.2.0 (Master), AppCoreKit integrates a new Resource management framework as a weak dependency. This framework called **ResourceManager** allows live update of your application when you modify your application's resources from 1 or several repositories. You can provide your XCode project folder when working in the simulator or a dropbox folder when working on your device to see your application reload when you modify or add images, strings files, sounds, stylesheets, layouts, color palettes, mappings, ...
+
+If this framework is not linked with your app, the AppCoreKit will use the resources from your application's main bundle. If the framework is linked, you can specify one or several repository you want to sync with.
+
+You can find a pre-compiled version of ResourceManager and sample integration in our sample repository at https://github.com/smorel/appcorekit-samples
+
+Or you can get the sources of this framework and more informations at : https://github.com/smorel/ResourceManager
+
+ResourceManager is also available as CocoaPods:
+
+<pre>pod 'ResourceManager-smorel'</pre>
+
+
+## XCode Integration
+
+### File Templates
+
+We propose file templates for creating view controllers inheriting the AppCoreKit's view controllers classes. This will generates for you the .h, .m and .style files for your view controller. The implementation and stylesheet are adapted to the type of controller you select as a base class to help you quickly quick start with your implementation without any additional setup.
+
+The templates are available in the "Documentation/File Templates/" folder.
+
+Copy the "File Templates/" directory into your "~/Library/Developer/Xcode/Templates/" directory to get ready using these templates.
+
+If you're using cocoa pods, File templates are automatically installed when executing the <pre>pod update</pre> command line.
+
+### Code Snippets
+
+We defined plenty of code snipers for helping you define your stylesheets and layout quickly by reducing time to check which format are supported for each properties you want to customize.
+
+Stylesheet Code Snippets shortcut begins with "st-". just type "st" in your .style file and completion will appear with the provided code snippets.
+Layout Code Snippets shortcut begins with "la-". just type "la" in your .style file and completion will appear with the provided code snippets.
+
+Code snipers are available in the "Documentation/CodeSnippets/" folder.
+
+Copy the "CodeSnippets/" directory into your "~/Library/Developer/Xcode/UserData/CodeSnippets/" directory to get ready using these snippets.
+
+If you're using cocoa pods, Code snippets are automatically installed when executing the <pre>pod update</pre> command line.
+
+## Installation
+
+The recommended approach for installing AppCoreKit is via the [CocoaPods](http://cocoapods.org/) package manager, as it provides flexible dependency management and dead simple installation. For best results, it is recommended that you install via CocoaPods **>= 0.19.1** using Git **>= 1.8.0** installed via Homebrew.
+
+### Using CocoaPods
+
+Adds the following lines in you PodFile
+
+<pre>
+platform :ios, '7.0'
+
+pod 'AppCoreKit-smorel'
+</pre>
+
+### As a framework
+
+#### Compiling the framework
+
+AppCoreKit is built as a Static Framework. Static Framework are not natively supported by Xcode 5 and less and requires some additional specifications to get compiled properly.
+You can skip this setup if using XCode 6 and more.
+
+Copy the following file:
+
+<pre>./static Frameworks.xcspec</pre>
+
+To:
+
+<pre>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Specifications</pre>
+And
+<pre>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Specifications</pre>
+
+<b>IMPORTANT</b> : You will have to copy this file each time you update Xcode to a newer version.
+
+
+#### Compiling the API Documentation
+
+AppCoreKit provides a "Documentation" target that generate a docset using the public header files and the additional programming guides in the Documentation folder. This target is a script base on "appledoc". To install appledoc, follow the installation procedure here : https://github.com/tomaz/appledoc
+
+#### Using AppCoreKit in your own App
+
+* <b>Drag'n'drop</b> the AppCoreKit projects as subprojects in Xcode.
+
+* Adds the AppCoreKit.framework <b>link dependency to your target</b> in the build phases settings.
+
+* Add the following <b>frameworks and libraries dependencies</b> to your project in the build phases settings: 
+<pre>
+libstdc++.dylib, 
+UIKit, 
+Foundation, 
+CoreGraphics, 
+AddressBook, 
+CoreData, 
+QuartzCore, 
+CoreLocation, 
+MapKit, 
+MediaPlayer, 
+CoreFoundation, 
+CFNetwork, 
+SystemConfiguration, 
+MobileCoreServices, 
+Security,
+CoreImage,
+Accelerate,
+AdSupport.
+</pre>
+
+<div style="text-align:center">
+<img src="https://github.com/smorel/cloudkit/blob/master/Documentation/integrating-framework-projects-and-dependencies.png?raw=true"/>
+</div>
+
+
+* Adds the following <b>Header Search Path</b> in your build settings (<b> HEADER_SEARCH_PATHS </b>):
+<pre>
+/usr/include/libxml2
+</pre>
+
+<img src="https://github.com/smorel/cloudkit/blob/master/Documentation/settings-header-search-path.png?raw=true"/>
+
+* Adds the following <b>link flags</b> in your build settings (<b>OTHER_LDFLAGS</b>): 
+<pre>
+ -ObjC -all_load -lxml2 -licucore -lz -weak_library /usr/lib/libstdc++.dylib
+</pre>
+
+<img src="https://github.com/smorel/cloudkit/blob/master/Documentation/settings-other-linker-flags.png?raw=true"/>
+
+* As Xcode do not natively support static frameworks especially for resources, you'll need to add a post build phase if you'd like to use some components. In the build phase for your target, add a <b>"Run Script" build phase</b> and add the following script :
+
+<pre>
+FRAMEWORKS_BUILD_PATH="$TARGET_BUILD_DIR"
+
+# Modify the following path to point on your AppCoreKit sources folder!
+APPCOREKIT_PROJECT_PATH="$HOME/Projects/Frameworks/AppCoreKit/"    
+
+sh "$APPCOREKIT_PROJECT_PATH/copy_framework_resources.sh" 
+            --system-developer-dir "$SYSTEM_DEVELOPER_DIR"
+            --executable-name "$EXECUTABLE_NAME" 
+            --frameworks-dir "$FRAMEWORKS_BUILD_PATH" 
+            --target-build-dir "$TARGET_BUILD_DIR" 
+            --project "$PROJECT" 
+            --project-dir "$PROJECT_DIR"
+</pre>
+
+<img src="https://github.com/smorel/cloudkit/blob/master/Documentation/copy-resources-build-phase.png?raw=true"/>
+
+
+## Credits
+
+If you have any comments, suggestions, question or information request, please contact us at morel.sebastien@gmail.com.
+
+
+## License
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+   

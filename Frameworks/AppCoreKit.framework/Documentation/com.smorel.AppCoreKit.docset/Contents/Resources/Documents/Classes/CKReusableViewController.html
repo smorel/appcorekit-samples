@@ -1,0 +1,2909 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CKReusableViewController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AppCoreKit </a></h1>
+				<a id="developerHome" href="../index.html">smorel</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CKReusableViewController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/accessoryType">&nbsp;&nbsp;&nbsp;&nbsp;accessoryType</option>
+	
+	<option value="//api/name/collectionView">&nbsp;&nbsp;&nbsp;&nbsp;collectionView</option>
+	
+	<option value="//api/name/collectionViewCell">&nbsp;&nbsp;&nbsp;&nbsp;collectionViewCell</option>
+	
+	<option value="//api/name/contentView">&nbsp;&nbsp;&nbsp;&nbsp;contentView</option>
+	
+	<option value="//api/name/contentViewCell">&nbsp;&nbsp;&nbsp;&nbsp;contentViewCell</option>
+	
+	<option value="//api/name/didDeselectBlock">&nbsp;&nbsp;&nbsp;&nbsp;didDeselectBlock</option>
+	
+	<option value="//api/name/didHighlightBlock">&nbsp;&nbsp;&nbsp;&nbsp;didHighlightBlock</option>
+	
+	<option value="//api/name/didRemoveBlock">&nbsp;&nbsp;&nbsp;&nbsp;didRemoveBlock</option>
+	
+	<option value="//api/name/didSelectAccessoryBlock">&nbsp;&nbsp;&nbsp;&nbsp;didSelectAccessoryBlock</option>
+	
+	<option value="//api/name/didSelectBlock">&nbsp;&nbsp;&nbsp;&nbsp;didSelectBlock</option>
+	
+	<option value="//api/name/didUnhighlightBlock">&nbsp;&nbsp;&nbsp;&nbsp;didUnhighlightBlock</option>
+	
+	<option value="//api/name/estimatedSize">&nbsp;&nbsp;&nbsp;&nbsp;estimatedSize</option>
+	
+	<option value="//api/name/flags">&nbsp;&nbsp;&nbsp;&nbsp;flags</option>
+	
+	<option value="//api/name/headerFooterView">&nbsp;&nbsp;&nbsp;&nbsp;headerFooterView</option>
+	
+	<option value="//api/name/indexPath">&nbsp;&nbsp;&nbsp;&nbsp;indexPath</option>
+	
+	<option value="//api/name/isFooterViewController">&nbsp;&nbsp;&nbsp;&nbsp;isFooterViewController</option>
+	
+	<option value="//api/name/isHeaderViewController">&nbsp;&nbsp;&nbsp;&nbsp;isHeaderViewController</option>
+	
+	<option value="//api/name/mapAnnotation">&nbsp;&nbsp;&nbsp;&nbsp;mapAnnotation</option>
+	
+	<option value="//api/name/mapAnnotationView">&nbsp;&nbsp;&nbsp;&nbsp;mapAnnotationView</option>
+	
+	<option value="//api/name/mapView">&nbsp;&nbsp;&nbsp;&nbsp;mapView</option>
+	
+	<option value="//api/name/parentSwipeableContentViewController">&nbsp;&nbsp;&nbsp;&nbsp;parentSwipeableContentViewController</option>
+	
+	<option value="//api/name/tableView">&nbsp;&nbsp;&nbsp;&nbsp;tableView</option>
+	
+	<option value="//api/name/tableViewCell">&nbsp;&nbsp;&nbsp;&nbsp;tableViewCell</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/controllerWithObject:keyPath:">&nbsp;&nbsp;&nbsp;&nbsp;+ controllerWithObject:keyPath:</option>
+	
+	<option value="//api/name/controllerWithObject:keyPath:readOnly:">&nbsp;&nbsp;&nbsp;&nbsp;+ controllerWithObject:keyPath:readOnly:</option>
+	
+	<option value="//api/name/controllerWithProperty:">&nbsp;&nbsp;&nbsp;&nbsp;+ controllerWithProperty:</option>
+	
+	<option value="//api/name/controllerWithProperty:readOnly:">&nbsp;&nbsp;&nbsp;&nbsp;+ controllerWithProperty:readOnly:</option>
+	
+	<option value="//api/name/controllerWithTitle:action:">&nbsp;&nbsp;&nbsp;&nbsp;+ controllerWithTitle:action:</option>
+	
+	<option value="//api/name/controllerWithTitle:defaultImageName:imageURL:action:">&nbsp;&nbsp;&nbsp;&nbsp;+ controllerWithTitle:defaultImageName:imageURL:action:</option>
+	
+	<option value="//api/name/controllerWithTitle:imageName:action:">&nbsp;&nbsp;&nbsp;&nbsp;+ controllerWithTitle:imageName:action:</option>
+	
+	<option value="//api/name/controllerWithTitle:imageURL:action:">&nbsp;&nbsp;&nbsp;&nbsp;+ controllerWithTitle:imageURL:action:</option>
+	
+	<option value="//api/name/controllerWithTitle:subtitle:action:">&nbsp;&nbsp;&nbsp;&nbsp;+ controllerWithTitle:subtitle:action:</option>
+	
+	<option value="//api/name/controllerWithTitle:subtitle:defaultImageName:imageURL:action:">&nbsp;&nbsp;&nbsp;&nbsp;+ controllerWithTitle:subtitle:defaultImageName:imageURL:action:</option>
+	
+	<option value="//api/name/controllerWithTitle:subtitle:imageName:action:">&nbsp;&nbsp;&nbsp;&nbsp;+ controllerWithTitle:subtitle:imageName:action:</option>
+	
+	<option value="//api/name/controllerWithTitle:subtitle:imageURL:action:">&nbsp;&nbsp;&nbsp;&nbsp;+ controllerWithTitle:subtitle:imageURL:action:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/activateNextResponder">&nbsp;&nbsp;&nbsp;&nbsp;- activateNextResponder</option>
+	
+	<option value="//api/name/activatePreviousResponder">&nbsp;&nbsp;&nbsp;&nbsp;- activatePreviousResponder</option>
+	
+	<option value="//api/name/becomeFirstResponder">&nbsp;&nbsp;&nbsp;&nbsp;- becomeFirstResponder</option>
+	
+	<option value="//api/name/didBecomeFirstResponder">&nbsp;&nbsp;&nbsp;&nbsp;- didBecomeFirstResponder</option>
+	
+	<option value="//api/name/didDeselect">&nbsp;&nbsp;&nbsp;&nbsp;- didDeselect</option>
+	
+	<option value="//api/name/didHighlight">&nbsp;&nbsp;&nbsp;&nbsp;- didHighlight</option>
+	
+	<option value="//api/name/didRemove">&nbsp;&nbsp;&nbsp;&nbsp;- didRemove</option>
+	
+	<option value="//api/name/didResignFirstResponder">&nbsp;&nbsp;&nbsp;&nbsp;- didResignFirstResponder</option>
+	
+	<option value="//api/name/didSelect">&nbsp;&nbsp;&nbsp;&nbsp;- didSelect</option>
+	
+	<option value="//api/name/didSelectAccessory">&nbsp;&nbsp;&nbsp;&nbsp;- didSelectAccessory</option>
+	
+	<option value="//api/name/didUnhighlight">&nbsp;&nbsp;&nbsp;&nbsp;- didUnhighlight</option>
+	
+	<option value="//api/name/hasNextResponder">&nbsp;&nbsp;&nbsp;&nbsp;- hasNextResponder</option>
+	
+	<option value="//api/name/hasPreviousResponder">&nbsp;&nbsp;&nbsp;&nbsp;- hasPreviousResponder</option>
+	
+	<option value="//api/name/hasResponder">&nbsp;&nbsp;&nbsp;&nbsp;- hasResponder</option>
+	
+	<option value="//api/name/nextResponder:">&nbsp;&nbsp;&nbsp;&nbsp;- nextResponder:</option>
+	
+	<option value="//api/name/postInit">&nbsp;&nbsp;&nbsp;&nbsp;- postInit</option>
+	
+	<option value="//api/name/preferredSizeConstraintToSize:">&nbsp;&nbsp;&nbsp;&nbsp;- preferredSizeConstraintToSize:</option>
+	
+	<option value="//api/name/prepareForReuseUsingContentView:contentViewCell:">&nbsp;&nbsp;&nbsp;&nbsp;- prepareForReuseUsingContentView:contentViewCell:</option>
+	
+	<option value="//api/name/resignFirstResponder">&nbsp;&nbsp;&nbsp;&nbsp;- resignFirstResponder</option>
+	
+	<option value="//api/name/reuseIdentifier">&nbsp;&nbsp;&nbsp;&nbsp;- reuseIdentifier</option>
+	
+	<option value="//api/name/scrollToCell">&nbsp;&nbsp;&nbsp;&nbsp;- scrollToCell</option>
+	
+	<option value="//api/name/setNeedsDisplay">&nbsp;&nbsp;&nbsp;&nbsp;- setNeedsDisplay</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKTableViewController Methods">CKTableViewController Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKSwipeableViewController Methods">CKSwipeableViewController Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Property Methods">Property Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKMapViewController Methods">CKMapViewController Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Standard Methods">Standard Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CKCollectionViewController Methods">CKCollectionViewController Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_ResponderChain Methods">ResponderChain Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/accessoryType">accessoryType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/collectionView">collectionView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/collectionViewCell">collectionViewCell</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentView">contentView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentViewCell">contentViewCell</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didDeselectBlock">didDeselectBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didHighlightBlock">didHighlightBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didRemoveBlock">didRemoveBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didSelectAccessoryBlock">didSelectAccessoryBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didSelectBlock">didSelectBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didUnhighlightBlock">didUnhighlightBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/estimatedSize">estimatedSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flags">flags</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/headerFooterView">headerFooterView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/indexPath">indexPath</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isFooterViewController">isFooterViewController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isHeaderViewController">isHeaderViewController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapAnnotation">mapAnnotation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapAnnotationView">mapAnnotationView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapView">mapView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parentSwipeableContentViewController">parentSwipeableContentViewController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableView">tableView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableViewCell">tableViewCell</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controllerWithObject:keyPath:">controllerWithObject:keyPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controllerWithObject:keyPath:readOnly:">controllerWithObject:keyPath:readOnly:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controllerWithProperty:">controllerWithProperty:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controllerWithProperty:readOnly:">controllerWithProperty:readOnly:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controllerWithTitle:action:">controllerWithTitle:action:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controllerWithTitle:defaultImageName:imageURL:action:">controllerWithTitle:defaultImageName:imageURL:action:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controllerWithTitle:imageName:action:">controllerWithTitle:imageName:action:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controllerWithTitle:imageURL:action:">controllerWithTitle:imageURL:action:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controllerWithTitle:subtitle:action:">controllerWithTitle:subtitle:action:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controllerWithTitle:subtitle:defaultImageName:imageURL:action:">controllerWithTitle:subtitle:defaultImageName:imageURL:action:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controllerWithTitle:subtitle:imageName:action:">controllerWithTitle:subtitle:imageName:action:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controllerWithTitle:subtitle:imageURL:action:">controllerWithTitle:subtitle:imageURL:action:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/activateNextResponder">activateNextResponder</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/activatePreviousResponder">activatePreviousResponder</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/becomeFirstResponder">becomeFirstResponder</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didBecomeFirstResponder">didBecomeFirstResponder</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didDeselect">didDeselect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didHighlight">didHighlight</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didRemove">didRemove</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didResignFirstResponder">didResignFirstResponder</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didSelect">didSelect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didSelectAccessory">didSelectAccessory</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didUnhighlight">didUnhighlight</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasNextResponder">hasNextResponder</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasPreviousResponder">hasPreviousResponder</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasResponder">hasResponder</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/nextResponder:">nextResponder:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postInit">postInit</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preferredSizeConstraintToSize:">preferredSizeConstraintToSize:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prepareForReuseUsingContentView:contentViewCell:">prepareForReuseUsingContentView:contentViewCell:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resignFirstResponder">resignFirstResponder</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reuseIdentifier">reuseIdentifier</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scrollToCell">scrollToCell</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setNeedsDisplay">setNeedsDisplay</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CKReusableViewController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CKReusableViewController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CKReusableViewController.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postInit">&ndash;&nbsp;postInit</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contentView">&nbsp;&nbsp;contentView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contentViewCell">&nbsp;&nbsp;contentViewCell</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flags">&nbsp;&nbsp;flags</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didSelect">&ndash;&nbsp;didSelect</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didSelectBlock">&nbsp;&nbsp;didSelectBlock</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didSelectAccessory">&ndash;&nbsp;didSelectAccessory</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didSelectAccessoryBlock">&nbsp;&nbsp;didSelectAccessoryBlock</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didDeselect">&ndash;&nbsp;didDeselect</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didDeselectBlock">&nbsp;&nbsp;didDeselectBlock</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didRemove">&ndash;&nbsp;didRemove</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didRemoveBlock">&nbsp;&nbsp;didRemoveBlock</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didHighlight">&ndash;&nbsp;didHighlight</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didHighlightBlock">&nbsp;&nbsp;didHighlightBlock</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didUnhighlight">&ndash;&nbsp;didUnhighlight</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didUnhighlightBlock">&nbsp;&nbsp;didUnhighlightBlock</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/prepareForReuseUsingContentView:contentViewCell:">&ndash;&nbsp;prepareForReuseUsingContentView:contentViewCell:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reuseIdentifier">&ndash;&nbsp;reuseIdentifier</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/indexPath">&nbsp;&nbsp;indexPath</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isHeaderViewController">&nbsp;&nbsp;isHeaderViewController</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isFooterViewController">&nbsp;&nbsp;isFooterViewController</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/estimatedSize">&nbsp;&nbsp;estimatedSize</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preferredSizeConstraintToSize:">&ndash;&nbsp;preferredSizeConstraintToSize:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scrollToCell">&ndash;&nbsp;scrollToCell</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/accessoryType">&nbsp;&nbsp;accessoryType</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setNeedsDisplay">&ndash;&nbsp;setNeedsDisplay</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="CKTableViewController Methods" name="task_CKTableViewController Methods"></a>
+						<h3 class="subsubtitle task-title">CKTableViewController Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableViewCell">&nbsp;&nbsp;tableViewCell</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableView">&nbsp;&nbsp;tableView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/headerFooterView">&nbsp;&nbsp;headerFooterView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="CKSwipeableViewController Methods" name="task_CKSwipeableViewController Methods"></a>
+						<h3 class="subsubtitle task-title">CKSwipeableViewController Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parentSwipeableContentViewController">&nbsp;&nbsp;parentSwipeableContentViewController</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Property Methods" name="task_Property Methods"></a>
+						<h3 class="subsubtitle task-title">Property Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/controllerWithObject:keyPath:">+&nbsp;controllerWithObject:keyPath:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/controllerWithObject:keyPath:readOnly:">+&nbsp;controllerWithObject:keyPath:readOnly:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/controllerWithProperty:">+&nbsp;controllerWithProperty:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/controllerWithProperty:readOnly:">+&nbsp;controllerWithProperty:readOnly:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="CKMapViewController Methods" name="task_CKMapViewController Methods"></a>
+						<h3 class="subsubtitle task-title">CKMapViewController Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mapAnnotationView">&nbsp;&nbsp;mapAnnotationView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mapView">&nbsp;&nbsp;mapView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mapAnnotation">&nbsp;&nbsp;mapAnnotation</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Standard Methods" name="task_Standard Methods"></a>
+						<h3 class="subsubtitle task-title">Standard Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/controllerWithTitle:action:">+&nbsp;controllerWithTitle:action:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/controllerWithTitle:subtitle:action:">+&nbsp;controllerWithTitle:subtitle:action:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/controllerWithTitle:imageURL:action:">+&nbsp;controllerWithTitle:imageURL:action:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/controllerWithTitle:subtitle:imageURL:action:">+&nbsp;controllerWithTitle:subtitle:imageURL:action:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/controllerWithTitle:defaultImageName:imageURL:action:">+&nbsp;controllerWithTitle:defaultImageName:imageURL:action:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/controllerWithTitle:subtitle:defaultImageName:imageURL:action:">+&nbsp;controllerWithTitle:subtitle:defaultImageName:imageURL:action:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/controllerWithTitle:imageName:action:">+&nbsp;controllerWithTitle:imageName:action:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/controllerWithTitle:subtitle:imageName:action:">+&nbsp;controllerWithTitle:subtitle:imageName:action:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="CKCollectionViewController Methods" name="task_CKCollectionViewController Methods"></a>
+						<h3 class="subsubtitle task-title">CKCollectionViewController Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/collectionViewCell">&nbsp;&nbsp;collectionViewCell</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/collectionView">&nbsp;&nbsp;collectionView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="ResponderChain Methods" name="task_ResponderChain Methods"></a>
+						<h3 class="subsubtitle task-title">ResponderChain Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasNextResponder">&ndash;&nbsp;hasNextResponder</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasPreviousResponder">&ndash;&nbsp;hasPreviousResponder</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/activateNextResponder">&ndash;&nbsp;activateNextResponder</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/activatePreviousResponder">&ndash;&nbsp;activatePreviousResponder</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasResponder">&ndash;&nbsp;hasResponder</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/nextResponder:">&ndash;&nbsp;nextResponder:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/becomeFirstResponder">&ndash;&nbsp;becomeFirstResponder</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resignFirstResponder">&ndash;&nbsp;resignFirstResponder</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didBecomeFirstResponder">&ndash;&nbsp;didBecomeFirstResponder</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didResignFirstResponder">&ndash;&nbsp;didResignFirstResponder</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/accessoryType" title="accessoryType"></a>
+	<h3 class="subsubtitle method-title">accessoryType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The accessoryType when the <a href="../Classes/CKStandardContentViewController.html">CKStandardContentViewController</a> is presented in a table view.
+Default value is UITableViewCellAccessoryNone</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CKAccessoryType accessoryType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The accessoryType when the <a href="../Classes/CKStandardContentViewController.html">CKStandardContentViewController</a> is presented in a table view.
+Default value is UITableViewCellAccessoryNone</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/collectionView" title="collectionView"></a>
+	<h3 class="subsubtitle method-title">collectionView</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) UICollectionView *collectionView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/collectionViewCell" title="collectionViewCell"></a>
+	<h3 class="subsubtitle method-title">collectionViewCell</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) UICollectionViewCell *collectionViewCell</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKCollectionViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/contentView" title="contentView"></a>
+	<h3 class="subsubtitle method-title">contentView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The collection view</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) UIView *contentView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The collection view</p>
+
+<pre><code>UITableView,
+UICollectionView,
+MKMapView
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/contentViewCell" title="contentViewCell"></a>
+	<h3 class="subsubtitle method-title">contentViewCell</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The reusable collection view currently associated to the collectionCellController</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) UIView *contentViewCell</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The reusable collection view currently associated to the collectionCellController</p>
+
+<pre><code>UITableViewCell,
+UICollectionViewCell, 
+MKMapAnnotationView,
+UITableViewHeaderFooterView
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didDeselectBlock" title="didDeselectBlock"></a>
+	<h3 class="subsubtitle method-title">didDeselectBlock</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) void ( ^ ) ( CKReusableViewController *controller ) didDeselectBlock</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didHighlightBlock" title="didHighlightBlock"></a>
+	<h3 class="subsubtitle method-title">didHighlightBlock</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) void ( ^ ) ( CKReusableViewController *controller ) didHighlightBlock</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didRemoveBlock" title="didRemoveBlock"></a>
+	<h3 class="subsubtitle method-title">didRemoveBlock</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) void ( ^ ) ( CKReusableViewController *controller ) didRemoveBlock</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didSelectAccessoryBlock" title="didSelectAccessoryBlock"></a>
+	<h3 class="subsubtitle method-title">didSelectAccessoryBlock</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) void ( ^ ) ( CKReusableViewController *controller ) didSelectAccessoryBlock</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didSelectBlock" title="didSelectBlock"></a>
+	<h3 class="subsubtitle method-title">didSelectBlock</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) void ( ^ ) ( CKReusableViewController *controller ) didSelectBlock</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didUnhighlightBlock" title="didUnhighlightBlock"></a>
+	<h3 class="subsubtitle method-title">didUnhighlightBlock</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) void ( ^ ) ( CKReusableViewController *controller ) didUnhighlightBlock</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/estimatedSize" title="estimatedSize"></a>
+	<h3 class="subsubtitle method-title">estimatedSize</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Default is 320,44</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGSize estimatedSize</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Default is 320,44</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/flags" title="flags"></a>
+	<h3 class="subsubtitle method-title">flags</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>default value is selectable</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CKViewControllerFlags flags</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>default value is selectable</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/headerFooterView" title="headerFooterView"></a>
+	<h3 class="subsubtitle method-title">headerFooterView</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) UITableViewHeaderFooterView *headerFooterView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/indexPath" title="indexPath"></a>
+	<h3 class="subsubtitle method-title">indexPath</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The IndexPath of the reusable view controller in section container</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSIndexPath *indexPath</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The IndexPath of the reusable view controller in section container</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isFooterViewController" title="isFooterViewController"></a>
+	<h3 class="subsubtitle method-title">isFooterViewController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES if the reusable view controller is a footer controller in a section</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL isFooterViewController</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES if the reusable view controller is a footer controller in a section</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isHeaderViewController" title="isHeaderViewController"></a>
+	<h3 class="subsubtitle method-title">isHeaderViewController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES if the reusable view controller is a header controller in a section</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL isHeaderViewController</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES if the reusable view controller is a header controller in a section</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mapAnnotation" title="mapAnnotation"></a>
+	<h3 class="subsubtitle method-title">mapAnnotation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Default value is an empty object implementing MKAnnotation located at 0,0.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) id&lt;MKAnnotation&gt; mapAnnotation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Default value is an empty object implementing MKAnnotation located at 0,0.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mapAnnotationView" title="mapAnnotationView"></a>
+	<h3 class="subsubtitle method-title">mapAnnotationView</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MKAnnotationView *mapAnnotationView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mapView" title="mapView"></a>
+	<h3 class="subsubtitle method-title">mapView</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MKMapView *mapView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKMapViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parentSwipeableContentViewController" title="parentSwipeableContentViewController"></a>
+	<h3 class="subsubtitle method-title">parentSwipeableContentViewController</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) CKSwipeableViewController *parentSwipeableContentViewController</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKSwipeableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableView" title="tableView"></a>
+	<h3 class="subsubtitle method-title">tableView</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) UITableView *tableView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableViewCell" title="tableViewCell"></a>
+	<h3 class="subsubtitle method-title">tableViewCell</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) CKTableViewCell *tableViewCell</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/controllerWithObject:keyPath:" title="controllerWithObject:keyPath:"></a>
+	<h3 class="subsubtitle method-title">controllerWithObject:keyPath:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)controllerWithObject:(id)<em>object</em> keyPath:(NSString *)<em>keyPath</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+Property.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/controllerWithObject:keyPath:readOnly:" title="controllerWithObject:keyPath:readOnly:"></a>
+	<h3 class="subsubtitle method-title">controllerWithObject:keyPath:readOnly:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)controllerWithObject:(id)<em>object</em> keyPath:(NSString *)<em>keyPath</em> readOnly:(BOOL)<em>readOnly</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+Property.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/controllerWithProperty:" title="controllerWithProperty:"></a>
+	<h3 class="subsubtitle method-title">controllerWithProperty:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)controllerWithProperty:(CKProperty *)<em>property</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+Property.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/controllerWithProperty:readOnly:" title="controllerWithProperty:readOnly:"></a>
+	<h3 class="subsubtitle method-title">controllerWithProperty:readOnly:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)controllerWithProperty:(CKProperty *)<em>property</em> readOnly:(BOOL)<em>readOnly</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+Property.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/controllerWithTitle:action:" title="controllerWithTitle:action:"></a>
+	<h3 class="subsubtitle method-title">controllerWithTitle:action:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)controllerWithTitle:(NSString *)<em>title</em> action:(void ( ^ ) ( CKStandardContentViewController *controller ))<em>action</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+Standard.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/controllerWithTitle:defaultImageName:imageURL:action:" title="controllerWithTitle:defaultImageName:imageURL:action:"></a>
+	<h3 class="subsubtitle method-title">controllerWithTitle:defaultImageName:imageURL:action:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)controllerWithTitle:(NSString *)<em>title</em> defaultImageName:(NSString *)<em>defaultImageName</em> imageURL:(NSURL *)<em>imageURL</em> action:(void ( ^ ) ( CKStandardContentViewController *controller ))<em>action</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+Standard.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/controllerWithTitle:imageName:action:" title="controllerWithTitle:imageName:action:"></a>
+	<h3 class="subsubtitle method-title">controllerWithTitle:imageName:action:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)controllerWithTitle:(NSString *)<em>title</em> imageName:(NSString *)<em>imageName</em> action:(void ( ^ ) ( CKStandardContentViewController *controller ))<em>action</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+Standard.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/controllerWithTitle:imageURL:action:" title="controllerWithTitle:imageURL:action:"></a>
+	<h3 class="subsubtitle method-title">controllerWithTitle:imageURL:action:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)controllerWithTitle:(NSString *)<em>title</em> imageURL:(NSURL *)<em>imageURL</em> action:(void ( ^ ) ( CKStandardContentViewController *controller ))<em>action</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+Standard.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/controllerWithTitle:subtitle:action:" title="controllerWithTitle:subtitle:action:"></a>
+	<h3 class="subsubtitle method-title">controllerWithTitle:subtitle:action:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)controllerWithTitle:(NSString *)<em>title</em> subtitle:(NSString *)<em>subtitle</em> action:(void ( ^ ) ( CKStandardContentViewController *controller ))<em>action</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+Standard.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/controllerWithTitle:subtitle:defaultImageName:imageURL:action:" title="controllerWithTitle:subtitle:defaultImageName:imageURL:action:"></a>
+	<h3 class="subsubtitle method-title">controllerWithTitle:subtitle:defaultImageName:imageURL:action:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)controllerWithTitle:(NSString *)<em>title</em> subtitle:(NSString *)<em>subtitle</em> defaultImageName:(NSString *)<em>defaultImageName</em> imageURL:(NSURL *)<em>imageURL</em> action:(void ( ^ ) ( CKStandardContentViewController *controller ))<em>action</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+Standard.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/controllerWithTitle:subtitle:imageName:action:" title="controllerWithTitle:subtitle:imageName:action:"></a>
+	<h3 class="subsubtitle method-title">controllerWithTitle:subtitle:imageName:action:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)controllerWithTitle:(NSString *)<em>title</em> subtitle:(NSString *)<em>subtitle</em> imageName:(NSString *)<em>imageName</em> action:(void ( ^ ) ( CKStandardContentViewController *controller ))<em>action</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+Standard.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/controllerWithTitle:subtitle:imageURL:action:" title="controllerWithTitle:subtitle:imageURL:action:"></a>
+	<h3 class="subsubtitle method-title">controllerWithTitle:subtitle:imageURL:action:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)controllerWithTitle:(NSString *)<em>title</em> subtitle:(NSString *)<em>subtitle</em> imageURL:(NSURL *)<em>imageURL</em> action:(void ( ^ ) ( CKStandardContentViewController *controller ))<em>action</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+Standard.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/activateNextResponder" title="activateNextResponder"></a>
+	<h3 class="subsubtitle method-title">activateNextResponder</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)activateNextResponder</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+ResponderChain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/activatePreviousResponder" title="activatePreviousResponder"></a>
+	<h3 class="subsubtitle method-title">activatePreviousResponder</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)activatePreviousResponder</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+ResponderChain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/becomeFirstResponder" title="becomeFirstResponder"></a>
+	<h3 class="subsubtitle method-title">becomeFirstResponder</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)becomeFirstResponder</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+ResponderChain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didBecomeFirstResponder" title="didBecomeFirstResponder"></a>
+	<h3 class="subsubtitle method-title">didBecomeFirstResponder</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didBecomeFirstResponder</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+ResponderChain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didDeselect" title="didDeselect"></a>
+	<h3 class="subsubtitle method-title">didDeselect</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method is called after the cell has been selected</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didDeselect</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method is called after the cell has been selected</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didHighlight" title="didHighlight"></a>
+	<h3 class="subsubtitle method-title">didHighlight</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method is called after the cell has been highlighted</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didHighlight</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method is called after the cell has been highlighted</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didRemove" title="didRemove"></a>
+	<h3 class="subsubtitle method-title">didRemove</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method is called after the cell has been removec</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didRemove</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method is called after the cell has been removec</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didResignFirstResponder" title="didResignFirstResponder"></a>
+	<h3 class="subsubtitle method-title">didResignFirstResponder</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didResignFirstResponder</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+ResponderChain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didSelect" title="didSelect"></a>
+	<h3 class="subsubtitle method-title">didSelect</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method is called after the cell has been selected</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didSelect</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method is called after the cell has been selected</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didSelectAccessory" title="didSelectAccessory"></a>
+	<h3 class="subsubtitle method-title">didSelectAccessory</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method is called after the cell accessory view has been selected</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didSelectAccessory</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method is called after the cell accessory view has been selected</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didUnhighlight" title="didUnhighlight"></a>
+	<h3 class="subsubtitle method-title">didUnhighlight</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method is called after the cell has been unhighlighted</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didUnhighlight</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method is called after the cell has been unhighlighted</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasNextResponder" title="hasNextResponder"></a>
+	<h3 class="subsubtitle method-title">hasNextResponder</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)hasNextResponder</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+ResponderChain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasPreviousResponder" title="hasPreviousResponder"></a>
+	<h3 class="subsubtitle method-title">hasPreviousResponder</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)hasPreviousResponder</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+ResponderChain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasResponder" title="hasResponder"></a>
+	<h3 class="subsubtitle method-title">hasResponder</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)hasResponder</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+ResponderChain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/nextResponder:" title="nextResponder:"></a>
+	<h3 class="subsubtitle method-title">nextResponder:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIView *)nextResponder:(UIView *)<em>view</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+ResponderChain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postInit" title="postInit"></a>
+	<h3 class="subsubtitle method-title">postInit</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)postInit</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preferredSizeConstraintToSize:" title="preferredSizeConstraintToSize:"></a>
+	<h3 class="subsubtitle method-title">preferredSizeConstraintToSize:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGSize)preferredSizeConstraintToSize:(CGSize)<em>size</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/prepareForReuseUsingContentView:contentViewCell:" title="prepareForReuseUsingContentView:contentViewCell:"></a>
+	<h3 class="subsubtitle method-title">prepareForReuseUsingContentView:contentViewCell:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Ensure you call the super implementation !</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)prepareForReuseUsingContentView:(UIView *)<em>contentView</em> contentViewCell:(UIView *)<em>contentViewCell</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Ensure you call the super implementation !</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resignFirstResponder" title="resignFirstResponder"></a>
+	<h3 class="subsubtitle method-title">resignFirstResponder</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)resignFirstResponder</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController+ResponderChain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reuseIdentifier" title="reuseIdentifier"></a>
+	<h3 class="subsubtitle method-title">reuseIdentifier</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)reuseIdentifier</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scrollToCell" title="scrollToCell"></a>
+	<h3 class="subsubtitle method-title">scrollToCell</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)scrollToCell</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setNeedsDisplay" title="setNeedsDisplay"></a>
+	<h3 class="subsubtitle method-title">setNeedsDisplay</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method will be called by the container view controller if the separators or corners needs to be updated after some controllers have been removed/added in sections.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setNeedsDisplay</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method will be called by the container view controller if the separators or corners needs to be updated after some controllers have been removed/added in sections.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CKReusableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 smorel. All rights reserved. (Last updated: 2015-06-09)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
