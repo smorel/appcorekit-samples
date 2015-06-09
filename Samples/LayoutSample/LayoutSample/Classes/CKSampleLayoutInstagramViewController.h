@@ -8,6 +8,6 @@
 
 #import <AppCoreKit/AppCoreKit.h>
 
-@interface CKSampleLayoutInstagramViewController : CKFormTableViewController
+@interface CKSampleLayoutInstagramViewController : CKTableViewController
 
 @end

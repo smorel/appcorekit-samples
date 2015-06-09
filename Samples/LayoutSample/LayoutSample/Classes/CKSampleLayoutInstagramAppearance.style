@@ -30,9 +30,6 @@
     },
     
     "$cell_background_view" : {
-        "borderShadowColor" : "0 0 0 0.6",
-        "borderShadowRadius" : 6,
-        "borderShadowOffset" : "0 4",
         
         "separatorColor" : "0.6 0.6 0.6 1",
         "embossTopColor" : "whiteColor",

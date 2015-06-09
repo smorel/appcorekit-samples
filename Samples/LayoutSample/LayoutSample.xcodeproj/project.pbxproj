@@ -61,6 +61,11 @@
 		96EE04CF15ED7DF000C0584B /* btn-back-highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE04CB15ED7DF000C0584B /* btn-back-highlight@2x.png */; };
 		96EE04D015ED7DF000C0584B /* btn-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE04CC15ED7DF000C0584B /* btn-back.png */; };
 		96EE04D115ED7DF000C0584B /* btn-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE04CD15ED7DF000C0584B /* btn-back@2x.png */; };
+		D9C3B0F31B27744E00B2C07D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B0F21B27744E00B2C07D /* CoreImage.framework */; };
+		D9C3B0F51B27745400B2C07D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B0F41B27745400B2C07D /* CoreMotion.framework */; };
+		D9C3B0F71B27745800B2C07D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B0F61B27745800B2C07D /* Accelerate.framework */; };
+		D9C3B0F91B27745D00B2C07D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B0F81B27745D00B2C07D /* AVFoundation.framework */; };
+		D9C3B0FB1B27746800B2C07D /* AppPeerIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B0FA1B27746800B2C07D /* AppPeerIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +132,11 @@
 		96EE04CB15ED7DF000C0584B /* btn-back-highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-back-highlight@2x.png"; sourceTree = "<group>"; };
 		96EE04CC15ED7DF000C0584B /* btn-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-back.png"; sourceTree = "<group>"; };
 		96EE04CD15ED7DF000C0584B /* btn-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-back@2x.png"; sourceTree = "<group>"; };
+		D9C3B0F21B27744E00B2C07D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D9C3B0F41B27745400B2C07D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D9C3B0F61B27745800B2C07D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		D9C3B0F81B27745D00B2C07D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D9C3B0FA1B27746800B2C07D /* AppPeerIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppPeerIOS.framework; path = ../../Frameworks/AppPeerIOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +144,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9C3B0F91B27745D00B2C07D /* AVFoundation.framework in Frameworks */,
+				D9C3B0F71B27745800B2C07D /* Accelerate.framework in Frameworks */,
+				D9C3B0F51B27745400B2C07D /* CoreMotion.framework in Frameworks */,
+				D9C3B0F31B27744E00B2C07D /* CoreImage.framework in Frameworks */,
 				963AB7CC179D66160076925C /* Security.framework in Frameworks */,
 				963BF4891760DEAA003E3D94 /* AdSupport.framework in Frameworks */,
 				9668B92315D59A5B00C57715 /* libstdc++.dylib in Frameworks */,
@@ -146,6 +160,7 @@
 				9668B8E715D5954D00C57715 /* CoreLocation.framework in Frameworks */,
 				9668B8E915D5954D00C57715 /* MapKit.framework in Frameworks */,
 				9668B8EB15D5954D00C57715 /* MediaPlayer.framework in Frameworks */,
+				D9C3B0FB1B27746800B2C07D /* AppPeerIOS.framework in Frameworks */,
 				9668B8ED15D5954D00C57715 /* CoreFoundation.framework in Frameworks */,
 				9668B8EF15D5954D00C57715 /* CFNetwork.framework in Frameworks */,
 				9668B8F115D5954D00C57715 /* SystemConfiguration.framework in Frameworks */,
@@ -179,6 +194,11 @@
 		9668B8D915D5954D00C57715 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D9C3B0FA1B27746800B2C07D /* AppPeerIOS.framework */,
+				D9C3B0F81B27745D00B2C07D /* AVFoundation.framework */,
+				D9C3B0F61B27745800B2C07D /* Accelerate.framework */,
+				D9C3B0F41B27745400B2C07D /* CoreMotion.framework */,
+				D9C3B0F21B27744E00B2C07D /* CoreImage.framework */,
 				963AB7CB179D66160076925C /* Security.framework */,
 				963AB7C9179D66070076925C /* DropboxSDK.framework */,
 				963AB7C7179D66000076925C /* ResourceManager.framework */,
@@ -303,7 +323,6 @@
 				9668B8D115D5954D00C57715 /* Sources */,
 				9668B8D215D5954D00C57715 /* Frameworks */,
 				9668B8D315D5954D00C57715 /* Resources */,
-				9668B8D415D5954D00C57715 /* Copy Framework Resources */,
 			);
 			buildRules = (
 			);
@@ -378,23 +397,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		9668B8D415D5954D00C57715 /* Copy Framework Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Framework Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sh \"$PROJECT_DIR/../../Frameworks/copy_framework_resources.sh\" --system-developer-dir \"$SYSTEM_DEVELOPER_DIR\" --executable-name \"$EXECUTABLE_NAME\" --frameworks-dir \"$PROJECT_DIR/../../Frameworks/\" --target-build-dir \"$TARGET_BUILD_DIR\" --project \"$PROJECT\" --project-dir \"$PROJECT_DIR\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9668B8D115D5954D00C57715 /* Sources */ = {
@@ -478,6 +480,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Frameworks\"",
+					"/Users/sebastienmorel/Documents/Projects/smorel/appcorekit-samples/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LayoutSample/LayoutSample-Prefix.pch";
@@ -505,6 +508,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Frameworks\"",
+					"/Users/sebastienmorel/Documents/Projects/smorel/appcorekit-samples/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LayoutSample/LayoutSample-Prefix.pch";

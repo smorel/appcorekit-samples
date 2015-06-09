@@ -28,14 +28,12 @@
 - (void)setup{
     self.title = _(@"Layout - Forms");
     
-    CKTableViewCellController* next = [self cellControllerForNextUser];
-    CKFormSection* nextSection = [CKFormSection sectionWithCellControllers:@[next]];
+    CKReusableViewController* next = [self cellControllerForNextUser];
+    CKReusableViewController* header  = [self cellControllerForHeader];
+    CKReusableViewController* details = [self cellControllerForDetails];
+    CKSection* section = [CKSection sectionWithControllers:@[next,header,details]];
     
-    CKTableViewCellController* header  = [self cellControllerForHeader];
-    CKTableViewCellController* details = [self cellControllerForDetails];
-    CKFormSection* modelSection = [CKFormSection sectionWithCellControllers:@[header,details]];
-    
-    [self addSections:@[nextSection, modelSection]];
+    [self addSections:@[section] animated:NO];
     
     __unsafe_unretained CKSampleLayoutInstagramViewController* bself = self;
     
@@ -51,19 +49,19 @@
     [CKSampleLayoutInstagramDataSources fetchRandomUserInModel:self.model completion:nil];
 }
 
-- (CKTableViewCellController*)cellControllerForHeader{
+- (CKReusableViewController*)cellControllerForHeader{
     __unsafe_unretained CKSampleLayoutInstagramViewController* bself = self;
     
-    CKTableViewCellController* cellController = [CKTableViewCellController cellControllerWithName:@"InstagramHeaderCell"];
-    [cellController setSetupBlock:^(CKTableViewCellController *controller, UITableViewCell *cell) {
+    CKReusableViewController* cellController = [CKReusableViewController controllerWithName:@"InstagramHeaderCell"];
+    cellController.viewWillAppearBlock = ^(UIViewController* controller, BOOL animated){
         
-        CKImageView* imageView = [cell.contentView viewWithKeyPath:@"ImageHighlightBackgroundView.ImageLeft"];
-        UILabel* photoCountLabel = [cell.contentView viewWithKeyPath:@"PhotoCounterLabel"];
-        UILabel* followersCounterLabel = [cell.contentView viewWithKeyPath:@"FollowersCounterLabel"];
-        UILabel* followingCounterLabel = [cell.contentView viewWithKeyPath:@"FollowingCounterLabel"];
-        UIButton* followButton = [cell.contentView viewWithKeyPath:@"FollowButton"];
+        CKImageView* imageView = [controller.view  viewWithKeyPath:@"ImageHighlightBackgroundView.ImageLeft"];
+        UILabel* photoCountLabel = [controller.view  viewWithKeyPath:@"PhotoCounterLabel"];
+        UILabel* followersCounterLabel = [controller.view  viewWithKeyPath:@"FollowersCounterLabel"];
+        UILabel* followingCounterLabel = [controller.view  viewWithKeyPath:@"FollowingCounterLabel"];
+        UIButton* followButton = [controller.view  viewWithKeyPath:@"FollowButton"];
         
-        [cell beginBindingsContextByRemovingPreviousBindings];
+        [controller.view  beginBindingsContextByRemovingPreviousBindings];
         [bself.model bind:@"imageURL"          toObject:imageView             withKeyPath:@"imageURL"];
         [bself.model bind:@"numberOfPhotos"    toObject:photoCountLabel       withKeyPath:@"text"];
         [bself.model bind:@"numberOfFollowers" toObject:followersCounterLabel withKeyPath:@"text"];
@@ -71,23 +69,23 @@
         [followButton bindEvent:UIControlEventTouchUpInside withBlock:^{
             [[UIApplication sharedApplication]openURL:bself.model.detailURL];
         }];
-        [cell endBindingsContext];
-    }];
+        [controller.view  endBindingsContext];
+    };
     
     return cellController;
 }
 
-- (CKTableViewCellController*)cellControllerForDetails{
+- (CKReusableViewController*)cellControllerForDetails{
     __unsafe_unretained CKSampleLayoutInstagramViewController* bself = self;
     
-    CKTableViewCellController* cellController = [CKTableViewCellController cellControllerWithName:@"InstagramDetailCell"];
-    [cellController setSetupBlock:^(CKTableViewCellController *controller, UITableViewCell *cell) {
+    CKReusableViewController* cellController = [CKReusableViewController controllerWithName:@"InstagramDetailCell"];
+    cellController.viewWillAppearBlock = ^(UIViewController* controller, BOOL animated){
         
-        UILabel* headerLabel = [cell.contentView viewWithKeyPath:@"HeaderLabel"];
-        UILabel* detailLabel = [cell.contentView viewWithKeyPath:@"DetailLabel"];
-        UIButton* URLButton = [cell.contentView viewWithKeyPath:@"URLButton"];
+        UILabel* headerLabel = [controller.view viewWithKeyPath:@"HeaderLabel"];
+        UILabel* detailLabel = [controller.view viewWithKeyPath:@"DetailLabel"];
+        UIButton* URLButton = [controller.view viewWithKeyPath:@"URLButton"];
         
-        [cell beginBindingsContextByRemovingPreviousBindings];
+        [controller.view beginBindingsContextByRemovingPreviousBindings];
         [bself.model bind:@"presentationText" toObject:headerLabel withKeyPath:@"text"];
         [bself.model bind:@"detailText" toObject:detailLabel withKeyPath:@"text"];
         [bself.model bind:@"detailURL" executeBlockImmediatly:YES withBlock:^(id value) {
@@ -96,26 +94,19 @@
         [URLButton bindEvent:UIControlEventTouchUpInside withBlock:^{
             [[UIApplication sharedApplication]openURL:bself.model.detailURL];
         }];
-        [cell endBindingsContext];
-    }];
+        [controller.view endBindingsContext];
+    };
     
     return cellController;
 }
 
-- (CKTableViewCellController*)cellControllerForNextUser{
+- (CKReusableViewController*)cellControllerForNextUser{
     __unsafe_unretained CKSampleLayoutInstagramViewController* bself = self;
     
-    CKTableViewCellController* cellController = [CKTableViewCellController cellControllerWithTitle:_(@"Next") action:^(CKTableViewCellController *controller) {
-        UIActivityIndicatorView* activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-        [activityIndicator startAnimating];
-        
-        controller.accessoryView = activityIndicator;
+    CKReusableViewController* cellController = [CKStandardContentViewController controllerWithTitle:_(@"Next") action:^(CKStandardContentViewController *controller) {
+        controller.accessoryType = CKAccessoryActivityIndicator;
         [CKSampleLayoutInstagramDataSources fetchRandomUserInModel:bself.model completion:^{
-            [controller performBlockOnMainThread:^{
-                [activityIndicator stopAnimating];
-                controller.accessoryView = nil;
-                controller.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-            }];
+            controller.accessoryType = CKAccessoryDisclosureIndicator;
          }];
     }];
     cellController.name = @"InstagramNextCell";

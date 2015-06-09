@@ -43,7 +43,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController: [CKSampleLayoutInstagramViewController controller]];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController: [[CKSampleLayoutInstagramViewController alloc]initWithStyle:UITableViewStylePlain]];
     [self.window makeKeyAndVisible];
     return YES;
 }

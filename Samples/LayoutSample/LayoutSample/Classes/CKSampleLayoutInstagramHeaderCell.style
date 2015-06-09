@@ -55,11 +55,22 @@
         "@class" : "CKHorizontalBoxLayout",
         
         "layoutBoxes" : [
+            { "@class" : "CKLayoutFlexibleSpace" },
             { "@inherits" : [ "$InstagramHeaderCell_PhotoCounters" ] },
+                         
+            { "@class" : "CKLayoutFlexibleSpace" },
             { "@inherits" : [ "$gray_separator" ], "fixedWidth" : 1 },
+                         
+            { "@class" : "CKLayoutFlexibleSpace" },
             { "@inherits" : [ "$InstagramHeaderCell_FollowersCounters" ] },
+                         
+            { "@class" : "CKLayoutFlexibleSpace" },
             { "@inherits" : [ "$gray_separator" ], "fixedWidth" : 1 },
-            { "@inherits" : [ "$InstagramHeaderCell_FollowingCounters" ] }
+                         
+            { "@class" : "CKLayoutFlexibleSpace" },
+            { "@inherits" : [ "$InstagramHeaderCell_FollowingCounters" ] },
+                         
+            { "@class" : "CKLayoutFlexibleSpace" }
         ]
     },
     
@@ -96,21 +107,20 @@
         ]
     },
     
-    "CKTableViewCellController[name=InstagramHeaderCell]" : {
-        "cellStyle" : "CKTableViewCellStyleCustomLayout",
+    "CKReusableViewController[name=InstagramHeaderCell]" : {
         "flags" : "CKItemViewFlagNone",
         
-        "UITableViewCell" : {
+        "tableViewCell" : {
             "backgroundView" : {
                 "@inherits" : [ "$cell_background_view" ]
-            },
-            "contentView" : {
-                "layoutBoxes" : [{
-                    "@inherits" : [ "$InstagramHeaderCell_Layout" ]
-                }]
             }
         },
         
+        "view" : {
+            "layoutBoxes" : [{
+                             "@inherits" : [ "$InstagramHeaderCell_Layout" ]
+                             }]
+        },
         
         "UIImageView[name=ImageLeft]" : {
             "defaultImage" : "Instagram_Icon_Large1",

@@ -4,29 +4,22 @@
         "CKSampleLayoutInstagramHeaderCell"
     ],
     
-    "CKTableViewCellController[name=InstagramNextCell]" : {
-        "UITableViewCell" : {
+    "CKReusableViewController[name=InstagramNextCell]" : {
+        "tableViewCell" : {
             "backgroundView" : {
                 "@inherits" : [ "$cell_background_view" ]
             },
             "selectedBackgroundView" : {
                 "@inherits" : [ "$cell_selected_background_view" ]
-            },
-            "textLabel" : {
-                "highlightedTextColor" : "0.14 0.14 0.14 1"
             }
+        },
+        "UILabel[name=TitleLabel]" : {
+            "highlightedTextColor" : "0.14 0.14 0.14 1"
         }
     },
     
     "CKSampleLayoutInstagramViewController" : {
-        "UITableView,tableViewContainer" : {
-            "backgroundView" : {
-                "backgroundColor" : "clearColor" 
-            },
-            "backgroundColor" : "clearColor" 
-        },
-        
-        "view" : {
+        "tableView,view" : {
             "backgroundColor" : "0.7 0.7 0.7 1"
         }
     }

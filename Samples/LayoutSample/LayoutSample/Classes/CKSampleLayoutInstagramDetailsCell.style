@@ -22,19 +22,19 @@
         ]
     },
     
-    "CKTableViewCellController[name=InstagramDetailCell]" : {
-        "cellStyle" : "CKTableViewCellStyleCustomLayout",
+    "CKReusableViewController[name=InstagramDetailCell]" : {
         "flags" : "CKItemViewFlagNone",
         
-        "UITableViewCell" : {
+        "tableViewCell" : {
             "backgroundView" : {
                 "@inherits" : [ "$cell_background_view" ]
-            },
-            "contentView" : {
-                "layoutBoxes" : [{
-                    "@inherits" : [ "$InstagramDetailCell_layout" ]
-                }]
             }
+        },
+        
+        "view" : {
+            "layoutBoxes" : [{
+                             "@inherits" : [ "$InstagramDetailCell_layout" ]
+                             }]
         },
         
         "UILabel[name=HeaderLabel]" : {
