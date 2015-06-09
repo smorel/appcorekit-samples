@@ -9,7 +9,7 @@
 #import <AppCoreKit/AppCoreKit.h>
 #import "CKSampleStoreUserObjectModel.h"
 
-@interface CKSampleStoreUserObjectViewController : CKFormTableViewController
+@interface CKSampleStoreUserObjectViewController : CKTableViewController
 
 - (id)initWithUserObject:(CKSampleStoreUserObjectModel*)userObject;
 

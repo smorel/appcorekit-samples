@@ -24,7 +24,6 @@
 		960F34DD15E3E5150002DF6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 960F34DC15E3E5150002DF6F /* main.m */; };
 		960F34E115E3E5150002DF6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 960F34E015E3E5150002DF6F /* AppDelegate.m */; };
 		960F34E315E3E5150002DF6F /* AppCoreKit.conf in Resources */ = {isa = PBXBuildFile; fileRef = 960F34E215E3E5150002DF6F /* AppCoreKit.conf */; };
-		960F34F315E3E5150002DF6F /* Stylesheet.style in Resources */ = {isa = PBXBuildFile; fileRef = 960F34F215E3E5150002DF6F /* Stylesheet.style */; };
 		960F34F515E3E5150002DF6F /* Appearance.style in Resources */ = {isa = PBXBuildFile; fileRef = 960F34F415E3E5150002DF6F /* Appearance.style */; };
 		960F34F715E3E5150002DF6F /* CKSampleStoreSettingsViewController.style in Resources */ = {isa = PBXBuildFile; fileRef = 960F34F615E3E5150002DF6F /* CKSampleStoreSettingsViewController.style */; };
 		960F350215E3E5150002DF6F /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 960F350115E3E5150002DF6F /* Localization.strings */; };
@@ -50,6 +49,12 @@
 		96F5C14E15E82969007121C6 /* uppernav_button-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F5C14415E82969007121C6 /* uppernav_button-pressed@2x.png */; };
 		96F5C14F15E82969007121C6 /* uppernav_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F5C14515E82969007121C6 /* uppernav_button.png */; };
 		96F5C15015E82969007121C6 /* uppernav_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F5C14615E82969007121C6 /* uppernav_button@2x.png */; };
+		D9C3B0CE1B275ECB00B2C07D /* AppPeerIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B0CD1B275ECB00B2C07D /* AppPeerIOS.framework */; };
+		D9C3B0D01B275EDA00B2C07D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B0CF1B275EDA00B2C07D /* CoreMotion.framework */; };
+		D9C3B0D21B275EDF00B2C07D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B0D11B275EDF00B2C07D /* CoreImage.framework */; };
+		D9C3B0D41B275EE400B2C07D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B0D31B275EE400B2C07D /* Accelerate.framework */; };
+		D9C3B0D61B275EE800B2C07D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B0D51B275EE800B2C07D /* AVFoundation.framework */; };
+		D9C3B0E61B2763B400B2C07D /* CloudKit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9C3B0E21B2763B400B2C07D /* CloudKit.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,7 +79,6 @@
 		960F34DF15E3E5150002DF6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		960F34E015E3E5150002DF6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		960F34E215E3E5150002DF6F /* AppCoreKit.conf */ = {isa = PBXFileReference; lastKnownFileType = text; name = AppCoreKit.conf; path = Resources/AppCoreKit.conf; sourceTree = "<group>"; };
-		960F34F215E3E5150002DF6F /* Stylesheet.style */ = {isa = PBXFileReference; lastKnownFileType = text; name = Stylesheet.style; path = Resources/Stylesheet.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		960F34F415E3E5150002DF6F /* Appearance.style */ = {isa = PBXFileReference; lastKnownFileType = text; name = Appearance.style; path = Resources/Appearance.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		960F34F615E3E5150002DF6F /* CKSampleStoreSettingsViewController.style */ = {isa = PBXFileReference; lastKnownFileType = text; name = CKSampleStoreSettingsViewController.style; path = Resources/CKSampleStoreSettingsViewController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		960F350115E3E5150002DF6F /* Localization.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localization.strings; path = Resources/Localization.strings; sourceTree = "<group>"; };
@@ -105,6 +109,14 @@
 		96F5C14415E82969007121C6 /* uppernav_button-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "uppernav_button-pressed@2x.png"; path = "Resources/uppernav_button-pressed@2x.png"; sourceTree = "<group>"; };
 		96F5C14515E82969007121C6 /* uppernav_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uppernav_button.png; path = Resources/uppernav_button.png; sourceTree = "<group>"; };
 		96F5C14615E82969007121C6 /* uppernav_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "uppernav_button@2x.png"; path = "Resources/uppernav_button@2x.png"; sourceTree = "<group>"; };
+		D9C3B0CD1B275ECB00B2C07D /* AppPeerIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppPeerIOS.framework; path = ../../Frameworks/AppPeerIOS.framework; sourceTree = "<group>"; };
+		D9C3B0CF1B275EDA00B2C07D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D9C3B0D11B275EDF00B2C07D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D9C3B0D31B275EE400B2C07D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		D9C3B0D51B275EE800B2C07D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D9C3B0E31B2763B400B2C07D /* CloudKit-1.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CloudKit-1.1.xcdatamodel"; sourceTree = "<group>"; };
+		D9C3B0E41B2763B400B2C07D /* CloudKit-1.1000.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CloudKit-1.1000.xcdatamodel"; sourceTree = "<group>"; };
+		D9C3B0E51B2763B400B2C07D /* CloudKit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudKit.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +124,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9C3B0D61B275EE800B2C07D /* AVFoundation.framework in Frameworks */,
+				D9C3B0D41B275EE400B2C07D /* Accelerate.framework in Frameworks */,
+				D9C3B0D21B275EDF00B2C07D /* CoreImage.framework in Frameworks */,
+				D9C3B0D01B275EDA00B2C07D /* CoreMotion.framework in Frameworks */,
 				963AB7C0179D64C50076925C /* Security.framework in Frameworks */,
 				963BF48D1760DEBB003E3D94 /* AdSupport.framework in Frameworks */,
 				960F34B515E3E5150002DF6F /* UIKit.framework in Frameworks */,
@@ -121,6 +137,7 @@
 				960F34BD15E3E5150002DF6F /* CoreData.framework in Frameworks */,
 				960F34BF15E3E5150002DF6F /* QuartzCore.framework in Frameworks */,
 				960F34C115E3E5150002DF6F /* CoreLocation.framework in Frameworks */,
+				D9C3B0CE1B275ECB00B2C07D /* AppPeerIOS.framework in Frameworks */,
 				960F34C315E3E5150002DF6F /* MapKit.framework in Frameworks */,
 				960F34C515E3E5150002DF6F /* MediaPlayer.framework in Frameworks */,
 				960F34C715E3E5150002DF6F /* CoreFoundation.framework in Frameworks */,
@@ -156,6 +173,11 @@
 		960F34B315E3E5150002DF6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D9C3B0D51B275EE800B2C07D /* AVFoundation.framework */,
+				D9C3B0D31B275EE400B2C07D /* Accelerate.framework */,
+				D9C3B0D11B275EDF00B2C07D /* CoreImage.framework */,
+				D9C3B0CF1B275EDA00B2C07D /* CoreMotion.framework */,
+				D9C3B0CD1B275ECB00B2C07D /* AppPeerIOS.framework */,
 				963AB7BF179D64C50076925C /* Security.framework */,
 				963AB7BD179D64BC0076925C /* DropboxSDK.framework */,
 				963AB7BB179D64B70076925C /* ResourceManager.framework */,
@@ -188,7 +210,6 @@
 				96DC229E1760F8BD0058BA15 /* CKSampleStoreUserObjectModel.m */,
 				96DC22A01760F8D60058BA15 /* CKSampleStoreUserSettingsModel.h */,
 				96DC22A11760F8D60058BA15 /* CKSampleStoreUserSettingsModel.m */,
-				960F34F215E3E5150002DF6F /* Stylesheet.style */,
 				960F34F415E3E5150002DF6F /* Appearance.style */,
 				96F5C06C15E7CBED007121C6 /* UINavigationController.style */,
 				960F34F615E3E5150002DF6F /* CKSampleStoreSettingsViewController.style */,
@@ -196,6 +217,7 @@
 				96DC229B1760F8940058BA15 /* CKSampleStoreSettingsViewController.m */,
 				96DC22A317610ECA0058BA15 /* CKSampleStoreUserObjectViewController.h */,
 				96DC22A417610ECA0058BA15 /* CKSampleStoreUserObjectViewController.m */,
+				D9C3B0E21B2763B400B2C07D /* CloudKit.xcdatamodeld */,
 				960F350015E3E5150002DF6F /* Resources */,
 				960F34D715E3E5150002DF6F /* Supporting Files */,
 			);
@@ -244,7 +266,6 @@
 				960F34AB15E3E5150002DF6F /* Sources */,
 				960F34AC15E3E5150002DF6F /* Frameworks */,
 				960F34AD15E3E5150002DF6F /* Resources */,
-				960F34AE15E3E5150002DF6F /* Copy Framework Resources */,
 			);
 			buildRules = (
 			);
@@ -288,7 +309,6 @@
 			files = (
 				960F34DB15E3E5150002DF6F /* InfoPlist.strings in Resources */,
 				960F34E315E3E5150002DF6F /* AppCoreKit.conf in Resources */,
-				960F34F315E3E5150002DF6F /* Stylesheet.style in Resources */,
 				960F34F515E3E5150002DF6F /* Appearance.style in Resources */,
 				960F34F715E3E5150002DF6F /* CKSampleStoreSettingsViewController.style in Resources */,
 				960F350215E3E5150002DF6F /* Localization.strings in Resources */,
@@ -310,23 +330,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		960F34AE15E3E5150002DF6F /* Copy Framework Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Framework Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sh \"$PROJECT_DIR/../../Frameworks/copy_framework_resources.sh\" --system-developer-dir \"$SYSTEM_DEVELOPER_DIR\" --executable-name \"$EXECUTABLE_NAME\" --frameworks-dir \"$PROJECT_DIR/../../Frameworks/\" --target-build-dir \"$TARGET_BUILD_DIR\" --project \"$PROJECT\" --project-dir \"$PROJECT_DIR\"";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		960F34AB15E3E5150002DF6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -337,6 +340,7 @@
 				96DC229C1760F8940058BA15 /* CKSampleStoreSettingsViewController.m in Sources */,
 				96DC229F1760F8BD0058BA15 /* CKSampleStoreUserObjectModel.m in Sources */,
 				96DC22A21760F8D60058BA15 /* CKSampleStoreUserSettingsModel.m in Sources */,
+				D9C3B0E61B2763B400B2C07D /* CloudKit.xcdatamodeld in Sources */,
 				96DC22A517610ECA0058BA15 /* CKSampleStoreUserObjectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +416,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Frameworks\"",
+					"/Users/sebastienmorel/Documents/Projects/smorel/appcorekit-samples/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CKStoreSample/CKStoreSample-Prefix.pch";
@@ -438,6 +443,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Frameworks\"",
+					"/Users/sebastienmorel/Documents/Projects/smorel/appcorekit-samples/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CKStoreSample/CKStoreSample-Prefix.pch";
@@ -480,6 +486,22 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D9C3B0E21B2763B400B2C07D /* CloudKit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D9C3B0E31B2763B400B2C07D /* CloudKit-1.1.xcdatamodel */,
+				D9C3B0E41B2763B400B2C07D /* CloudKit-1.1000.xcdatamodel */,
+				D9C3B0E51B2763B400B2C07D /* CloudKit.xcdatamodel */,
+			);
+			currentVersion = D9C3B0E31B2763B400B2C07D /* CloudKit-1.1.xcdatamodel */;
+			name = CloudKit.xcdatamodeld;
+			path = ../../../Frameworks/AppCoreKit.framework/CloudKit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 960F34A615E3E5150002DF6F /* Project object */;
 }

@@ -30,7 +30,7 @@
 #endif
     
     
-    [[CKStyleManager defaultManager]loadContentOfFileNamed:@"Stylesheet"];
+    //  [[CKStyleManager defaultManager]loadContentOfFileNamed:@"Stylesheet"];
     
 #ifdef DEBUG
     [CKConfiguration initWithContentOfFileNames:@"AppCoreKit" type:CKConfigurationTypeDebug];

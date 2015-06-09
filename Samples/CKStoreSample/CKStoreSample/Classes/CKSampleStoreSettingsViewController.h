@@ -9,7 +9,7 @@
 #import <AppCoreKit/AppCoreKit.h>
 #import "CKSampleStoreUserSettingsModel.h"
 
-@interface CKSampleStoreSettingsViewController : CKFormTableViewController
+@interface CKSampleStoreSettingsViewController : CKTableViewController
 
 - (id)initWithSettings:(CKSampleStoreUserSettingsModel*)settings;
 

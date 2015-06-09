@@ -1,56 +1,65 @@
 {
     "@import" : [
-        "Appearance"
+        "Appearance",
+        "UINavigationController"
     ],
     
-    "UIViewController,CKSampleStoreSettingsViewController, CKSampleStoreUserObjectViewController" : {
-        "style" : "UITableViewStyleGrouped",
-        
-        "tableView" : {
+    "UIViewController, CKSampleStoreSettingsViewController, CKSampleStoreUserObjectViewController" : {
+        "view, tableView" : {
             "backgroundColor" : "0.79 0.79 0.79 1"  
-        },
-        
-        
-        "sectionHeaderView" : {
-            "backgroundColor" : "clearColor",
-            "label" : {
-                "@inherits" : [ "$text_light_shadow" ],
-                "textColor" : "blackColor"
+        }
+    },
+    
+    "CKSectionHeaderFooterViewController" : {
+        "backgroundColor" : "0.79 0.79 0.79 1",
+        "UILabel" : {
+            "@inherits" : [ "$text_light_shadow" ],
+            "textColor" : "blackColor"
+        }
+    },
+    
+    "CKReusableViewController" : {
+        "enableNavigationToolbar" : 1,
+        "tableViewCell" : {
+            "backgroundView" : {
+                "@inherits" : [ "$lightGradient" ],
+                "borderColor" : "lightGrayColor",
+                "borderWidth" : 1,
+                "cornerSize" : 5,
+                
+                "borderShadowColor" : "0 0 0 0.6",
+                "borderShadowRadius" : 6,
+                "borderShadowOffset" : "0 0"
+            },
+            "selectedBackgroundView" : {
+                "@inherits" : [ "$blueGradient" ],
+                "borderColor" : "lightGrayColor",
+                "cornerSize" : 5,
+                "borderWidth" : 1
             }
         },
-        
-        "CKTableViewCellController" : {
-            "cellStyle" : "CKTableViewCellStyleIPhoneForm",
-            "contentInsets" : "15 10 15 10",
-            "enableNavigationToolbar" : 1,
-            "UITableViewCell" : {
-                "backgroundView" : {
-                    "@inherits" : [ "$lightGradient" ],
-                    "borderColor" : "lightGrayColor",
-                    "borderWidth" : 1,
-                    "cornerSize" : 5,
-                    
-                    "borderShadowColor" : "0 0 0 0.6",
-                    "borderShadowRadius" : 6,
-                    "borderShadowOffset" : "0 0"
-                },
-                "selectedBackgroundView" : {
-                    "@inherits" : [ "$blueGradient" ],
-                    "borderColor" : "lightGrayColor",
-                    "cornerSize" : 5,
-                    "borderWidth" : 1
-                },
-                "textLabel" : {
-                    "@inherits" : [ "$cell_title_font", "$transparent_background", "$text_light_shadow" ]
-                }
-            }
+        "view" : {
+            "padding" : "10 10 10 10"
         },
+        "UILabel[name=TitleLabel], UILabel[name=PropertyNameLabel]" : {
+            "@inherits" : [ "$cell_title_font", "$transparent_background", "$text_light_shadow" ],
+            "numberOfLines" : 0
+        }
+    },
+    
+    "CKStandardContentViewController" : {
+        "@inherits" : [ "CKReusableViewController" ],
         
-        "CKTableViewCellController[value.keyPath=phoneNumber],CKTableViewCellController[value.keyPath=phoneNumberConfirmation]" : {
-            "@inherits" : [ "CKTableViewCellController" ],
-            "textField" : {
-                "keyboardType" : "UIKeyboardTypePhonePad"
-            }
+        "view" : {
+            "padding" : "0 0 0 0"
+        }
+    },
+    
+    "CKReusableViewController[property.keyPath=phoneNumber], CKReusableViewController[property.keyPath=phoneNumberConfirmation]" : {
+        "@inherits" : [ "CKReusableViewController" ],
+        
+        "UITextField" : {
+            "keyboardType" : "UIKeyboardTypePhonePad"
         }
     }
 }

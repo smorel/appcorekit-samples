@@ -33,7 +33,7 @@
       [self sectionForFamily],
       [self sectionForUserObjects],
       [self sectionForManagingUserObjects]
-    ]];
+    ] animated:NO];
     
     //Manage the form state depending on the number of userObjects
     
@@ -41,7 +41,7 @@
     [self beginBindingsContextByRemovingPreviousBindings];
     [self.settings.userObjects bind:@"count" executeBlockImmediatly:YES withBlock:^(id value) {
         //Show/hide the edit navigation bar button
-        bSelf.editableType = ([bSelf.settings.userObjects count] > 0) ? CKTableCollectionViewControllerEditingTypeLeft : CKTableCollectionViewControllerEditingTypeNone;
+        //bSelf.editableType = ([bSelf.settings.userObjects count] > 0) ? CKTableCollectionViewControllerEditingTypeLeft : CKTableCollectionViewControllerEditingTypeNone;
         
         //Updates the settings model if it's selected user gets removed
         if([[ bSelf.settings.userObjects allObjects]indexOfObjectIdenticalTo: bSelf.settings.userObject] == NSNotFound){
@@ -88,20 +88,20 @@
    to simply describe your form.
  */
 
-- (CKFormSectionBase*)sectionForIdentification{
-    return [CKFormSection sectionWithObject:self.settings
+- (CKAbstractSection*)sectionForIdentification{
+    return [CKSection sectionWithObject:self.settings
                                  properties:[NSArray arrayWithObjects:@"title",@"name",@"forname",@"birthDate",nil]
                                 headerTitle:_(@"kIdentification")];
 }
 
-- (CKFormSectionBase*)sectionForContact{
-    return [CKFormSection sectionWithObject:self.settings
+- (CKAbstractSection*)sectionForContact{
+    return [CKSection sectionWithObject:self.settings
                                  properties:[NSArray arrayWithObjects:@"phoneNumber",@"phoneNumberConfirmation",nil]
                                 headerTitle:_(@"kContact")];
 }
 
-- (CKFormSectionBase*)sectionForFamily{
-    return [CKFormSection sectionWithObject:self.settings
+- (CKAbstractSection*)sectionForFamily{
+    return [CKSection sectionWithObject:self.settings
                                  properties:[NSArray arrayWithObjects:@"numberOfChildren",nil]
                                 headerTitle:_(@"kFamily")];
 }
@@ -123,28 +123,28 @@
    for the factory.
  */
 
-- (CKFormSectionBase*)sectionForUserObjects{
+- (CKAbstractSection*)sectionForUserObjects{
     __unsafe_unretained CKSampleStoreSettingsViewController* bSelf = self;
     
     //Setup the cell controller factory for creating cell controllers for CKSampleStoreUserObjectModel objects
-    CKCollectionCellControllerFactory* userObjectCellFactory = [CKCollectionCellControllerFactory factory];
-    [userObjectCellFactory addItemForObjectOfClass:[CKSampleStoreUserObjectModel class] withControllerCreationBlock:^CKCollectionCellController *(id object, NSIndexPath *indexPath) {
+    CKReusableViewControllerFactory* userObjectCellFactory = [CKReusableViewControllerFactory factory];
+    [userObjectCellFactory registerFactoryForObjectOfClass:[CKSampleStoreUserObjectModel class] factory:^CKReusableViewController *(id object, NSIndexPath *indexPath) {
         CKSampleStoreUserObjectModel* userObject = (CKSampleStoreUserObjectModel*)object;
         return [bSelf cellControllerForUserObject:userObject];
     }];
     
-    CKFormBindedCollectionSection* section = [CKFormBindedCollectionSection sectionWithCollection:self.settings.userObjects factory:userObjectCellFactory headerTitle:_(@"kUserObjects")];
+    CKCollectionSection* section = [CKCollectionSection sectionWithCollection:self.settings.userObjects factory:userObjectCellFactory headerTitle:_(@"kUserObjects")];
     
-    [section addFooterCellController:[self cellControllerForAddingUserObject]];
+    [section addCollectionFooterController:[self cellControllerForAddingUserObject] animated:NO];
     
     return section;
 }
 
 
-- (CKTableViewCellController*)cellControllerForAddingUserObject{
+- (CKReusableViewController*)cellControllerForAddingUserObject{
     __unsafe_unretained CKSampleStoreSettingsViewController* bSelf = self;
     
-    CKTableViewCellController* cellController = [CKTableViewCellController cellControllerWithTitle:_(@"kAdd") action:^(CKTableViewCellController *controller) {
+    CKStandardContentViewController* cellController = [CKStandardContentViewController controllerWithTitle:_(@"kAdd") action:^(CKStandardContentViewController *controller) {
         CKSampleStoreUserObjectModel* newObject = [CKSampleStoreUserObjectModel object];
         [bSelf.settings.userObjects addObject:newObject];
     }];
@@ -153,53 +153,47 @@
 }
 
 
-- (CKTableViewCellController*)cellControllerForUserObject:(CKSampleStoreUserObjectModel*)userObject{
+- (CKReusableViewController*)cellControllerForUserObject:(CKSampleStoreUserObjectModel*)userObject{
     NSString* text = ([userObject text] && [[userObject text]length] > 0)? [userObject text] : _(@"kEmptyText");
     
     //Creates a simple cell controller pushing an editing view controller
-    CKTableViewCellController* cellController = [CKTableViewCellController cellControllerWithTitle:text action:^(CKTableViewCellController *controller) {
+    CKStandardContentViewController* cellController = [CKStandardContentViewController controllerWithTitle:text action:^(CKStandardContentViewController *controller) {
         CKSampleStoreUserObjectViewController* edition = [[CKSampleStoreUserObjectViewController alloc]initWithUserObject:userObject];
-        [controller.containerController.navigationController pushViewController:edition animated:YES];
+        [controller.navigationController pushViewController:edition animated:YES];
     }];
+    
     cellController.name = @"UserObjectCell"; //For reuse and stylesheets
-    cellController.flags = CKItemViewFlagRemovable | CKItemViewFlagSelectable;
+    cellController.flags = CKViewControllerFlagsRemovable | CKViewControllerFlagsSelectable;
     
     //Binds on object text to update the cell controller text
-    __unsafe_unretained CKTableViewCellController* bCellController = cellController;
+    __unsafe_unretained CKStandardContentViewController* bCellController = cellController;
     [cellController beginBindingsContextByRemovingPreviousBindings];
     [userObject bind:@"text" withBlock:^(id value) {
-        bCellController.text = ([userObject text] && [[userObject text]length] > 0)? [userObject text] : _(@"kEmptyText");
+        bCellController.title = ([userObject text] && [[userObject text]length] > 0)? [userObject text] : _(@"kEmptyText");
     }];
     [cellController endBindingsContext];
     
     return cellController;
 }
 
-- (CKFormSectionBase*)sectionForManagingUserObjects{
-    return [CKFormSection sectionWithCellControllers:@[
+- (CKAbstractSection*)sectionForManagingUserObjects{
+    return [CKSection sectionWithControllers:@[
                 [self cellControllerForSelectingUserObject]
     ]];
 }
 
-- (void)updateSelectUserCellController:(CKTableViewCellController*)controller usingSettings:(CKSampleStoreUserSettingsModel*)settings{
+- (void)updateSelectUserCellController:(CKPropertySelectionViewController*)controller usingSettings:(CKSampleStoreUserSettingsModel*)settings{
     BOOL hasValidUserObjects = [self.settings hasValidUserObjects];
     
     //Updates selectUserObject detailText when number of objects in userObjects changes.
-    controller.accessoryType  = hasValidUserObjects ? UITableViewCellAccessoryDisclosureIndicator : UITableViewCellAccessoryNone;
-    controller.flags          = hasValidUserObjects ? CKItemViewFlagSelectable : CKItemViewFlagNone;
-    controller.selectionStyle = hasValidUserObjects ? UITableViewCellSelectionStyleBlue : UITableViewCellSelectionStyleNone;
-    
-    BOOL canChooseUserObject = (settings.userObject != nil && [settings.userObject text] != nil && [[settings.userObject text]length] > 0);
-    
-    NSString* text = canChooseUserObject ? [settings.userObject text] : _(@"userObject_Placeholder");
-    
-    controller.detailText = hasValidUserObjects ? text : _(@"kNoUserObjects");
+    controller.accessoryType  = hasValidUserObjects ? CKAccessoryDisclosureIndicator : CKAccessoryNone;
+    controller.flags          = hasValidUserObjects ? CKViewControllerFlagsSelectable : CKViewControllerFlagsNone;
 }
 
-- (CKTableViewCellController*)cellControllerForSelectingUserObject{
+- (CKReusableViewController*)cellControllerForSelectingUserObject{
     __unsafe_unretained CKSampleStoreSettingsViewController* bSelf = self;
     
-    CKTableViewCellController* cellController = [CKTableViewCellController cellControllerWithObject:self.settings keyPath:@"userObject"];
+    CKPropertySelectionViewController* cellController = (CKPropertySelectionViewController*)[CKReusableViewController controllerWithObject:self.settings keyPath:@"userObject"];
     cellController.name = @"selectUserObject";
     
     //As cellControllerWithObject:keyPath: sets the text using the localized value _(@"userObject") when initializing the cell,
@@ -207,11 +201,11 @@
     //We ensure by setuping the cell using setSetupBlock that the default values have been set previously and we have full control
     //on the controller's properties here
     
-    [cellController setSetupBlock:^(CKTableViewCellController *controller, UITableViewCell *cell) {
-        [bSelf updateSelectUserCellController:controller usingSettings:bSelf.settings];
-    }];
+    __unsafe_unretained CKPropertySelectionViewController* bCellController = cellController;
     
-    __unsafe_unretained CKTableViewCellController* bCellController = cellController;
+    cellController.viewWillAppearBlock = ^(UIViewController* controller, BOOL animated){
+        [bSelf updateSelectUserCellController:bCellController usingSettings:bSelf.settings];
+    };
     
     [cellController beginBindingsContextByRemovingPreviousBindings];
     

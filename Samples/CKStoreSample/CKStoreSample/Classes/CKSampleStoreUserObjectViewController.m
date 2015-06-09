@@ -22,11 +22,11 @@
 }
 
 - (void)setup{
-    CKFormSection* section1 = [CKFormSection sectionWithObject:self.userObject
+    CKSection* section1 = [CKSection sectionWithObject:self.userObject
                                                     properties:@[ @"text" ]
                                                    headerTitle:nil];
     
-    [self addSections:@[section1]];
+    [self addSections:@[section1] animated:NO];
 }
 
 @end
