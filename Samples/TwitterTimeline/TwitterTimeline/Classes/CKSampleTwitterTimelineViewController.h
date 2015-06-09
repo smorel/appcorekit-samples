@@ -10,7 +10,7 @@
 #import "CKSampleTwitterTweetModel.h"
 #import "CKSampleTwitterTimelineModel.h"
 
-@interface CKSampleTwitterTimelineViewController : CKFormTableViewController
+@interface CKSampleTwitterTimelineViewController : CKTableViewController
 
 - (id)initWithTimeline:(CKSampleTwitterTimelineModel*)timeline;
 

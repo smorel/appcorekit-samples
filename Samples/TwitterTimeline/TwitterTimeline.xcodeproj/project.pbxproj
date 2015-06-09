@@ -42,8 +42,12 @@
 		96DC22CF17622CF60058BA15 /* CKSampleTwitterTimelineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22CE17622CF60058BA15 /* CKSampleTwitterTimelineModel.m */; };
 		96DC22D217622D310058BA15 /* CKSampleTwitterTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC22D117622D310058BA15 /* CKSampleTwitterTimelineViewController.m */; };
 		96DC22D417622EE40058BA15 /* UINavigationController.style in Resources */ = {isa = PBXBuildFile; fileRef = 96DC22D317622EE40058BA15 /* UINavigationController.style */; };
-		96DC22D617622F5E0058BA15 /* Stylesheet.style in Resources */ = {isa = PBXBuildFile; fileRef = 96DC22D517622F5E0058BA15 /* Stylesheet.style */; };
 		96F5C12515E82931007121C6 /* background_nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F5C12415E82931007121C6 /* background_nav@2x.png */; };
+		D9C3B1111B27856100B2C07D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B1101B27856100B2C07D /* CoreImage.framework */; };
+		D9C3B1131B27856600B2C07D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B1121B27856600B2C07D /* CoreMotion.framework */; };
+		D9C3B1151B27856B00B2C07D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B1141B27856B00B2C07D /* AVFoundation.framework */; };
+		D9C3B1171B27856E00B2C07D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B1161B27856E00B2C07D /* Accelerate.framework */; };
+		D9C3B1191B27857800B2C07D /* AppPeerIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B1181B27857800B2C07D /* AppPeerIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,8 +95,12 @@
 		96DC22D017622D310058BA15 /* CKSampleTwitterTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSampleTwitterTimelineViewController.h; path = Classes/CKSampleTwitterTimelineViewController.h; sourceTree = "<group>"; };
 		96DC22D117622D310058BA15 /* CKSampleTwitterTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKSampleTwitterTimelineViewController.m; path = Classes/CKSampleTwitterTimelineViewController.m; sourceTree = "<group>"; };
 		96DC22D317622EE40058BA15 /* UINavigationController.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = UINavigationController.style; path = Classes/UINavigationController.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
-		96DC22D517622F5E0058BA15 /* Stylesheet.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Stylesheet.style; path = Classes/Stylesheet.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		96F5C12415E82931007121C6 /* background_nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background_nav@2x.png"; path = "Resources/background_nav@2x.png"; sourceTree = "<group>"; };
+		D9C3B1101B27856100B2C07D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D9C3B1121B27856600B2C07D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D9C3B1141B27856B00B2C07D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D9C3B1161B27856E00B2C07D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		D9C3B1181B27857800B2C07D /* AppPeerIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppPeerIOS.framework; path = ../../Frameworks/AppPeerIOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +108,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9C3B1171B27856E00B2C07D /* Accelerate.framework in Frameworks */,
+				D9C3B1151B27856B00B2C07D /* AVFoundation.framework in Frameworks */,
+				D9C3B1131B27856600B2C07D /* CoreMotion.framework in Frameworks */,
+				D9C3B1111B27856100B2C07D /* CoreImage.framework in Frameworks */,
 				963AB7EA179D68E90076925C /* Security.framework in Frameworks */,
 				963BF4831760DE8E003E3D94 /* AdSupport.framework in Frameworks */,
+				D9C3B1191B27857800B2C07D /* AppPeerIOS.framework in Frameworks */,
 				96047294163EF69A00B39F8F /* Accounts.framework in Frameworks */,
 				9604728D163EEB4A00B39F8F /* Twitter.framework in Frameworks */,
 				9691A53415824FB000E4E6E8 /* libstdc++.dylib in Frameworks */,
@@ -147,6 +160,11 @@
 		9691A4DB158246D300E4E6E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D9C3B1181B27857800B2C07D /* AppPeerIOS.framework */,
+				D9C3B1161B27856E00B2C07D /* Accelerate.framework */,
+				D9C3B1141B27856B00B2C07D /* AVFoundation.framework */,
+				D9C3B1121B27856600B2C07D /* CoreMotion.framework */,
+				D9C3B1101B27856100B2C07D /* CoreImage.framework */,
 				963AB7E9179D68E90076925C /* Security.framework */,
 				963AB7E7179D68DE0076925C /* DropboxSDK.framework */,
 				963AB7E5179D68D80076925C /* ResourceManager.framework */,
@@ -185,7 +203,6 @@
 				9691A52B15824C9100E4E6E8 /* CKSampleTwitterDataSources.mappings */,
 				9691A5281582493A00E4E6E8 /* CKSampleTwitterDataSources.h */,
 				9691A5291582493A00E4E6E8 /* CKSampleTwitterDataSources.m */,
-				96DC22D517622F5E0058BA15 /* Stylesheet.style */,
 				96DC22D317622EE40058BA15 /* UINavigationController.style */,
 				9691A52C15824C9100E4E6E8 /* CKSampleTwitterTimelineViewController.style */,
 				96DC22D017622D310058BA15 /* CKSampleTwitterTimelineViewController.h */,
@@ -229,7 +246,6 @@
 				9691A4D3158246D300E4E6E8 /* Sources */,
 				9691A4D4158246D300E4E6E8 /* Frameworks */,
 				9691A4D5158246D300E4E6E8 /* Resources */,
-				9691A4D6158246D300E4E6E8 /* Copy Framework Resources */,
 			);
 			buildRules = (
 			);
@@ -280,28 +296,10 @@
 				96951A3115E69AE800408239 /* AppCoreKit.conf in Resources */,
 				96F5C12515E82931007121C6 /* background_nav@2x.png in Resources */,
 				96DC22D417622EE40058BA15 /* UINavigationController.style in Resources */,
-				96DC22D617622F5E0058BA15 /* Stylesheet.style in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		9691A4D6158246D300E4E6E8 /* Copy Framework Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Framework Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sh \"$PROJECT_DIR/../../Frameworks/copy_framework_resources.sh\" --system-developer-dir \"$SYSTEM_DEVELOPER_DIR\" --executable-name \"$EXECUTABLE_NAME\" --frameworks-dir \"$PROJECT_DIR/../../Frameworks/\" --target-build-dir \"$TARGET_BUILD_DIR\" --project \"$PROJECT\" --project-dir \"$PROJECT_DIR\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9691A4D3158246D300E4E6E8 /* Sources */ = {
@@ -387,6 +385,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Frameworks\"",
+					"/Users/sebastienmorel/Documents/Projects/smorel/appcorekit-samples/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TwitterTimeline/TwitterTimeline-Prefix.pch";
@@ -414,6 +413,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Frameworks\"",
+					"/Users/sebastienmorel/Documents/Projects/smorel/appcorekit-samples/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TwitterTimeline/TwitterTimeline-Prefix.pch";

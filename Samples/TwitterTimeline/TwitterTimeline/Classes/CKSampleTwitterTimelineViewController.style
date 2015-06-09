@@ -1,7 +1,5 @@
 {
-    "$big_font" : {
-        "fontSize" : 20
-    },
+    "@import" : [ "UINavigationController" ],
     
     "$background" : {
         "backgroundColor" : "clearColor"
@@ -9,9 +7,9 @@
     
     "$lightGradient" : {
         "backgroundGradientColors" : [ "0.986 0.986 0.986 1", "0.884 0.884 0.884 1" ],
-		"backgroundGradientLocations" : [ "0","1" ],
-		"embossTopColor" : "0.986 0.986 0.986 0.5",
-		"embossBottomColor" : "whiteColor"
+        "backgroundGradientLocations" : [ "0","1" ],
+        "embossTopColor" : "0.986 0.986 0.986 0.5",
+        "embossBottomColor" : "whiteColor"
     },
     
     "CKSampleTwitterTimelineViewController" : {
@@ -19,36 +17,68 @@
         "style" : "UITableViewStyleGrouped",
         
         "tableView" : {
-            "backgroundColor" : "0.79 0.79 0.79 1"  
+            "backgroundColor" : "0.79 0.79 0.79 1"
+        }
+        
+    },
+    
+    "CKStandardContentViewController" : {
+        "@inherits" : [ "CKReusableViewController" ],
+        
+        "view" : {
+            "layout" : {
+                "verticalAlignment" : "CKLayoutVerticalAlignmentTop",
+                "horizontalAlignment" : "CKLayoutHorizontalAlignmentLeft",
+                "padding" : "10 10 10 10",
+                "Horizontal" : [
+                                { "CKImageView" : "ImageView", "marginRight" : 10, "fixedSize" : "60 60" },
+                                {
+                                  "horizontalAlignment" : "CKLayoutHorizontalAlignmentLeft",
+                                  "Vertical" : [
+                                                { "UILabel" : "TitleLabel", "marginBottom" : 5 },
+                                                { "UILabel" : "SubtitleLabel" }
+                                                ]
+                                }
+                                ]
+            }
+        }
+        
+    },
+    
+    "CKReusableViewController" : {
+        "tableViewCell" : {
+            "backgroundView" : {
+                "@inherits" : [ "$lightGradient" ],
+                "borderColor" : "lightGrayColor",
+                "borderWidth" : 1,
+                
+                "borderShadowColor" : "0 0 0 0.6",
+                "borderShadowRadius" : 6,
+                "borderShadowOffset" : "0 0"
+            }
         },
         
-        "CKTableViewCellController" : {
-            "cellStyle" : "CKTableViewCellStyleSubtitle2",
-            "contentInsets" : "10 10 10 10",
-            "UITableViewCell" : {
-                "backgroundView" : {
-                    "@inherits" : [ "$lightGradient" ],
-                    "borderColor" : "lightGrayColor",
-                    "borderWidth" : 1,
-                    
-                    "borderShadowColor" : "0 0 0 0.6",
-                    "borderShadowRadius" : 6,
-                    "borderShadowOffset" : "0 0"
-                },
-                "textLabel,detailTextLabel" : {
-                    "@inherits" : [ "$big_font", "$background" ]
-                },
-                "imageView" : {
-                    "@inherits" : [ "$background" ],
-                    "clipsToBounds" : 0,
-                    "opaque" : 1,
-                    "layer" : {
-                        "shadowColor" : "blackColor",
-                        "shadowRadius" : 2,
-                        "shadowOffset" : "0 2",
-                        "shadowOpacity" : "0.8"
-                    }
-                }
+        "UILabel[name=TitleLabel],UILabel[name=SubtitleLabel]" : {
+            "@inherits" : [ "$background" ],
+            "font" : [ "Helvetica-Bold", 24 ],
+            "numberOfLines" : 0
+        },
+        
+        "UILabel[name=SubtitleLabel]" : {
+            "@inherits" : [  "$background" ],
+            "font" : [ "Helvetica", 17 ],
+            "numberOfLines" : 0
+        },
+        
+        "UIImageView[name=ImageView]" : {
+            "@inherits" : [ "$background" ],
+            "clipsToBounds" : 0,
+            "opaque" : 1,
+            "layer" : {
+                "shadowColor" : "blackColor",
+                "shadowRadius" : 2,
+                "shadowOffset" : "0 2",
+                "shadowOpacity" : "0.8"
             }
         }
     }

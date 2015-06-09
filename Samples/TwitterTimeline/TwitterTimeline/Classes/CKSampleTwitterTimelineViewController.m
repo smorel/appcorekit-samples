@@ -28,32 +28,28 @@
     __unsafe_unretained CKSampleTwitterTimelineViewController* bself = self;
     
     //Setup the factory allowing to create cell controller when tweet models gets inserted into self.timeline.tweets collection asynchronously
-    CKCollectionCellControllerFactory* tweetsFactory = [CKCollectionCellControllerFactory factory];
-    [tweetsFactory addItemForObjectOfClass:[CKSampleTwitterTweetModel class] withControllerCreationBlock:^CKCollectionCellController *(id object, NSIndexPath *indexPath) {
+    CKReusableViewControllerFactory* tweetsFactory = [CKReusableViewControllerFactory factory];
+    [tweetsFactory registerFactoryForObjectOfClass:[CKSampleTwitterTweetModel class] factory:^CKReusableViewController *(id object, NSIndexPath *indexPath) {
         CKSampleTwitterTweetModel* tweet = (CKSampleTwitterTweetModel*)object;
         return [bself cellControllerForTweet:tweet];
     }];
     
     //Setup the section binded to the self.timeline.tweets collection
-    CKFormBindedCollectionSection* section = [CKFormBindedCollectionSection sectionWithCollection:self.timeline.tweets factory:tweetsFactory appendSpinnerAsFooterCell:YES];
-    [self addSections:@[section]];
+    CKCollectionSection* section = [CKCollectionSection sectionWithCollection:self.timeline.tweets factory:tweetsFactory];
+    CKCollectionStatusViewController* status = [CKCollectionStatusViewController controllerWithCollection:self.timeline.tweets];
+    [section addCollectionFooterController:status animated:NO];
+    
+    [self addSections:@[section] animated:NO];
 }
 
 
-- (CKTableViewCellController*)cellControllerForTweet:(CKSampleTwitterTweetModel*)tweet{
+- (CKReusableViewController*)cellControllerForTweet:(CKSampleTwitterTweetModel*)tweet{
     //Setup the cell controller to display a tweet model
-    CKTableViewCellController* cellController =  [CKTableViewCellController cellControllerWithTitle:tweet.name
+    CKStandardContentViewController* cellController =  [CKStandardContentViewController controllerWithTitle:tweet.name
                                                                                            subtitle:tweet.message
-                                                                                       defaultImage:[UIImage imageNamed:@"default_avatar"]
+                                                                                       defaultImageName:@"default_avatar"
                                                                                            imageURL:tweet.imageUrl
-                                                                                          imageSize:CGSizeMake(40,40)
                                                                                              action:nil];
-    
-    //Customize the layout to keep the cell imageview on top with insets
-    [cellController setLayoutBlock:^(CKTableViewCellController *controller, UITableViewCell *cell) {
-        [controller performLayout];
-        cell.imageView.frame = CGRectMake(controller.contentInsets.left,controller.contentInsets.top,40,40);
-    }];
     
     return cellController;
 }
