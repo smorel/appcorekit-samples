@@ -46,7 +46,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    CKMapFormSynchronizationViewController* viewController = [[CKMapFormSynchronizationViewController alloc]init];
+    CKMapFormSynchronizationViewController* viewController = [[CKMapFormSynchronizationViewController alloc]initWithStyle:UITableViewStylePlain];
     self.window = [UIWindow  viewWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = [UINavigationController navigationControllerWithRootViewController:viewController];
     

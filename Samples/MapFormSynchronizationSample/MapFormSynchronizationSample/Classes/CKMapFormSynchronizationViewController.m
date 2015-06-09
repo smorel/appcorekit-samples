@@ -11,7 +11,7 @@
 #import "CKMapFormSynchronizationModel.h"
 
 @interface CKMapFormSynchronizationViewController ()
-@property(nonatomic,retain) CKMapCollectionViewController* mapViewController;
+@property(nonatomic,retain) CKMapViewController* mapViewController;
 @property(nonatomic,retain) CKArrayCollection* collection;
 @end
 
@@ -21,7 +21,6 @@
     [super postInit];
     
     self.title = @"Map/Form Synchronization Sample";
-    self.style = UITableViewStylePlain;
     
     //The collection we want to display in map and form
     //who's content is fetched asynchronously when scrolling in the table view.
@@ -45,8 +44,8 @@
 - (void)setupMap{
     __unsafe_unretained CKMapFormSynchronizationViewController* bself = self;
     
-    CKCollectionCellControllerFactory* mapFactory = [CKCollectionCellControllerFactory factory];
-    [mapFactory addItemForObjectOfClass:[NSObject class] withControllerCreationBlock:^CKCollectionCellController *(id object, NSIndexPath *indexPath) {
+    CKReusableViewControllerFactory* mapFactory = [CKReusableViewControllerFactory factory];
+    [mapFactory registerFactoryForObjectOfClass:[NSObject class] factory:^CKReusableViewController *(id object, NSIndexPath *indexPath) {
         return [bself mapAnnotationControllerForObject:object];
     }];
     
@@ -55,45 +54,29 @@
         return venue.coordinate.latitude != 0 && venue.coordinate.longitude != 0;
     }]];
     
-    self.mapViewController = [[CKMapCollectionViewController alloc]initWithCollection:filteredCollection factory:mapFactory];
+    self.mapViewController = [[CKMapViewController alloc]init];
+    [self.mapViewController addSection:[CKCollectionSection sectionWithCollection:filteredCollection factory:mapFactory] animated:NO];
     self.mapViewController.includeUserLocationWhenZooming = NO;
+    self.mapViewController.fixedHeight = 150;
 }
 
-- (CKMapAnnotationController*)mapAnnotationControllerForObject:(CKMapFormSynchronizationModel*)venue{
+- (CKReusableViewController*)mapAnnotationControllerForObject:(CKMapFormSynchronizationModel*)venue{
     __unsafe_unretained CKMapFormSynchronizationViewController* bself = self;
     
-    CKMapAnnotationController* controller = [[CKMapAnnotationController alloc]init];
-    controller.value = venue;
+    CKReusableViewController* controller = [[CKReusableViewController alloc]init];
+    controller.mapAnnotation = venue;
     
-    [controller setSetupBlock:^(CKMapAnnotationController *controller, MKAnnotationView *view) {
-        view.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-    }];
+    controller.viewWillAppearBlock = ^(UIViewController* controller, BOOL animated){
+        CKReusableViewController* rc = (CKReusableViewController*)controller;
+        rc.mapAnnotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        rc.mapAnnotationView.canShowCallout = YES;
+    };
     
-    [controller setAccessorySelectionBlock:^(CKMapAnnotationController *controller) {
+    controller.didSelectAccessoryBlock = ^(CKReusableViewController* controller){
         [bself didSelectVenueDetailsInMap:venue];
-    }];
+    };
     
     return controller;
-}
-
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    [self.mapViewController viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    [self.mapViewController viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    [self.mapViewController viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated{
-    [super viewDidDisappear:animated];
-    [self.mapViewController viewDidDisappear:animated];
 }
 
 
@@ -102,25 +85,26 @@
 - (void)setupForm{
     __unsafe_unretained CKMapFormSynchronizationViewController* bself = self;
     
-    CKCollectionCellControllerFactory* factory = [CKCollectionCellControllerFactory factory];
-    [factory addItemForObjectOfClass:[NSObject class] withControllerCreationBlock:^CKCollectionCellController *(id object, NSIndexPath *indexPath) {
+    CKReusableViewControllerFactory* factory = [CKReusableViewControllerFactory factory];
+    [factory registerFactoryForObjectOfClass:[NSObject class] factory:^CKReusableViewController *(id object, NSIndexPath *indexPath) {
         return [bself cellControllerForObject:object];
     }];
     
-    CKFormBindedCollectionSection* section = [CKFormBindedCollectionSection sectionWithCollection:self.collection factory:factory];
+    CKCollectionSection* section = [CKCollectionSection sectionWithCollection:self.collection factory:factory];
     
-    //Grab the map view controller's view and set it as section header view to stay in overlay when scrolling.
-    UIView* mapView = [self.mapViewController view];
-    mapView.frame = CGRectMake(0,0,320,300);
-    section.headerView = mapView;
+    CKReusableViewController* mapHeader = [CKReusableViewController controller];
+    mapHeader.viewWillAppearBlock = ^(UIViewController* controller, BOOL animated){
+        controller.layoutBoxes = [CKArrayCollection collectionWithObjectsFromArray:@[ self.mapViewController]];
+    };
+    section.headerViewController = mapHeader;
     
-    [self addSections:@[section]];
+    [self addSections:@[section] animated:NO];
 }
 
-- (CKTableViewCellController*)cellControllerForObject:(CKMapFormSynchronizationModel*)venue{
+- (CKReusableViewController*)cellControllerForObject:(CKMapFormSynchronizationModel*)venue{
     __unsafe_unretained CKMapFormSynchronizationViewController* bself = self;
     
-    return [CKTableViewCellController cellControllerWithTitle:venue.name subtitle:venue.phone action:^(CKTableViewCellController *controller) {
+    return [CKReusableViewController controllerWithTitle:venue.name subtitle:venue.phone action:^(CKStandardContentViewController *controller) {
         [bself didSelectVenueDetailsInForm:venue];
     }];
 }

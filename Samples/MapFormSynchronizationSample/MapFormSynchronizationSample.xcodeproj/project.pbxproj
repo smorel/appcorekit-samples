@@ -37,6 +37,11 @@
 		96DC23B517665E1C0058BA15 /* CKMapFormSynchronizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC23B417665E1C0058BA15 /* CKMapFormSynchronizationViewController.m */; };
 		96DC23B8176661F20058BA15 /* CKMapFormSynchronizationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC23B7176661F20058BA15 /* CKMapFormSynchronizationModel.m */; };
 		96DC23BB176663160058BA15 /* CKMapFormSynchronizationDataSources.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC23BA176663160058BA15 /* CKMapFormSynchronizationDataSources.m */; };
+		D9C3B0FD1B27798600B2C07D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B0FC1B27798600B2C07D /* Accelerate.framework */; };
+		D9C3B0FF1B27798B00B2C07D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B0FE1B27798B00B2C07D /* CoreImage.framework */; };
+		D9C3B1011B27798F00B2C07D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B1001B27798F00B2C07D /* CoreMotion.framework */; };
+		D9C3B1031B27799600B2C07D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B1021B27799600B2C07D /* AVFoundation.framework */; };
+		D9C3B1051B27799F00B2C07D /* AppPeerIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B1041B27799F00B2C07D /* AppPeerIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +83,11 @@
 		96DC23B7176661F20058BA15 /* CKMapFormSynchronizationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKMapFormSynchronizationModel.m; path = Classes/CKMapFormSynchronizationModel.m; sourceTree = "<group>"; };
 		96DC23B9176663160058BA15 /* CKMapFormSynchronizationDataSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKMapFormSynchronizationDataSources.h; path = Classes/CKMapFormSynchronizationDataSources.h; sourceTree = "<group>"; };
 		96DC23BA176663160058BA15 /* CKMapFormSynchronizationDataSources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKMapFormSynchronizationDataSources.m; path = Classes/CKMapFormSynchronizationDataSources.m; sourceTree = "<group>"; };
+		D9C3B0FC1B27798600B2C07D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		D9C3B0FE1B27798B00B2C07D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D9C3B1001B27798F00B2C07D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D9C3B1021B27799600B2C07D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D9C3B1041B27799F00B2C07D /* AppPeerIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppPeerIOS.framework; path = ../../Frameworks/AppPeerIOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +95,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9C3B1031B27799600B2C07D /* AVFoundation.framework in Frameworks */,
+				D9C3B1051B27799F00B2C07D /* AppPeerIOS.framework in Frameworks */,
+				D9C3B1011B27798F00B2C07D /* CoreMotion.framework in Frameworks */,
+				D9C3B0FF1B27798B00B2C07D /* CoreImage.framework in Frameworks */,
+				D9C3B0FD1B27798600B2C07D /* Accelerate.framework in Frameworks */,
 				963AB7D2179D66CD0076925C /* Security.framework in Frameworks */,
 				96DC235F17665D930058BA15 /* UIKit.framework in Frameworks */,
 				96DC236117665D930058BA15 /* Foundation.framework in Frameworks */,
@@ -129,6 +144,11 @@
 		96DC235D17665D930058BA15 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D9C3B1041B27799F00B2C07D /* AppPeerIOS.framework */,
+				D9C3B1021B27799600B2C07D /* AVFoundation.framework */,
+				D9C3B1001B27798F00B2C07D /* CoreMotion.framework */,
+				D9C3B0FE1B27798B00B2C07D /* CoreImage.framework */,
+				D9C3B0FC1B27798600B2C07D /* Accelerate.framework */,
 				963AB7D1179D66CD0076925C /* Security.framework */,
 				963AB7CF179D66C20076925C /* DropboxSDK.framework */,
 				963AB7CD179D66BB0076925C /* ResourceManager.framework */,
@@ -211,7 +231,6 @@
 				96DC235617665D930058BA15 /* Sources */,
 				96DC235717665D930058BA15 /* Frameworks */,
 				96DC235817665D930058BA15 /* Resources */,
-				96DC235917665D930058BA15 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -264,22 +283,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		96DC235917665D930058BA15 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sh \"${CloudKitFrameworks}/copy_framework_resources.sh\" --system-developer-dir \"$SYSTEM_DEVELOPER_DIR\" --executable-name \"$EXECUTABLE_NAME\" --frameworks-dir \"$CloudKitFrameworks\" --target-build-dir \"$TARGET_BUILD_DIR\" --project \"$PROJECT\" --project-dir \"$PROJECT_DIR\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		96DC235617665D930058BA15 /* Sources */ = {
@@ -376,6 +379,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Frameworks\"",
+					"/Users/sebastienmorel/Documents/Projects/smorel/appcorekit-samples/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapFormSynchronizationSample/MapFormSynchronizationSample-Prefix.pch";
@@ -400,6 +404,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Frameworks\"",
+					"/Users/sebastienmorel/Documents/Projects/smorel/appcorekit-samples/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapFormSynchronizationSample/MapFormSynchronizationSample-Prefix.pch";

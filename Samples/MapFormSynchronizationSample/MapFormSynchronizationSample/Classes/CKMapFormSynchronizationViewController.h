@@ -8,6 +8,6 @@
 
 #import <AppCoreKit/AppCoreKit.h>
 
-@interface CKMapFormSynchronizationViewController : CKFormTableViewController
+@interface CKMapFormSynchronizationViewController : CKTableViewController
 
 @end

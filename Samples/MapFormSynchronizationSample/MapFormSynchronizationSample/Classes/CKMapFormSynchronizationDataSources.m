@@ -31,14 +31,16 @@
     source.requestBlock = ^(NSRange range){
         
         NSRange pagedRange = [Paging rangeWithPageOfSize:40 usingRange:range];
-        
+
         NSDictionary* params = @{ @"near"          : near,
                                   @"section"       : section,
                                   @"offset"        : [NSNumber numberWithInt:pagedRange.location],
                                   @"limit"         : [NSNumber numberWithInt:pagedRange.length],
                                   @"venuePhotos"   : [NSNumber numberWithBool:YES],
                                   @"client_id"     : @"REFZ1OZ44LBWGW5JWWTLB154IMUZ5ZBWRTQ5YNWYMVMX14F0",
-                                  @"client_secret" : @"FIAG2QEHGVM20SGI0LECB5JRNCB0JY0IXPKMXMKAZGRLZMAK" };
+                                  @"client_secret" : @"FIAG2QEHGVM20SGI0LECB5JRNCB0JY0IXPKMXMKAZGRLZMAK",
+                                  @"v" : @(20140806),
+                                  @"m" : @"foursquare" };
         
         return [CKWebRequest requestForObjectsWithUrl:[NSURL URLWithString:@"https://api.foursquare.com/v2/venues/explore"]
                                                params:params
