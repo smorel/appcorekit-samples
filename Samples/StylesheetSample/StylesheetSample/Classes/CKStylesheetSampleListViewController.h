@@ -9,6 +9,6 @@
 #import <AppCoreKit/AppCoreKit.h>
 #import "CKStylesheetSampleProtocol.h"
 
-@interface CKStylesheetSampleListViewController : CKFormTableViewController
+@interface CKStylesheetSampleListViewController : CKTableViewController
 @property(nonatomic,copy)void(^didSelectSample)(id<CKStylesheetSampleProtocol> sample);
 @end

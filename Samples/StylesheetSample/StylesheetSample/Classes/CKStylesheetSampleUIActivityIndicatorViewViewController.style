@@ -21,7 +21,7 @@
     
     "$sample_activityindicator_layout" : {
         "layoutBoxes" : [
-            { "@class" : "UIActivityIndicatorView", "name" : "ACTIVITYINDICATOR" }, 
+            { "@class" : "UIActivityIndicatorView", "name" : "ACTIVITYINDICATOR", "flexibleSize" : 1 },
             { "@class" : "CKVerticalBoxLayout",
               "layoutBoxes" : [
                     { "@class" : "CKLayoutFlexibleSpace" },

@@ -4,11 +4,8 @@
     
     "CKViewController[name=Separator]" : {
         "view" : {
-            "backgroundColor" : "blackColor"
-        },
-        "splitViewConstraints" : {
-            "type" : "CKSplitViewConstraintsTypeFixedSizeInPixels",
-            "size" : 1
+            "backgroundColor" : "blackColor",
+            "fixedWidth" : 1
         }
     },
     

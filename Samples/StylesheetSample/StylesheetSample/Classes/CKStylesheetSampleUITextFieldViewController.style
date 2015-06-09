@@ -68,7 +68,7 @@
     "$sample_textfield_layout" : {
         "layoutBoxes" : [{
             "@class" : "CKVerticalBoxLayout",
-            "padding" : "10 10 10 10",
+            "padding" : "60 10 10 10",
             "layoutBoxes" : [
                 {
                     "@class" : "UIView",

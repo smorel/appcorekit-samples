@@ -84,6 +84,11 @@
 		96D5D0A817D0CDBC001A4534 /* slider-max@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96D5D0A217D0CDBC001A4534 /* slider-max@2x.png */; };
 		96D5D0A917D0CDBC001A4534 /* slider-min.png in Resources */ = {isa = PBXBuildFile; fileRef = 96D5D0A317D0CDBC001A4534 /* slider-min.png */; };
 		96D5D0AA17D0CDBC001A4534 /* slider-min@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96D5D0A417D0CDBC001A4534 /* slider-min@2x.png */; };
+		D9C3B1071B277DB000B2C07D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B1061B277DB000B2C07D /* CoreImage.framework */; };
+		D9C3B1091B277DB500B2C07D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B1081B277DB500B2C07D /* CoreMotion.framework */; };
+		D9C3B10B1B277DB900B2C07D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B10A1B277DB900B2C07D /* Accelerate.framework */; };
+		D9C3B10D1B277DBD00B2C07D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B10C1B277DBD00B2C07D /* AVFoundation.framework */; };
+		D9C3B10F1B277DC700B2C07D /* AppPeerIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B10E1B277DC700B2C07D /* AppPeerIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -181,6 +186,11 @@
 		96D5D0A217D0CDBC001A4534 /* slider-max@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slider-max@2x.png"; path = "Resources/slider-max@2x.png"; sourceTree = "<group>"; };
 		96D5D0A317D0CDBC001A4534 /* slider-min.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slider-min.png"; path = "Resources/slider-min.png"; sourceTree = "<group>"; };
 		96D5D0A417D0CDBC001A4534 /* slider-min@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slider-min@2x.png"; path = "Resources/slider-min@2x.png"; sourceTree = "<group>"; };
+		D9C3B1061B277DB000B2C07D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D9C3B1081B277DB500B2C07D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D9C3B10A1B277DB900B2C07D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		D9C3B10C1B277DBD00B2C07D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D9C3B10E1B277DC700B2C07D /* AppPeerIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppPeerIOS.framework; path = ../../Frameworks/AppPeerIOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +198,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9C3B10D1B277DBD00B2C07D /* AVFoundation.framework in Frameworks */,
+				D9C3B10F1B277DC700B2C07D /* AppPeerIOS.framework in Frameworks */,
+				D9C3B10B1B277DB900B2C07D /* Accelerate.framework in Frameworks */,
+				D9C3B1091B277DB500B2C07D /* CoreMotion.framework in Frameworks */,
+				D9C3B1071B277DB000B2C07D /* CoreImage.framework in Frameworks */,
 				963AB7E4179D682D0076925C /* Security.framework in Frameworks */,
 				962672F4176F57A800202F97 /* UIKit.framework in Frameworks */,
 				962672F6176F57A800202F97 /* Foundation.framework in Frameworks */,
@@ -233,6 +248,11 @@
 		962672F2176F57A800202F97 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D9C3B10E1B277DC700B2C07D /* AppPeerIOS.framework */,
+				D9C3B10C1B277DBD00B2C07D /* AVFoundation.framework */,
+				D9C3B10A1B277DB900B2C07D /* Accelerate.framework */,
+				D9C3B1081B277DB500B2C07D /* CoreMotion.framework */,
+				D9C3B1061B277DB000B2C07D /* CoreImage.framework */,
 				963AB7E3179D682D0076925C /* Security.framework */,
 				963AB7E1179D68200076925C /* DropboxSDK.framework */,
 				963AB7DF179D681A0076925C /* ResourceManager.framework */,
@@ -377,7 +397,6 @@
 				962672EB176F57A800202F97 /* Sources */,
 				962672EC176F57A800202F97 /* Frameworks */,
 				962672ED176F57A800202F97 /* Resources */,
-				962672EE176F57A800202F97 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -471,22 +490,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		962672EE176F57A800202F97 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sh \"${CloudKitFrameworks}/copy_framework_resources.sh\" --system-developer-dir \"$SYSTEM_DEVELOPER_DIR\" --executable-name \"$EXECUTABLE_NAME\" --frameworks-dir \"$CloudKitFrameworks\" --target-build-dir \"$TARGET_BUILD_DIR\" --project \"$PROJECT\" --project-dir \"$PROJECT_DIR\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		962672EB176F57A800202F97 /* Sources */ = {
@@ -614,7 +617,7 @@
 					"/usr/lib/libstdc++.dylib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -639,7 +642,7 @@
 					"/usr/lib/libstdc++.dylib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

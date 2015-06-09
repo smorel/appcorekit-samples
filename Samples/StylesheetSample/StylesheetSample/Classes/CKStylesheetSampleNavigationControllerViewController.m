@@ -26,7 +26,7 @@
     CKViewController* controller = [CKViewController controllerWithName:@"Sample"];
     
     //This block is called before applying styles
-    controller.viewWillAppearBlock = ^(CKViewController* controller, BOOL animated){
+    controller.viewWillAppearBlock = ^(UIViewController* controller, BOOL animated){
         //Set the toolbar items in code as it doesn't work by introspection.
         UIBarButtonItem* t1 = [UIBarButtonItem barButtonItemWithTitle:_(@"T1") style:UIBarButtonItemStyleBordered block:^{
             CKAlertView* alert = [[CKAlertView alloc]initWithTitle:_(@"Toolbar item") message:_(@"T1!")];
@@ -39,10 +39,10 @@
 
     
     //This block is called after applying styles and layouts
-    controller.viewWillAppearEndBlock = ^(CKViewController* controller, BOOL animated){
+    controller.viewWillAppearEndBlock = ^(UIViewController* controller, BOOL animated){
         [controller.navigationController setToolbarHidden:NO animated:NO];
         
-        __unsafe_unretained CKViewController* bController = controller;
+        __unsafe_unretained UIViewController* bController = controller;
         [controller beginBindingsContextByRemovingPreviousBindings];
         
         UIButton* pushButton = [controller.view viewWithKeyPath:@"PUSHBUTTON"];

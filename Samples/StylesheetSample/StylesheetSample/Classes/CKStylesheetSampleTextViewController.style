@@ -4,7 +4,13 @@
     
     "CKStylesheetSampleTextViewController" : {
         "view" : {
-            "backgroundColor" : "whiteColor"
+            "backgroundColor" : "whiteColor",
+            "@ipad" : {
+                "fixedWidth" : 480
+            },
+            "@iphone" : {
+                "fixedWidth" : 0
+            }
         },
         
         "scrollView" : {
@@ -17,11 +23,6 @@
             "numberOfLines" : 0,
             "font" : ["Helvetica", 14],
             "textColor" : "0x333333"
-        },
-        
-        "splitViewConstraints" : {
-            "type" : "CKSplitViewConstraintsTypeFixedSizeInPixels",
-            "size" : 480
         }
     }
 }

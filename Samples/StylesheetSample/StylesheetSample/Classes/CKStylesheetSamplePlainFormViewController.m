@@ -13,4 +13,10 @@
 @end
 
 @implementation CKStylesheetSamplePlainFormViewController
+
+- (instancetype)init{
+    self = [super initWithStyle:UITableViewStylePlain];
+    return self;
+}
+
 @end

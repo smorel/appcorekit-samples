@@ -3,12 +3,16 @@
     ],
     
     "CKStylesheetSampleListViewController" : {
-        "view,tableViewContainer" : {
-            "backgroundColor" : "darkGrayColor"
-        },
         
-        "tableView" : {
-            "backgroundColor" : "clearColor",
+        "view,tableView" : {
+            "@ipad" : {
+                "fixedWidth" : 200
+            },
+            "@iphone" : {
+                "fixedWidth" : 200
+            },
+            
+            "backgroundColor" : "darkGrayColor",
             "separatorStyle" : "UITableViewCellSeparatorStyleNone"
         },
         
@@ -28,11 +32,6 @@
                     "numberOfLines" : 0
                 }
             }
-        },
-        
-        "splitViewConstraints" : {
-            "type" : "CKSplitViewConstraintsTypeFixedSizeInPixels",
-            "size" : 200
         }
     }
 }

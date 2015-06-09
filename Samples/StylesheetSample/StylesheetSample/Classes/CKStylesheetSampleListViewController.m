@@ -92,7 +92,7 @@ static char* ignore[3] = {
 }
 
 - (NSArray*)sampleFactoriesByAppendingViewControllersSampleFactories:(NSArray*)classes{
-    NSArray* allViewControllerClasses = [NSObject allClassesKindOfClass:[CKViewController class]];
+    NSArray* allViewControllerClasses = [NSObject allClassesKindOfClass:[UIViewController class]];
     
     NSMutableArray* allClasses = classes ? [NSMutableArray arrayWithArray:classes] : [NSMutableArray array];
     for(Class c in allViewControllerClasses){
@@ -132,7 +132,6 @@ static char* ignore[3] = {
 }
 
 - (void)setup{
-    self.style = UITableViewStylePlain;
     self.stickySelectionEnabled = YES;
     
     __unsafe_unretained CKStylesheetSampleListViewController* bself = self;
@@ -141,7 +140,7 @@ static char* ignore[3] = {
     
     NSArray* sortedAndFilteredClasses = [self sortedAndFilteredSampleFactories];
     for(id<CKStylesheetSampleProtocol> sampleFactory in sortedAndFilteredClasses){
-        CKTableViewCellController* cell = [CKTableViewCellController cellControllerWithTitle:[sampleFactory title] subtitle:[sampleFactory subtitle] action:^(CKTableViewCellController *controller) {
+        CKStandardContentViewController* cell = [CKStandardContentViewController controllerWithTitle:[sampleFactory title] subtitle:[sampleFactory subtitle] action:^(CKStandardContentViewController *controller) {
             if(bself.didSelectSample){
                 bself.didSelectSample(sampleFactory);
             }
@@ -149,17 +148,18 @@ static char* ignore[3] = {
         [cells addObject:cell];
     }
     
-    [self addSections:@[[CKFormSection sectionWithCellControllers:cells]]];
+    [self addSections:@[[CKSection sectionWithControllers:cells]] animated:NO];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
     NSIndexPath* firstRow = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self selectRowAtIndexPath:firstRow animated:NO];
+    [self.tableView selectRowAtIndexPath:firstRow animated:NO scrollPosition:UITableViewScrollPositionNone];
+
     if(self.didSelectSample){
-        CKTableViewCellController* cell = (CKTableViewCellController*)[self controllerAtIndexPath:firstRow];
-        [cell didSelectRow];
+        CKStandardContentViewController* cell = (CKStandardContentViewController*)[self controllerAtIndexPath:firstRow];
+        [cell didSelect];
         
         NSArray* sortedAndFilteredClasses = [self sortedAndFilteredSampleFactories];
         self.didSelectSample([sortedAndFilteredClasses objectAtIndex:0]);

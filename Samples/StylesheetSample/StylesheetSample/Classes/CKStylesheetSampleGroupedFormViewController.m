@@ -10,13 +10,18 @@
 
 @implementation CKStylesheetSampleGroupedFormViewController
 
+- (instancetype)init{
+    self = [super initWithStyle:UITableViewStyleGrouped];
+    return self;
+}
+
 - (void)postInit{
     [super postInit];
     [self setup];
 }
 
-+ (NSString*)stringRepresentingAccessoryTypeUsingCellController:(CKTableViewCellController*)cell{
-    CKClassPropertyDescriptor* propertyDescriptor = [NSObject propertyDescriptorForClass:[CKTableViewCellController class] key:@"accessoryType"];
++ (NSString*)stringRepresentingAccessoryTypeUsingCellController:(CKStandardContentViewController*)cell{
+    CKClassPropertyDescriptor* propertyDescriptor = [NSObject propertyDescriptorForClass:[CKReusableViewController class] key:@"accessoryType"];
     
     CKPropertyExtendedAttributes* attributes = [propertyDescriptor extendedAttributesForInstance:cell];
     CKEnumDescriptor* enumDescriptor = attributes.enumDescriptor;
@@ -39,32 +44,30 @@
 
     for(int accessoryType = UITableViewCellAccessoryNone; accessoryType <= UITableViewCellAccessoryCheckmark; ++accessoryType){
         
-        UIImage* image = [UIImage imageNamed:@"more-info-button"];
-        CKTableViewCellController* fullStylesheet = [CKTableViewCellController cellControllerWithTitle:nil
+        CKStandardContentViewController* fullStylesheet = [CKStandardContentViewController controllerWithTitle:nil
                                                                                               subtitle:_(@"This cell illustrates all the stylesheet customization support.")
-                                                                                                 image:image
-                                                                                                action:^(CKTableViewCellController *controller) {
+                                                                                                 imageName:@"more-info-button"
+                                                                                                action:^(CKStandardContentViewController *controller) {
             //ACTION !
         }];
         
         if(accessoryType == UITableViewCellAccessoryDetailDisclosureButton){
-            [fullStylesheet setAccessorySelectionBlock:^(CKTableViewCellController *controller) {
+            fullStylesheet.didSelectAccessoryBlock = ^(CKReusableViewController* controller) {
                 //ACCESSORY ACTION !
-            }];
+            };
         }
         
-        fullStylesheet.cellStyle = CKTableViewCellStyleSubtitle2;
         fullStylesheet.accessoryType = accessoryType;
         fullStylesheet.name = @"fullStylesheet";
-        fullStylesheet.text = [CKStylesheetSampleGroupedFormViewController stringRepresentingAccessoryTypeUsingCellController:fullStylesheet];
+        fullStylesheet.title = [CKStylesheetSampleGroupedFormViewController stringRepresentingAccessoryTypeUsingCellController:fullStylesheet];
         
         [cells addObject:fullStylesheet];
     }
 
-    CKFormSection* section = [CKFormSection sectionWithCellControllers:cells headerTitle:_(@"Cell Controllers :")];
+    CKSection* section = [CKSection sectionWithControllers:cells headerTitle:_(@"Cell Controllers :")];
     section.footerTitle = _(@"This is a section footer title\nwith 2 lines of text aligned right.");
     
-    [self addSections:@[ section ]];
+    [self addSections:@[ section ] animated:NO];
 }
 
 @end

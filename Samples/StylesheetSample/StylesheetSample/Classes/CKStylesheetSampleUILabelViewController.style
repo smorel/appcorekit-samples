@@ -26,7 +26,7 @@
     
     "$sample_label_layout" : {
         "layoutBoxes" : [{
-            "@class" : "CKVerticalBoxLayout",
+            "@class" : "CKVerticalBoxLayout", "flexibleWidth" : 1,
             "layoutBoxes" : [
                 { "@class" : "CKLayoutFlexibleSpace" },
                 { "@class" : "UILabel", "name" : "LABEL" },

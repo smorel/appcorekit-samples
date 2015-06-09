@@ -24,9 +24,11 @@
 }
 
 - (void)setup{
+    self.orientation = CKSplitViewOrientationHorizontal;
+    
     CKContainerViewController* rightContainer = [CKContainerViewController controller];
     CKStylesheetSampleTextViewController* text = [CKStylesheetSampleTextViewController controller];
-    CKStylesheetSampleListViewController* list = [CKStylesheetSampleListViewController controller];
+    CKStylesheetSampleListViewController* list = [[CKStylesheetSampleListViewController alloc]initWithStyle:UITableViewStylePlain];
     
     self.viewControllers = @[list,
                              [CKViewController controllerWithName:@"Separator"],

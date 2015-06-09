@@ -14,17 +14,9 @@
     
     "$sample_switch_layout" : {
         "layoutBoxes" : [{
-            "@class" : "CKVerticalBoxLayout",
+            "@class" : "CKVerticalBoxLayout", "flexibleSize" : 1,
             "layoutBoxes" : [
-                { "@class" : "CKLayoutFlexibleSpace" },
-                { "@class" : "CKHorizontalBoxLayout",
-                  "layoutBoxes" : [
-                        { "@class" : "CKLayoutFlexibleSpace" },
-                        { "@class" : "UISwitch", "name" : "SWITCH", "fixedSize" : "79 30" },
-                        { "@class" : "CKLayoutFlexibleSpace" }
-                    ]
-                },
-                { "@class" : "CKLayoutFlexibleSpace" }
+                { "@class" : "UISwitch", "name" : "SWITCH" }
             ]
         }]
     }

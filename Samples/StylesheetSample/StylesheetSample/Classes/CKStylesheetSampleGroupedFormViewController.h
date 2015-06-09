@@ -8,6 +8,6 @@
 
 #import <AppCoreKit/AppCoreKit.h>
 
-@interface CKStylesheetSampleGroupedFormViewController : CKFormTableViewController
+@interface CKStylesheetSampleGroupedFormViewController : CKTableViewController
 
 @end
