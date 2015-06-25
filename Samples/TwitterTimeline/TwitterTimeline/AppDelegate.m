@@ -33,7 +33,6 @@
 #endif
     
     
-    [[CKStyleManager defaultManager]loadContentOfFileNamed:@"Stylesheet"];
     [CKMappingContext loadContentOfFileNamed:@"CKSampleTwitterDataSources"];
     
 #ifdef DEBUG
