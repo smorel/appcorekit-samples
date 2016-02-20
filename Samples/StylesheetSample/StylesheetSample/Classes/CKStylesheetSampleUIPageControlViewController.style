@@ -3,24 +3,17 @@
 
         "view" : {
             "backgroundColor" : ".8 .8 .8 1",
-            "@inherits" : [ "$sample_pagecontrol_layout" ]
+            
+            "layout" : {
+                "flexibleSize" : 1, "Vertical" : [
+                    { "UIPageControl" : "PAGECONTROL", "margins" : "0 10 0 10" }
+                ]
+            }
         },
         
         "UIPageControl[name=PAGECONTROL]" : {
             "numberOfPages" : 12,
             "currentPage" : 3
         }
-    },
-    
-    
-    "$sample_pagecontrol_layout" : {
-        "layoutBoxes" : [{
-            "@class" : "CKVerticalBoxLayout",
-            "layoutBoxes" : [
-                { "@class" : "CKLayoutFlexibleSpace" },
-                { "@class" : "UIPageControl", "name" : "PAGECONTROL", "fixedHeight" : 20, "margins" : "0 10 0 10" },
-                { "@class" : "CKLayoutFlexibleSpace" }
-            ]
-        }]
     }
 }

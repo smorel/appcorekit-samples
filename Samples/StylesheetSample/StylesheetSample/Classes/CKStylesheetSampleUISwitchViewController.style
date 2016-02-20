@@ -3,21 +3,16 @@
 
         "view" : {
             "backgroundColor" : ".8 .8 .8 1",
-            "@inherits" : [ "$sample_switch_layout" ]
+            
+            "layout" : {
+                "flexibleSize" : 1, "Vertical" : [
+                    { "UISwitch" : "SWITCH" }
+                ]
+            }
         },
         
         "UISwitch[name=SWITCH]" : {
             "onTintColor" : "redColor"
         }
-    },
-    
-    
-    "$sample_switch_layout" : {
-        "layoutBoxes" : [{
-            "@class" : "CKVerticalBoxLayout", "flexibleSize" : 1,
-            "layoutBoxes" : [
-                { "@class" : "UISwitch", "name" : "SWITCH" }
-            ]
-        }]
     }
 }

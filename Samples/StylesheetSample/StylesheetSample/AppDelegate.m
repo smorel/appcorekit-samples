@@ -31,7 +31,6 @@
 #endif
     
     
-   [[CKStyleManager defaultManager]loadContentOfFileNamed:@"Stylesheet"];
    [CKMappingContext loadContentOfFileNamed:@"Api"];
     
 #ifdef DEBUG

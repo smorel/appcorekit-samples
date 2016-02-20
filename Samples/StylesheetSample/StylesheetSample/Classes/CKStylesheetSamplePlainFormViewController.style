@@ -129,6 +129,7 @@
         
         "CKImageView[name=ImageView]" : {
             "marginLeft" : 10,
+            "fixedSize" : "50 50",
             "layer" : {
                 "shadowColor" : "blackColor",
                 "shadowRadius" : 5,

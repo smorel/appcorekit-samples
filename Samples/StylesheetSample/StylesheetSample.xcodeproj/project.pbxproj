@@ -29,7 +29,6 @@
 		96267322176F57A800202F97 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96267321176F57A800202F97 /* Default@2x.png */; };
 		96267324176F57A800202F97 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96267323176F57A800202F97 /* Default-568h@2x.png */; };
 		96267326176F57A800202F97 /* AppCoreKit.conf in Resources */ = {isa = PBXBuildFile; fileRef = 96267325176F57A800202F97 /* AppCoreKit.conf */; };
-		96267334176F57A800202F97 /* Stylesheet.style in Resources */ = {isa = PBXBuildFile; fileRef = 96267333176F57A800202F97 /* Stylesheet.style */; };
 		96267346176F57FF00202F97 /* CKStylesheetSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96267345176F57FF00202F97 /* CKStylesheetSampleViewController.m */; };
 		96267349176F586700202F97 /* CKStylesheetSampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96267348176F586700202F97 /* CKStylesheetSampleListViewController.m */; };
 		9626734C176F589800202F97 /* CKStylesheetSampleTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9626734B176F589700202F97 /* CKStylesheetSampleTextViewController.m */; };
@@ -119,7 +118,6 @@
 		96267321176F57A800202F97 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		96267323176F57A800202F97 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		96267325176F57A800202F97 /* AppCoreKit.conf */ = {isa = PBXFileReference; lastKnownFileType = text; name = AppCoreKit.conf; path = Resources/AppCoreKit.conf; sourceTree = "<group>"; };
-		96267333176F57A800202F97 /* Stylesheet.style */ = {isa = PBXFileReference; lastKnownFileType = text; name = Stylesheet.style; path = Resources/Stylesheet.style; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		9626733E176F57A900202F97 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		96267344176F57FF00202F97 /* CKStylesheetSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKStylesheetSampleViewController.h; path = Classes/CKStylesheetSampleViewController.h; sourceTree = "<group>"; };
 		96267345176F57FF00202F97 /* CKStylesheetSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKStylesheetSampleViewController.m; path = Classes/CKStylesheetSampleViewController.m; sourceTree = "<group>"; };
@@ -282,7 +280,6 @@
 				9626731D176F57A800202F97 /* AppDelegate.m */,
 				96267325176F57A800202F97 /* AppCoreKit.conf */,
 				68B99E6317A196E1005AE6A4 /* Localization.strings */,
-				96267333176F57A800202F97 /* Stylesheet.style */,
 				96267352176F5EAA00202F97 /* CKStylesheetSampleViewController.style */,
 				96267344176F57FF00202F97 /* CKStylesheetSampleViewController.h */,
 				96267345176F57FF00202F97 /* CKStylesheetSampleViewController.m */,
@@ -444,7 +441,6 @@
 				96267322176F57A800202F97 /* Default@2x.png in Resources */,
 				96267324176F57A800202F97 /* Default-568h@2x.png in Resources */,
 				96267326176F57A800202F97 /* AppCoreKit.conf in Resources */,
-				96267334176F57A800202F97 /* Stylesheet.style in Resources */,
 				68B99E6117A196E1005AE6A4 /* Localization.strings in Resources */,
 				96267353176F5EAA00202F97 /* CKStylesheetSampleViewController.style in Resources */,
 				96267355176F5EC200202F97 /* CKStylesheetSampleTextViewController.style in Resources */,

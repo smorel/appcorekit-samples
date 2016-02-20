@@ -3,7 +3,15 @@
 
         "view" : {
             "backgroundColor" : ".8 .8 .8 1",
-            "@inherits" : [ "$sample_activityindicator_layout" ]
+            
+            "layout" : {
+                "flexibleSize" : 1, "Vertical" : [
+                    { "Flexible" : "TOP" },
+                    { "UIActivityIndicatorView" : "ACTIVITYINDICATOR" },
+                    { "Flexible" : "MIDDLE" },
+                    { "UIButton" : "STARTSTOPBUTTON", "marginBottom" : 10 }
+                ]
+            }
         },
         
         "UIActivityIndicatorView[name=ACTIVITYINDICATOR]" : {
@@ -16,24 +24,5 @@
             "selectedTitle"    : "Start Animating",
             "defaultTextColor" : "blackColor"
         }
-    },
-    
-    
-    "$sample_activityindicator_layout" : {
-        "layoutBoxes" : [
-            { "@class" : "UIActivityIndicatorView", "name" : "ACTIVITYINDICATOR", "flexibleSize" : 1 },
-            { "@class" : "CKVerticalBoxLayout",
-              "layoutBoxes" : [
-                    { "@class" : "CKLayoutFlexibleSpace" },
-                    { "@class" : "CKHorizontalBoxLayout", "marginBottom" : 10,
-                      "layoutBoxes" : [
-                            { "@class" : "CKLayoutFlexibleSpace" },
-                            { "@class" : "UIButton", "name" : "STARTSTOPBUTTON" },
-                            { "@class" : "CKLayoutFlexibleSpace" }
-                      ]
-                    }
-                ]
-            }
-        ]
     }
 }

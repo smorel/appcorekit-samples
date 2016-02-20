@@ -3,7 +3,17 @@
 
         "view" : {
             "backgroundColor" : ".8 .8 .8 1",
-            "@inherits" : [ "$sample_textfield_layout" ]
+            
+            "layout" : {
+                "flexibleSize" : 0, "padding" : "60 10 10 10",
+                "Vertical" : [
+                    { "UIView" : "TEXTFIELDBACKGROUND", "padding" : "10 10 10 10",
+                        "layout" : [
+                            { "UITextField" : "TEXTFIELD"}
+                        ]
+                    }
+                ]
+            }
         },
         
         "UIView[name=TEXTFIELDBACKGROUND]" : {
@@ -62,27 +72,5 @@
             },
             "rightViewMode" : "UITextFieldViewModeUnlessEditing" 
         }
-    },
-    
-    
-    "$sample_textfield_layout" : {
-        "layoutBoxes" : [{
-            "@class" : "CKVerticalBoxLayout",
-            "padding" : "60 10 10 10",
-            "layoutBoxes" : [
-                {
-                    "@class" : "UIView",
-                    "name" : "TEXTFIELDBACKGROUND",
-                    "layoutBoxes" : [{
-                        "@class" : "CKHorizontalBoxLayout",
-                        "padding" : "10 10 10 10",
-                        "layoutBoxes" : [
-                            { "@class" : "UITextField", "name" : "TEXTFIELD" }
-                        ]
-                    }]
-                },
-                { "@class" : "CKLayoutFlexibleSpace" }
-            ]
-        }]
     }
 }

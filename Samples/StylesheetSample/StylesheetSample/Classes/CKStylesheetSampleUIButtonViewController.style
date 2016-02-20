@@ -3,7 +3,15 @@
 
         "view" : {
             "backgroundColor" : ".8 .8 .8 1",
-            "@inherits" : [ "$sample_button_layout" ]
+            
+            "layout" : {
+                "flexibleSize" : 1, "Vertical" : [
+                    { "Flexible" : "TOP" },
+                    { "UIButton" : "BUTTON" },
+                    { "Flexible" : "MIDDLE" },
+                    { "UISegmentedControl" : "ButtonStateSelector", "marginBottom" : 10 }
+                ]
+            }
         },
         
         "UIButton[name=BUTTON]" : {
@@ -45,24 +53,5 @@
         "UISegmentedControl[name=ButtonStateSelector]" : {
             "segmentedControlStyle" : 2
         }
-    },
-    
-    
-    "$sample_button_layout" : {
-        "layoutBoxes" : [{
-            "@class" : "CKVerticalBoxLayout",
-            "layoutBoxes" : [
-                { "@class" : "CKLayoutFlexibleSpace" },
-                { "@class" : "CKHorizontalBoxLayout",
-                  "layoutBoxes" : [
-                        { "@class" : "CKLayoutFlexibleSpace" },
-                        { "@class" : "UIButton", "name" : "BUTTON" },
-                        { "@class" : "CKLayoutFlexibleSpace" }
-                  ]
-                },
-                { "@class" : "CKLayoutFlexibleSpace" },
-                { "@class" : "UISegmentedControl", "name" : "ButtonStateSelector", "fixedHeight" : 30, "fixedWidth" : 320, "marginBottom" : 10 }
-            ]
-        }]
     }
 }

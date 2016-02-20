@@ -3,7 +3,21 @@
 
         "view" : {
             "backgroundColor" : ".8 .8 .8 1",
-            "@inherits" : [ "$sample_slider_layout" ]
+            
+            "layout" : [{
+                "padding" : "10 10 10 10",
+                "Vertical" : [
+                      { "Flexible" : "SPACE" },
+                      { "UILabel" : "TINT_LABEL" },
+                      { "UISlider" : "TINT_SLIDER", "marginTop" : 10 },
+                      { "Flexible" : "SPACE" },
+                      { "UILabel" : "VALUE_LABEL"},
+                      { "Flexible" : "SPACE" },
+                      { "UILabel" : "IMAGES_LABEL" },
+                      { "UISlider" : "IMAGES_SLIDER", "marginTop" : 10 },
+                      { "Flexible" : "SPACE" }
+                ]
+            }]
         },
         
         "$labels" : {
@@ -51,23 +65,5 @@
             "defaultThumbImage" : "slider-dot",
             "highlightedThumbImage" : "slider-dot"
         }
-    },
-    
-    
-    "$sample_slider_layout" : {
-        "layoutBoxes" : [{
-            "@class" : "CKVerticalBoxLayout", "padding" : "10 10 10 10",
-            "layoutBoxes" : [
-                { "@class" : "CKLayoutFlexibleSpace" },
-                { "@class" : "UILabel", "name" : "TINT_LABEL" },
-                { "@class" : "UISlider", "name" : "TINT_SLIDER", "marginTop" : 20 },
-                { "@class" : "CKLayoutFlexibleSpace" },
-                { "@class" : "UILabel", "name" : "VALUE_LABEL"},
-                { "@class" : "CKLayoutFlexibleSpace" },
-                { "@class" : "UILabel", "name" : "IMAGES_LABEL" },
-                { "@class" : "UISlider", "name" : "IMAGES_SLIDER", "marginTop" : 20 },
-                { "@class" : "CKLayoutFlexibleSpace" }
-            ]
-        }]
     }
 }
