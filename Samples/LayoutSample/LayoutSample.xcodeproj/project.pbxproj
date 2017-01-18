@@ -11,7 +11,6 @@
 		963AB7CA179D66070076925C /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7C9179D66070076925C /* DropboxSDK.framework */; };
 		963AB7CC179D66160076925C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963AB7CB179D66160076925C /* Security.framework */; };
 		963BF4891760DEAA003E3D94 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF4881760DEAA003E3D94 /* AdSupport.framework */; };
-		963BF49C1760DF28003E3D94 /* AppCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BF49A1760DF28003E3D94 /* AppCoreKit.framework */; };
 		965E71B115E6968C008EFE08 /* AppCoreKit.conf in Resources */ = {isa = PBXBuildFile; fileRef = 965E71B015E6968C008EFE08 /* AppCoreKit.conf */; };
 		9668B8DB15D5954D00C57715 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9668B8DA15D5954D00C57715 /* UIKit.framework */; };
 		9668B8DD15D5954D00C57715 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9668B8DC15D5954D00C57715 /* Foundation.framework */; };
@@ -28,7 +27,6 @@
 		9668B8F315D5954D00C57715 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9668B8F215D5954D00C57715 /* MobileCoreServices.framework */; };
 		9668B8FD15D5954D00C57715 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9668B8FB15D5954D00C57715 /* InfoPlist.strings */; };
 		9668B90315D5954D00C57715 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9668B90215D5954D00C57715 /* AppDelegate.m */; };
-		9668B92315D59A5B00C57715 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9668B92215D59A5B00C57715 /* libstdc++.dylib */; };
 		96691E1D15DDA12900D73510 /* button-dark-blue-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 96691E1B15DDA12900D73510 /* button-dark-blue-highlight.png */; };
 		96691E1E15DDA12900D73510 /* button-dark-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96691E1C15DDA12900D73510 /* button-dark-blue@2x.png */; };
 		96691E2115DDA13200D73510 /* button-dark-blue-highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96691E1F15DDA13200D73510 /* button-dark-blue-highlight@2x.png */; };
@@ -61,6 +59,7 @@
 		96EE04CF15ED7DF000C0584B /* btn-back-highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE04CB15ED7DF000C0584B /* btn-back-highlight@2x.png */; };
 		96EE04D015ED7DF000C0584B /* btn-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE04CC15ED7DF000C0584B /* btn-back.png */; };
 		96EE04D115ED7DF000C0584B /* btn-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE04CD15ED7DF000C0584B /* btn-back@2x.png */; };
+		D96F4E781E2F0CF8000BF7F6 /* AppCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96F4E771E2F0CF8000BF7F6 /* AppCoreKit.framework */; };
 		D9C3B0F31B27744E00B2C07D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B0F21B27744E00B2C07D /* CoreImage.framework */; };
 		D9C3B0F51B27745400B2C07D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B0F41B27745400B2C07D /* CoreMotion.framework */; };
 		D9C3B0F71B27745800B2C07D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3B0F61B27745800B2C07D /* Accelerate.framework */; };
@@ -73,7 +72,6 @@
 		963AB7C9179D66070076925C /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxSDK.framework; path = ../../Frameworks/DropboxSDK.framework; sourceTree = "<group>"; };
 		963AB7CB179D66160076925C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		963BF4881760DEAA003E3D94 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		963BF49A1760DF28003E3D94 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = ../../Frameworks/AppCoreKit.framework; sourceTree = "<group>"; };
 		965E71B015E6968C008EFE08 /* AppCoreKit.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AppCoreKit.conf; path = Classes/AppCoreKit.conf; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		9668B8D615D5954D00C57715 /* LayoutSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9668B8DA15D5954D00C57715 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -95,7 +93,6 @@
 		9668B90115D5954D00C57715 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9668B90215D5954D00C57715 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9668B91115D5954E00C57715 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
-		9668B92215D59A5B00C57715 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		96691E1B15DDA12900D73510 /* button-dark-blue-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-dark-blue-highlight.png"; sourceTree = "<group>"; };
 		96691E1C15DDA12900D73510 /* button-dark-blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-dark-blue@2x.png"; sourceTree = "<group>"; };
 		96691E1F15DDA13200D73510 /* button-dark-blue-highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-dark-blue-highlight@2x.png"; sourceTree = "<group>"; };
@@ -132,6 +129,7 @@
 		96EE04CB15ED7DF000C0584B /* btn-back-highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-back-highlight@2x.png"; sourceTree = "<group>"; };
 		96EE04CC15ED7DF000C0584B /* btn-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-back.png"; sourceTree = "<group>"; };
 		96EE04CD15ED7DF000C0584B /* btn-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-back@2x.png"; sourceTree = "<group>"; };
+		D96F4E771E2F0CF8000BF7F6 /* AppCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCoreKit.framework; path = ../../Frameworks/AppCoreKit.framework; sourceTree = "<group>"; };
 		D9C3B0F21B27744E00B2C07D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		D9C3B0F41B27745400B2C07D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		D9C3B0F61B27745800B2C07D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -144,13 +142,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D96F4E781E2F0CF8000BF7F6 /* AppCoreKit.framework in Frameworks */,
 				D9C3B0F91B27745D00B2C07D /* AVFoundation.framework in Frameworks */,
 				D9C3B0F71B27745800B2C07D /* Accelerate.framework in Frameworks */,
 				D9C3B0F51B27745400B2C07D /* CoreMotion.framework in Frameworks */,
 				D9C3B0F31B27744E00B2C07D /* CoreImage.framework in Frameworks */,
 				963AB7CC179D66160076925C /* Security.framework in Frameworks */,
 				963BF4891760DEAA003E3D94 /* AdSupport.framework in Frameworks */,
-				9668B92315D59A5B00C57715 /* libstdc++.dylib in Frameworks */,
 				9668B8DB15D5954D00C57715 /* UIKit.framework in Frameworks */,
 				9668B8DD15D5954D00C57715 /* Foundation.framework in Frameworks */,
 				9668B8DF15D5954D00C57715 /* CoreGraphics.framework in Frameworks */,
@@ -165,7 +163,6 @@
 				9668B8EF15D5954D00C57715 /* CFNetwork.framework in Frameworks */,
 				9668B8F115D5954D00C57715 /* SystemConfiguration.framework in Frameworks */,
 				9668B8F315D5954D00C57715 /* MobileCoreServices.framework in Frameworks */,
-				963BF49C1760DF28003E3D94 /* AppCoreKit.framework in Frameworks */,
 				963AB7C8179D66010076925C /* ResourceManager.framework in Frameworks */,
 				963AB7CA179D66070076925C /* DropboxSDK.framework in Frameworks */,
 			);
@@ -194,6 +191,7 @@
 		9668B8D915D5954D00C57715 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D96F4E771E2F0CF8000BF7F6 /* AppCoreKit.framework */,
 				D9C3B0FA1B27746800B2C07D /* AppPeerIOS.framework */,
 				D9C3B0F81B27745D00B2C07D /* AVFoundation.framework */,
 				D9C3B0F61B27745800B2C07D /* Accelerate.framework */,
@@ -202,9 +200,7 @@
 				963AB7CB179D66160076925C /* Security.framework */,
 				963AB7C9179D66070076925C /* DropboxSDK.framework */,
 				963AB7C7179D66000076925C /* ResourceManager.framework */,
-				963BF49A1760DF28003E3D94 /* AppCoreKit.framework */,
 				963BF4881760DEAA003E3D94 /* AdSupport.framework */,
-				9668B92215D59A5B00C57715 /* libstdc++.dylib */,
 				9668B8DA15D5954D00C57715 /* UIKit.framework */,
 				9668B8DC15D5954D00C57715 /* Foundation.framework */,
 				9668B8DE15D5954D00C57715 /* CoreGraphics.framework */,
@@ -485,7 +481,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LayoutSample/LayoutSample-Prefix.pch";
 				INFOPLIST_FILE = "LayoutSample/LayoutSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -513,7 +509,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LayoutSample/LayoutSample-Prefix.pch";
 				INFOPLIST_FILE = "LayoutSample/LayoutSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",

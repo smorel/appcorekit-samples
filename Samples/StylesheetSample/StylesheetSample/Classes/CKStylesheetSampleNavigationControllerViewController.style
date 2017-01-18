@@ -13,7 +13,7 @@
         }
     },
     
-    "UINavigationController" : {
+    "Default_UINavigationController" : {
         "navigationBar" : {
             //"backgroundImage" : "",
             "tintColor" : "yellowColor",
@@ -66,12 +66,12 @@
         }
     },
     
-    "CKViewController[name=Sample]" : {
+    "CKSimpleViewController" : {
         "title" : "TITLE",
         
         //Customizing Sample view controller view
         "view" : {
-            "backgroundColor" : ".8 .8 .8 1",
+            "backgroundColor" : "1 0 0 1",
             "@inherits" : [ "$sample_nav_sample_layout" ]
         },
         
@@ -89,9 +89,9 @@
             },
             
             "rightBarButtonItem" : {
-                "@class" : "UIBarButtonItem",
                 "title" : "RIGHT",
-                "name" : "SAMPLE_RIGHT_BAR_BUTTON"
+                "name" : "SAMPLE_RIGHT_BAR_BUTTON",
+                "@inherits" : [ "$base_button_sample" ]
             }
         },
         
@@ -105,7 +105,7 @@
         "UINavigationController" : {
             
             //inherits global UINavigationController Style
-            "@inherits" : [ "UINavigationController" ],
+            "@inherits" : [ "Default_UINavigationController" ],
             
             "navigationBar" : {
                 "UIBarButtonItem[name=SAMPLE_RIGHT_BAR_BUTTON]" : {
@@ -122,12 +122,10 @@
     },
     
     "$sample_nav_sample_layout" : {
-        "layoutBoxes" : [{
-            "@class" : "CKVerticalBoxLayout",
-            "layoutBoxes" : [
+        "layout" : {
+            "vertical" : [
                 { "@class" : "CKLayoutFlexibleSpace" },
-                { "@class" : "CKHorizontalBoxLayout",
-                  "layoutBoxes" : [
+                { "horizontal" : [
                         { "@class" : "CKLayoutFlexibleSpace" },
                         { "@class" : "UIButton", "name" : "PUSHBUTTON" },
                         { "@class" : "CKLayoutFlexibleSpace" }
@@ -135,13 +133,12 @@
                 },
                 { "@class" : "CKLayoutFlexibleSpace" }
             ]
-        }]
+        }
     },
     
     "$sample_nav_titleView_layout" : {
-        "layoutBoxes" : [
-            { "@class" : "CKHorizontalBoxLayout",
-              "layoutBoxes" : [
+        "layout" : [
+            { "vertical" : [
                                
                     { "@class" : "UILabel", "name" : "FIRST_TITLE_LABEL",
                                "text" : "FIRST", "backgroundColor" : "clearColor", "textColor" : "redColor",
